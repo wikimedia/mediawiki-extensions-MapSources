@@ -61,9 +61,13 @@ class MapsourcesPage extends SpecialPage {
 					$rev = Revision::newFromTitle( $title );
 					$wgOut->addWikiText( $this->replaceText( $rev->getText() ) );
 					return true;
-				} else $this->errorMsgs[] = wfMsg( 'mapsources-nopage', wfMsgForContent( 'mapsources' ) );
+				} else {
+					$this->errorMsgs[] = wfMsg( 'mapsources-nopage', wfMsgForContent( 'mapsources' ) );
+				}
 			}
-		} else $this->makeForm( false );
+		} else {
+			$this->makeForm( false );
+		}
 
 		$this->outputErrorMsgs();
 	}
@@ -75,8 +79,11 @@ class MapsourcesPage extends SpecialPage {
 
 		$wgOut->addWikiText( wfMsgNoTrans( 'mapsources-summary' ) );
 
-		if ( $noErrors ) $input = $this->params;
-		else $input = '0,0,scale=100000';
+		if ( $noErrors ) {
+			$input = $this->params;
+		} else {
+			$input = '0,0,scale=100000';
+		}
 
 		$title = self::getTitleFor( 'Mapsources' );
 		$form = '<fieldset><legend>' . wfMsgHtml( 'mapsources-search-legend' ) . '</legend>';
@@ -95,30 +102,47 @@ class MapsourcesPage extends SpecialPage {
 
 		if ( count( $this->errorMsgs ) > 0 ) {
 			$wgOut->addWikiText( '==' . wfMsg( 'mapsources-errormsgs' ) . '==' );
-			foreach ( $this->errorMsgs as $msg ) $wgOut->addWikiText( '* ' . $msg );
+			foreach ( $this->errorMsgs as $msg ) {
+				$wgOut->addWikiText( '* ' . $msg );
+			}
 		}
 	}
 
+	/**
+	 * @return int
+	 */
 	private function splitParameters() {
 		$a = explode( ',', str_replace( ';', ',', $this->params ), 4 );
 		$c = count( $a );
 		if ( ( $c > 1 ) and ( $c < 4 ) ) {
 			$this->lat = $a[0];
 			$this->long = $a[1];
-			if ( $c > 2 ) $args = $a[2]; else $args = '';
+			if ( $c > 2 ) {
+				$args = $a[2];
+			} else {
+				$args = '';
+			}
 		} else {
 			$a = explode( '_N_', $this->params, 2 );
 			if ( count( $a ) < 2 ) {
 				$a = explode( '_S_', $this->params, 2 );
-				if ( count( $a ) < 2 ) return -1;
+				if ( count( $a ) < 2 ) {
+					return -1;
+				}
 				$this->lat = $a[0] . '_S';
-			} else $this->lat = $a[0] . '_N';
+			} else {
+				$this->lat = $a[0] . '_N';
+			}
 			$b = explode( '_E', $a[1], 2 );
 			if ( count( $b ) < 2 ) {
 				$b = explode( '_W', $a[1], 2 );
-				if ( count( $b ) < 2 ) return -2;
+				if ( count( $b ) < 2 ) {
+					return -2;
+				}
 				$this->long = $b[0] . '_W';
-			} else $this->long = $b[0] . '_E';
+			} else {
+				$this->long = $b[0] . '_E';
+			}
 			$args = $b[1];
 		}
 
@@ -126,13 +150,19 @@ class MapsourcesPage extends SpecialPage {
 		$this->par = array();
 		foreach ( $args as $arg ) {
 			$parts = array_map( 'trim', explode( ':', $arg, 2 ) );
-			if ( count( $parts ) == 2 && $parts[0] && $parts[1] ) $this->par[$parts[0]] = $parts[1];
+			if ( count( $parts ) == 2 && $parts[0] && $parts[1] ) {
+				$this->par[$parts[0]] = $parts[1];
+			}
 		}
 		if ( isset( $this->par['precision'] ) ) {
 			$a = intval( $this->par['precision'] );
-			if ( ( $a < 0 ) or ( $a > 12 ) ) $a = 6;
+			if ( ( $a < 0 ) or ( $a > 12 ) ) {
+				$a = 6;
+			}
 			$this->par['precision'] = $a;
-		} else $this->par['precision'] = 6;
+		} else {
+			$this->par['precision'] = 6;
+		}
 
 		return 0;
 	}
@@ -153,9 +183,11 @@ class MapsourcesPage extends SpecialPage {
 				'airport' => 30000,
 				'landmark' => 10000
 			);
-			if ( isset( $this->par['type'] ) and isset( $scaleByType[$this->par['type']] ) )
+			if ( isset( $this->par['type'] ) and isset( $scaleByType[$this->par['type']] ) ) {
 				$this->par['scale'] = $scaleByType[$this->par['type']];
-			else $this->par['scale'] = 100000;
+			} else {
+				$this->par['scale'] = 100000;
+			}
 		}
 
 		/* Google and Tiger span */
@@ -163,12 +195,18 @@ class MapsourcesPage extends SpecialPage {
 
 		/* Mapquest zoom 0 ... 9 */
 		$this->mapquest = intval( 18.0 - log( $this->par['scale'] ) );
-		if ( $this->mapquest < 0 ) $this->mapquest = 0;
-		if ( $this->mapquest > 9 ) $this->mapquest = 9;
+		if ( $this->mapquest < 0 ) {
+			$this->mapquest = 0;
+		}
+		if ( $this->mapquest > 9 ) {
+			$this->mapquest = 9;
+		}
 
 		/* MSN altitude */
 		$this->msn = intval( $this->par['scale'] * 143 / 1000000 );
-		if ( $this->msn < 1 ) $this->msn = 1;
+		if ( $this->msn < 1 ) {
+			$this->msn = 1;
+		}
 
 		/* Multimap fixed scales */
 		$min = array( 1, 7000, 15000, 35000, 70000, 140000, 310000,
@@ -184,10 +222,16 @@ class MapsourcesPage extends SpecialPage {
 
 		/* OSM zoom */
 		$this->osmzoom = round( log( 500000000 / $this->par['scale'], 2 ) );
-		if ( $this->osmzoom < 0 ) $this->osmzoom = 0;
-		if ( $this->osmzoom > 18 ) $this->osmzoom = 18;
+		if ( $this->osmzoom < 0 ) {
+			$this->osmzoom = 0;
+		}
+		if ( $this->osmzoom > 18 ) {
+			$this->osmzoom = 18;
+		}
 		$this->osmzoommap = $this->osmzoom - 1;
-		if ( $this->osmzoommap < 0 ) $this->osmzoommap = 0;
+		if ( $this->osmzoommap < 0 ) {
+			$this->osmzoommap = 0;
+		}
 	}
 
 	private function getParams( $par ) {
@@ -196,15 +240,15 @@ class MapsourcesPage extends SpecialPage {
 		$this->errorMsgs = array();
 
 		$this->locName = $wgRequest->getText( 'pagename' );
-		if ( $this->locName == '' ) $this->locName = $wgRequest->getText( 'locname' );
+		if ( $this->locName == '' ) {
+			$this->locName = $wgRequest->getText( 'locname' );
+		}
 		if ( ( $this->locName == '' ) and isset( $_SERVER['HTTP_REFERER'] ) ) {
 			$pos = strpos( $_SERVER['HTTP_REFERER'], strtolower( $wgSitename ) );
-			if ( $pos === false ) ;
-			else {
+			if ( $pos !== false ) {
 				$this->locName = substr( strrchr( $_SERVER['HTTP_REFERER'], '/' ), 1 );
 				$pos = strpos( $this->locName, 'title=' );
-				if ( $pos === false ) ;
-				else {
+				if ( $pos !== false ) {
 					$this->locName = substr( $this->locName, $pos + 6 ) . '&';
 					$this->locName = substr( $this->locName, 0, strpos( $this->locName, '&' ) );
 				}
@@ -240,18 +284,41 @@ class MapsourcesPage extends SpecialPage {
 	private function replaceText( $text ) {
 		$origParams = abs( $this->lat->dec ) . '_' . $this->lat->coord['NS'] . '_'
 			. abs( $this->long->dec ) . '_' . $this->long->coord['EW'];
-		if ( count( $this->par ) > 0 )
-			foreach ( $this->par as $key => $value )
-				if ( $key != 'precision' )
+		if ( count( $this->par ) > 0 ) {
+			foreach ( $this->par as $key => $value ) {
+				if ( $key != 'precision' ) {
 					$origParams .= '_' . $key . ':' . $this->par[$key];
+				}
+			}
+		}
 
 		$Geo = new GeoTransform( $this->lat->dec, $this->long->dec );
 		$errorMsg = '(' . wfMsgForContent( 'mapsources-outofrange' ) . ')';
-		if ( $Geo->utm['error'] == 0 ) $utmError = ''; else $utmError = $errorMsg;
-		if ( $Geo->utm33['error'] == 0 ) $utm33Error = ''; else $utm33Error = $errorMsg;
-		if ( $Geo->osgb36['error'] == 0 ) $osgb36Error = ''; else $osgb36Error = $errorMsg;
-		if ( $Geo->ch1903['error'] == 0 ) $ch1903Error = ''; else $ch1903Error = $errorMsg;
-		if ( $Geo->nztm['error'] == 0 ) $nztmError = ''; else $nztmError = $errorMsg;
+		if ( $Geo->utm['error'] == 0 ) {
+			$utmError = '';
+		} else {
+			$utmError = $errorMsg;
+		}
+		if ( $Geo->utm33['error'] == 0 ) {
+			$utm33Error = '';
+		} else {
+			$utm33Error = $errorMsg;
+		}
+		if ( $Geo->osgb36['error'] == 0 ) {
+			$osgb36Error = '';
+		} else {
+			$osgb36Error = $errorMsg;
+		}
+		if ( $Geo->ch1903['error'] == 0 ) {
+			$ch1903Error = '';
+		} else {
+			$ch1903Error = $errorMsg;
+		}
+		if ( $Geo->nztm['error'] == 0 ) {
+			$nztmError = '';
+		} else {
+			$nztmError = $errorMsg;
+		}
 
 		$search = array(
 			'{latdegdec}', '{latdegabs}', '{latdegint}', '{latmindec}', '{latminint}', '{latsecdec}', '{latsecint}', '{latNS}',

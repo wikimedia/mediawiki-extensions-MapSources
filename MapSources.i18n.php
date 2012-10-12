@@ -84,5 +84,3 @@ $messages['pl'] = array(
 	'mapsources-nopage'          => 'Brak adresu [[Project:$1]] źródła',
 	'mapsources-outofrange'      => 'Współrzędne poza zakresem',
 );
-
-?>

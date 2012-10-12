@@ -15,6 +15,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	die( 'This file is a MediaWiki extension, it is not a valid entry point' );
 }
 
+// TODO: Should the GeoMath extension be in here too?
 require_once( dirname( __FILE__ ) . '/GeoMath.php' );
 require_once( dirname( __FILE__ ) . '/GeoTransform.php' );
 
@@ -25,10 +26,9 @@ $wgExtensionCredits['specialpage']['MapSources'] = array(
 	'path' => __FILE__,
 	'name' => 'MapSources',
 	'url' => 'http://www.wikivoyage.org/tech/MapSources_extension',
-	'description' => 'Map sources extension',
 	'descriptionmsg' => 'mapsources-desc',
 	'author' => 'Roland Unger, Egil Kvaleberg',
-	'version' => '1.05'
+	'version' => '1.06'
 );
 
 $wgAutoloadClasses['MapsourcesPage'] = dirname( __FILE__ ) . '/MapSources_body.php';
