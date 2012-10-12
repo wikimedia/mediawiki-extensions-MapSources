@@ -12,7 +12,7 @@
  */
 
 if ( !defined( 'MEDIAWIKI' ) ) {
-        die( 'This file is a MediaWiki extension, it is not a valid entry point' );
+	die( 'This file is a MediaWiki extension, it is not a valid entry point' );
 }
 
 require_once( dirname( __FILE__ ) . '/GeoMath.php' );
@@ -28,9 +28,8 @@ $wgExtensionCredits['specialpage']['MapSources'] = array(
 	'description' => 'Map sources extension',
 	'descriptionmsg' => 'mapsources-desc',
 	'author' => 'Roland Unger, Egil Kvaleberg',
-	'version' => '1.05' );
+	'version' => '1.05'
+);
 
 $wgAutoloadClasses['MapsourcesPage'] = dirname( __FILE__ ) . '/MapSources_body.php';
 $wgSpecialPages['Mapsources'] = 'MapsourcesPage';
-
-?>
