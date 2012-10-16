@@ -16,12 +16,28 @@ $messages['en'] = array(
 	'mapsources-go'              => 'Go',
 	'mapsources-errormsgs'       => 'Error Messages',
 	'mapsources-noparams'        => 'No parameters given',
-	'mapsources-incorrectparams' => 'Incorrect parameters given',
+	'mapsources-incorrectparams' => 'Incorrect parameters ($1) given',
 	'mapsources-incorrectlat'    => 'Incorrect latitude',
 	'mapsources-incorrectlong'   => 'Incorrect longitude',
 	'mapsources-nopage'          => 'No project page [[Project:$1]] available',
 	'mapsources-outofrange'      => 'Coordinate out of range',
 	'mapsources-desc'            => 'Map sources extension',
+);
+
+$messages['qqq'] = array(
+	'mapsources'                 => 'Extension name: Map Sources.',
+	'mapsources-summary'         => "Extension summary to be displayed at the top of the special page, explaining how the extension works.",
+	'mapsources-search-legend'   => 'Form fieldset label.',
+	'mapsources-coordinate'      => 'Label for input box accepting coordinated.',
+	'mapsources-go'              => 'Label for submit button.',
+	'mapsources-errormsgs'       => 'Title above error messages, if any occurred during search.',
+	'mapsources-noparams'        => 'Error message when no parameters are given.',
+	'mapsources-incorrectparams' => 'Error message when incorrect parameters are given. $1 is the current parameters.',
+	'mapsources-incorrectlat'    => 'Error message when latitude is incorrect.',
+	'mapsources-incorrectlong'   => 'Error message when longitude is incorrect.',
+	'mapsources-nopage'          => 'Error message when project page is not available.',
+	'mapsources-outofrange'      => 'Error message when coordinates are out of range.',
+	'mapsources-desc'            => 'Extension credits: extension description.',
 );
 
 $messages['de'] = array(

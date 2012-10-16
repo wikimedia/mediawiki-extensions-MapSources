@@ -18,13 +18,13 @@
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
-class MapsourcesPage extends SpecialPage {
+class MapSourcesPage extends SpecialPage {
 
 	var $lat = 0;
 	var $long = 0;
 	var $params = '';
 	var $par;
-	var $errorMsgs;
+	var $errorMsgs = array();
 	var $locName = '';
 
 	var $google = 0.1;
@@ -34,76 +34,73 @@ class MapsourcesPage extends SpecialPage {
 	var $osmzoom = 12;
 	var $osmzoommap = 10;
 
-	public function __construct() {
-		parent::__construct( 'Mapsources' );
+	public function __construct(
+		$name = 'MapSources', $restriction = '', $listed = true,
+		$function = false, $file = 'default', $includable = false
+	) {
+		parent::__construct( $name, $restriction, $listed, $function, $file, $includable );
 	}
 
-	# used by $this->setHeaders()
-	function getDescription() {
-		return wfMsg( 'mapsources' );
-	}
-
-	public function execute( $par ) {
-		global $wgOut;
+	public function execute( $subPage ) {
+		$out = $this->getOutput();
 
 		$this->setHeaders();
 
-		if ( $this->getParams( $par ) == 0 ) {
-			$this->makeForm( true );
-			$title = Title::makeTitleSafe( NS_PROJECT, wfMsg( 'mapsources' ) );
-			if ( is_object( $title ) && $title->exists() ) {
-				$rev = Revision::newFromTitle( $title );
-				$wgOut->addWikiText( $this->replaceText( $rev->getText() ) );
-				return true;
-			} else {
-				$title = Title::makeTitleSafe( NS_PROJECT, wfMsgForContent( 'mapsources' ) );
-				if ( is_object( $title ) && $title->exists() ) {
-					$rev = Revision::newFromTitle( $title );
-					$wgOut->addWikiText( $this->replaceText( $rev->getText() ) );
-					return true;
-				} else {
-					$this->errorMsgs[] = wfMsg( 'mapsources-nopage', wfMsgForContent( 'mapsources' ) );
-				}
+		$success = $this->getParams( $subPage );
+
+		// build form, using submitted value (or if invalid, set default)
+		$defaultValue = $success ? $this->params : '0,0,scale=100000';
+		$this->makeForm( $defaultValue );
+
+		if ( $success ) {
+			// attempt to fetch title, either generic title or in-content-language title
+			$title = Title::makeTitleSafe( NS_PROJECT, $this->msg( 'mapsources' )->text() );
+			if ( $title === null || !$title->exists() ) {
+				$title = Title::makeTitleSafe( NS_PROJECT, $this->msg( 'mapsources' )->inContentLanguage()->text() );
 			}
-		} else {
-			$this->makeForm( false );
+
+			if ( $title !== null && $title->exists() ) {
+				$rev = Revision::newFromTitle( $title );
+				$text = ContentHandler::getContentText( $rev->getContent() );
+				$out->addWikiText( $this->replaceText( $text ) );
+			} else {
+				$this->errorMsgs[] = $this->msg( 'mapsources-nopage', $this->msg( 'mapsources' )->inContentLanguage()->escaped() )->text();
+			}
 		}
 
 		$this->outputErrorMsgs();
 	}
 
 	# makeForm() code by Rob Church <robchur@gmail.com>
+	private function makeForm( $defaultValue ) {
+		global $wgScript;
+		$out = $this->getOutput();
 
-	private function makeForm( $noErrors = false ) {
-		global $wgScript, $wgOut;
+		$out->addWikiMsg( 'mapsources-summary' );
 
-		$wgOut->addWikiText( wfMsgNoTrans( 'mapsources-summary' ) );
+		$form =
+			Html::rawElement( 'fieldset', array(),
+				Html::element( 'legend', array(), $this->msg( 'mapsources-search-legend' )->escaped() ) .
+				Html::rawElement( 'form', array( 'method' => 'get', 'action' => $wgScript ),
+					Html::hidden( 'title', self::getTitleFor( 'Mapsources' )->getPrefixedText() ) .
+					Html::rawElement( 'p', array(),
+						Xml::inputLabel( $this->msg( 'mapsources-coordinate' )->escaped(), 'params', 'params', 80, $defaultValue ) .
+						Xml::submitButton( $this->msg( 'mapsources-go' )->escaped() )
+					)
+				)
+			);
 
-		if ( $noErrors ) {
-			$input = $this->params;
-		} else {
-			$input = '0,0,scale=100000';
-		}
-
-		$title = self::getTitleFor( 'Mapsources' );
-		$form = '<fieldset><legend>' . wfMsgHtml( 'mapsources-search-legend' ) . '</legend>';
-		$form .= Xml::openElement( 'form', array( 'method' => 'get', 'action' => $wgScript ) );
-		$form .= Html::hidden( 'title', $title->getPrefixedText() );
-		$form .= '<p>' . Xml::inputLabel( wfMsg( 'mapsources-coordinate' ), 'params', 'params', 80, $input );
-		$form .= '&nbsp;' . Xml::submitButton( wfMsg( 'mapsources-go' ) ) . '</p>';
-		$form .= Xml::closeElement( 'form' );
-		$form .= '</fieldset>';
-
-		$wgOut->addHtml( $form );
+		$out->addHtml( $form );
 	}
 
 	private function outputErrorMsgs() {
-		global $wgOut;
+		$out = $this->getOutput();
 
 		if ( count( $this->errorMsgs ) > 0 ) {
-			$wgOut->addWikiText( '==' . wfMsg( 'mapsources-errormsgs' ) . '==' );
+			$out->addWikiText( '==' . $this->msg( 'mapsources-errormsgs' )->plain() . '==' );
+
 			foreach ( $this->errorMsgs as $msg ) {
-				$wgOut->addWikiText( '* ' . $msg );
+				$out->addWikiText( '* ' . $msg );
 			}
 		}
 	}
@@ -114,7 +111,7 @@ class MapsourcesPage extends SpecialPage {
 	private function splitParameters() {
 		$a = explode( ',', str_replace( ';', ',', $this->params ), 4 );
 		$c = count( $a );
-		if ( ( $c > 1 ) and ( $c < 4 ) ) {
+		if ( ( $c > 1 ) && ( $c < 4 ) ) {
 			$this->lat = $a[0];
 			$this->long = $a[1];
 			if ( $c > 2 ) {
@@ -156,7 +153,7 @@ class MapsourcesPage extends SpecialPage {
 		}
 		if ( isset( $this->par['precision'] ) ) {
 			$a = intval( $this->par['precision'] );
-			if ( ( $a < 0 ) or ( $a > 12 ) ) {
+			if ( ( $a < 0 ) || ( $a > 12 ) ) {
 				$a = 6;
 			}
 			$this->par['precision'] = $a;
@@ -168,9 +165,8 @@ class MapsourcesPage extends SpecialPage {
 	}
 
 	# setScales() code by Egil Kvaleberg <egil@kvaleberg.no>
-
 	private function setScales() {
-		if ( !isset( $this->par['scale'] ) or ( $this->par['scale'] < 100 ) ) {
+		if ( !isset( $this->par['scale'] ) || ( $this->par['scale'] < 100 ) ) {
 			$scaleByType = array(
 				'country' => 10000000,
 				'state' => 3000000,
@@ -183,7 +179,7 @@ class MapsourcesPage extends SpecialPage {
 				'airport' => 30000,
 				'landmark' => 10000
 			);
-			if ( isset( $this->par['type'] ) and isset( $scaleByType[$this->par['type']] ) ) {
+			if ( isset( $this->par['type'] ) && isset( $scaleByType[$this->par['type']] ) ) {
 				$this->par['scale'] = $scaleByType[$this->par['type']];
 			} else {
 				$this->par['scale'] = 100000;
@@ -215,7 +211,7 @@ class MapsourcesPage extends SpecialPage {
 			1000000, 2000000, 4000000, 10000000, 20000000, 40000000 );
 		$i = 0;
 		$c = count( $min );
-		while ( ( $this->par['scale'] >= $min[$i] ) and ( $i < $c ) ) {
+		while ( ( $this->par['scale'] >= $min[$i] ) && ( $i < $c ) ) {
 			$this->multimap = $mm[$i];
 			$i++;
 		}
@@ -234,51 +230,74 @@ class MapsourcesPage extends SpecialPage {
 		}
 	}
 
-	private function getParams( $par ) {
-		global $wgRequest, $wgSitename;
+	/**
+	 * Get parameters
+	 *
+	 * @param $par[optional]
+	 * @return bool
+	 */
+	private function getParams( $param = null ) {
+		global $wgServer, $wgArticlePath;
+		$request = $this->getRequest();
 
-		$this->errorMsgs = array();
-
-		$this->locName = $wgRequest->getText( 'pagename' );
+		$this->locName = $request->getText( 'pagename' );
 		if ( $this->locName == '' ) {
-			$this->locName = $wgRequest->getText( 'locname' );
+			$this->locName = $request->getText( 'locname' );
 		}
-		if ( ( $this->locName == '' ) and isset( $_SERVER['HTTP_REFERER'] ) ) {
-			$pos = strpos( $_SERVER['HTTP_REFERER'], strtolower( $wgSitename ) );
-			if ( $pos !== false ) {
-				$this->locName = substr( strrchr( $_SERVER['HTTP_REFERER'], '/' ), 1 );
-				$pos = strpos( $this->locName, 'title=' );
-				if ( $pos !== false ) {
-					$this->locName = substr( $this->locName, $pos + 6 ) . '&';
-					$this->locName = substr( $this->locName, 0, strpos( $this->locName, '&' ) );
+
+		$referrer = ( $request->getVal( 'referrer' ) ) ? $request->getVal( 'referrer' ) : $request->getHeader( 'referer' );
+		if ( $this->locName == '' && $referrer ) {
+			// check if internal referrer
+			if ( strpos( $referrer, $wgServer ) !== false ) {
+				// check if referrer is in format /index.php?title=<title>
+				// otherwise, format should be /wiki/<title> (or whatever, based on $wgArticlePath)
+				$url = parse_url( $referrer );
+
+				$values = array();
+				if ( isset( $url['query'] ) ) {
+					parse_str( $url['query'], $values );
 				}
-				$this->locName = ':' . urldecode( str_replace( '_', ' ', $this->locName ) );
-				$this->locName = substr( strrchr( $this->locName, ':' ), 1 );
+
+				if ( isset( $values['title'] ) ) {
+					$title = $values['title'];
+				} else {
+					$path = isset( $url['path'] ) ? $url['path'] : '';
+					$title = WebRequest::extractTitle( $path, $wgArticlePath );
+					$title = isset( $title['title'] ) ? $title['title'] : '';
+				}
+
+				// get text for referrer page
+				$title = Title::newFromText( $title );
+				if ( $title ) {
+					$this->locName = $title->getText();
+				}
 			}
 		}
 
-		$this->params = $par ? $par : $wgRequest->getText( 'params' );
+		$this->params = $param ? $param : $request->getText( 'params' );
+
 		if ( $this->params == '' ) {
-			$this->errorMsgs[] = wfMsg( 'mapsources-noparams' );
-			return -1;
+			$this->errorMsgs[] = $this->msg( 'mapsources-noparams' )->text();
+			return false;
 		}
-		if ( $this->splitParameters() != 0 ) {
-			$this->errorMsgs[] = wfMsg( 'mapsources-incorrectparams' ) . ' ' . $this->params;
-			return -1;
+		elseif ( $this->splitParameters() != 0 ) {
+			$this->errorMsgs[] = $this->msg( 'mapsources-incorrectparams', $this->params )->text();
+			return false;
 		}
 
 		$this->lat = new GeoMath( $this->lat, $this->par['precision'], 'lat', 2 );
 		if ( $this->lat->error != 0 ) {
-			$this->errorMsgs[] = wfMsg( 'mapsources-incorrectlat' );
-			return -1;
+			$this->errorMsgs[] = $this->msg( 'mapsources-incorrectlat' )->text();
+			return false;
 		}
 		$this->long = new GeoMath( $this->long, $this->par['precision'], 'long', 2 );
 		if ( $this->long->error != 0 ) {
-			$this->errorMsgs[] = wfMsg( 'mapsources-incorrectlong' );
-			return -1;
+			$this->errorMsgs[] = $this->msg( 'mapsources-incorrectlong' )->text();
+			return false;
 		}
 		$this->setScales();
-		return 0;
+
+		return true;
 	}
 
 	private function replaceText( $text ) {
@@ -293,7 +312,7 @@ class MapsourcesPage extends SpecialPage {
 		}
 
 		$Geo = new GeoTransform( $this->lat->dec, $this->long->dec );
-		$errorMsg = '(' . wfMsgForContent( 'mapsources-outofrange' ) . ')';
+		$errorMsg = '(' . $this->msg( 'mapsources-outofrange' )->inContentLanguage()->text() . ')';
 		if ( $Geo->utm['error'] == 0 ) {
 			$utmError = '';
 		} else {
@@ -320,72 +339,60 @@ class MapsourcesPage extends SpecialPage {
 			$nztmError = $errorMsg;
 		}
 
-		$search = array(
-			'{latdegdec}', '{latdegabs}', '{latdegint}', '{latmindec}', '{latminint}', '{latsecdec}', '{latsecint}', '{latNS}',
-			'{londegdec}', '{londegabs}', '{londegneg}', '{londegint}', '{lonmindec}', '{lonminint}', '{lonsecdec}',
-			'{lonsecint}', '{lonEW}',
-			'{scale}', '{mmscale}', '{altitude}', '{zoom}', '{span}', '{osmzoom}', '{osmzoommap}',
-			'{type}', '{region}', '{globe}', '{params}',
-			'{utmzone}', '{utmnorthing}', '{utmeasting}', '{utm33northing}', '{utm33easting}',
-			'{osgb36ref}', '{osgb36northing}', '{osgb36easting}',
-			'{ch1903northing}', '{ch1903easting}', '{nztmnorthing}', '{nztmeasting}',
-			'{utmerror}', '{utm33error}', '{osgb36error}', '{ch1903error}', '{nztmerror}',
-			'{locname}' );
-
 		$replace = array(
-			$this->lat->coord['dec'],
-			abs( $this->lat->coord['deg'] ),
-			$this->lat->coord['deg'],
-			round( $this->lat->coord['min'] + $this->lat->coord['sec'] / 60, 4 ),
-			$this->lat->coord['min'],
-			$this->lat->coord['sec'],
-			round( $this->lat->coord['sec'] ),
-			$this->lat->coord['NS'],
+			'{latdegdec}' => $this->lat->coord['dec'],
+			'{latdegabs}' => abs( $this->lat->coord['deg'] ),
+			'{latdegint}' => $this->lat->coord['deg'],
+			'{latmindec}' => round( $this->lat->coord['min'] + $this->lat->coord['sec'] / 60, 4 ),
+			'{latminint}' => $this->lat->coord['min'],
+			'{latsecdec}' => $this->lat->coord['sec'],
+			'{latsecint}' => round( $this->lat->coord['sec'] ),
+			'{latNS}' => $this->lat->coord['NS'],
 
-			$this->long->coord['dec'],
-			abs( $this->long->coord['deg'] ),
-			-$this->long->dec,
-			$this->long->coord['deg'],
-			round( $this->long->coord['min'] + $this->long->coord['sec'] / 60, 4 ),
-			$this->long->coord['min'],
-			$this->long->coord['sec'],
-			round( $this->long->coord['sec'] ),
-			$this->long->coord['EW'],
+			'{londegdec}' => $this->long->coord['dec'],
+			'{londegabs}' => abs( $this->long->coord['deg'] ),
+			'{londegneg}' => -$this->long->dec,
+			'{londegint}' => $this->long->coord['deg'],
+			'{lonmindec}' => round( $this->long->coord['min'] + $this->long->coord['sec'] / 60, 4 ),
+			'{lonminint}' => $this->long->coord['min'],
+			'{lonsecdec}' => $this->long->coord['sec'],
+			'{lonsecint}' => round( $this->long->coord['sec'] ),
+			'{lonEW}' => $this->long->coord['EW'],
 
-			$this->par['scale'],
-			$this->multimap,
-			$this->msn,
-			$this->mapquest,
-			$this->google,
-			$this->osmzoom,
-			$this->osmzoommap,
+			'{scale}' => $this->par['scale'],
+			'{mmscale}' => $this->multimap,
+			'{altitude}' => $this->msn,
+			'{zoom}' => $this->mapquest,
+			'{span}' => $this->google,
+			'{osmzoom}' => $this->osmzoom,
+			'{osmzoommap}' => $this->osmzoommap,
 
-			isset( $this->par['type'] ) ? $this->par['type'] : '',
-			isset( $this->par['region'] ) ? $this->par['region'] : '',
-			isset( $this->par['globe'] ) ? $this->par['globe'] : '',
-			$origParams,
+			'{type}' => isset( $this->par['type'] ) ? $this->par['type'] : '',
+			'{region}' => isset( $this->par['region'] ) ? $this->par['region'] : '',
+			'{globe}' => isset( $this->par['globe'] ) ? $this->par['globe'] : '',
+			'{params}' => $origParams,
 
-			$Geo->utm['zone'] . $Geo->utm['zoneLetter'],
-			round( $Geo->utm['northing'] ),
-			round( $Geo->utm['easting'] ),
-			round( $Geo->utm33['northing'] ),
-			round( $Geo->utm33['easting'] ),
-			$Geo->osgb36['ref'],
-			round( $Geo->osgb36['northing'] ),
-			round( $Geo->osgb36['easting'] ),
-			round( $Geo->ch1903['northing'] ),
-			round( $Geo->ch1903['easting'] ),
-			round( $Geo->nztm['northing'] ),
-			round( $Geo->nztm['easting'] ),
+			'{utmzone}' => $Geo->utm['zone'] . $Geo->utm['zoneLetter'],
+			'{utmnorthing}' => round( $Geo->utm['northing'] ),
+			'{utmeasting}' => round( $Geo->utm['easting'] ),
+			'{utm33northing}' => round( $Geo->utm33['northing'] ),
+			'{utm33easting}' => round( $Geo->utm33['easting'] ),
+			'{osgb36ref}' => $Geo->osgb36['ref'],
+			'{osgb36northing}' => round( $Geo->osgb36['northing'] ),
+			'{osgb36easting}' => round( $Geo->osgb36['easting'] ),
+			'{ch1903northing}' => round( $Geo->ch1903['northing'] ),
+			'{ch1903easting}' => round( $Geo->ch1903['easting'] ),
+			'{nztmnorthing}' => round( $Geo->nztm['northing'] ),
+			'{nztmeasting}' => round( $Geo->nztm['easting'] ),
 
-			$utmError,
-			$utm33Error,
-			$osgb36Error,
-			$ch1903Error,
-			$nztmError,
-			$this->locName
+			'{utmerror}' => $utmError,
+			'{utm33error}' => $utm33Error,
+			'{osgb36error}' => $osgb36Error,
+			'{ch1903error}' => $ch1903Error,
+			'{nztmerror}' => $nztmError,
+			'{locname}' => $this->locName
 		);
 
-		return str_replace( $search, $replace, $text );
+		return strtr( $text, $replace );
 	}
 }

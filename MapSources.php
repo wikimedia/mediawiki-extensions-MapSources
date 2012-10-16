@@ -15,19 +15,16 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	die( 'This file is a MediaWiki extension, it is not a valid entry point' );
 }
 
-// TODO: Should the GeoMath extension be in here too?
-
 $dir = dirname(__FILE__) . '/';
 $wgExtensionMessagesFiles['MapSources'] = $dir . 'MapSources.i18n.php';
+$wgAutoloadClasses['MapSourcesPage'] = $dir . 'MapSources_body.php';
+$wgSpecialPages['Mapsources'] = 'MapSourcesPage';
 
-$wgExtensionCredits['specialpage']['MapSources'] = array( 
+$wgExtensionCredits['specialpage']['MapSources'] = array(
 	'path' => __FILE__,
 	'name' => 'MapSources',
-	'url' => 'http://www.wikivoyage.org/tech/MapSources_extension',
+	'url' => '//www.mediawiki.org/wiki/Extension:MapSources',
 	'descriptionmsg' => 'mapsources-desc',
-	'author' => 'Roland Unger, Egil Kvaleberg',
+	'author' => array( 'Roland Unger', 'Egil Kvaleberg' ),
 	'version' => '1.06'
 );
-
-$wgAutoloadClasses['MapsourcesPage'] = dirname( __FILE__ ) . '/MapSources_body.php';
-$wgSpecialPages['Mapsources'] = 'MapsourcesPage';
