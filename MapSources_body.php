@@ -68,7 +68,10 @@ class MapSourcesPage extends SpecialPage {
 			}
 		}
 
-		$this->outputErrorMsgs();
+		// show error messages only when form is submitted
+		if ( $this->params !== null ) {
+			$this->outputErrorMsgs();
+		}
 	}
 
 	# makeForm() code by Rob Church <robchur@gmail.com>
@@ -274,23 +277,26 @@ class MapSourcesPage extends SpecialPage {
 			}
 		}
 
-		$this->params = $param ? $param : $request->getText( 'params' );
+		$this->params = $param;
+		// check if form is submitted, otherwise leave params null
+		if ( $param === null && in_array( 'params', $request->getValueNames() ) ) {
+			$this->params = $request->getText( 'params' );
+		}
 
-		if ( $this->params == '' ) {
+		if ( $this->params === '' ) {
 			$this->errorMsgs[] = $this->msg( 'mapsources-noparams' )->text();
 			return false;
-		}
-		elseif ( $this->splitParameters() != 0 ) {
+		} elseif ( $this->splitParameters() != 0 ) {
 			$this->errorMsgs[] = $this->msg( 'mapsources-incorrectparams', $this->params )->text();
 			return false;
 		}
 
-		$this->lat = new GeoMath( $this->lat, $this->par['precision'], 'lat', 2 );
+		$this->lat = new MapSourcesMath( $this->lat, $this->par['precision'], 'lat', 2 );
 		if ( $this->lat->error != 0 ) {
 			$this->errorMsgs[] = $this->msg( 'mapsources-incorrectlat' )->text();
 			return false;
 		}
-		$this->long = new GeoMath( $this->long, $this->par['precision'], 'long', 2 );
+		$this->long = new MapSourcesMath( $this->long, $this->par['precision'], 'long', 2 );
 		if ( $this->long->error != 0 ) {
 			$this->errorMsgs[] = $this->msg( 'mapsources-incorrectlong' )->text();
 			return false;
@@ -311,29 +317,29 @@ class MapSourcesPage extends SpecialPage {
 			}
 		}
 
-		$Geo = new GeoTransform( $this->lat->dec, $this->long->dec );
+		$geo = new MapSourcesTransform( $this->lat->dec, $this->long->dec );
 		$errorMsg = '(' . $this->msg( 'mapsources-outofrange' )->inContentLanguage()->text() . ')';
-		if ( $Geo->utm['error'] == 0 ) {
+		if ( $geo->utm['error'] == 0 ) {
 			$utmError = '';
 		} else {
 			$utmError = $errorMsg;
 		}
-		if ( $Geo->utm33['error'] == 0 ) {
+		if ( $geo->utm33['error'] == 0 ) {
 			$utm33Error = '';
 		} else {
 			$utm33Error = $errorMsg;
 		}
-		if ( $Geo->osgb36['error'] == 0 ) {
+		if ( $geo->osgb36['error'] == 0 ) {
 			$osgb36Error = '';
 		} else {
 			$osgb36Error = $errorMsg;
 		}
-		if ( $Geo->ch1903['error'] == 0 ) {
+		if ( $geo->ch1903['error'] == 0 ) {
 			$ch1903Error = '';
 		} else {
 			$ch1903Error = $errorMsg;
 		}
-		if ( $Geo->nztm['error'] == 0 ) {
+		if ( $geo->nztm['error'] == 0 ) {
 			$nztmError = '';
 		} else {
 			$nztmError = $errorMsg;
@@ -372,18 +378,18 @@ class MapSourcesPage extends SpecialPage {
 			'{globe}' => isset( $this->par['globe'] ) ? $this->par['globe'] : '',
 			'{params}' => $origParams,
 
-			'{utmzone}' => $Geo->utm['zone'] . $Geo->utm['zoneLetter'],
-			'{utmnorthing}' => round( $Geo->utm['northing'] ),
-			'{utmeasting}' => round( $Geo->utm['easting'] ),
-			'{utm33northing}' => round( $Geo->utm33['northing'] ),
-			'{utm33easting}' => round( $Geo->utm33['easting'] ),
-			'{osgb36ref}' => $Geo->osgb36['ref'],
-			'{osgb36northing}' => round( $Geo->osgb36['northing'] ),
-			'{osgb36easting}' => round( $Geo->osgb36['easting'] ),
-			'{ch1903northing}' => round( $Geo->ch1903['northing'] ),
-			'{ch1903easting}' => round( $Geo->ch1903['easting'] ),
-			'{nztmnorthing}' => round( $Geo->nztm['northing'] ),
-			'{nztmeasting}' => round( $Geo->nztm['easting'] ),
+			'{utmzone}' => $geo->utm['zone'] . $geo->utm['zoneLetter'],
+			'{utmnorthing}' => round( $geo->utm['northing'] ),
+			'{utmeasting}' => round( $geo->utm['easting'] ),
+			'{utm33northing}' => round( $geo->utm33['northing'] ),
+			'{utm33easting}' => round( $geo->utm33['easting'] ),
+			'{osgb36ref}' => $geo->osgb36['ref'],
+			'{osgb36northing}' => round( $geo->osgb36['northing'] ),
+			'{osgb36easting}' => round( $geo->osgb36['easting'] ),
+			'{ch1903northing}' => round( $geo->ch1903['northing'] ),
+			'{ch1903easting}' => round( $geo->ch1903['easting'] ),
+			'{nztmnorthing}' => round( $geo->nztm['northing'] ),
+			'{nztmeasting}' => round( $geo->nztm['easting'] ),
 
 			'{utmerror}' => $utmError,
 			'{utm33error}' => $utm33Error,

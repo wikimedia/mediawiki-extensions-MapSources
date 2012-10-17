@@ -21,7 +21,10 @@ $messages['en'] = array(
 	'mapsources-incorrectlong'   => 'Incorrect longitude',
 	'mapsources-nopage'          => 'No project page [[Project:$1]] available',
 	'mapsources-outofrange'      => 'Coordinate out of range',
+	'mapsources-math-missing-operand' => 'Missing operand',
+	'mapsources-math-incorrect-input' => 'Incorrect input',
 	'mapsources-desc'            => 'Map sources extension',
+	'mapsources-math-desc'       => 'Map sources math parser hooks',
 );
 
 $messages['qqq'] = array(
@@ -37,7 +40,10 @@ $messages['qqq'] = array(
 	'mapsources-incorrectlong'   => 'Error message when longitude is incorrect.',
 	'mapsources-nopage'          => 'Error message when project page is not available.',
 	'mapsources-outofrange'      => 'Error message when coordinates are out of range.',
-	'mapsources-desc'            => 'Extension credits: extension description.',
+	'mapsources-math-missing-operand' => 'Error message when operand is missing.',
+	'mapsources-math-incorrect-input' => 'Error message when input is incorrect',
+	'mapsources-desc'            => 'Extension credits: special page description.',
+	'mapsources-math-desc'       => 'Extension credits: parser hook description',
 );
 
 $messages['de'] = array(
@@ -53,6 +59,8 @@ $messages['de'] = array(
 	'mapsources-incorrectlong'   => 'Fehlerhafte Längenangabe',
 	'mapsources-nopage'          => 'Keine Projektseite [[Project:$1]] verfügbar',
 	'mapsources-outofrange'      => 'Ungültige Koordinate',
+	'mapsources-math-missing-operand'    => 'Fehlende(r) Parameter',
+	'mapsources-math-incorrect-input'    => 'Fehlerhafte Eingabe',
 	'mapsources-desc'            => 'Erweiterung für Karten- und Datenquellen',
 );
 
@@ -69,6 +77,8 @@ $messages['fr'] = array(
 	'mapsources-incorrectlong'   => 'Longitude erronée',
 	'mapsources-nopage'          => 'Pas de page de projet [[Project:$1]] disponible',
 	'mapsources-outofrange'      => 'Coordonées invalides',
+	'mapsources-math-missing-operand'    => 'Opérateur(s) manquant(s)',
+	'mapsources-math-incorrect-input'    => 'Entrée erronée',
 );
 
 $messages['it'] = array(
@@ -84,6 +94,8 @@ $messages['it'] = array(
 	'mapsources-incorrectlong'   => 'Longitudine non corretta',
 	'mapsources-nopage'          => 'Pagine del progetto [[Project:$1]] non disponibili',
 	'mapsources-outofrange'      => 'Coordinate non valide',
+	'mapsources-math-missing-operand'    => 'Parametro mancante',
+	'mapsources-math-incorrect-input'    => 'Input non corretto',
 );
 
 $messages['pl'] = array(
@@ -99,4 +111,6 @@ $messages['pl'] = array(
 	'mapsources-incorrectlong'   => 'Błędna długość',
 	'mapsources-nopage'          => 'Brak adresu [[Project:$1]] źródła',
 	'mapsources-outofrange'      => 'Współrzędne poza zakresem',
+	'mapsources-math-missing-operand'    => 'Brak parametru(ów)',
+	'mapsources-math-incorrect-input'    => 'Błędne dane',
 );
