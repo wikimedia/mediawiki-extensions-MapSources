@@ -16,8 +16,6 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 }
 
 // TODO: Should the GeoMath extension be in here too?
-require_once( dirname( __FILE__ ) . '/GeoMath.php' );
-require_once( dirname( __FILE__ ) . '/GeoTransform.php' );
 
 $dir = dirname(__FILE__) . '/';
 $wgExtensionMessagesFiles['MapSources'] = $dir . 'MapSources.i18n.php';
