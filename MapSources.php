@@ -32,18 +32,18 @@ $wgExtensionMessagesFiles['MapSources'] = __DIR__ . '/MapSources.i18n.php';
 $wgExtensionMessagesFiles['MapSourcesMagic'] = __DIR__ . '/MapSources.i18n.magic.php';
 
 // credits
-$wgExtensionCredits['specialpage']['MapSources'] = array(
+$wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'MapSources',
-	'url' => '//www.mediawiki.org/wiki/Extension:MapSources',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:MapSources',
 	'descriptionmsg' => 'mapsources-desc',
 	'author' => array( 'Roland Unger', 'Egil Kvaleberg', 'Matthias Mullie' ),
 	'version' => '1.07'
 );
-$wgExtensionCredits['parserhook']['MapSourcesMath'] = array(
+$wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'MapSourcesMath',
-	'url' => '//www.mediawiki.org/wiki/Extension:MapSources',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:MapSources',
 	'descriptionmsg' => 'mapsources-math-desc',
 	'author' => array( 'Roland Unger', 'Matthias Mullie' ),
 	'version' => '1.07'

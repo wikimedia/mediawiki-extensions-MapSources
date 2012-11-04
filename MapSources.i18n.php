@@ -10,7 +10,14 @@ $messages = array();
 
 $messages['en'] = array(
 	'mapsources'                 => 'Map Sources',
-	'mapsources-summary'         => "This page allows users to search for multiple sources for a location given by its coordinate.\n\nLatitude, longitude and additional paramters must be separated with commas. Parameters consist of an identifier, the equal sign and a value.\n\nExample: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nAdditionally, the Wikipedia Geohack tool server format will be accepted.",
+	'mapsources-summary'         => 'This page allows users to search for multiple sources for a location given by its coordinate.
+
+Latitude, longitude and additional paramters must be separated with commas.
+Parameters consist of an identifier, the equal sign and a value.
+
+Example: 52° 31′ N, 13° 24′ 30″ E, scale=50000
+
+Additionally, the Wikipedia Geohack tool server format will be accepted.',
 	'mapsources-search-legend'   => 'Search for data and map sources',
 	'mapsources-coordinate'      => 'Coordinate:',
 	'mapsources-go'              => 'Go',
@@ -23,8 +30,8 @@ $messages['en'] = array(
 	'mapsources-outofrange'      => 'Coordinate out of range',
 	'mapsources-math-missing-operand' => 'Missing operand',
 	'mapsources-math-incorrect-input' => 'Incorrect input',
-	'mapsources-desc'            => 'Map sources extension',
-	'mapsources-math-desc'       => 'Map sources math parser hooks',
+	'mapsources-desc'            => '[[Special:MapSources|Search]] for data and map sources',
+	'mapsources-math-desc'       => 'Adds tags for conversion of coordinates',
 );
 
 $messages['qqq'] = array(
