@@ -85,6 +85,15 @@ Zusätzlich wird das Format des Wikipedia-Geohack-Toolservers akzeptiert.',
 	'mapsources-math-desc' => 'Ergänzt Tags zur Umwandlung von Koordinaten',
 );
 
+/** Finnish (suomi)
+ * @author Stryn
+ */
+$messages['fi'] = array(
+	'mapsources-coordinate' => 'Koordinaatti:',
+	'mapsources-incorrectlat' => 'Virheellinen leveysaste',
+	'mapsources-incorrectlong' => 'Virheellinen pituusaste',
+);
+
 /** French (français)
  * @author Gomoko
  */
