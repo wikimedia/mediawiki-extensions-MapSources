@@ -12,12 +12,12 @@ $messages['en'] = array(
 	'mapsources'                 => 'Map Sources',
 	'mapsources-summary'         => 'This page allows users to search for multiple sources for a location given by its coordinate.
 
-Latitude, longitude and additional paramters must be separated with commas.
+Latitude, longitude and additional parameters must be separated with commas.
 Parameters consist of an identifier, the equal sign and a value.
 
 Example: 52° 31′ N, 13° 24′ 30″ E, scale=50000
 
-Additionally, the Wikipedia Geohack tool server format will be accepted.',
+Additionally, the Wikipedia Geohack toolserver format will be accepted.',
 	'mapsources-search-legend'   => 'Search for data and map sources',
 	'mapsources-coordinate'      => 'Coordinate:',
 	'mapsources-go'              => 'Go',
