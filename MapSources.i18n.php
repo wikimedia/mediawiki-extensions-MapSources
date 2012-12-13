@@ -167,6 +167,35 @@ $messages['ja'] = array(
 	'mapsources-math-desc' => '座標を変換するためのタグを追加する',
 );
 
+/** Korean (한국어)
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'mapsources' => '지도 출처',
+	'mapsources-summary' => '이 문서는 사용자가 해당 좌표에 의해 지정된 위치에 대한 여러 출처를 찾을 수 있습니다.
+
+위도, 경도 및 추가 변수는 쉼표로 구분해야 합니다.
+변수 식별자, 등호와 값으로 구성되어 있습니다.
+
+예 : 52° 31′ N, 13° 24′ 30″ E, scale=50000
+
+또한 위키백과 Geohack 툴서버 형식도 허용합니다.',
+	'mapsources-search-legend' => '데이터와 지도 출처에 대해 찾기',
+	'mapsources-coordinate' => '좌표',
+	'mapsources-go' => '가기',
+	'mapsources-errormsgs' => '오류 메시지',
+	'mapsources-noparams' => '주어진 변수가 없습니다',
+	'mapsources-incorrectparams' => '주어진 변수($1)가 잘못되었습니다',
+	'mapsources-incorrectlat' => '위도가 잘못되었습니다',
+	'mapsources-incorrectlong' => '경도가 잘못되었습니다',
+	'mapsources-nopage' => '[[Project:$1]] 프로젝트 문서를 사용할 수 없습니다',
+	'mapsources-outofrange' => '좌표가 범위를 벗어났습니다',
+	'mapsources-math-missing-operand' => '피연산자가 없습니다',
+	'mapsources-math-incorrect-input' => '입력을 잘못했습니다',
+	'mapsources-desc' => '데이터와 지도 출처 [[Special:MapSources|찾기]]',
+	'mapsources-math-desc' => '좌표 변환 태그 추가',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
@@ -194,6 +223,35 @@ $messages['mk'] = array(
 	'mapsources-math-incorrect-input' => 'Погрешен внос',
 	'mapsources-desc' => '[[Special:MapSources|Пребарување]] на податочни и картографски ресурси',
 	'mapsources-math-desc' => 'Додава ознаки за претворање на координати',
+);
+
+/** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
+ */
+$messages['ms'] = array(
+	'mapsources' => 'Sumber Peta',
+	'mapsources-summary' => 'Halaman ini membolehkan pengguna untuk pelbagai sumber untuk sesuatu lokasi yang diberi oleh koordinatnya.
+
+Garis lintang, garis bujur dan parameter-parameter tambahan mesti diasingkan dengan tanda koma.
+Parameter terdiri daripada pengecam, tanda sama dengan (=) dan satu nilai.
+
+Contoh: 52° 31′ N, 13° 24′ 30″ E, scale=50000
+
+Tambahan pula, format toolserver Wikipedia Geohack juga diterima.',
+	'mapsources-search-legend' => 'Cari sumber data dan peta',
+	'mapsources-coordinate' => 'Koordinat',
+	'mapsources-go' => 'Pergi',
+	'mapsources-errormsgs' => 'Pesanan Ralat',
+	'mapsources-noparams' => 'Tiada parameter diberikan',
+	'mapsources-incorrectparams' => 'Parameter yang diberikan ($1) tidak betul',
+	'mapsources-incorrectlat' => 'Garis lintang tidak betul',
+	'mapsources-incorrectlong' => 'Garis bujur tidak betul',
+	'mapsources-nopage' => 'Tiada halaman projek [[Project:$1]] disediakan',
+	'mapsources-outofrange' => 'Koordinat di luar julat',
+	'mapsources-math-missing-operand' => 'Tiada kendalian',
+	'mapsources-math-incorrect-input' => 'Input tidak betul',
+	'mapsources-desc' => '[[Special:MapSources|Cari]] sumber data dan peta',
+	'mapsources-math-desc' => 'Membubuh teg untuk penukaran koordinat',
 );
 
 /** Dutch (Nederlands)
@@ -252,4 +310,33 @@ $messages['pl'] = array(
  */
 $messages['te'] = array(
 	'mapsources-go' => 'వెళ్ళు',
+);
+
+/** Vietnamese (Tiếng Việt)
+ * @author Minh Nguyen
+ */
+$messages['vi'] = array(
+	'mapsources' => 'Nguồn bản đồ',
+	'mapsources-summary' => 'Trang này cho phép tìm kiếm các nguồn cho một địa điểm theo tọa độ.
+
+Vĩ độ, kinh độ, và các tham số khác được phân cách bằng dấu phẩy.
+Các tham số bao gồm định danh, dấu bằng, và một giá trị.
+
+Ví dụ: 52° 31′ N, 13° 24′ 30″ E, scale=50000
+
+Ngoài ra, định dạng GeoHack của Wikimedia Toolserver cũng được chấp nhận.',
+	'mapsources-search-legend' => 'Tìm dữ liệu và nguồn bản đồ',
+	'mapsources-coordinate' => 'Tọa độ:',
+	'mapsources-go' => 'Tìm kiếm',
+	'mapsources-errormsgs' => 'Lỗi',
+	'mapsources-noparams' => 'Không đưa vào tham số',
+	'mapsources-incorrectparams' => 'Tham số không chính xác ($1) được đưa vào',
+	'mapsources-incorrectlat' => 'Vĩ độ không chính xác',
+	'mapsources-incorrectlong' => 'Kinh độ không chính xác',
+	'mapsources-nopage' => 'Không có sẵn trang dự án [[Project:$1]]',
+	'mapsources-outofrange' => 'Tọa độ ngoài miền cho phép',
+	'mapsources-math-missing-operand' => 'Thiếu toán hạng',
+	'mapsources-math-incorrect-input' => 'Đầu vào không chính xác',
+	'mapsources-desc' => '[[Special:MapSources|Tìm]] dữ liệu và nguồn bản đồ',
+	'mapsources-math-desc' => 'Thêm thẻ để chuyển đổi tọa độ',
 );
