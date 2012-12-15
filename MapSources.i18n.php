@@ -85,6 +85,35 @@ Zusätzlich wird das Format des Wikipedia-Geohack-Toolservers akzeptiert.',
 	'mapsources-math-desc' => 'Ergänzt Tags zur Umwandlung von Koordinaten',
 );
 
+/** Spanish (español)
+ * @author Armando-Martin
+ */
+$messages['es'] = array(
+	'mapsources' => 'Fuentes de datos del mapa',
+	'mapsources-summary' => 'Esta página permite a los usuarios buscar en múltiples fuentes para un lugar dado por sus coordenadas.
+
+La latitud, longitud y los parámetros adicionales deben separarse con comas.
+Los parámetros consisten en un identificador, el signo igual y un valor.
+
+Ejemplo: 52° 31′ N, 13° 24′ 30″ E, escala=50000
+
+Además, se aceptará el formato wiki de Wikipedia Geohack.',
+	'mapsources-search-legend' => 'Búsqueda de datos y fuentes de datos del mapa',
+	'mapsources-coordinate' => 'Coordenadas:',
+	'mapsources-go' => 'Ir',
+	'mapsources-errormsgs' => 'Mensajes de error',
+	'mapsources-noparams' => 'Faltan parámetros',
+	'mapsources-incorrectparams' => 'Los parámetros suministrados son incorrectos ($1)',
+	'mapsources-incorrectlat' => 'Latitud incorrecta',
+	'mapsources-incorrectlong' => 'Longitud incorrecta',
+	'mapsources-nopage' => 'No está disponible la página del proyecto [[Project:$1]]',
+	'mapsources-outofrange' => 'Coordenadas fuera de rango',
+	'mapsources-math-missing-operand' => 'Falta un operador',
+	'mapsources-math-incorrect-input' => 'Entrada incorrecta',
+	'mapsources-desc' => '[[Special:MapSources|Buscar]] datos y fuentes de datos del mapa',
+	'mapsources-math-desc' => 'Agrega etiquetas para la conversión de coordenadas',
+);
+
 /** Finnish (suomi)
  * @author Stryn
  */
