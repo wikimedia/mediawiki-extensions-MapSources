@@ -17,7 +17,7 @@ Parameters consist of an identifier, the equal sign and a value.
 
 Example: 52° 31′ N, 13° 24′ 30″ E, scale=50000
 
-Additionally, the Wikipedia Geohack toolserver format will be accepted.',
+Additionally, the [https://wiki.toolserver.org/view/GeoHack GeoHack] format will be accepted.',
 	'mapsources-search-legend'   => 'Search for data and map sources',
 	'mapsources-coordinate'      => 'Coordinate:',
 	'mapsources-go'              => 'Go',
