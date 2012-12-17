@@ -68,7 +68,7 @@ Geografische Breite, Länge und weitere Parameter müssen mit Kommas getrennt we
 
 Beispiel: 52° 31′ N, 13° 24′ 30″ E, scale=50000
 
-Zusätzlich wird das Format des Wikipedia-Geohack-Toolservers akzeptiert.',
+Zusätzlich wird das Format des [https://wiki.toolserver.org/view/GeoHack Wikipedia-Geohack-Toolservers] akzeptiert.',
 	'mapsources-search-legend' => 'Suche nach Daten- und Kartenquellen',
 	'mapsources-coordinate' => 'Koordinate:',
 	'mapsources-go' => 'Suche',
@@ -97,7 +97,7 @@ Los parámetros consisten en un identificador, el signo igual y un valor.
 
 Ejemplo: 52° 31′ N, 13° 24′ 30″ E, escala=50000
 
-Además, se aceptará el formato wiki de Wikipedia Geohack.',
+Además, se aceptará el formato wiki de Wikipedia Geohack.', # Fuzzy
 	'mapsources-search-legend' => 'Búsqueda de datos y fuentes de datos del mapa',
 	'mapsources-coordinate' => 'Coordenadas:',
 	'mapsources-go' => 'Ir',
@@ -128,7 +128,14 @@ $messages['fi'] = array(
  */
 $messages['fr'] = array(
 	'mapsources' => 'Sources de cartes',
-	'mapsources-summary' => 'Cette page permet aux utilisateurs de rechercher des sources multiples pour un lieu en donnant ses coordonées.',
+	'mapsources-summary' => 'Cette page permet aux utilisateurs de rechercher des sources multiples pour un lieu en donnant ses coordonnées.
+
+La latitude, la longitude et les paramètres supplémentaires doivent être séparés par des virgules.
+Les paramètres consistent en un identifiant, le signe égal et une valeur.
+
+Exemple: 52° 31′ N, 13° 24′ 30″ E, échelle=50000
+
+De plus, le format [https://wiki.toolserver.org/view/GeoHack GeoHack] sera accepté.',
 	'mapsources-search-legend' => 'Rechercher des sources de cartes et données',
 	'mapsources-coordinate' => 'Coordonées:',
 	'mapsources-go' => 'Rechercher',
@@ -150,7 +157,7 @@ $messages['fr'] = array(
  */
 $messages['it'] = array(
 	'mapsources' => 'Fonte della mappa',
-	'mapsources-summary' => 'Questa pagina speciale permette che gli utenti cerchino le fonti multiple per una posizione data dalla relativa coordinata.',
+	'mapsources-summary' => 'Questa pagina speciale permette che gli utenti cerchino le fonti multiple per una posizione data dalla relativa coordinata.', # Fuzzy
 	'mapsources-search-legend' => 'Cerca per dati e fonti delle mappe',
 	'mapsources-coordinate' => 'Coordinate:',
 	'mapsources-go' => 'Cerca',
@@ -179,7 +186,7 @@ $messages['ja'] = array(
 
 例: 52° 31′ N, 13° 24′ 30″ E, scale=50000
 
-さらに、ウィキペディア ジオハック ツールサーバーの書式も使用できます。',
+さらに、[https://wiki.toolserver.org/view/GeoHack ジオハック]の書式も使用できます。',
 	'mapsources-search-legend' => 'データおよび地図情報源の検索',
 	'mapsources-coordinate' => '緯度経度:',
 	'mapsources-go' => '実行',
@@ -208,7 +215,7 @@ $messages['ko'] = array(
 
 예 : 52° 31′ N, 13° 24′ 30″ E, scale=50000
 
-또한 위키백과 Geohack 툴서버 형식도 허용합니다.',
+또한 위키백과 Geohack 툴서버 형식도 허용합니다.', # Fuzzy
 	'mapsources-search-legend' => '데이터와 지도 출처에 대해 찾기',
 	'mapsources-coordinate' => '좌표',
 	'mapsources-go' => '가기',
@@ -237,7 +244,7 @@ $messages['mk'] = array(
 
 Пример: 52° 31′ N, 13° 24′ 30″ E, scale=50000
 
-Покрај ова, ќе се прифаќа и форматот на опслужувачот на Википедиината алатка „Geohack“.',
+Покрај ова, ќе се прифаќа и форматот на „[https://wiki.toolserver.org/view/GeoHack GeoHack]“.',
 	'mapsources-search-legend' => 'Пребарување на податочни и картографски ресурси',
 	'mapsources-coordinate' => 'Координата:',
 	'mapsources-go' => 'Оди',
@@ -266,7 +273,7 @@ Parameter terdiri daripada pengecam, tanda sama dengan (=) dan satu nilai.
 
 Contoh: 52° 31′ N, 13° 24′ 30″ E, scale=50000
 
-Tambahan pula, format toolserver Wikipedia Geohack juga diterima.',
+Tambahan pula, format [https://wiki.toolserver.org/view/GeoHack GeoHack] juga diterima.',
 	'mapsources-search-legend' => 'Cari sumber data dan peta',
 	'mapsources-coordinate' => 'Koordinat',
 	'mapsources-go' => 'Pergi',
@@ -295,7 +302,7 @@ Parameters bestaan uit een identificatie, het =-teken en een waarde.
 
 Voorbeeld: 52° 31′ N, 13° 24′ 30″ E, scale=50000
 
-Ook de opmaak van het hulpprogramma Geohack van de Wikimedia Toolserver wordt ondersteund.",
+Ook de [https://wiki.toolserver.org/view/GeoHack opmaak van Geohack] wordt ondersteund.",
 	'mapsources-search-legend' => 'Zoeken naar gegevens- en kaartbronnen',
 	'mapsources-coordinate' => 'Coördinaat:',
 	'mapsources-go' => 'OK',
@@ -317,7 +324,7 @@ Ook de opmaak van het hulpprogramma Geohack van de Wikimedia Toolserver wordt on
  */
 $messages['pl'] = array(
 	'mapsources' => 'Mapy',
-	'mapsources-summary' => 'Na tej stronie można odnaleźć łącza do map przedstawiających miejsce o podanych współrzędnych.',
+	'mapsources-summary' => 'Na tej stronie można odnaleźć łącza do map przedstawiających miejsce o podanych współrzędnych.', # Fuzzy
 	'mapsources-search-legend' => 'Wyszukaj mapy i odwzorowania terenu',
 	'mapsources-coordinate' => 'Współrzędne:',
 	'mapsources-go' => 'Przejdź',
@@ -353,7 +360,7 @@ Các tham số bao gồm định danh, dấu bằng, và một giá trị.
 
 Ví dụ: 52° 31′ N, 13° 24′ 30″ E, scale=50000
 
-Ngoài ra, định dạng GeoHack của Wikimedia Toolserver cũng được chấp nhận.',
+Ngoài ra, định dạng GeoHack của Wikimedia Toolserver cũng được chấp nhận.', # Fuzzy
 	'mapsources-search-legend' => 'Tìm dữ liệu và nguồn bản đồ',
 	'mapsources-coordinate' => 'Tọa độ:',
 	'mapsources-go' => 'Tìm kiếm',
