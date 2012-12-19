@@ -348,6 +348,27 @@ $messages['te'] = array(
 	'mapsources-go' => 'వెళ్ళు',
 );
 
+/** Ukrainian (українська)
+ * @author Base
+ */
+$messages['uk'] = array(
+	'mapsources' => 'Джерела карт',
+	'mapsources-search-legend' => 'Пошук даних та картографічних джерел',
+	'mapsources-coordinate' => 'Координати:',
+	'mapsources-go' => 'Перейти',
+	'mapsources-errormsgs' => 'Повідомлення про помилки',
+	'mapsources-noparams' => 'Не передано параметрів',
+	'mapsources-incorrectparams' => 'Передано некоректні параметри ($1)',
+	'mapsources-incorrectlat' => 'Некоректна широта',
+	'mapsources-incorrectlong' => 'Некоректна довгота',
+	'mapsources-nopage' => 'Не існує сторінка проекту [[Project:$1]]',
+	'mapsources-outofrange' => 'Координати за межами допустимого діапазону',
+	'mapsources-math-missing-operand' => 'Відсутній операнд',
+	'mapsources-math-incorrect-input' => 'Неправильний ввід',
+	'mapsources-desc' => '[[Special:MapSources|Пошук]] даних та картографічний джерел',
+	'mapsources-math-desc' => 'Додає теґи для конвертування координат',
+);
+
 /** Vietnamese (Tiếng Việt)
  * @author Minh Nguyen
  */
@@ -375,4 +396,33 @@ Ngoài ra, định dạng GeoHack của Wikimedia Toolserver cũng được ch�
 	'mapsources-math-incorrect-input' => 'Đầu vào không chính xác',
 	'mapsources-desc' => '[[Special:MapSources|Tìm]] dữ liệu và nguồn bản đồ',
 	'mapsources-math-desc' => 'Thêm thẻ để chuyển đổi tọa độ',
+);
+
+/** Traditional Chinese (中文（繁體）‎)
+ * @author Simon Shek
+ */
+$messages['zh-hant'] = array(
+	'mapsources' => '地圖來源',
+	'mapsources-summary' => '此頁面允許使用者以位置座標在多個地圖搜尋位置。
+
+緯度、 經度和附加的參數必須用逗號分隔。
+參數包含一個識別碼、 等號和一個值。
+
+例子：52° 31′ N, 13° 24′ 30″ E, 比例=50000
+
+此外，亦接受[https://wiki.toolserver.org/view/GeoHack GeoHack]格式填寫。',
+	'mapsources-search-legend' => '搜尋資料和地圖來源',
+	'mapsources-coordinate' => '座標：',
+	'mapsources-go' => '提交',
+	'mapsources-errormsgs' => '錯誤訊息',
+	'mapsources-noparams' => '沒有參數',
+	'mapsources-incorrectparams' => '參數（$1）有誤',
+	'mapsources-incorrectlat' => '緯度有誤',
+	'mapsources-incorrectlong' => '經度有誤',
+	'mapsources-nopage' => '沒有項目頁[[Project:$1]]可用',
+	'mapsources-outofrange' => '座標超出範圍',
+	'mapsources-math-missing-operand' => '缺少運算元',
+	'mapsources-math-incorrect-input' => '輸入有誤',
+	'mapsources-desc' => '[[Special:MapSources|搜尋]]資料和地圖來源',
+	'mapsources-math-desc' => '添加坐標變換標記',
 );
