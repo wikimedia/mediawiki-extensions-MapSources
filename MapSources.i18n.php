@@ -152,12 +152,48 @@ De plus, le format [https://wiki.toolserver.org/view/GeoHack GeoHack] sera accep
 	'mapsources-math-desc' => 'Ajoute des balises pour la conversion des coordonnées',
 );
 
+/** Galician (galego)
+ * @author Toliño
+ */
+$messages['gl'] = array(
+	'mapsources' => 'Fontes de mapas',
+	'mapsources-summary' => 'Esta páxina permite aos usuarios procurar en varias fontes unha localización dada mediante as súas coordenadas.
+
+A latitude, a lonxitude e os parámetros adicionais deben separarse por comas.
+Os parámetros consisten nun identificador, o signo igual e un valor.
+
+Exemplo: 52° 31′ N, 13° 24′ 30″ E, escala=50000
+
+Ademais, acéptase o formato [https://wiki.toolserver.org/view/GeoHack GeoHack].',
+	'mapsources-search-legend' => 'Procurar datos e fontes de mapas',
+	'mapsources-coordinate' => 'Coordenadas:',
+	'mapsources-go' => 'Continuar',
+	'mapsources-errormsgs' => 'Mensaxes de erro',
+	'mapsources-noparams' => 'Non se deu parámetro ningún',
+	'mapsources-incorrectparams' => 'Os parámetros achegados ($1) son incorrectos',
+	'mapsources-incorrectlat' => 'Latitude incorrecta',
+	'mapsources-incorrectlong' => 'Lonxitude incorrecta',
+	'mapsources-nopage' => 'Non hai dispoñible ningunha páxina do proxecto "[[Project:$1]]"',
+	'mapsources-outofrange' => 'A coordenada está fóra do rango',
+	'mapsources-math-missing-operand' => 'Falta o operador',
+	'mapsources-math-incorrect-input' => 'Entrada incorrecta',
+	'mapsources-desc' => '[[Special:MapSources|Procurar]] datos e fontes de mapas',
+	'mapsources-math-desc' => 'Engade etiquetas para a conversión de coordenadas',
+);
+
 /** Italian (italiano)
  * @author Beta16
  */
 $messages['it'] = array(
 	'mapsources' => 'Fonte della mappa',
-	'mapsources-summary' => 'Questa pagina speciale permette che gli utenti cerchino le fonti multiple per una posizione data dalla relativa coordinata.', # Fuzzy
+	'mapsources-summary' => 'Questa pagina speciale permette di cercare fonti multiple per una posizione date le relative coordinate.
+
+Latitudine, longitudine e parametri aggiuntivi devono essere separati con virgole.
+I parametri sono costituiti da un identificatore, il segno di uguale e un valore.
+
+Esempio: 52° 31′ N, 13° 24′ 30″ E, scale=50000
+
+Inoltre, anche il formato [https://wiki.toolserver.org/view/GeoHack GeoHack] è accettato.',
 	'mapsources-search-legend' => 'Cerca per dati e fonti delle mappe',
 	'mapsources-coordinate' => 'Coordinate:',
 	'mapsources-go' => 'Cerca',
