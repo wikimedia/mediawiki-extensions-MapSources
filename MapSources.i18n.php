@@ -57,6 +57,14 @@ Extension credits: special page description.',
 	'mapsources-math-desc' => 'Extension credits: parser hook description',
 );
 
+/** Catalan (català)
+ * @author Jmontane
+ */
+$messages['ca'] = array(
+	'mapsources-incorrectlat' => 'La latitud no és correcta',
+	'mapsources-incorrectlong' => 'La longitud no és correcta',
+);
+
 /** German (Deutsch)
  * @author Metalhead64
  */
