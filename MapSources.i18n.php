@@ -61,8 +61,17 @@ Extension credits: special page description.',
  * @author Jmontane
  */
 $messages['ca'] = array(
+	'mapsources-coordinate' => 'Coordenades:',
+	'mapsources-go' => 'Vés',
+	'mapsources-errormsgs' => "Missatges d'error",
+	'mapsources-noparams' => 'No heu indicat cap paràmetre',
 	'mapsources-incorrectlat' => 'La latitud no és correcta',
 	'mapsources-incorrectlong' => 'La longitud no és correcta',
+	'mapsources-nopage' => 'La pàgina del projecte [[Project:$1]] no es troba disponible',
+	'mapsources-outofrange' => "Les coordenades són fora de l'interval",
+	'mapsources-math-missing-operand' => 'Manca un operador',
+	'mapsources-math-incorrect-input' => "L'entrada no és correcta",
+	'mapsources-desc' => '[[Special:MapSources|Cerqueu]] dades i fonts de mapes',
 );
 
 /** German (Deutsch)
@@ -120,6 +129,22 @@ Además, se aceptará el formato wiki de Wikipedia Geohack.', # Fuzzy
 	'mapsources-math-incorrect-input' => 'Entrada incorrecta',
 	'mapsources-desc' => '[[Special:MapSources|Buscar]] datos y fuentes de datos del mapa',
 	'mapsources-math-desc' => 'Agrega etiquetas para la conversión de coordenadas',
+);
+
+/** Estonian (eesti)
+ * @author Avjoska
+ */
+$messages['et'] = array(
+	'mapsources-coordinate' => 'Koordinaat',
+	'mapsources-go' => 'Mine',
+);
+
+/** Persian (فارسی)
+ * @author Mjbmr
+ */
+$messages['fa'] = array(
+	'mapsources-go' => 'رفتن',
+	'mapsources-errormsgs' => 'پیام‌های خطا',
 );
 
 /** Finnish (suomi)
@@ -245,6 +270,14 @@ $messages['ja'] = array(
 	'mapsources-math-incorrect-input' => '入力が正しくありません',
 	'mapsources-desc' => 'データおよび地図情報源の[[Special:MapSources|検索]]',
 	'mapsources-math-desc' => '座標を変換するためのタグを追加する',
+);
+
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'mapsources-coordinate' => 'კოორდინატი',
+	'mapsources-go' => 'მიდი',
 );
 
 /** Korean (한국어)
@@ -383,6 +416,36 @@ $messages['pl'] = array(
 	'mapsources-math-incorrect-input' => 'Błędne dane',
 	'mapsources-desc' => '[[Special:MapSources|Wyszukaj]] źródła map i danych',
 	'mapsources-math-desc' => 'Dodaje znaczniki do konwersji współrzędnych',
+);
+
+/** Romanian (română)
+ * @author Firilacroco
+ * @author Minisarm
+ */
+$messages['ro'] = array(
+	'mapsources-coordinate' => 'Coordonate:',
+	'mapsources-go' => 'Du-te',
+	'mapsources-errormsgs' => 'Mesaje de eroare',
+	'mapsources-noparams' => 'Niciun parametru introdus',
+	'mapsources-incorrectparams' => 'Parametri incorecți ($1) furnizați',
+	'mapsources-incorrectlat' => 'Latitudine incorectă',
+	'mapsources-incorrectlong' => 'Longitudine incorectă',
+	'mapsources-outofrange' => 'Coordonate în afara limitei',
+	'mapsources-math-missing-operand' => 'Operand lipsă',
+	'mapsources-math-incorrect-input' => 'Intrare incorectă',
+);
+
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'mapsources-coordinate' => 'සමකක්ෂය:',
+	'mapsources-go' => 'යන්න',
+	'mapsources-errormsgs' => 'දෝෂ පණිවුඩ',
+	'mapsources-noparams' => 'කිසිදු පරාමිතියක් දී නොමැත',
+	'mapsources-incorrectlat' => 'සාවද්‍ය අක්ෂාංශය',
+	'mapsources-incorrectlong' => 'සාවද්‍ය දේශාංශය',
+	'mapsources-math-incorrect-input' => 'සාවද්‍ය ප්‍රදානය',
 );
 
 /** Telugu (తెలుగు)
