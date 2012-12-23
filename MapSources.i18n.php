@@ -133,9 +133,10 @@ Además, se aceptará el formato wiki de Wikipedia Geohack.', # Fuzzy
 
 /** Estonian (eesti)
  * @author Avjoska
+ * @author Pikne
  */
 $messages['et'] = array(
-	'mapsources-coordinate' => 'Koordinaat',
+	'mapsources-coordinate' => 'Koordinaat:',
 	'mapsources-go' => 'Mine',
 );
 
@@ -307,6 +308,14 @@ $messages['ko'] = array(
 	'mapsources-math-incorrect-input' => '입력을 잘못했습니다',
 	'mapsources-desc' => '데이터와 지도 출처 [[Special:MapSources|찾기]]',
 	'mapsources-math-desc' => '좌표 변환 태그 추가',
+);
+
+/** Lithuanian (lietuvių)
+ * @author Eitvys200
+ */
+$messages['lt'] = array(
+	'mapsources-go' => 'Eiti',
+	'mapsources-errormsgs' => 'Klaidų Pranešimai',
 );
 
 /** Macedonian (македонски)
