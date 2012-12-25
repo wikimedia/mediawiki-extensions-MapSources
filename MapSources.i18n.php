@@ -376,6 +376,21 @@ Tambahan pula, format [https://wiki.toolserver.org/view/GeoHack GeoHack] juga di
 	'mapsources-math-desc' => 'Membubuh teg untuk penukaran koordinat',
 );
 
+/** Maltese (Malti)
+ * @author Chrisportelli
+ */
+$messages['mt'] = array(
+	'mapsources-coordinate' => 'Koordinati:',
+	'mapsources-go' => 'Mur',
+	'mapsources-errormsgs' => "Messaġġ ta' żball",
+	'mapsources-noparams' => 'Parametri nieqsa',
+	'mapsources-incorrectparams' => 'Ingħataw parametri ħżiena ($1)',
+	'mapsources-incorrectlat' => 'Latitudni ħażina',
+	'mapsources-incorrectlong' => 'Lonġitudni ħażina',
+	'mapsources-nopage' => 'Il-paġna tal-proġett [[Project:$1]] mhix disponibbli',
+	'mapsources-outofrange' => 'Il-koordinati huma ħżiena',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
