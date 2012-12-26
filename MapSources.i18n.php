@@ -472,6 +472,30 @@ $messages['si'] = array(
 	'mapsources-math-incorrect-input' => 'සාවද්‍ය ප්‍රදානය',
 );
 
+/** Swedish (svenska)
+ * @author WikiPhoenix
+ */
+$messages['sv'] = array(
+	'mapsources-coordinate' => 'Koordinat:',
+	'mapsources-go' => 'Gå',
+	'mapsources-errormsgs' => 'Felmeddelanden',
+	'mapsources-noparams' => 'Inga parametrar angivna',
+	'mapsources-incorrectlat' => 'Felaktig latitud',
+	'mapsources-incorrectlong' => 'Felaktig longitud',
+	'mapsources-nopage' => 'Ingen projektsida [[Project:$1]] tillgänglig',
+	'mapsources-math-incorrect-input' => 'Felaktig inmatning',
+);
+
+/** Tamil (தமிழ்)
+ * @author Shanmugamp7
+ */
+$messages['ta'] = array(
+	'mapsources-coordinate' => 'ஆயக்கூறு',
+	'mapsources-go' => 'செல்',
+	'mapsources-errormsgs' => 'பிழைச் செய்திகள்',
+	'mapsources-noparams' => 'அளவுருக்கள் ஏதும் தரப்படவில்லை',
+);
+
 /** Telugu (తెలుగు)
  * @author Veeven
  */
