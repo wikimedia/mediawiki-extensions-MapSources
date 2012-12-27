@@ -9,7 +9,7 @@
 $messages = array();
 
 $messages['en'] = array(
-	'mapsources'                 => 'Map Sources',
+	'mapsources'                 => 'Map sources',
 	'mapsources-summary'         => 'This page allows users to search for multiple sources for a location given by its coordinate.
 
 Latitude, longitude and additional parameters must be separated with commas.
@@ -21,12 +21,12 @@ Additionally, the [https://wiki.toolserver.org/view/GeoHack GeoHack] format will
 	'mapsources-search-legend'   => 'Search for data and map sources',
 	'mapsources-coordinate'      => 'Coordinate:',
 	'mapsources-go'              => 'Go',
-	'mapsources-errormsgs'       => 'Error Messages',
+	'mapsources-errormsgs'       => 'Error messages',
 	'mapsources-noparams'        => 'No parameters given',
 	'mapsources-incorrectparams' => 'Incorrect parameters ($1) given',
 	'mapsources-incorrectlat'    => 'Incorrect latitude',
 	'mapsources-incorrectlong'   => 'Incorrect longitude',
-	'mapsources-nopage'          => 'No project page [[Project:$1]] available',
+	'mapsources-nopage'          => 'No project page [[{{ns:project}}:$1|$1]] available',
 	'mapsources-outofrange'      => 'Coordinate out of range',
 	'mapsources-math-missing-operand' => 'Missing operand',
 	'mapsources-math-incorrect-input' => 'Incorrect input',
