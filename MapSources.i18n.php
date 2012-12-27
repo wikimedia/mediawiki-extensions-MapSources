@@ -67,7 +67,7 @@ $messages['ca'] = array(
 	'mapsources-noparams' => 'No heu indicat cap paràmetre',
 	'mapsources-incorrectlat' => 'La latitud no és correcta',
 	'mapsources-incorrectlong' => 'La longitud no és correcta',
-	'mapsources-nopage' => 'La pàgina del projecte [[Project:$1]] no es troba disponible',
+	'mapsources-nopage' => 'La pàgina del projecte [[Project:$1]] no es troba disponible', # Fuzzy
 	'mapsources-outofrange' => "Les coordenades són fora de l'interval",
 	'mapsources-math-missing-operand' => 'Manca un operador',
 	'mapsources-math-incorrect-input' => "L'entrada no és correcta",
@@ -150,11 +150,29 @@ $messages['fa'] = array(
 
 /** Finnish (suomi)
  * @author Stryn
+ * @author VezonThunder
  */
 $messages['fi'] = array(
+	'mapsources' => 'Karttalähteet',
+	'mapsources-summary' => 'Tämä sivu antaa käyttäjien hakea sijaintia useista lähteistä sen koordinaattien mukaan.
+
+Leveys- ja pituusaste sekä lisäehdot tulee erottaa pilkuin.
+Ehdot koostuvat tunnisteesta, yhtäsuuruusmerkistä ja arvosta.
+
+Esimerkki: 52° 31′ N, 13° 24′ 30″ E, scale=50000
+
+Myös [https://wiki.toolserver.org/view/GeoHack GeoHack]-muoto hyväksytään.',
+	'mapsources-search-legend' => 'Hae tieto- ja karttalähteitä',
 	'mapsources-coordinate' => 'Koordinaatti:',
+	'mapsources-go' => 'Siirry',
+	'mapsources-errormsgs' => 'Virheilmoitukset',
+	'mapsources-noparams' => 'Ehtoja ei annettu',
+	'mapsources-incorrectparams' => 'Virheelliset ehdot ($1) annettu',
 	'mapsources-incorrectlat' => 'Virheellinen leveysaste',
 	'mapsources-incorrectlong' => 'Virheellinen pituusaste',
+	'mapsources-nopage' => 'Projektisivua [[Project:$1]] ei saatavilla', # Fuzzy
+	'mapsources-outofrange' => 'Koordinaatti kantaman ulkopuolella',
+	'mapsources-desc' => 'Tieto- ja karttalähteiden [[Special:MapSources|haku]]',
 );
 
 /** French (français)
@@ -207,7 +225,7 @@ Ademais, acéptase o formato [https://wiki.toolserver.org/view/GeoHack GeoHack].
 	'mapsources-incorrectparams' => 'Os parámetros achegados ($1) son incorrectos',
 	'mapsources-incorrectlat' => 'Latitude incorrecta',
 	'mapsources-incorrectlong' => 'Lonxitude incorrecta',
-	'mapsources-nopage' => 'Non hai dispoñible ningunha páxina do proxecto "[[Project:$1]]"',
+	'mapsources-nopage' => 'Non hai dispoñible ningunha páxina do proxecto "[[Project:$1]]"', # Fuzzy
 	'mapsources-outofrange' => 'A coordenada está fóra do rango',
 	'mapsources-math-missing-operand' => 'Falta o operador',
 	'mapsources-math-incorrect-input' => 'Entrada incorrecta',
@@ -236,7 +254,7 @@ Inoltre, anche il formato [https://wiki.toolserver.org/view/GeoHack GeoHack] è 
 	'mapsources-incorrectparams' => 'Inseriti parametri non corretti ($1)',
 	'mapsources-incorrectlat' => 'Latitudine non corretta',
 	'mapsources-incorrectlong' => 'Longitudine non corretta',
-	'mapsources-nopage' => 'Pagine del progetto [[Project:$1]] non disponibili',
+	'mapsources-nopage' => 'Pagine del progetto [[Project:$1]] non disponibili', # Fuzzy
 	'mapsources-outofrange' => 'Coordinate non valide',
 	'mapsources-math-missing-operand' => 'Parametro mancante',
 	'mapsources-math-incorrect-input' => 'Input non corretto',
@@ -387,7 +405,7 @@ $messages['mt'] = array(
 	'mapsources-incorrectparams' => 'Ingħataw parametri ħżiena ($1)',
 	'mapsources-incorrectlat' => 'Latitudni ħażina',
 	'mapsources-incorrectlong' => 'Lonġitudni ħażina',
-	'mapsources-nopage' => 'Il-paġna tal-proġett [[Project:$1]] mhix disponibbli',
+	'mapsources-nopage' => 'Il-paġna tal-proġett [[Project:$1]] mhix disponibbli', # Fuzzy
 	'mapsources-outofrange' => 'Il-koordinati huma ħżiena',
 );
 
@@ -482,7 +500,7 @@ $messages['sv'] = array(
 	'mapsources-noparams' => 'Inga parametrar angivna',
 	'mapsources-incorrectlat' => 'Felaktig latitud',
 	'mapsources-incorrectlong' => 'Felaktig longitud',
-	'mapsources-nopage' => 'Ingen projektsida [[Project:$1]] tillgänglig',
+	'mapsources-nopage' => 'Ingen projektsida [[Project:$1]] tillgänglig', # Fuzzy
 	'mapsources-math-incorrect-input' => 'Felaktig inmatning',
 );
 
@@ -574,7 +592,7 @@ $messages['zh-hant'] = array(
 	'mapsources-incorrectparams' => '參數（$1）有誤',
 	'mapsources-incorrectlat' => '緯度有誤',
 	'mapsources-incorrectlong' => '經度有誤',
-	'mapsources-nopage' => '沒有項目頁[[Project:$1]]可用',
+	'mapsources-nopage' => '沒有項目頁[[Project:$1]]可用', # Fuzzy
 	'mapsources-outofrange' => '座標超出範圍',
 	'mapsources-math-missing-operand' => '缺少運算元',
 	'mapsources-math-incorrect-input' => '輸入有誤',
