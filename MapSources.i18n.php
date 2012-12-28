@@ -94,7 +94,7 @@ Zusätzlich wird das Format des [https://wiki.toolserver.org/view/GeoHack Wikipe
 	'mapsources-incorrectparams' => 'Fehlerhafte Parameter ($1) angegeben',
 	'mapsources-incorrectlat' => 'Fehlerhafte Breitenangabe',
 	'mapsources-incorrectlong' => 'Fehlerhafte Längenangabe',
-	'mapsources-nopage' => 'Keine Projektseite [[Project:$1]] verfügbar',
+	'mapsources-nopage' => 'Keine Projektseite [[{{ns:project}}:$1|$1]] verfügbar',
 	'mapsources-outofrange' => 'Ungültige Koordinate',
 	'mapsources-math-missing-operand' => 'Fehlende(r) Parameter',
 	'mapsources-math-incorrect-input' => 'Fehlerhafte Eingabe',
@@ -196,7 +196,7 @@ De plus, le format [https://wiki.toolserver.org/view/GeoHack GeoHack] sera accep
 	'mapsources-incorrectparams' => 'Paramètres incorrects ($1) fournis',
 	'mapsources-incorrectlat' => 'Latitude erronée',
 	'mapsources-incorrectlong' => 'Longitude erronée',
-	'mapsources-nopage' => 'Pas de page de projet [[Project:$1]] disponible',
+	'mapsources-nopage' => 'Pas de page de projet [[{{ns:project}}:$1|$1]] disponible',
 	'mapsources-outofrange' => 'Coordonées invalides',
 	'mapsources-math-missing-operand' => 'Opérateur(s) manquant(s)',
 	'mapsources-math-incorrect-input' => 'Entrée erronée',
@@ -225,7 +225,7 @@ Ademais, acéptase o formato [https://wiki.toolserver.org/view/GeoHack GeoHack].
 	'mapsources-incorrectparams' => 'Os parámetros achegados ($1) son incorrectos',
 	'mapsources-incorrectlat' => 'Latitude incorrecta',
 	'mapsources-incorrectlong' => 'Lonxitude incorrecta',
-	'mapsources-nopage' => 'Non hai dispoñible ningunha páxina do proxecto "[[Project:$1]]"', # Fuzzy
+	'mapsources-nopage' => 'Non hai dispoñible ningunha páxina do proxecto "[[{{ns:project}}:$1|$1]]"',
 	'mapsources-outofrange' => 'A coordenada está fóra do rango',
 	'mapsources-math-missing-operand' => 'Falta o operador',
 	'mapsources-math-incorrect-input' => 'Entrada incorrecta',
@@ -254,7 +254,7 @@ Inoltre, anche il formato [https://wiki.toolserver.org/view/GeoHack GeoHack] è 
 	'mapsources-incorrectparams' => 'Inseriti parametri non corretti ($1)',
 	'mapsources-incorrectlat' => 'Latitudine non corretta',
 	'mapsources-incorrectlong' => 'Longitudine non corretta',
-	'mapsources-nopage' => 'Pagine del progetto [[Project:$1]] non disponibili', # Fuzzy
+	'mapsources-nopage' => 'Pagine del progetto [[{{ns:project}}:$1]] non disponibili',
 	'mapsources-outofrange' => 'Coordinate non valide',
 	'mapsources-math-missing-operand' => 'Parametro mancante',
 	'mapsources-math-incorrect-input' => 'Input non corretto',
@@ -283,7 +283,7 @@ $messages['ja'] = array(
 	'mapsources-incorrectparams' => '正しくないパラメーター ($1) を指定しました',
 	'mapsources-incorrectlat' => '緯度が無効です',
 	'mapsources-incorrectlong' => '経度が無効です',
-	'mapsources-nopage' => 'プロジェクトページ [[Project:$1]] を利用できません',
+	'mapsources-nopage' => 'プロジェクトページ [[{{ns:project}}:$1|$1]] を利用できません',
 	'mapsources-outofrange' => '座標が範囲外です',
 	'mapsources-math-missing-operand' => '演算対象がありません',
 	'mapsources-math-incorrect-input' => '入力が正しくありません',
@@ -357,7 +357,7 @@ $messages['mk'] = array(
 	'mapsources-incorrectparams' => 'Зададени се неисправни параметри ($1)',
 	'mapsources-incorrectlat' => 'Погрешна геог. ширина',
 	'mapsources-incorrectlong' => 'Погрешна геог. должина',
-	'mapsources-nopage' => 'Нема на располагање проектна страница со име [[Project:$1]]',
+	'mapsources-nopage' => 'Нема на располагање проектна страница со име [[{{ns:project}}:$1|$1]]',
 	'mapsources-outofrange' => 'Координатите се вон опсегот',
 	'mapsources-math-missing-operand' => 'Недостасува операнд',
 	'mapsources-math-incorrect-input' => 'Погрешен внос',
@@ -430,7 +430,7 @@ Ook de [https://wiki.toolserver.org/view/GeoHack opmaak van Geohack] wordt onder
 	'mapsources-incorrectparams' => 'Ongeldige parameters opgegeven ($1)',
 	'mapsources-incorrectlat' => 'Onjuiste breedtegraad',
 	'mapsources-incorrectlong' => 'Onjuiste lengtegraad',
-	'mapsources-nopage' => 'Geen projectpagina [[Project:$1]] beschikbaar',
+	'mapsources-nopage' => 'Geen projectpagina [[{{ns:project}}:$1|$1]] beschikbaar',
 	'mapsources-outofrange' => 'Coördinaat buiten het bereik',
 	'mapsources-math-missing-operand' => 'Ontbrekende operand',
 	'mapsources-math-incorrect-input' => 'Onjuiste invoer',
@@ -460,6 +460,13 @@ $messages['pl'] = array(
 	'mapsources-math-desc' => 'Dodaje znaczniki do konwersji współrzędnych',
 );
 
+/** Piedmontese (Piemontèis)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['pms'] = array(
+	'mapsources-go' => 'Va',
+);
+
 /** Romanian (română)
  * @author Firilacroco
  * @author Minisarm
@@ -477,16 +484,37 @@ $messages['ro'] = array(
 	'mapsources-math-incorrect-input' => 'Intrare incorectă',
 );
 
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'mapsources-coordinate' => 'Coordinate:',
+	'mapsources-go' => 'Véje',
+	'mapsources-errormsgs' => "Messàgge d'errore",
+	'mapsources-noparams' => 'Nisciune parmatre date',
+	'mapsources-incorrectparams' => 'Parametre none corrette ($1) mise',
+	'mapsources-incorrectlat' => 'Latitudine none corrette',
+	'mapsources-incorrectlong' => 'Longitudine none corrette',
+	'mapsources-nopage' => 'Nisciuna pàgene de proggette [[{{ns:project}}:$1|$1]] disponibbele',
+	'mapsources-outofrange' => "Coordinate fore da l'indervalle",
+	'mapsources-math-missing-operand' => 'Operande zumbate',
+);
+
 /** Sinhala (සිංහල)
  * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
+	'mapsources' => 'සිතියම් මූලාශ්‍ර',
+	'mapsources-search-legend' => 'දත්ත සහ සිතියම් මූලාශ්‍ර සඳහා සොයන්න',
 	'mapsources-coordinate' => 'සමකක්ෂය:',
 	'mapsources-go' => 'යන්න',
 	'mapsources-errormsgs' => 'දෝෂ පණිවුඩ',
 	'mapsources-noparams' => 'කිසිදු පරාමිතියක් දී නොමැත',
+	'mapsources-incorrectparams' => 'ලබාදුන් පරාමිතීන් ($1) වැරදියි',
 	'mapsources-incorrectlat' => 'සාවද්‍ය අක්ෂාංශය',
 	'mapsources-incorrectlong' => 'සාවද්‍ය දේශාංශය',
+	'mapsources-outofrange' => 'සමකක්ෂය පරාසයෙන් ඉවත් වී ඇත',
+	'mapsources-math-missing-operand' => 'දක්නට නොමැති ප්‍රවර්ත්‍යය',
 	'mapsources-math-incorrect-input' => 'සාවද්‍ය ප්‍රදානය',
 );
 
