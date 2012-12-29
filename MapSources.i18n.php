@@ -102,6 +102,15 @@ Zusätzlich wird das Format des [https://wiki.toolserver.org/view/GeoHack Wikipe
 	'mapsources-math-desc' => 'Ergänzt Tags zur Umwandlung von Koordinaten',
 );
 
+/** Greek (Ελληνικά)
+ * @author ZaDiak
+ */
+$messages['el'] = array(
+	'mapsources-coordinate' => 'Συντεταγμένες:',
+	'mapsources-go' => 'Πήγαινε',
+	'mapsources-errormsgs' => 'Μηνύματα σφάλματος',
+);
+
 /** Spanish (español)
  * @author Armando-Martin
  */
@@ -461,10 +470,33 @@ $messages['pl'] = array(
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Dragonòt
  * @author පසිඳු කාවින්ද
  */
 $messages['pms'] = array(
+	'mapsources' => 'Sorziss dla carta',
+	'mapsources-summary' => "Sta pagina a përmëtt a j'utent ëd serché sorziss mùltiple për na locassion dàite le soe coordinà.
+
+Latitùdin, longitùdin e paràmetr adissionaj a deuvo esse separà da vìrgole.
+Ij paràmetr a consisto ëd n'identificador, ël segn ugual e un valor.
+
+Esempi: 52° 31′ N, 13° 24′ 30″ E, scale=50000
+
+An pi, ël formà [https://wiki.toolserver.org/view/GeoHack GeoHack] a sarà acetà.",
+	'mapsources-search-legend' => 'Serca dat e sorziss dla carta',
+	'mapsources-coordinate' => 'Coordinà:',
 	'mapsources-go' => 'Va',
+	'mapsources-errormsgs' => "Mëssagi d'eror",
+	'mapsources-noparams' => 'Gnun paràmetr dàit',
+	'mapsources-incorrectparams' => 'Paràmetr ($1) dàit pa bon',
+	'mapsources-incorrectlat' => 'Latitùdin pa giusta',
+	'mapsources-incorrectlong' => 'Longitùdin pa giusta',
+	'mapsources-nopage' => 'Gnun-e pagine ëd proget [[{{ns:project}}:$1|$1]] disponìbij',
+	'mapsources-outofrange' => 'Coordinà fòra antërval',
+	'mapsources-math-missing-operand' => 'Operand mancant',
+	'mapsources-math-incorrect-input' => 'Anseriment pa giust',
+	'mapsources-desc' => '[[Special:MapSources|Arserca]] dat e sorziss dla carta',
+	'mapsources-math-desc' => 'A gionta tichëtte për conversion ëd coordinà',
 );
 
 /** Romanian (română)
