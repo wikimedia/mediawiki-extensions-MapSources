@@ -337,6 +337,14 @@ $messages['ko'] = array(
 	'mapsources-math-desc' => '좌표 변환 태그 추가',
 );
 
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'mapsources-go' => 'Lass',
+	'mapsources-errormsgs' => 'Feelermessagen',
+);
+
 /** Lithuanian (lietuvių)
  * @author Eitvys200
  */
@@ -395,7 +403,7 @@ Tambahan pula, format [https://wiki.toolserver.org/view/GeoHack GeoHack] juga di
 	'mapsources-incorrectparams' => 'Parameter yang diberikan ($1) tidak betul',
 	'mapsources-incorrectlat' => 'Garis lintang tidak betul',
 	'mapsources-incorrectlong' => 'Garis bujur tidak betul',
-	'mapsources-nopage' => 'Tiada halaman projek [[Project:$1]] disediakan',
+	'mapsources-nopage' => 'Tiada halaman projek [[{{ns:project}}:$1|$1]] disediakan',
 	'mapsources-outofrange' => 'Koordinat di luar julat',
 	'mapsources-math-missing-operand' => 'Tiada kendalian',
 	'mapsources-math-incorrect-input' => 'Input tidak betul',
