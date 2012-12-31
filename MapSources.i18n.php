@@ -74,6 +74,16 @@ $messages['ca'] = array(
 	'mapsources-desc' => '[[Special:MapSources|Cerqueu]] dades i fonts de mapes',
 );
 
+/** Czech (česky)
+ * @author Vks
+ */
+$messages['cs'] = array(
+	'mapsources' => 'Zdroje map',
+	'mapsources-go' => 'Přejít',
+	'mapsources-math-missing-operand' => 'Chybí operand',
+	'mapsources-math-incorrect-input' => 'Špatný vstup',
+);
+
 /** German (Deutsch)
  * @author Metalhead64
  */
@@ -211,6 +221,25 @@ De plus, le format [https://wiki.toolserver.org/view/GeoHack GeoHack] sera accep
 	'mapsources-math-incorrect-input' => 'Entrée erronée',
 	'mapsources-desc' => '[[Special:MapSources|Recherche]] de sources de données et de cartes',
 	'mapsources-math-desc' => 'Ajoute des balises pour la conversion des coordonnées',
+);
+
+/** Franco-Provençal (arpetan)
+ * @author ChrisPtDe
+ */
+$messages['frp'] = array(
+	'mapsources' => 'Sôrses de mapes',
+	'mapsources-search-legend' => 'Rechèrchiér des sôrses de mapes et donâs',
+	'mapsources-coordinate' => 'Coordonâs :',
+	'mapsources-go' => 'Emmodar',
+	'mapsources-errormsgs' => 'Mèssâjos de fôta',
+	'mapsources-noparams' => 'Nion paramètro balyê',
+	'mapsources-incorrectparams' => 'Paramètros fôx ($1) balyês',
+	'mapsources-incorrectlat' => 'Latituda fôssa',
+	'mapsources-incorrectlong' => 'Longituda fôssa',
+	'mapsources-nopage' => 'Niona pâge projèt [[{{ns:project}}:$1|$1]] disponibla',
+	'mapsources-outofrange' => 'Coordonâs en defôr de les limites',
+	'mapsources-math-missing-operand' => 'Opèrando manquent',
+	'mapsources-math-incorrect-input' => 'Entrâ fôssa',
 );
 
 /** Galician (galego)
@@ -510,8 +539,10 @@ An pi, ël formà [https://wiki.toolserver.org/view/GeoHack GeoHack] a sarà ace
 /** Romanian (română)
  * @author Firilacroco
  * @author Minisarm
+ * @author Stelistcristi
  */
 $messages['ro'] = array(
+	'mapsources' => 'Surse pentru hartă',
 	'mapsources-coordinate' => 'Coordonate:',
 	'mapsources-go' => 'Du-te',
 	'mapsources-errormsgs' => 'Mesaje de eroare',
@@ -587,6 +618,13 @@ $messages['ta'] = array(
  */
 $messages['te'] = array(
 	'mapsources-go' => 'వెళ్ళు',
+);
+
+/** Uyghur (Arabic script) (ئۇيغۇرچە)
+ * @author Sahran
+ */
+$messages['ug-arab'] = array(
+	'mapsources-go' => 'يۆتكەل',
 );
 
 /** Ukrainian (українська)
