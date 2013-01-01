@@ -584,9 +584,12 @@ $messages['si'] = array(
 	'mapsources-incorrectparams' => 'ලබාදුන් පරාමිතීන් ($1) වැරදියි',
 	'mapsources-incorrectlat' => 'සාවද්‍ය අක්ෂාංශය',
 	'mapsources-incorrectlong' => 'සාවද්‍ය දේශාංශය',
+	'mapsources-nopage' => 'ව්‍යපෘති පිටුවක් ලබා ගත නොහැක [[{{ns:project}}:$1|$1]]',
 	'mapsources-outofrange' => 'සමකක්ෂය පරාසයෙන් ඉවත් වී ඇත',
 	'mapsources-math-missing-operand' => 'දක්නට නොමැති ප්‍රවර්ත්‍යය',
 	'mapsources-math-incorrect-input' => 'සාවද්‍ය ප්‍රදානය',
+	'mapsources-desc' => 'දත්ත සහ සිතියම් මූලාශ්‍ර සඳහා [[Special:MapSources|සොයන්න]]',
+	'mapsources-math-desc' => 'ඛණ්ඩාංකවල පරිවර්තනය සඳහා ටැගයන් එක් කරයි',
 );
 
 /** Swedish (svenska)
