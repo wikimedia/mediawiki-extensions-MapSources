@@ -195,6 +195,7 @@ Myös [https://wiki.toolserver.org/view/GeoHack GeoHack]-muoto hyväksytään.',
 );
 
 /** French (français)
+ * @author Crochet.david
  * @author Gomoko
  */
 $messages['fr'] = array(
@@ -208,7 +209,7 @@ Exemple: 52° 31′ N, 13° 24′ 30″ E, échelle=50000
 
 De plus, le format [https://wiki.toolserver.org/view/GeoHack GeoHack] sera accepté.',
 	'mapsources-search-legend' => 'Rechercher des sources de cartes et données',
-	'mapsources-coordinate' => 'Coordonées:',
+	'mapsources-coordinate' => 'Coordonées :',
 	'mapsources-go' => 'Rechercher',
 	'mapsources-errormsgs' => 'Messages d’erreur',
 	'mapsources-noparams' => 'Paramètres manquants',
