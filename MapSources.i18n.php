@@ -113,10 +113,11 @@ Zusätzlich wird das Format des [https://wiki.toolserver.org/view/GeoHack Wikipe
 );
 
 /** Greek (Ελληνικά)
+ * @author Protnet
  * @author ZaDiak
  */
 $messages['el'] = array(
-	'mapsources-coordinate' => 'Συντεταγμένες:',
+	'mapsources-coordinate' => 'Συντεταγμένη:',
 	'mapsources-go' => 'Πήγαινε',
 	'mapsources-errormsgs' => 'Μηνύματα σφάλματος',
 );
