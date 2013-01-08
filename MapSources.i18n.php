@@ -573,6 +573,14 @@ $messages['roa-tara'] = array(
 	'mapsources-math-missing-operand' => 'Operande zumbate',
 );
 
+/** Russian (русский)
+ * @author Kaganer
+ */
+$messages['ru'] = array(
+	'mapsources' => 'Источники карт',
+	'mapsources-math-desc' => 'Добавляет теги для преобразования координат',
+);
+
 /** Sinhala (සිංහල)
  * @author පසිඳු කාවින්ද
  */
