@@ -42,7 +42,8 @@ $messages['qqq'] = array(
 	'mapsources-summary' => 'Extension summary to be displayed at the top of the special page, explaining how the extension works.',
 	'mapsources-search-legend' => 'Form fieldset label.',
 	'mapsources-coordinate' => 'Label for input box accepting coordinated.',
-	'mapsources-go' => 'Label for submit button.',
+	'mapsources-go' => 'Label for submit button.
+{{Identical|Go}}',
 	'mapsources-errormsgs' => 'Title above error messages, if any occurred during search.',
 	'mapsources-noparams' => 'Error message when no parameters are given.',
 	'mapsources-incorrectparams' => 'Error message when incorrect parameters are given. $1 is the current parameters.',
