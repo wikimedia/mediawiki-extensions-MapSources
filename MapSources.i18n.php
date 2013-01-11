@@ -41,7 +41,8 @@ $messages['qqq'] = array(
 	'mapsources' => 'Extension name: Map Sources.',
 	'mapsources-summary' => 'Extension summary to be displayed at the top of the special page, explaining how the extension works.',
 	'mapsources-search-legend' => 'Form fieldset label.',
-	'mapsources-coordinate' => 'Label for input box accepting coordinated.',
+	'mapsources-coordinate' => 'Label for input box accepting coordinated.
+{{Identical|Coordinates}}',
 	'mapsources-go' => 'Label for submit button.
 {{Identical|Go}}',
 	'mapsources-errormsgs' => 'Title above error messages, if any occurred during search.',
@@ -352,7 +353,7 @@ $messages['ko'] = array(
 
 예 : 52° 31′ N, 13° 24′ 30″ E, scale=50000
 
-또한 위키백과 Geohack 툴서버 형식도 허용합니다.', # Fuzzy
+또한 [https://wiki.toolserver.org/view/GeoHack GeoHack] 형식도 허용합니다.',
 	'mapsources-search-legend' => '데이터와 지도 출처에 대해 찾기',
 	'mapsources-coordinate' => '좌표',
 	'mapsources-go' => '가기',
@@ -361,7 +362,7 @@ $messages['ko'] = array(
 	'mapsources-incorrectparams' => '주어진 변수($1)가 잘못되었습니다',
 	'mapsources-incorrectlat' => '위도가 잘못되었습니다',
 	'mapsources-incorrectlong' => '경도가 잘못되었습니다',
-	'mapsources-nopage' => '[[Project:$1]] 프로젝트 문서를 사용할 수 없습니다',
+	'mapsources-nopage' => '[[{{ns:project}}:$1|$1]] 프로젝트 문서를 사용할 수 없습니다',
 	'mapsources-outofrange' => '좌표가 범위를 벗어났습니다',
 	'mapsources-math-missing-operand' => '피연산자가 없습니다',
 	'mapsources-math-incorrect-input' => '입력을 잘못했습니다',
