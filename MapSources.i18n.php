@@ -171,6 +171,7 @@ $messages['fa'] = array(
 );
 
 /** Finnish (suomi)
+ * @author Crt
  * @author Stryn
  * @author VezonThunder
  */
@@ -192,7 +193,7 @@ Myös [https://wiki.toolserver.org/view/GeoHack GeoHack]-muoto hyväksytään.',
 	'mapsources-incorrectparams' => 'Virheelliset ehdot ($1) annettu',
 	'mapsources-incorrectlat' => 'Virheellinen leveysaste',
 	'mapsources-incorrectlong' => 'Virheellinen pituusaste',
-	'mapsources-nopage' => 'Projektisivua [[Project:$1]] ei saatavilla', # Fuzzy
+	'mapsources-nopage' => 'Projektisivua [[{{ns:project}}:$1|$1]] ei saatavilla',
 	'mapsources-outofrange' => 'Koordinaatti kantaman ulkopuolella',
 	'mapsources-desc' => 'Tieto- ja karttalähteiden [[Special:MapSources|haku]]',
 );
@@ -576,10 +577,28 @@ $messages['roa-tara'] = array(
 );
 
 /** Russian (русский)
+ * @author DCamer
  * @author Kaganer
  */
 $messages['ru'] = array(
 	'mapsources' => 'Источники карт',
+	'mapsources-summary' => 'Эта страница позволяет пользователям вести поиск по нескольким источникам, на месте, с учетом его координат.
+
+Широта, долгота и дополнительные параметры должны быть разделены запятыми.
+Параметры состоят из идентификатора, знака равенства и значения.
+
+Пример: 52° 31′ N, 13° 24′ 30″ E, scale=50000
+
+Кроме того, формат [https://wiki.toolserver.org/view/GeoHack GeoHack] подходит.',
+	'mapsources-search-legend' => 'Поиск данных и картографических источников',
+	'mapsources-coordinate' => 'Координаты:',
+	'mapsources-go' => 'Найти',
+	'mapsources-errormsgs' => 'Сообщения об ошибках',
+	'mapsources-incorrectlat' => 'Неправильная широта',
+	'mapsources-incorrectlong' => 'Неправильная долгота',
+	'mapsources-math-missing-operand' => 'Отсутствует операнд',
+	'mapsources-math-incorrect-input' => 'Неправильный ввод',
+	'mapsources-desc' => '[[Special:MapSources|Поиск]] данных и картографических источников',
 	'mapsources-math-desc' => 'Добавляет теги для преобразования координат',
 );
 
