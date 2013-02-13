@@ -338,8 +338,10 @@ $messages['ja'] = array(
  * @author David1010
  */
 $messages['ka'] = array(
+	'mapsources' => 'რუკის წყაროები',
 	'mapsources-coordinate' => 'კოორდინატი',
 	'mapsources-go' => 'მიდი',
+	'mapsources-errormsgs' => 'შეცდომის შეტყობინებები',
 );
 
 /** Korean (한국어)
@@ -512,33 +514,34 @@ $messages['pl'] = array(
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Dragonòt
  * @author පසිඳු කාවින්ද
  */
 $messages['pms'] = array(
-	'mapsources' => 'Sorziss dla carta',
-	'mapsources-summary' => "Sta pagina a përmëtt a j'utent ëd serché sorziss mùltiple për na locassion dàite le soe coordinà.
+	'mapsources' => 'Sorgiss ëd carte',
+	'mapsources-summary' => "Costa pàgina a përmët a j'utent d'arserché dle sorgiss mùltiple për na locassion dàite le soe coordinà.
 
-Latitùdin, longitùdin e paràmetr adissionaj a deuvo esse separà da vìrgole.
+La latitùdin, la longitùdin e ij paràmetr adissionaj a devo esse separà da dle vìrgole.
 Ij paràmetr a consisto ëd n'identificador, ël segn ugual e un valor.
 
-Esempi: 52° 31′ N, 13° 24′ 30″ E, scale=50000
+Esempi: 52° 31′ N, 13° 24′ 30″ E, scala=50000
 
 An pi, ël formà [https://wiki.toolserver.org/view/GeoHack GeoHack] a sarà acetà.",
-	'mapsources-search-legend' => 'Serca dat e sorziss dla carta',
+	'mapsources-search-legend' => 'Arserché dij dat e sorgiss ëd carte',
 	'mapsources-coordinate' => 'Coordinà:',
 	'mapsources-go' => 'Va',
 	'mapsources-errormsgs' => "Mëssagi d'eror",
 	'mapsources-noparams' => 'Gnun paràmetr dàit',
 	'mapsources-incorrectparams' => 'Paràmetr ($1) dàit pa bon',
-	'mapsources-incorrectlat' => 'Latitùdin pa giusta',
-	'mapsources-incorrectlong' => 'Longitùdin pa giusta',
-	'mapsources-nopage' => 'Gnun-e pagine ëd proget [[{{ns:project}}:$1|$1]] disponìbij',
-	'mapsources-outofrange' => 'Coordinà fòra antërval',
+	'mapsources-incorrectlat' => 'Latitùdin nen giusta',
+	'mapsources-incorrectlong' => 'Longitùdin nen giusta',
+	'mapsources-nopage' => 'Gnun-e pàgine ëd proget [[{{ns:project}}:$1|$1]] disponìbij',
+	'mapsources-outofrange' => "Coordinà fòra da l'antërval",
 	'mapsources-math-missing-operand' => 'Operand mancant',
-	'mapsources-math-incorrect-input' => 'Anseriment pa giust',
-	'mapsources-desc' => '[[Special:MapSources|Arserca]] dat e sorziss dla carta',
-	'mapsources-math-desc' => 'A gionta tichëtte për conversion ëd coordinà',
+	'mapsources-math-incorrect-input' => 'Anseriment nen giust',
+	'mapsources-desc' => '[[Special:MapSources|Arserca]] ëd e sorgiss ëd dàit e ëd carte',
+	'mapsources-math-desc' => 'A gionta dle tichëtte për la conversion ëd le coordinà',
 );
 
 /** Romanian (română)
