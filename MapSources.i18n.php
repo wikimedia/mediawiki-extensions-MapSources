@@ -342,6 +342,8 @@ $messages['ka'] = array(
 	'mapsources-coordinate' => 'კოორდინატი',
 	'mapsources-go' => 'მიდი',
 	'mapsources-errormsgs' => 'შეცდომის შეტყობინებები',
+	'mapsources-incorrectlat' => 'არასწორი განედი',
+	'mapsources-incorrectlong' => 'არასწორი გრძედი',
 );
 
 /** Korean (한국어)
