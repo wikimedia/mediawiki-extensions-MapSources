@@ -716,6 +716,34 @@ Ngoài ra, định dạng GeoHack của Wikimedia Toolserver cũng được ch�
 	'mapsources-math-desc' => 'Thêm thẻ để chuyển đổi tọa độ',
 );
 
+/** Simplified Chinese (中文（简体）‎)
+ * @author Yfdyh000
+ */
+$messages['zh-hans'] = array(
+	'mapsources' => '地图来源',
+	'mapsources-summary' => '此页面允许用户提供一个地点的坐标搜索多个来源。
+
+纬度、经度和其他参数必须用逗号分隔。
+参数包含一个标识符、等号和一个值。
+
+例子: 52° 31′ N, 13° 24′ 30″ E, scale=50000
+
+此外，[https://wiki.toolserver.org/view/GeoHack GeoHack]格式也能接受。',
+	'mapsources-search-legend' => '搜索数据和地图来源',
+	'mapsources-coordinate' => '坐标：',
+	'mapsources-go' => '提交',
+	'mapsources-errormsgs' => '错误消息',
+	'mapsources-noparams' => '没有提供参数',
+	'mapsources-incorrectparams' => '提供了不正确的参数（$1）',
+	'mapsources-incorrectlat' => '不正确的纬度',
+	'mapsources-incorrectlong' => '不正确的经度',
+	'mapsources-nopage' => '没有项目页面[[{{ns:project}}:$1|$1]]可用',
+	'mapsources-outofrange' => '坐标超出范围',
+	'mapsources-math-incorrect-input' => '不正确的输入',
+	'mapsources-desc' => '[[Special:MapSources|搜索]]数据和地图来源',
+	'mapsources-math-desc' => '添加坐标换算标签',
+);
+
 /** Traditional Chinese (中文（繁體）‎)
  * @author Simon Shek
  */
