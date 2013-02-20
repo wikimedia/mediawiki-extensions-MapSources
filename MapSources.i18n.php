@@ -739,6 +739,7 @@ $messages['zh-hans'] = array(
 	'mapsources-incorrectlong' => '不正确的经度',
 	'mapsources-nopage' => '没有项目页面[[{{ns:project}}:$1|$1]]可用',
 	'mapsources-outofrange' => '坐标超出范围',
+	'mapsources-math-missing-operand' => '缺少操作数',
 	'mapsources-math-incorrect-input' => '不正确的输入',
 	'mapsources-desc' => '[[Special:MapSources|搜索]]数据和地图来源',
 	'mapsources-math-desc' => '添加坐标换算标签',
