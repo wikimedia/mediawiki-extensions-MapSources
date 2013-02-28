@@ -569,6 +569,7 @@ $messages['ro'] = array(
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'mapsources' => 'Sorgende de le mappe',
 	'mapsources-coordinate' => 'Coordinate:',
 	'mapsources-go' => 'Véje',
 	'mapsources-errormsgs' => "Messàgge d'errore",
