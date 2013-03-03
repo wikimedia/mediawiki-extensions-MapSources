@@ -59,6 +59,14 @@ Extension credits: special page description.',
 	'mapsources-math-desc' => 'Extension credits: parser hook description',
 );
 
+/** Breton (brezhoneg)
+ * @author Y-M D
+ */
+$messages['br'] = array(
+	'mapsources-coordinate' => 'Daveennoù :',
+	'mapsources-go' => 'Mont',
+);
+
 /** Catalan (català)
  * @author Jmontane
  */
