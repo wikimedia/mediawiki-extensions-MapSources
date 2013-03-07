@@ -172,9 +172,10 @@ $messages['et'] = array(
 
 /** Persian (فارسی)
  * @author Mjbmr
+ * @author ZxxZxxZ
  */
 $messages['fa'] = array(
-	'mapsources-go' => 'رفتن',
+	'mapsources-go' => 'برو',
 	'mapsources-errormsgs' => 'پیام‌های خطا',
 );
 
