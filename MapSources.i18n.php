@@ -60,11 +60,14 @@ Extension credits: special page description.',
 );
 
 /** Breton (brezhoneg)
+ * @author Fohanno
  * @author Y-M D
  */
 $messages['br'] = array(
 	'mapsources-coordinate' => 'Daveennoù :',
 	'mapsources-go' => 'Mont',
+	'mapsources-incorrectlat' => 'Ledred direizh',
+	'mapsources-incorrectlong' => 'Hedred direizh',
 );
 
 /** Catalan (català)
