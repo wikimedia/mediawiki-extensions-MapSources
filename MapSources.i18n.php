@@ -38,7 +38,7 @@ Additionally, the [https://wiki.toolserver.org/view/GeoHack GeoHack] format will
  * @author Shirayuki
  */
 $messages['qqq'] = array(
-	'mapsources' => 'Extension name: Map Sources.',
+	'mapsources' => '{{doc-special|MapSources|unlisted=1}}',
 	'mapsources-summary' => 'Extension summary to be displayed at the top of the special page, explaining how the extension works.',
 	'mapsources-search-legend' => 'Form fieldset label.',
 	'mapsources-coordinate' => 'Label for input box accepting coordinated.
