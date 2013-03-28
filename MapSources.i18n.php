@@ -503,6 +503,13 @@ $messages['mt'] = array(
 	'mapsources-outofrange' => 'Il-koordinati huma ħżiena',
 );
 
+/** Low German (Plattdüütsch)
+ * @author Joachim Mos
+ */
+$messages['nds'] = array(
+	'mapsources-go' => 'Los',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
