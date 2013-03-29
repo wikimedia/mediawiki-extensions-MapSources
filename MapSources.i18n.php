@@ -715,9 +715,18 @@ $messages['ug-arab'] = array(
 
 /** Ukrainian (українська)
  * @author Base
+ * @author RLuts
  */
 $messages['uk'] = array(
 	'mapsources' => 'Джерела карт',
+	'mapsources-summary' => 'Ця сторінка дозволяє користувачам шукати за декількома джерелами по його координатах розташування.
+
+Широта, довгота та додаткові параметри повинні бути розділені комами.
+Параметри складаються з ідентифікатора, знака «дорівнює» та значення.
+
+Приклад: 52° 31′ N, 13° 24′ 30″ E, scale=50000
+
+Крім цього, підходить формат [https://wiki.toolserver.org/view/GeoHack GeoHack].',
 	'mapsources-search-legend' => 'Пошук даних та картографічних джерел',
 	'mapsources-coordinate' => 'Координати:',
 	'mapsources-go' => 'Перейти',
@@ -726,12 +735,12 @@ $messages['uk'] = array(
 	'mapsources-incorrectparams' => 'Передано некоректні параметри ($1)',
 	'mapsources-incorrectlat' => 'Некоректна широта',
 	'mapsources-incorrectlong' => 'Некоректна довгота',
-	'mapsources-nopage' => 'Не існує сторінка проекту [[Project:$1]]', # Fuzzy
+	'mapsources-nopage' => 'Не існує сторінка проекту [[{{ns:project}}:$1]]', # Fuzzy
 	'mapsources-outofrange' => 'Координати за межами допустимого діапазону',
 	'mapsources-math-missing-operand' => 'Відсутній операнд',
 	'mapsources-math-incorrect-input' => 'Неправильний ввід',
 	'mapsources-desc' => '[[Special:MapSources|Пошук]] даних та картографічний джерел',
-	'mapsources-math-desc' => 'Додає теґи для конвертування координат',
+	'mapsources-math-desc' => 'Додає теги для конвертування координат',
 );
 
 /** Vietnamese (Tiếng Việt)
