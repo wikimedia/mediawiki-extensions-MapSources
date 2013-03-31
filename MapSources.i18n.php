@@ -755,7 +755,7 @@ Các tham số bao gồm định danh, dấu bằng, và một giá trị.
 
 Ví dụ: 52° 31′ N, 13° 24′ 30″ E, scale=50000
 
-Ngoài ra, định dạng GeoHack của Wikimedia Toolserver cũng được chấp nhận.', # Fuzzy
+Ngoài ra, định dạng [https://wiki.toolserver.org/view/GeoHack?uselang=vi GeoHack] cũng được chấp nhận.',
 	'mapsources-search-legend' => 'Tìm dữ liệu và nguồn bản đồ',
 	'mapsources-coordinate' => 'Tọa độ:',
 	'mapsources-go' => 'Tìm kiếm',
@@ -764,7 +764,7 @@ Ngoài ra, định dạng GeoHack của Wikimedia Toolserver cũng được ch�
 	'mapsources-incorrectparams' => 'Tham số không chính xác ($1) được đưa vào',
 	'mapsources-incorrectlat' => 'Vĩ độ không chính xác',
 	'mapsources-incorrectlong' => 'Kinh độ không chính xác',
-	'mapsources-nopage' => 'Không có sẵn trang dự án [[Project:$1]]', # Fuzzy
+	'mapsources-nopage' => 'Không có sẵn trang dự án [[{{ns:project}}:$1|$1]]',
 	'mapsources-outofrange' => 'Tọa độ ngoài miền cho phép',
 	'mapsources-math-missing-operand' => 'Thiếu toán hạng',
 	'mapsources-math-incorrect-input' => 'Đầu vào không chính xác',
