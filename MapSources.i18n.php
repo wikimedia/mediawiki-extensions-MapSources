@@ -636,6 +636,15 @@ $messages['ro'] = array(
  */
 $messages['roa-tara'] = array(
 	'mapsources' => 'Sorgende de le mappe',
+	'mapsources-summary' => "Sta pàgene permette a l'utinde de cercà pe sorgende multiple pe 'na località date da le coordinate sue.
+
+Latitudine, longitudine e parametre aggiundive ponne essere separate cu le virgole.
+Le parametre tènene 'n'idendificatore,'u segne uguale e 'nu valore.
+
+Esembie: 52° 31′ N, 13° 24′ 30″ E, scale=50000
+
+In aggiunde: 'u formate [https://wiki.toolserver.org/view/GeoHack GeoHack] avène accettate.",
+	'mapsources-search-legend' => "Cirche pe date e origgene d'a mappe",
 	'mapsources-coordinate' => 'Coordinate:',
 	'mapsources-go' => 'Véje',
 	'mapsources-errormsgs' => "Messàgge d'errore",
@@ -646,6 +655,9 @@ $messages['roa-tara'] = array(
 	'mapsources-nopage' => 'Nisciuna pàgene de proggette [[{{ns:project}}:$1|$1]] disponibbele',
 	'mapsources-outofrange' => "Coordinate fore da l'indervalle",
 	'mapsources-math-missing-operand' => 'Operande zumbate',
+	'mapsources-math-incorrect-input' => "'Nzerimento ingorrette",
+	'mapsources-desc' => "[[Special:MapSources|Cirche]] pe date e mappe d'origgene",
+	'mapsources-math-desc' => 'Aggiunge le tag pa conversione de le coordinate',
 );
 
 /** Russian (русский)
@@ -705,7 +717,7 @@ $messages['sv'] = array(
 	'mapsources-noparams' => 'Inga parametrar angivna',
 	'mapsources-incorrectlat' => 'Felaktig latitud',
 	'mapsources-incorrectlong' => 'Felaktig longitud',
-	'mapsources-nopage' => 'Ingen projektsida [[Project:$1]] tillgänglig', # Fuzzy
+	'mapsources-nopage' => 'Ingen projektsida [[{{ns:project}}:$1|$1]] tillgänglig',
 	'mapsources-math-incorrect-input' => 'Felaktig inmatning',
 );
 
