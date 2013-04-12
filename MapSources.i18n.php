@@ -204,6 +204,7 @@ $messages['fa'] = array(
 
 /** Finnish (suomi)
  * @author Crt
+ * @author Silvonen
  * @author Stryn
  * @author VezonThunder
  */
@@ -227,6 +228,7 @@ Myös [https://wiki.toolserver.org/view/GeoHack GeoHack]-muoto hyväksytään.',
 	'mapsources-incorrectlong' => 'Virheellinen pituusaste',
 	'mapsources-nopage' => 'Projektisivua [[{{ns:project}}:$1|$1]] ei saatavilla',
 	'mapsources-outofrange' => 'Koordinaatti kantaman ulkopuolella',
+	'mapsources-math-incorrect-input' => 'Virheellinen syöte',
 	'mapsources-desc' => 'Tieto- ja karttalähteiden [[Special:MapSources|haku]]',
 );
 
