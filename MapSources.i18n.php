@@ -310,6 +310,35 @@ Ademais, acéptase o formato [https://wiki.toolserver.org/view/GeoHack GeoHack].
 	'mapsources-math-desc' => 'Engade etiquetas para a conversión de coordenadas',
 );
 
+/** Hebrew (עברית)
+ * @author Amire80
+ */
+$messages['he'] = array(
+	'mapsources' => 'מקורות מפות',
+	'mapsources-summary' => 'הדף הזה מאפשר לך לחפש מקורות מרובים למיקום לפי נקודות הציון שלו.
+
+קו רוחב, קו אורך ופרמטרים נוספים צריכים להיות מופרדים בפסיקים.
+פרמטרים מורכבים ממזהה, סימן שווה וערך.
+
+דוגמה: <span dir="ltr">32° 45′ N, 34° 57′ E, scale=50000 </span>
+
+בנוסף, אפשר להשתמש בתסדיר [https://wiki.toolserver.org/view/GeoHack GeoHack].',
+	'mapsources-search-legend' => 'חיפוש נתונים ומקורות מפה',
+	'mapsources-coordinate' => 'נקודות ציון:',
+	'mapsources-go' => 'מעבר',
+	'mapsources-errormsgs' => 'הודעות שגיאה',
+	'mapsources-noparams' => 'לא ניתנו פרמטרים',
+	'mapsources-incorrectparams' => 'נותנים פרמטרים שגויים ($1)',
+	'mapsources-incorrectlat' => 'קו רוחב לא נכון',
+	'mapsources-incorrectlong' => 'קו אורך לא נכון',
+	'mapsources-nopage' => 'לא זמין דף מיזם [[{{ns:project}}:$1|$1]]',
+	'mapsources-outofrange' => 'נקודות הציון מחוץ לטווח',
+	'mapsources-math-missing-operand' => 'חסר אופרנד',
+	'mapsources-math-incorrect-input' => 'קלט שגוי',
+	'mapsources-desc' => '[[Special:MapSources|חיפוד]] נתונים ומקורות מפה',
+	'mapsources-math-desc' => 'הוספת תגים להמרת נקודות ציון',
+);
+
 /** Italian (italiano)
  * @author Beta16
  */
