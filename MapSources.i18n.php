@@ -438,6 +438,13 @@ $messages['ko'] = array(
 	'mapsources-math-desc' => '좌표 변환 태그 추가',
 );
 
+/** Colognian (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'mapsources-coordinate' => "Ko'oodėnaate", # Fuzzy
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
