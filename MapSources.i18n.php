@@ -598,6 +598,7 @@ Ook de [https://wiki.toolserver.org/view/GeoHack opmaak van Geohack] wordt onder
 );
 
 /** Polish (polski)
+ * @author Chrumps
  * @author Odie2
  */
 $messages['pl'] = array(
@@ -608,7 +609,7 @@ $messages['pl'] = array(
 	'mapsources-go' => 'Przejdź',
 	'mapsources-errormsgs' => 'Komunikaty błędów',
 	'mapsources-noparams' => 'Brak parametrów',
-	'mapsources-incorrectparams' => 'Błędne parametry', # Fuzzy
+	'mapsources-incorrectparams' => 'Podano błędne parametry ($1)',
 	'mapsources-incorrectlat' => 'Błędna szerokość',
 	'mapsources-incorrectlong' => 'Błędna długość',
 	'mapsources-nopage' => 'Brak adresu [[Project:$1]] źródła', # Fuzzy
