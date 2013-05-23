@@ -449,8 +449,10 @@ $messages['ksh'] = array(
  * @author Robby
  */
 $messages['lb'] = array(
+	'mapsources-coordinate' => 'Koordinat:',
 	'mapsources-go' => 'Lass',
 	'mapsources-errormsgs' => 'Feelermessagen',
+	'mapsources-noparams' => 'Keng Parameter uginn',
 );
 
 /** Lithuanian (lietuvių)
