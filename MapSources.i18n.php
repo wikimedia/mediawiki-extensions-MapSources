@@ -653,6 +653,17 @@ An pi, ël formà [https://wiki.toolserver.org/view/GeoHack GeoHack] a sarà ace
 	'mapsources-math-desc' => 'A gionta dle tichëtte për la conversion ëd le coordinà',
 );
 
+/** Brazilian Portuguese (português do Brasil)
+ * @author Luckas
+ */
+$messages['pt-br'] = array(
+	'mapsources-coordinate' => 'Coordenadas:',
+	'mapsources-go' => 'Ir',
+	'mapsources-errormsgs' => 'Mensagens de erro',
+	'mapsources-incorrectlat' => 'Latitude incorreta',
+	'mapsources-incorrectlong' => 'Longitude incorreta',
+);
+
 /** Romanian (română)
  * @author Firilacroco
  * @author Minisarm
