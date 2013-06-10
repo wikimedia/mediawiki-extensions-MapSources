@@ -59,6 +59,35 @@ Extension credits: special page description.',
 	'mapsources-math-desc' => 'Extension credits: parser hook description',
 );
 
+/** Asturian (asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'mapsources' => 'Fontes de mapes',
+	'mapsources-summary' => "Esta páxina permite a los usuarios buscar en múltiples fontes un llugar dau poles sos coordenaes.
+
+La llatitú, llonxitú y demás parámetros tienen de separase con comes.
+Los parámetros consisten nun identificador, el signu igual y un valor.
+
+Exemplu: 52° 31′ N, 13° 24′ 30″ E, escala=50000
+
+Amás, aceutaráse'l formatu [https://wiki.toolserver.org/view/GeoHack GeoHack].",
+	'mapsources-search-legend' => 'Buscar datos y fontes de mapes',
+	'mapsources-coordinate' => 'Coordenaes:',
+	'mapsources-go' => 'Dir',
+	'mapsources-errormsgs' => "Mensaxes d'error",
+	'mapsources-noparams' => 'Nun se dieron parámetros',
+	'mapsources-incorrectparams' => 'Dieronse los parámetros ($1) incorreutos',
+	'mapsources-incorrectlat' => 'Llatitú incorreuta',
+	'mapsources-incorrectlong' => 'Llonxitú incorreuta',
+	'mapsources-nopage' => 'Nun ta disponible la páxina del proyeutu [[{{ns:project}}:$1|$1]]',
+	'mapsources-outofrange' => 'Coordenaes fuera de rangu',
+	'mapsources-math-missing-operand' => 'Falta un operando',
+	'mapsources-math-incorrect-input' => 'Entrada incorreuta',
+	'mapsources-desc' => '[[Special:MapSources|Buscar]] datos y fontes de mapes',
+	'mapsources-math-desc' => 'Amestar etiquetes pa la conversión de coordenaes',
+);
+
 /** Breton (brezhoneg)
  * @author Fohanno
  * @author Y-M D
@@ -457,10 +486,13 @@ $messages['lb'] = array(
 
 /** Lithuanian (lietuvių)
  * @author Eitvys200
+ * @author Mantak111
  */
 $messages['lt'] = array(
+	'mapsources-coordinate' => 'Koordinatės:',
 	'mapsources-go' => 'Eiti',
 	'mapsources-errormsgs' => 'Klaidų Pranešimai',
+	'mapsources-noparams' => 'Nėra pateiktų parametrų',
 );
 
 /** Macedonian (македонски)
