@@ -482,6 +482,7 @@ $messages['lb'] = array(
 	'mapsources-go' => 'Lass',
 	'mapsources-errormsgs' => 'Feelermessagen',
 	'mapsources-noparams' => 'Keng Parameter uginn',
+	'mapsources-incorrectparams' => 'Falsch Parameter ($1) uginn',
 );
 
 /** Lithuanian (lietuvių)
