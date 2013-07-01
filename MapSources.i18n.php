@@ -478,11 +478,16 @@ $messages['ksh'] = array(
  * @author Robby
  */
 $messages['lb'] = array(
+	'mapsources' => 'Quelle vun de Kaarten',
 	'mapsources-coordinate' => 'Koordinat:',
 	'mapsources-go' => 'Lass',
 	'mapsources-errormsgs' => 'Feelermessagen',
 	'mapsources-noparams' => 'Keng Parameter uginn',
 	'mapsources-incorrectparams' => 'Falsch Parameter ($1) uginn',
+	'mapsources-incorrectlat' => 'Falsche Breedegrad',
+	'mapsources-incorrectlong' => 'Falsche Längtegrad',
+	'mapsources-nopage' => 'Keng Säit vum Projet [[{{ns:project}}:$1|$1]] disponibel',
+	'mapsources-outofrange' => 'Koordinaten ausserhalb vum Beräich',
 );
 
 /** Lithuanian (lietuvių)
