@@ -116,6 +116,13 @@ $messages['ca'] = array(
 	'mapsources-desc' => '[[Special:MapSources|Cerqueu]] dades i fonts de mapes',
 );
 
+/** Chechen (нохчийн)
+ * @author Умар
+ */
+$messages['ce'] = array(
+	'mapsources-go' => 'Лаха',
+);
+
 /** Czech (česky)
  * @author Mormegil
  * @author Vks
