@@ -805,13 +805,17 @@ $messages['si'] = array(
 );
 
 /** Swedish (svenska)
+ * @author Jopparn
  * @author WikiPhoenix
  */
 $messages['sv'] = array(
+	'mapsources' => 'Källor för karta',
+	'mapsources-search-legend' => 'Söka efter data och källor för karta',
 	'mapsources-coordinate' => 'Koordinat:',
 	'mapsources-go' => 'Gå',
 	'mapsources-errormsgs' => 'Felmeddelanden',
 	'mapsources-noparams' => 'Inga parametrar angivna',
+	'mapsources-incorrectparams' => 'Felaktiga parametrar ($1) har angetts',
 	'mapsources-incorrectlat' => 'Felaktig latitud',
 	'mapsources-incorrectlong' => 'Felaktig longitud',
 	'mapsources-nopage' => 'Ingen projektsida [[{{ns:project}}:$1|$1]] tillgänglig',
