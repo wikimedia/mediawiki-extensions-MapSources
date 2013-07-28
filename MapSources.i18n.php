@@ -120,6 +120,7 @@ $messages['ca'] = array(
  * @author Умар
  */
 $messages['ce'] = array(
+	'mapsources-coordinate' => 'Координаташ:',
 	'mapsources-go' => 'Лаха',
 );
 
