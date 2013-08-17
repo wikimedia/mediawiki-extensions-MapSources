@@ -848,6 +848,7 @@ $messages['ug-arab'] = array(
 );
 
 /** Ukrainian (українська)
+ * @author Andriykopanytsia
  * @author Base
  * @author RLuts
  */
@@ -869,7 +870,7 @@ $messages['uk'] = array(
 	'mapsources-incorrectparams' => 'Передано некоректні параметри ($1)',
 	'mapsources-incorrectlat' => 'Некоректна широта',
 	'mapsources-incorrectlong' => 'Некоректна довгота',
-	'mapsources-nopage' => 'Не існує сторінка проекту [[{{ns:project}}:$1]]', # Fuzzy
+	'mapsources-nopage' => 'Немає доступної сторінки проекту  [[{{ns:project}}:$1|$1]]',
 	'mapsources-outofrange' => 'Координати за межами допустимого діапазону',
 	'mapsources-math-missing-operand' => 'Відсутній операнд',
 	'mapsources-math-incorrect-input' => 'Неправильний ввід',
