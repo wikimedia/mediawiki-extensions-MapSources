@@ -471,8 +471,8 @@ $messages['ko'] = array(
 	'mapsources-outofrange' => '좌표가 범위를 벗어났습니다',
 	'mapsources-math-missing-operand' => '피연산자가 없습니다',
 	'mapsources-math-incorrect-input' => '입력을 잘못했습니다',
-	'mapsources-desc' => '데이터와 지도 출처 [[Special:MapSources|찾기]]',
-	'mapsources-math-desc' => '좌표 변환 태그 추가',
+	'mapsources-desc' => '데이터와 지도 출처에 대한 [[Special:MapSources|찾기]]',
+	'mapsources-math-desc' => '좌표를 변환하기 위한 태그를 추가합니다',
 );
 
 /** Colognian (Ripoarisch)
