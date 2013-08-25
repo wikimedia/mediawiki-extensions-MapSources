@@ -50,7 +50,8 @@ $messages['qqq'] = array(
 	'mapsources-incorrectparams' => 'Error message when incorrect parameters are given. $1 is the current parameters.',
 	'mapsources-incorrectlat' => 'Error message when latitude is incorrect.',
 	'mapsources-incorrectlong' => 'Error message when longitude is incorrect.',
-	'mapsources-nopage' => 'Error message when project page is not available.',
+	'mapsources-nopage' => 'Error message when project page is not available. Parameters:
+* $1 - the message {{msg-mw|Mapsources}}',
 	'mapsources-outofrange' => 'Error message when coordinates are out of range.',
 	'mapsources-math-missing-operand' => 'Error message when operand is missing.',
 	'mapsources-math-incorrect-input' => 'Error message when input is incorrect',
