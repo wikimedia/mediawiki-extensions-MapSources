@@ -45,7 +45,8 @@ $messages['qqq'] = array(
 {{Identical|Coordinates}}',
 	'mapsources-go' => 'Label for submit button.
 {{Identical|Go}}',
-	'mapsources-errormsgs' => 'Title above error messages, if any occurred during search.',
+	'mapsources-errormsgs' => 'Title above error messages, if any occurred during search.
+{{Identical|Error message}}',
 	'mapsources-noparams' => 'Error message when no parameters are given.',
 	'mapsources-incorrectparams' => 'Error message when incorrect parameters are given. $1 is the current parameters.',
 	'mapsources-incorrectlat' => 'Error message when latitude is incorrect.',
