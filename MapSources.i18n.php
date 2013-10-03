@@ -156,6 +156,15 @@ Navíc je podporován formát [https://wiki.toolserver.org/view/GeoHack GeoHack]
 	'mapsources-math-desc' => 'Přidává značky pro převody souřadnic',
 );
 
+/** Welsh (Cymraeg)
+ * @author Lloffiwr
+ */
+$messages['cy'] = array(
+	'mapsources' => 'Ffynnonellau mapiau',
+	'mapsources-go' => 'Chwilier',
+	'mapsources-errormsgs' => 'Negeseuon gwallau',
+);
+
 /** German (Deutsch)
  * @author Metalhead64
  */
