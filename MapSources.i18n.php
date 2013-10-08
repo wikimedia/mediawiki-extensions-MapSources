@@ -772,6 +772,7 @@ In aggiunde: 'u formate [https://wiki.toolserver.org/view/GeoHack GeoHack] avèn
 /** Russian (русский)
  * @author DCamer
  * @author Kaganer
+ * @author Okras
  */
 $messages['ru'] = array(
 	'mapsources' => 'Источники карт',
@@ -787,8 +788,11 @@ $messages['ru'] = array(
 	'mapsources-coordinate' => 'Координаты:',
 	'mapsources-go' => 'Найти',
 	'mapsources-errormsgs' => 'Сообщения об ошибках',
+	'mapsources-noparams' => 'Параметры не заданы',
+	'mapsources-incorrectparams' => 'Заданы неправильные параметры ($1)',
 	'mapsources-incorrectlat' => 'Неправильная широта',
 	'mapsources-incorrectlong' => 'Неправильная долгота',
+	'mapsources-outofrange' => 'Координаты вне диапазона',
 	'mapsources-math-missing-operand' => 'Отсутствует операнд',
 	'mapsources-math-incorrect-input' => 'Неправильный ввод',
 	'mapsources-desc' => '[[Special:MapSources|Поиск]] данных и картографических источников',
