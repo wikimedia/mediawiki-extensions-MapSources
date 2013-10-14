@@ -792,6 +792,7 @@ $messages['ru'] = array(
 	'mapsources-incorrectparams' => 'Заданы неправильные параметры ($1)',
 	'mapsources-incorrectlat' => 'Неправильная широта',
 	'mapsources-incorrectlong' => 'Неправильная долгота',
+	'mapsources-nopage' => 'Страница проекта [[{{ns:project}}:$1|$1]] недоступна.',
 	'mapsources-outofrange' => 'Координаты вне диапазона',
 	'mapsources-math-missing-operand' => 'Отсутствует операнд',
 	'mapsources-math-incorrect-input' => 'Неправильный ввод',
