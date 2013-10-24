@@ -822,11 +822,19 @@ $messages['si'] = array(
 );
 
 /** Swedish (svenska)
+ * @author Bengt B
  * @author Jopparn
  * @author WikiPhoenix
  */
 $messages['sv'] = array(
 	'mapsources' => 'Källor för karta',
+	'mapsources-summary' => 'Den här sidan kan användare söka efter flera källor för en plats ges av dess koordinaten.
+N!Latitud, longitud och ytterligare parametrar måste avgränsas med kommatecken.
+Parametrar består av en identifierare, likhetstecknet och ett värde.
+
+Exempel:52°31′N,13°24′30″E,scale=50000
+
+Dessutom kommer formatet [https://wiki.toolserver.org/view/GeoHack GeoHack] att accepteras.',
 	'mapsources-search-legend' => 'Söka efter data och källor för karta',
 	'mapsources-coordinate' => 'Koordinat:',
 	'mapsources-go' => 'Gå',
@@ -836,7 +844,11 @@ $messages['sv'] = array(
 	'mapsources-incorrectlat' => 'Felaktig latitud',
 	'mapsources-incorrectlong' => 'Felaktig longitud',
 	'mapsources-nopage' => 'Ingen projektsida [[{{ns:project}}:$1|$1]] tillgänglig',
+	'mapsources-outofrange' => 'Koordinat utanför intervallet',
+	'mapsources-math-missing-operand' => 'Operand saknas',
 	'mapsources-math-incorrect-input' => 'Felaktig inmatning',
+	'mapsources-desc' => '[[Special:MapSources|Search]] för data och kartkällor',
+	'mapsources-math-desc' => 'Lägger till taggar för konvertering av koordinater',
 );
 
 /** Tamil (தமிழ்)
