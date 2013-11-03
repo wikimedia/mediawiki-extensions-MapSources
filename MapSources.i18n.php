@@ -161,8 +161,15 @@ Navíc je podporován formát [https://wiki.toolserver.org/view/GeoHack GeoHack]
  */
 $messages['cy'] = array(
 	'mapsources' => 'Ffynnonellau mapiau',
+	'mapsources-search-legend' => 'Chwilio am ffynonellau data a mapio',
+	'mapsources-coordinate' => 'Cyfesuryn:',
 	'mapsources-go' => 'Chwilier',
 	'mapsources-errormsgs' => 'Negeseuon gwallau',
+	'mapsources-noparams' => 'Ni roddwyd unrhyw baramedrau',
+	'mapsources-incorrectparams' => 'Rhoddwyd paramedrau ($1) anghywir',
+	'mapsources-incorrectlat' => 'Lledred anghywir',
+	'mapsources-incorrectlong' => 'Hydred anghywir',
+	'mapsources-math-incorrect-input' => 'Mewnbwn anghywir',
 );
 
 /** German (Deutsch)
