@@ -469,7 +469,7 @@ $messages['ka'] = array(
  */
 $messages['ko'] = array(
 	'mapsources' => '지도 출처',
-	'mapsources-summary' => '이 문서는 사용자가 해당 좌표에 의해 지정된 위치에 대한 여러 출처를 찾을 수 있습니다.
+	'mapsources-summary' => '이 문서는 사용자가 해당 좌표에 의해 지정된 위치에 대한 여러 출처를 검색할 수 있습니다.
 
 위도, 경도 및 추가 변수는 쉼표로 구분해야 합니다.
 변수 식별자, 등호와 값으로 구성되어 있습니다.
@@ -489,7 +489,7 @@ $messages['ko'] = array(
 	'mapsources-outofrange' => '좌표가 범위를 벗어났습니다',
 	'mapsources-math-missing-operand' => '피연산자가 없습니다',
 	'mapsources-math-incorrect-input' => '입력을 잘못했습니다',
-	'mapsources-desc' => '데이터와 지도 출처에 대한 [[Special:MapSources|찾기]]',
+	'mapsources-desc' => '데이터와 지도 출처에 대해 [[Special:MapSources|검색]]',
 	'mapsources-math-desc' => '좌표를 변환하기 위한 태그를 추가합니다',
 );
 
