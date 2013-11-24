@@ -477,7 +477,7 @@ $messages['ko'] = array(
 예 : 52° 31′ N, 13° 24′ 30″ E, scale=50000
 
 또한 [https://wiki.toolserver.org/view/GeoHack GeoHack] 형식도 허용합니다.',
-	'mapsources-search-legend' => '데이터와 지도 출처에 대해 찾기',
+	'mapsources-search-legend' => '데이터와 지도 출처에 대해 검색',
 	'mapsources-coordinate' => '좌표',
 	'mapsources-go' => '가기',
 	'mapsources-errormsgs' => '오류 메시지',
