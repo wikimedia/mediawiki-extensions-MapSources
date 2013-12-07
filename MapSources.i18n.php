@@ -126,7 +126,7 @@ $messages['ce'] = array(
 	'mapsources-go' => 'Лаха',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Mormegil
  * @author Vks
  */
