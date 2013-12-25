@@ -41,7 +41,7 @@ $messages['qqq'] = array(
 	'mapsources' => '{{doc-special|MapSources|unlisted=1}}',
 	'mapsources-summary' => 'Extension summary to be displayed at the top of the special page, explaining how the extension works.',
 	'mapsources-search-legend' => 'Form fieldset label.',
-	'mapsources-coordinate' => 'Label for input box accepting coordinated.
+	'mapsources-coordinate' => 'Label for input box accepting geographical coordinates.
 {{Identical|Coordinates}}',
 	'mapsources-go' => 'Label for submit button.
 {{Identical|Go}}',
