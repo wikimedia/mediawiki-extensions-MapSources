@@ -169,7 +169,12 @@ $messages['cy'] = array(
 	'mapsources-incorrectparams' => 'Rhoddwyd paramedrau ($1) anghywir',
 	'mapsources-incorrectlat' => 'Lledred anghywir',
 	'mapsources-incorrectlong' => 'Hydred anghywir',
+	'mapsources-nopage' => 'Dim tudalen brosiect [[{{ns:project}}:$1|$1]] ar gael',
+	'mapsources-outofrange' => "Y cyfesuryn yn rhy bell o'r cyrraedd",
+	'mapsources-math-missing-operand' => 'Operand yn eisiau',
 	'mapsources-math-incorrect-input' => 'Mewnbwn anghywir',
+	'mapsources-desc' => "[[Special:MapSources|Chwilio]] am ddata a ffynnonellau'r mapiau",
+	'mapsources-math-desc' => 'Ychwanegu tagiau er mwyn trosi cyfesurynnau',
 );
 
 /** German (Deutsch)
