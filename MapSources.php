@@ -22,7 +22,7 @@ $wgAutoloadClasses['MapSourcesMath'] = __DIR__ . '/MapSources_math.php';
 $wgAutoloadClasses['MapSourcesTransform'] = __DIR__ . '/MapSources_transform.php';
 
 // special page
-$wgSpecialPages['Mapsources'] = 'MapSourcesPage';
+$wgSpecialPages['MapSources'] = 'MapSourcesPage';
 
 // parser hooks
 $wgHooks['ParserFirstCallInit'][] = 'MapSourcesHooks::parserHooks';
@@ -30,6 +30,7 @@ $wgHooks['ParserFirstCallInit'][] = 'MapSourcesHooks::parserHooks';
 // extension & magic words i18n
 $wgExtensionMessagesFiles['MapSources'] = __DIR__ . '/MapSources.i18n.php';
 $wgExtensionMessagesFiles['MapSourcesMagic'] = __DIR__ . '/MapSources.i18n.magic.php';
+$wgExtensionMessagesFiles['MapSourcesAlias'] = $dir . '/MapSources.i18n.alias.php';
 
 // credits
 $wgExtensionCredits['specialpage'][] = array(
