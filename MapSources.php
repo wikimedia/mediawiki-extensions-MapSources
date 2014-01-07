@@ -30,7 +30,7 @@ $wgHooks['ParserFirstCallInit'][] = 'MapSourcesHooks::parserHooks';
 // extension & magic words i18n
 $wgExtensionMessagesFiles['MapSources'] = __DIR__ . '/MapSources.i18n.php';
 $wgExtensionMessagesFiles['MapSourcesMagic'] = __DIR__ . '/MapSources.i18n.magic.php';
-$wgExtensionMessagesFiles['MapSourcesAlias'] = $dir . '/MapSources.i18n.alias.php';
+$wgExtensionMessagesFiles['MapSourcesAlias'] = __DIR__ . '/MapSources.i18n.alias.php';
 
 // credits
 $wgExtensionCredits['specialpage'][] = array(
