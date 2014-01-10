@@ -254,12 +254,26 @@ $messages['et'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Armin1392
  * @author Mjbmr
  * @author ZxxZxxZ
  */
 $messages['fa'] = array(
+	'mapsources' => 'منابع نقشه',
+	'mapsources-search-legend' => 'جستجو برای اطلاعات و منابع نقشه',
+	'mapsources-coordinate' => 'مختصات:',
 	'mapsources-go' => 'برو',
 	'mapsources-errormsgs' => 'پیام‌های خطا',
+	'mapsources-noparams' => 'هیچ پارامتری داده نشده',
+	'mapsources-incorrectparams' => 'پارامتر‌های نادرست ($1) داده شده',
+	'mapsources-incorrectlat' => 'عرض جغرافیایی نادرست',
+	'mapsources-incorrectlong' => 'طول جغرافیایی نادرست',
+	'mapsources-nopage' => 'هیچ صفحهٔ پروژه [[{{ns:project}}:$1|$1]] در دسترس نیست',
+	'mapsources-outofrange' => 'متناسب کردن خارج از محدوده',
+	'mapsources-math-missing-operand' => 'دستور گم شده',
+	'mapsources-math-incorrect-input' => 'ورودی نادرست',
+	'mapsources-desc' => '[[ویژه:منابع نقشه|جستجو]] برای اطلاعات و منابع نقشه', # Fuzzy
+	'mapsources-math-desc' => 'اضافه کردن برچسب‌ها برای تبدیل مختصات',
 );
 
 /** Finnish (suomi)
