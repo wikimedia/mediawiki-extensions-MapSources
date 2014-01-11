@@ -217,6 +217,7 @@ $messages['el'] = array(
 
 /** Spanish (español)
  * @author Armando-Martin
+ * @author Ciencia Al Poder
  */
 $messages['es'] = array(
 	'mapsources' => 'Fuentes de datos del mapa',
@@ -236,7 +237,7 @@ Además, se aceptará el formato wiki de Wikipedia Geohack.', # Fuzzy
 	'mapsources-incorrectparams' => 'Los parámetros suministrados son incorrectos ($1)',
 	'mapsources-incorrectlat' => 'Latitud incorrecta',
 	'mapsources-incorrectlong' => 'Longitud incorrecta',
-	'mapsources-nopage' => 'No está disponible la página del proyecto [[Project:$1]]', # Fuzzy
+	'mapsources-nopage' => 'No está disponible la página del proyecto [[{{ns:project}}:$1|$1]]',
 	'mapsources-outofrange' => 'Coordenadas fuera de rango',
 	'mapsources-math-missing-operand' => 'Falta un operador',
 	'mapsources-math-incorrect-input' => 'Entrada incorrecta',
