@@ -895,6 +895,34 @@ $messages['te'] = array(
 	'mapsources-go' => 'వెళ్ళు',
 );
 
+/** Turkish (Türkçe)
+ * @author Joseph
+ */
+$messages['tr'] = array(
+	'mapsources' => 'Harita kaynakları',
+	'mapsources-summary' => 'Bu sayfa, koordinatı verilen bir yer için kullanıcıların çoklu kaynakları aramasına izin verir.
+
+Enlem, boylam ve ek parametreler virgülle ayrılmalıdır. Paramatreler bir belirleyici, eşittir işareti ve bir değerden oluşur.
+
+Örnek: 52° 31′ N, 13° 24′ 30″ E, scale=50000
+
+Ek olarak, [https://wiki.toolserver.org/view/GeoHack GeoHack] formatı kabul edilebilir.',
+	'mapsources-search-legend' => 'Veri ve harita kaynaklarını ara',
+	'mapsources-coordinate' => 'Koordinatlar:',
+	'mapsources-go' => 'Git',
+	'mapsources-errormsgs' => 'Hata iletileri',
+	'mapsources-noparams' => 'Hiçbir parametre verilmedi',
+	'mapsources-incorrectparams' => 'Yanlış parametreler ($1) verildi',
+	'mapsources-incorrectlat' => 'Yanlış enlem',
+	'mapsources-incorrectlong' => 'Yanlış boylam',
+	'mapsources-nopage' => 'Proje sayfası [[{{ns:project}}:$1|$1]] mevcut değil',
+	'mapsources-outofrange' => 'Koordinat sınır dışında',
+	'mapsources-math-missing-operand' => 'Eksik terim',
+	'mapsources-math-incorrect-input' => 'Hatalı girdi',
+	'mapsources-desc' => 'Veri ve harita kaynaklarını [[Special:MapSources|ara]]',
+	'mapsources-math-desc' => 'Koordinatları dönüştürmek için etiketler ekler',
+);
+
 /** Uyghur (Arabic script) (ئۇيغۇرچە)
  * @author Sahran
  */
