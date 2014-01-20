@@ -273,7 +273,7 @@ $messages['fa'] = array(
 	'mapsources-outofrange' => 'متناسب کردن خارج از محدوده',
 	'mapsources-math-missing-operand' => 'دستور گم شده',
 	'mapsources-math-incorrect-input' => 'ورودی نادرست',
-	'mapsources-desc' => '[[ویژه:منابع نقشه|جستجو]] برای منابع اطلاعات و نقشه', # Fuzzy
+	'mapsources-desc' => '[[Special:منابع نقشه|جستجو]] برای منابع اطلاعات و نقشه', # Fuzzy
 	'mapsources-math-desc' => 'اضافه کردن برچسب‌ها برای تبدیل مختصات',
 );
 
