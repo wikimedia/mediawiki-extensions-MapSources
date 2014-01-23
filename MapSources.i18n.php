@@ -97,6 +97,9 @@ Amás, aceutaráse'l formatu [https://wiki.toolserver.org/view/GeoHack GeoHack].
 $messages['br'] = array(
 	'mapsources-coordinate' => 'Daveennoù :',
 	'mapsources-go' => 'Mont',
+	'mapsources-errormsgs' => 'Kemennadennoù fazi',
+	'mapsources-noparams' => "N'eus bet roet arventenn ebet",
+	'mapsources-incorrectparams' => 'Arventennoù direizh ($1) zo bet roet',
 	'mapsources-incorrectlat' => 'Ledred direizh',
 	'mapsources-incorrectlong' => 'Hedred direizh',
 );
