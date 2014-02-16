@@ -176,7 +176,7 @@ $messages['cy'] = array(
 	'mapsources-outofrange' => "Y cyfesuryn yn rhy bell o'r cyrraedd",
 	'mapsources-math-missing-operand' => 'Operand yn eisiau',
 	'mapsources-math-incorrect-input' => 'Mewnbwn anghywir',
-	'mapsources-desc' => "[[Special:MapSources|Chwilio]] am ddata a ffynnonellau'r mapiau",
+	'mapsources-desc' => "[[Special:MapSources|Chwilio]] am ffynonellau'r mapiau a'r data",
 	'mapsources-math-desc' => 'Ychwanegu tagiau er mwyn trosi cyfesurynnau',
 );
 
@@ -264,6 +264,11 @@ $messages['et'] = array(
  */
 $messages['fa'] = array(
 	'mapsources' => 'منابع نقشه',
+	'mapsources-summary' => 'این صفحه به کاربران برای جستجوی چندین منابع برای مکان داده شده توسط مختصات آن می دهد.
+عرض جغرافیایی، طول جغرافیایی و پارامترهای اضافه باید با کاما جدا شوند.
+پارامترها شامل یک شناسه، نشان برابر و یک مقدار هستند.
+برای مثال:  ۵۲° ۳۱′ ان, ۱۳° ۲۴′ ۳۰″ ای, مقیاس=۵۰۰۰۰
+علاوه بر این، فرمت [https://wiki.toolserver.org/view/GeoHack GeoHack] پذیرفته خواهد شد.',
 	'mapsources-search-legend' => 'جستجو برای اطلاعات و منابع نقشه',
 	'mapsources-coordinate' => 'مختصات:',
 	'mapsources-go' => 'برو',
