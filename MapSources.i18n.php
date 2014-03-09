@@ -35,6 +35,7 @@ Additionally, the [https://wiki.toolserver.org/view/GeoHack GeoHack] format will
 );
 
 /** Message documentation (Message documentation)
+ * @author Lloffiwr
  * @author Shirayuki
  */
 $messages['qqq'] = array(
@@ -57,7 +58,7 @@ $messages['qqq'] = array(
 	'mapsources-math-missing-operand' => 'Error message when operand is missing.',
 	'mapsources-math-incorrect-input' => 'Error message when input is incorrect',
 	'mapsources-desc' => '{{desc|name=Map Sources|url=http://www.mediawiki.org/wiki/Extension:MapSources}}
-Extension credits: special page description.',
+Extension credits: special page description.  See [[Thread:Support/About MediaWiki:Mapsources-desc/cy|discussion]] of precise meaning.',
 	'mapsources-math-desc' => 'Extension credits: parser hook description',
 );
 
