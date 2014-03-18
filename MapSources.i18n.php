@@ -10,7 +10,7 @@ $messages = array();
 
 $messages['en'] = array(
 	'mapsources'                 => 'Map sources',
-	'mapsources-summary'         => 'This page allows users to search for multiple sources for a location given by its coordinate.
+	'mapsources-summary'         => 'This page allows users to search for a location (defined by its coordinates) in multiple resources.
 
 Latitude, longitude and additional parameters must be separated with commas.
 Parameters consist of an identifier, the equal sign and a value.
@@ -18,8 +18,8 @@ Parameters consist of an identifier, the equal sign and a value.
 Example: 52° 31′ N, 13° 24′ 30″ E, scale=50000
 
 Additionally, the [https://wiki.toolserver.org/view/GeoHack GeoHack] format will be accepted.',
-	'mapsources-search-legend'   => 'Search for data and map sources',
-	'mapsources-coordinate'      => 'Coordinate:',
+	'mapsources-search-legend'   => 'Find data and maps in resources',
+	'mapsources-coordinate'      => 'Coordinates:',
 	'mapsources-go'              => 'Go',
 	'mapsources-errormsgs'       => 'Error messages',
 	'mapsources-noparams'        => 'No parameters given',
@@ -30,7 +30,7 @@ Additionally, the [https://wiki.toolserver.org/view/GeoHack GeoHack] format will
 	'mapsources-outofrange'      => 'Coordinate out of range',
 	'mapsources-math-missing-operand' => 'Missing operand',
 	'mapsources-math-incorrect-input' => 'Incorrect input',
-	'mapsources-desc'            => '[[Special:MapSources|Search]] for data and map sources',
+	'mapsources-desc'            => '[[Special:MapSources|Search]] data and maps in resources',
 	'mapsources-math-desc'       => 'Adds tags for conversion of coordinates',
 );
 
