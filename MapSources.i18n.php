@@ -105,6 +105,13 @@ $messages['br'] = array(
 	'mapsources-incorrectlong' => 'Hedred direizh',
 );
 
+/** Bosnian (bosanski)
+ * @author DzWiki
+ */
+$messages['bs'] = array(
+	'mapsources-coordinate' => 'Koordinate:',
+);
+
 /** Catalan (català)
  * @author Jmontane
  */
@@ -186,15 +193,15 @@ $messages['cy'] = array(
  */
 $messages['de'] = array(
 	'mapsources' => 'Karten- und Datenquellen',
-	'mapsources-summary' => 'Auf dieser Spezialseite können Sie eine Koordinate eingeben und erhalten dann eine Liste mit Informations- und Bezugsmöglichkeiten von Karten und geografischen Angaben.
+	'mapsources-summary' => 'Diese Seite ermöglicht es Benutzern, in mehreren Ressourcen nach einem Standort (definiert durch seine Koordinaten) zu suchen.
 
 Geografische Breite, Länge und weitere Parameter müssen mit Kommas getrennt werden. Parameter bestehen aus dem Kennwort, dem Gleichheitszeichen und dem Wert.
 
 Beispiel: 52° 31′ N, 13° 24′ 30″ E, scale=50000
 
 Zusätzlich wird das Format des [https://wiki.toolserver.org/view/GeoHack Wikipedia-Geohack-Toolservers] akzeptiert.',
-	'mapsources-search-legend' => 'Suche nach Daten- und Kartenquellen',
-	'mapsources-coordinate' => 'Koordinate:',
+	'mapsources-search-legend' => 'Daten und Karten in Ressourcen finden',
+	'mapsources-coordinate' => 'Koordinaten:',
 	'mapsources-go' => 'Suche',
 	'mapsources-errormsgs' => 'Fehlermeldungen',
 	'mapsources-noparams' => 'Keine Parameter angegeben',
@@ -205,7 +212,7 @@ Zusätzlich wird das Format des [https://wiki.toolserver.org/view/GeoHack Wikipe
 	'mapsources-outofrange' => 'Ungültige Koordinate',
 	'mapsources-math-missing-operand' => 'Fehlende(r) Parameter',
 	'mapsources-math-incorrect-input' => 'Fehlerhafte Eingabe',
-	'mapsources-desc' => '[[Special:MapSources|Suche]] nach Daten- und Kartenquellen',
+	'mapsources-desc' => '[[Special:MapSources|Suche]] nach Daten und Karten in Ressourcen',
 	'mapsources-math-desc' => 'Ergänzt Tags zur Umwandlung von Koordinaten',
 );
 
@@ -322,7 +329,7 @@ Myös [https://wiki.toolserver.org/view/GeoHack GeoHack]-muoto hyväksytään.',
  */
 $messages['fr'] = array(
 	'mapsources' => 'Sources de cartes',
-	'mapsources-summary' => 'Cette page permet aux utilisateurs de rechercher des sources multiples pour un lieu en donnant ses coordonnées.
+	'mapsources-summary' => 'Cette page permet aux utilisateurs un lieu (défini par ses coordonnées) dans de multiples ressources.
 
 La latitude, la longitude et les paramètres supplémentaires doivent être séparés par des virgules.
 Les paramètres consistent en un identifiant, le signe égal et une valeur.
@@ -330,8 +337,8 @@ Les paramètres consistent en un identifiant, le signe égal et une valeur.
 Exemple: 52° 31′ N, 13° 24′ 30″ E, échelle=50000
 
 De plus, le format [https://wiki.toolserver.org/view/GeoHack GeoHack] sera accepté.',
-	'mapsources-search-legend' => 'Rechercher des sources de cartes et données',
-	'mapsources-coordinate' => 'Coordonées :',
+	'mapsources-search-legend' => 'Trouver des données et des cartes dans les ressources',
+	'mapsources-coordinate' => 'Coordonnées :',
 	'mapsources-go' => 'Rechercher',
 	'mapsources-errormsgs' => 'Messages d’erreur',
 	'mapsources-noparams' => 'Paramètres manquants',
@@ -342,7 +349,7 @@ De plus, le format [https://wiki.toolserver.org/view/GeoHack GeoHack] sera accep
 	'mapsources-outofrange' => 'Coordonées invalides',
 	'mapsources-math-missing-operand' => 'Opérateur(s) manquant(s)',
 	'mapsources-math-incorrect-input' => 'Entrée erronée',
-	'mapsources-desc' => '[[Special:MapSources|Recherche]] de sources de données et de cartes',
+	'mapsources-desc' => '[[Special:MapSources|Recherche]] de données et de cartes dans les ressources',
 	'mapsources-math-desc' => 'Ajoute des balises pour la conversion des coordonnées',
 );
 
@@ -396,10 +403,11 @@ Ademais, acéptase o formato [https://wiki.toolserver.org/view/GeoHack GeoHack].
 
 /** Hebrew (עברית)
  * @author Amire80
+ * @author Yona b
  */
 $messages['he'] = array(
 	'mapsources' => 'מקורות מפות',
-	'mapsources-summary' => 'הדף הזה מאפשר לך לחפש מקורות מרובים למיקום לפי נקודות הציון שלו.
+	'mapsources-summary' => 'דף זה מאפשר לחפש מיקום (המוגדר על ידי נקודות ציון) במקורות רבים.
 
 קו רוחב, קו אורך ופרמטרים נוספים צריכים להיות מופרדים בפסיקים.
 פרמטרים מורכבים ממזהה, סימן שווה וערך.
@@ -407,7 +415,7 @@ $messages['he'] = array(
 דוגמה: <span dir="ltr">32° 45′ N, 34° 57′ E, scale=50000 </span>
 
 בנוסף, אפשר להשתמש בתסדיר [https://wiki.toolserver.org/view/GeoHack GeoHack].',
-	'mapsources-search-legend' => 'חיפוש נתונים ומקורות מפה',
+	'mapsources-search-legend' => 'חיפוש נתונים ומפות במקורות',
 	'mapsources-coordinate' => 'נקודות ציון:',
 	'mapsources-go' => 'מעבר',
 	'mapsources-errormsgs' => 'הודעות שגיאה',
@@ -419,7 +427,7 @@ $messages['he'] = array(
 	'mapsources-outofrange' => 'נקודות הציון מחוץ לטווח',
 	'mapsources-math-missing-operand' => 'חסר אופרנד',
 	'mapsources-math-incorrect-input' => 'קלט שגוי',
-	'mapsources-desc' => '[[Special:MapSources|חיפוד]] נתונים ומקורות מפה',
+	'mapsources-desc' => '[[Special:MapSources|חיפוס]] נתונים ומפות במקורות מידע',
 	'mapsources-math-desc' => 'הוספת תגים להמרת נקודות ציון',
 );
 
@@ -561,7 +569,7 @@ $messages['lt'] = array(
  */
 $messages['mk'] = array(
 	'mapsources' => 'Картографски извори',
-	'mapsources-summary' => 'Страницава возможува пребарување на повеќе извори за дадено место според неговите координати.
+	'mapsources-summary' => 'Страницава им овозможува на корисниците да пребаруваат места од повеќе ресурси според координатите.
 
 Географската ширина, должина и другите параметри мора да бидат одвоени со запирки.
 Параметрите се состојат од назнака, знакот еднакво и вредност.
@@ -569,8 +577,8 @@ $messages['mk'] = array(
 Пример: 52° 31′ N, 13° 24′ 30″ E, scale=50000
 
 Покрај ова, ќе се прифаќа и форматот на „[https://wiki.toolserver.org/view/GeoHack GeoHack]“.',
-	'mapsources-search-legend' => 'Пребарување на податочни и картографски ресурси',
-	'mapsources-coordinate' => 'Координата:',
+	'mapsources-search-legend' => 'Пребарување на податоци и карти по ресурси',
+	'mapsources-coordinate' => 'Координати:',
 	'mapsources-go' => 'Оди',
 	'mapsources-errormsgs' => 'Пораки за грешки',
 	'mapsources-noparams' => 'Нема зададено параметри',
@@ -581,7 +589,7 @@ $messages['mk'] = array(
 	'mapsources-outofrange' => 'Координатите се вон опсегот',
 	'mapsources-math-missing-operand' => 'Недостасува операнд',
 	'mapsources-math-incorrect-input' => 'Погрешен внос',
-	'mapsources-desc' => '[[Special:MapSources|Пребарување]] на податочни и картографски ресурси',
+	'mapsources-desc' => '[[Special:MapSources|Пребарување]] на податоци и карти по ресурси',
 	'mapsources-math-desc' => 'Додава ознаки за претворање на координати',
 );
 
@@ -812,15 +820,15 @@ In aggiunde: 'u formate [https://wiki.toolserver.org/view/GeoHack GeoHack] avèn
  */
 $messages['ru'] = array(
 	'mapsources' => 'Источники карт',
-	'mapsources-summary' => 'Эта страница позволяет пользователям вести поиск по нескольким источникам, на месте, с учетом его координат.
+	'mapsources-summary' => 'Эта страница позволяет пользователям вести поиск места (по его координатам) по нескольким источникам.
 
 Широта, долгота и дополнительные параметры должны быть разделены запятыми.
 Параметры состоят из идентификатора, знака равенства и значения.
 
 Пример: 52° 31′ N, 13° 24′ 30″ E, scale=50000
 
-Кроме того, формат [https://wiki.toolserver.org/view/GeoHack GeoHack] подходит.',
-	'mapsources-search-legend' => 'Поиск данных и картографических источников',
+Кроме того, также подходит формат [https://wiki.toolserver.org/view/GeoHack GeoHack].',
+	'mapsources-search-legend' => 'Искать данные и карты в источниках',
 	'mapsources-coordinate' => 'Координаты:',
 	'mapsources-go' => 'Найти',
 	'mapsources-errormsgs' => 'Сообщения об ошибках',
@@ -832,7 +840,7 @@ $messages['ru'] = array(
 	'mapsources-outofrange' => 'Координаты вне диапазона',
 	'mapsources-math-missing-operand' => 'Отсутствует операнд',
 	'mapsources-math-incorrect-input' => 'Неправильный ввод',
-	'mapsources-desc' => '[[Special:MapSources|Поиск]] данных и картографических источников',
+	'mapsources-desc' => '[[Special:MapSources|Поиск]] данных и карт в источниках',
 	'mapsources-math-desc' => 'Добавляет теги для преобразования координат',
 );
 
@@ -855,6 +863,20 @@ $messages['si'] = array(
 	'mapsources-math-incorrect-input' => 'සාවද්‍ය ප්‍රදානය',
 	'mapsources-desc' => 'දත්ත සහ සිතියම් මූලාශ්‍ර සඳහා [[Special:MapSources|සොයන්න]]',
 	'mapsources-math-desc' => 'ඛණ්ඩාංකවල පරිවර්තනය සඳහා ටැගයන් එක් කරයි',
+);
+
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
+ * @author Milicevic01
+ */
+$messages['sr-ec'] = array(
+	'mapsources-coordinate' => 'Координате:',
+);
+
+/** Serbian (Latin script) (srpski (latinica)‎)
+ * @author Milicevic01
+ */
+$messages['sr-el'] = array(
+	'mapsources-coordinate' => 'Koordinate:',
 );
 
 /** Swedish (svenska)
@@ -953,8 +975,8 @@ $messages['uk'] = array(
 
 Приклад: 52° 31′ N, 13° 24′ 30″ E, scale=50000
 
-Крім цього, підходить формат [https://wiki.toolserver.org/view/GeoHack GeoHack].',
-	'mapsources-search-legend' => 'Пошук даних та картографічних джерел',
+Крім цього, підходить формат [https://wiki.toolserver.org/view/GeoHack GeoHack].', # Fuzzy
+	'mapsources-search-legend' => 'Знайти дані і карти у ресурсах',
 	'mapsources-coordinate' => 'Координати:',
 	'mapsources-go' => 'Перейти',
 	'mapsources-errormsgs' => 'Повідомлення про помилки',
@@ -966,7 +988,7 @@ $messages['uk'] = array(
 	'mapsources-outofrange' => 'Координати за межами допустимого діапазону',
 	'mapsources-math-missing-operand' => 'Відсутній операнд',
 	'mapsources-math-incorrect-input' => 'Неправильний ввід',
-	'mapsources-desc' => '[[Special:MapSources|Пошук]] даних та картографічний джерел',
+	'mapsources-desc' => '[[Special:MapSources|Пошук]] даних та карт на ресурсах',
 	'mapsources-math-desc' => 'Додає теги для конвертування координат',
 );
 
@@ -997,6 +1019,13 @@ Ngoài ra, định dạng [https://wiki.toolserver.org/view/GeoHack?uselang=vi G
 	'mapsources-math-incorrect-input' => 'Đầu vào không chính xác',
 	'mapsources-desc' => '[[Special:MapSources|Tìm]] dữ liệu và nguồn bản đồ',
 	'mapsources-math-desc' => 'Thêm thẻ để chuyển đổi tọa độ',
+);
+
+/** Yiddish (ייִדיש)
+ * @author פוילישער
+ */
+$messages['yi'] = array(
+	'mapsources-coordinate' => 'קאארדינאטן',
 );
 
 /** Simplified Chinese (中文（简体）‎)
