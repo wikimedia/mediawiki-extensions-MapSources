@@ -542,7 +542,7 @@ $messages['ksh'] = array(
  */
 $messages['lb'] = array(
 	'mapsources' => 'Quelle vun de Kaarten',
-	'mapsources-coordinate' => 'Koordinat:',
+	'mapsources-coordinate' => 'Koordinaten:',
 	'mapsources-go' => 'Lass',
 	'mapsources-errormsgs' => 'Feelermessagen',
 	'mapsources-noparams' => 'Keng Parameter uginn',
@@ -844,13 +844,38 @@ $messages['ru'] = array(
 	'mapsources-math-desc' => 'Добавляет теги для преобразования координат',
 );
 
+/** Scots (Scots)
+ * @author John Reid
+ */
+$messages['sco'] = array(
+	'mapsources-summary' => 'This page permits uisers tae rake fer ae location (defined bi its coordinates) in monie resoorces.
+
+Lateetuid, langeetuid n addeetional guidins maun be separated wi commas.
+Parameters conseest o aen identeefier, the equal sign n ae value.
+
+Example: 52° 31′ N, 13° 24′ 30″ E, scale=50000
+
+Addeetionlie, the [https://wiki.toolserver.org/view/GeoHack GeoHack] format will be accepted.',
+	'mapsources-search-legend' => 'Fynd data n maps in resoorces',
+	'mapsources-coordinate' => 'Coordinates:',
+	'mapsources-desc' => '[[Special:MapSources|Rake]] data n maps in resoorces',
+);
+
 /** Sinhala (සිංහල)
+ * @author Sahan.ssw
  * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
 	'mapsources' => 'සිතියම් මූලාශ්‍ර',
-	'mapsources-search-legend' => 'දත්ත සහ සිතියම් මූලාශ්‍ර සඳහා සොයන්න',
-	'mapsources-coordinate' => 'සමකක්ෂය:',
+	'mapsources-summary' => 'මෙම පිටුව පරිශීලකයන් හට සමකක්ෂ භාවිතයෙන් බොහෝ ස්ථානවල පිහිටුම සෙවීමට අවසර දී ඇත.
+
+අක්ෂාංශ,දේශාංශ සහ අමතර පරාමිතීන් කොමා යොදා වෙන් කල යුතුය.පරාමිතීන් වල  හඳුන්වනයක් අන්තර්ගත වී ඇති අතර,සමාන ලකුණ හා අගය.
+
+උදාහරණයක්:52° 31′ N, 13° 24′ 30″ E, scale=50000
+
+අමතරව  [https://wiki.toolserver.org/view/GeoHack GeoHack] ආකාරය පිළිගත හැක.',
+	'mapsources-search-legend' => 'මූලාශ්‍රවල දත්ත සහ සිතියම් සඳහා සොයන්න',
+	'mapsources-coordinate' => 'සමකක්ෂ:',
 	'mapsources-go' => 'යන්න',
 	'mapsources-errormsgs' => 'දෝෂ පණිවුඩ',
 	'mapsources-noparams' => 'කිසිදු පරාමිතියක් දී නොමැත',
@@ -861,7 +886,7 @@ $messages['si'] = array(
 	'mapsources-outofrange' => 'සමකක්ෂය පරාසයෙන් ඉවත් වී ඇත',
 	'mapsources-math-missing-operand' => 'දක්නට නොමැති ප්‍රවර්ත්‍යය',
 	'mapsources-math-incorrect-input' => 'සාවද්‍ය ප්‍රදානය',
-	'mapsources-desc' => 'දත්ත සහ සිතියම් මූලාශ්‍ර සඳහා [[Special:MapSources|සොයන්න]]',
+	'mapsources-desc' => 'මූලාශ්‍රවල දත්ත සහ සිතියම් සඳහා [[Special:MapSources|සොයන්න]]',
 	'mapsources-math-desc' => 'ඛණ්ඩාංකවල පරිවර්තනය සඳහා ටැගයන් එක් කරයි',
 );
 
@@ -1029,19 +1054,19 @@ $messages['yi'] = array(
 );
 
 /** Simplified Chinese (中文（简体）‎)
+ * @author Liuxinyu970226
  * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
 	'mapsources' => '地图来源',
 	'mapsources-summary' => '此页面允许用户提供一个地点的坐标搜索多个来源。
 
-纬度、经度和其他参数必须用逗号分隔。
-参数包含一个标识符、等号和一个值。
+纬度、经度和其他参数必须用逗号分隔。参数包含一个标识符、等号和一个值。
 
-例子: 52° 31′ N, 13° 24′ 30″ E, scale=50000
+例子：52° 31′ N, 13° 24′ 30″ E, scale=50000
 
 此外，[https://wiki.toolserver.org/view/GeoHack GeoHack]格式也能接受。',
-	'mapsources-search-legend' => '搜索数据和地图来源',
+	'mapsources-search-legend' => '搜索数据和地图来源', # Fuzzy
 	'mapsources-coordinate' => '坐标：',
 	'mapsources-go' => '提交',
 	'mapsources-errormsgs' => '错误消息',
@@ -1053,7 +1078,7 @@ $messages['zh-hans'] = array(
 	'mapsources-outofrange' => '坐标超出范围',
 	'mapsources-math-missing-operand' => '缺少操作数',
 	'mapsources-math-incorrect-input' => '不正确的输入',
-	'mapsources-desc' => '[[Special:MapSources|搜索]]数据和地图来源',
+	'mapsources-desc' => '[[Special:MapSources|搜索]]来源的数据和地图',
 	'mapsources-math-desc' => '添加坐标换算标签',
 );
 
