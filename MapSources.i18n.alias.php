@@ -29,6 +29,11 @@ $specialPageAliases['de'] = array(
 	'MapSources' => array( 'Kartenquellen' ),
 );
 
+/** Zazaki (Zazaki) */
+$specialPageAliases['diq'] = array(
+	'MapSources' => array( 'ÇımeyĞeriter' ),
+);
+
 /** Persian (فارسی) */
 $specialPageAliases['fa'] = array(
 	'MapSources' => array( 'منابع_نقشه' ),

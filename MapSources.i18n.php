@@ -917,9 +917,9 @@ Parametrar består av en identifierare, likhetstecknet och ett värde.
 
 Exempel:52°31′N,13°24′30″E,scale=50000
 
-Dessutom kommer formatet [https://wiki.toolserver.org/view/GeoHack GeoHack] att accepteras.',
-	'mapsources-search-legend' => 'Söka efter data och källor för karta',
-	'mapsources-coordinate' => 'Koordinat:',
+Dessutom kommer formatet [https://wiki.toolserver.org/view/GeoHack GeoHack] att accepteras.', # Fuzzy
+	'mapsources-search-legend' => 'Hitta data och källor i resurser',
+	'mapsources-coordinate' => 'Koordinater:',
 	'mapsources-go' => 'Gå',
 	'mapsources-errormsgs' => 'Felmeddelanden',
 	'mapsources-noparams' => 'Inga parametrar angivna',
@@ -930,7 +930,7 @@ Dessutom kommer formatet [https://wiki.toolserver.org/view/GeoHack GeoHack] att 
 	'mapsources-outofrange' => 'Koordinat utanför intervallet',
 	'mapsources-math-missing-operand' => 'Operand saknas',
 	'mapsources-math-incorrect-input' => 'Felaktig inmatning',
-	'mapsources-desc' => '[[Special:MapSources|Search]] för data och kartkällor',
+	'mapsources-desc' => '[[Special:MapSources|Sök]] efter data och kartor i resurser',
 	'mapsources-math-desc' => 'Lägger till taggar för konvertering av koordinater',
 );
 
