@@ -431,6 +431,13 @@ $messages['he'] = array(
 	'mapsources-math-desc' => 'הוספת תגים להמרת נקודות ציון',
 );
 
+/** Hindi (हिन्दी)
+ * @author Wikiuser13
+ */
+$messages['hi'] = array(
+	'mapsources-coordinate' => 'निर्देशांक:',
+);
+
 /** Italian (italiano)
  * @author Beta16
  */
@@ -683,9 +690,9 @@ Parameters bestaan uit een identificatie, het =-teken en een waarde.
 
 Voorbeeld: 52° 31′ N, 13° 24′ 30″ E, scale=50000
 
-Ook de [https://wiki.toolserver.org/view/GeoHack opmaak van Geohack] wordt ondersteund.",
-	'mapsources-search-legend' => 'Zoeken naar gegevens- en kaartbronnen',
-	'mapsources-coordinate' => 'Coördinaat:',
+Ook de [https://wiki.toolserver.org/view/GeoHack opmaak van Geohack] wordt ondersteund.", # Fuzzy
+	'mapsources-search-legend' => 'Zoeken naar gegevens- en kaartbronnen', # Fuzzy
+	'mapsources-coordinate' => 'Coördinaten:',
 	'mapsources-go' => 'OK',
 	'mapsources-errormsgs' => 'Foutberichten',
 	'mapsources-noparams' => 'Geen parameters opgegeven',
@@ -696,7 +703,7 @@ Ook de [https://wiki.toolserver.org/view/GeoHack opmaak van Geohack] wordt onder
 	'mapsources-outofrange' => 'Coördinaat buiten het bereik',
 	'mapsources-math-missing-operand' => 'Ontbrekende operand',
 	'mapsources-math-incorrect-input' => 'Onjuiste invoer',
-	'mapsources-desc' => '[[Special:MapSources|Zoeken]] naar gegevens- en kaartbronnen',
+	'mapsources-desc' => '[[Special:MapSources|Zoeken]] naar gegevens- en kaartbronnen', # Fuzzy
 	'mapsources-math-desc' => 'Voegt labels toe voor het omrekenen van coördinaten',
 );
 
