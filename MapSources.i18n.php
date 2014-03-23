@@ -261,7 +261,7 @@ Además, se aceptará el formato wiki de Wikipedia Geohack.', # Fuzzy
  * @author Pikne
  */
 $messages['et'] = array(
-	'mapsources-coordinate' => 'Koordinaat:',
+	'mapsources-coordinate' => 'Koordinaadid:',
 	'mapsources-go' => 'Mine',
 );
 
