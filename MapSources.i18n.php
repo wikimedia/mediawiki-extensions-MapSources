@@ -683,15 +683,15 @@ $messages['nds'] = array(
  */
 $messages['nl'] = array(
 	'mapsources' => 'Kaartbronnen',
-	'mapsources-summary' => "Via deze pagina kunt u zoeken naar ene locatie op basis van coördinaten in meerdere bronnen.
+	'mapsources-summary' => "Via deze pagina kunt u, op basis van coördinaten, zoeken naar een locatie in meerdere bronnen.
 
 Lengtegraad, breedtegraad en extra parameters moeten gescheiden worden met komma's.
 Parameters bestaan uit een identificatie, het =-teken en een waarde.
 
 Voorbeeld: 52° 31′ N, 13° 24′ 30″ E, scale=50000
 
-Ook de [https://wiki.toolserver.org/view/GeoHack opmaak van Geohack] wordt ondersteund.", # Fuzzy
-	'mapsources-search-legend' => 'Zoeken naar gegevens- en kaartbronnen', # Fuzzy
+Ook de [https://wiki.toolserver.org/view/GeoHack opmaak van Geohack] wordt ondersteund.",
+	'mapsources-search-legend' => 'Gegevens- en kaarten vinden in bronnen',
 	'mapsources-coordinate' => 'Coördinaten:',
 	'mapsources-go' => 'OK',
 	'mapsources-errormsgs' => 'Foutberichten',
@@ -703,7 +703,7 @@ Ook de [https://wiki.toolserver.org/view/GeoHack opmaak van Geohack] wordt onder
 	'mapsources-outofrange' => 'Coördinaat buiten het bereik',
 	'mapsources-math-missing-operand' => 'Ontbrekende operand',
 	'mapsources-math-incorrect-input' => 'Onjuiste invoer',
-	'mapsources-desc' => '[[Special:MapSources|Zoeken]] naar gegevens- en kaartbronnen', # Fuzzy
+	'mapsources-desc' => '[[Special:MapSources|Zoeken]] naar gegevens en kaarten in bronnen',
 	'mapsources-math-desc' => 'Voegt labels toe voor het omrekenen van coördinaten',
 );
 
@@ -1000,14 +1000,14 @@ $messages['ug-arab'] = array(
  */
 $messages['uk'] = array(
 	'mapsources' => 'Джерела карт',
-	'mapsources-summary' => 'Ця сторінка дозволяє користувачам шукати за декількома джерелами по його координатах розташування.
+	'mapsources-summary' => 'Ця сторінка дозволяє користувачам здійснювати пошук місця (на основі його координат) за кількома джерелами.
 
-Широта, довгота та додаткові параметри повинні бути розділені комами.
-Параметри складаються з ідентифікатора, знака «дорівнює» та значення.
+Широта, довгота і додаткові параметри повинні бути розділені комами.
+Параметри складаються з ідентифікатора, знака рівності і значення.
 
 Приклад: 52° 31′ N, 13° 24′ 30″ E, scale=50000
 
-Крім цього, підходить формат [https://wiki.toolserver.org/view/GeoHack GeoHack].', # Fuzzy
+Крім того, також підходить формат [https://wiki.toolserver.org/view/GeoHack GeoHack].',
 	'mapsources-search-legend' => 'Знайти дані і карти у ресурсах',
 	'mapsources-coordinate' => 'Координати:',
 	'mapsources-go' => 'Перейти',
