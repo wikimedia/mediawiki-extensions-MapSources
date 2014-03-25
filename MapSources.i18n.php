@@ -914,17 +914,19 @@ $messages['sr-el'] = array(
 /** Swedish (svenska)
  * @author Bengt B
  * @author Jopparn
+ * @author Lokal Profil
  * @author WikiPhoenix
  */
 $messages['sv'] = array(
 	'mapsources' => 'Källor för karta',
-	'mapsources-summary' => 'Den här sidan kan användare söka efter flera källor för en plats ges av dess koordinaten.
-N!Latitud, longitud och ytterligare parametrar måste avgränsas med kommatecken.
+	'mapsources-summary' => 'Den här sidan tillåter användare att söka efter en plats (definierad av dess koordinater) i flera resurser.
+
+Latitud, longitud och ytterligare parametrar måste avgränsas med kommatecken.
 Parametrar består av en identifierare, likhetstecknet och ett värde.
 
-Exempel:52°31′N,13°24′30″E,scale=50000
+Exempel: 52° 31′ N, 13° 24′ 30″ E, scale=50000
 
-Dessutom kommer formatet [https://wiki.toolserver.org/view/GeoHack GeoHack] att accepteras.', # Fuzzy
+Dessutom kommer [https://wiki.toolserver.org/view/GeoHack GeoHack]-formatet att accepteras.',
 	'mapsources-search-legend' => 'Hitta data och källor i resurser',
 	'mapsources-coordinate' => 'Koordinater:',
 	'mapsources-go' => 'Gå',
