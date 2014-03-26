@@ -1064,6 +1064,7 @@ $messages['yi'] = array(
 
 /** Simplified Chinese (中文（简体）‎)
  * @author Liuxinyu970226
+ * @author Xiaomingyan
  * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
@@ -1075,7 +1076,7 @@ $messages['zh-hans'] = array(
 例子：52° 31′ N, 13° 24′ 30″ E, scale=50000
 
 此外，[https://wiki.toolserver.org/view/GeoHack GeoHack]格式也能接受。',
-	'mapsources-search-legend' => '搜索数据和地图来源', # Fuzzy
+	'mapsources-search-legend' => '在资源中查找数据和地图',
 	'mapsources-coordinate' => '坐标：',
 	'mapsources-go' => '提交',
 	'mapsources-errormsgs' => '错误消息',
