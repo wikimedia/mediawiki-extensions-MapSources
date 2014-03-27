@@ -1031,7 +1031,7 @@ $messages['uk'] = array(
  */
 $messages['vi'] = array(
 	'mapsources' => 'Nguồn bản đồ',
-	'mapsources-summary' => 'Trang này cho phép tìm kiếm các nguồn cho một địa điểm theo tọa độ.
+	'mapsources-summary' => 'Trang này cho phép tìm một địa điểm (theo tọa độ) trong nhiều nguồn gốc.
 
 Vĩ độ, kinh độ, và các tham số khác được phân cách bằng dấu phẩy.
 Các tham số bao gồm định danh, dấu bằng, và một giá trị.
@@ -1039,7 +1039,7 @@ Các tham số bao gồm định danh, dấu bằng, và một giá trị.
 Ví dụ: 52° 31′ N, 13° 24′ 30″ E, scale=50000
 
 Ngoài ra, định dạng [https://wiki.toolserver.org/view/GeoHack?uselang=vi GeoHack] cũng được chấp nhận.',
-	'mapsources-search-legend' => 'Tìm dữ liệu và nguồn bản đồ',
+	'mapsources-search-legend' => 'Tìm dữ liệu và bản đồ trong nguồn gốc',
 	'mapsources-coordinate' => 'Tọa độ:',
 	'mapsources-go' => 'Tìm kiếm',
 	'mapsources-errormsgs' => 'Lỗi',
@@ -1051,7 +1051,7 @@ Ngoài ra, định dạng [https://wiki.toolserver.org/view/GeoHack?uselang=vi G
 	'mapsources-outofrange' => 'Tọa độ ngoài miền cho phép',
 	'mapsources-math-missing-operand' => 'Thiếu toán hạng',
 	'mapsources-math-incorrect-input' => 'Đầu vào không chính xác',
-	'mapsources-desc' => '[[Special:MapSources|Tìm]] dữ liệu và nguồn bản đồ',
+	'mapsources-desc' => '[[Special:MapSources|Tìm]] dữ liệu và bản đồ trong nhiều nguồn gốc',
 	'mapsources-math-desc' => 'Thêm thẻ để chuyển đổi tọa độ',
 );
 
