@@ -1,0 +1,23 @@
+{
+    "@metadata": {
+        "authors": [
+            "Shirayuki"
+        ]
+    },
+    "mapsources": "地図情報源",
+    "mapsources-summary": "このページでは、指定した緯度経度の場所について複数の地図情報源で検索できます。\n\n緯度、経度、追加のパラメーターは、カンマで区切ってください。\n追加のパラメーターの書式は 識別子=値 です。\n\n例: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nさらに、[https://wiki.toolserver.org/view/GeoHack ジオハック]の書式も使用できます。",
+    "mapsources-search-legend": "データおよび地図情報源の検索",
+    "mapsources-coordinate": "緯度経度:",
+    "mapsources-go": "実行",
+    "mapsources-errormsgs": "エラーメッセージ",
+    "mapsources-noparams": "パラメーターを指定していません",
+    "mapsources-incorrectparams": "正しくないパラメーター ($1) を指定しました",
+    "mapsources-incorrectlat": "緯度が無効です",
+    "mapsources-incorrectlong": "経度が無効です",
+    "mapsources-nopage": "プロジェクトページ [[{{ns:project}}:$1|$1]] を利用できません",
+    "mapsources-outofrange": "座標が範囲外です",
+    "mapsources-math-missing-operand": "演算対象がありません",
+    "mapsources-math-incorrect-input": "入力が正しくありません",
+    "mapsources-desc": "データおよび地図情報源の[[Special:MapSources|検索]]",
+    "mapsources-math-desc": "座標を変換するためのタグを追加する"
+}

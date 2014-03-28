@@ -1,0 +1,24 @@
+{
+    "@metadata": {
+        "authors": [
+            "Chrumps",
+            "Odie2"
+        ]
+    },
+    "mapsources": "Mapy",
+    "mapsources-summary": "Na tej stronie można odnaleźć łącza do map przedstawiających miejsce o podanych współrzędnych.",
+    "mapsources-search-legend": "Wyszukaj mapy i odwzorowania terenu",
+    "mapsources-coordinate": "Współrzędne:",
+    "mapsources-go": "Przejdź",
+    "mapsources-errormsgs": "Komunikaty błędów",
+    "mapsources-noparams": "Brak parametrów",
+    "mapsources-incorrectparams": "Podano błędne parametry ($1)",
+    "mapsources-incorrectlat": "Błędna szerokość",
+    "mapsources-incorrectlong": "Błędna długość",
+    "mapsources-nopage": "Brak adresu [[Project:$1]] źródła",
+    "mapsources-outofrange": "Współrzędne poza zakresem",
+    "mapsources-math-missing-operand": "Brak parametru(ów)",
+    "mapsources-math-incorrect-input": "Błędne dane",
+    "mapsources-desc": "[[Special:MapSources|Wyszukaj]] źródła map i danych",
+    "mapsources-math-desc": "Dodaje znaczniki do konwersji współrzędnych"
+}

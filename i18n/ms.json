@@ -1,0 +1,23 @@
+{
+    "@metadata": {
+        "authors": [
+            "Anakmalaysia"
+        ]
+    },
+    "mapsources": "Sumber Peta",
+    "mapsources-summary": "Halaman ini membolehkan pengguna untuk pelbagai sumber untuk sesuatu lokasi yang diberi oleh koordinatnya.\n\nGaris lintang, garis bujur dan parameter-parameter tambahan mesti diasingkan dengan tanda koma.\nParameter terdiri daripada pengecam, tanda sama dengan (=) dan satu nilai.\n\nContoh: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nTambahan pula, format [https://wiki.toolserver.org/view/GeoHack GeoHack] juga diterima.",
+    "mapsources-search-legend": "Cari sumber data dan peta",
+    "mapsources-coordinate": "Koordinat",
+    "mapsources-go": "Pergi",
+    "mapsources-errormsgs": "Pesanan Ralat",
+    "mapsources-noparams": "Tiada parameter diberikan",
+    "mapsources-incorrectparams": "Parameter yang diberikan ($1) tidak betul",
+    "mapsources-incorrectlat": "Garis lintang tidak betul",
+    "mapsources-incorrectlong": "Garis bujur tidak betul",
+    "mapsources-nopage": "Tiada halaman projek [[{{ns:project}}:$1|$1]] disediakan",
+    "mapsources-outofrange": "Koordinat di luar julat",
+    "mapsources-math-missing-operand": "Tiada kendalian",
+    "mapsources-math-incorrect-input": "Input tidak betul",
+    "mapsources-desc": "[[Special:MapSources|Cari]] sumber data dan peta",
+    "mapsources-math-desc": "Membubuh teg untuk penukaran koordinat"
+}

@@ -28,6 +28,7 @@ $wgSpecialPages['MapSources'] = 'MapSourcesPage';
 $wgHooks['ParserFirstCallInit'][] = 'MapSourcesHooks::parserHooks';
 
 // extension & magic words i18n
+$wgMessagesDirs['MapSources'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['MapSources'] = __DIR__ . '/MapSources.i18n.php';
 $wgExtensionMessagesFiles['MapSourcesMagic'] = __DIR__ . '/MapSources.i18n.magic.php';
 $wgExtensionMessagesFiles['MapSourcesAlias'] = __DIR__ . '/MapSources.i18n.alias.php';
@@ -39,7 +40,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'url' => 'https://www.mediawiki.org/wiki/Extension:MapSources',
 	'descriptionmsg' => 'mapsources-desc',
 	'author' => array( 'Roland Unger', 'Egil Kvaleberg', 'Matthias Mullie' ),
-	'version' => '1.07'
+	'version' => '1.8.0'
 );
 $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,

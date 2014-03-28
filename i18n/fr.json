@@ -1,0 +1,24 @@
+{
+    "@metadata": {
+        "authors": [
+            "Crochet.david",
+            "Gomoko"
+        ]
+    },
+    "mapsources": "Sources de cartes",
+    "mapsources-summary": "Cette page permet aux utilisateurs un lieu (défini par ses coordonnées) dans de multiples ressources.\n\nLa latitude, la longitude et les paramètres supplémentaires doivent être séparés par des virgules.\nLes paramètres consistent en un identifiant, le signe égal et une valeur.\n\nExemple: 52° 31′ N, 13° 24′ 30″ E, échelle=50000\n\nDe plus, le format [https://wiki.toolserver.org/view/GeoHack GeoHack] sera accepté.",
+    "mapsources-search-legend": "Trouver des données et des cartes dans les ressources",
+    "mapsources-coordinate": "Coordonnées :",
+    "mapsources-go": "Rechercher",
+    "mapsources-errormsgs": "Messages d’erreur",
+    "mapsources-noparams": "Paramètres manquants",
+    "mapsources-incorrectparams": "Paramètres incorrects ($1) fournis",
+    "mapsources-incorrectlat": "Latitude erronée",
+    "mapsources-incorrectlong": "Longitude erronée",
+    "mapsources-nopage": "Pas de page de projet [[{{ns:project}}:$1|$1]] disponible",
+    "mapsources-outofrange": "Coordonées invalides",
+    "mapsources-math-missing-operand": "Opérateur(s) manquant(s)",
+    "mapsources-math-incorrect-input": "Entrée erronée",
+    "mapsources-desc": "[[Special:MapSources|Recherche]] de données et de cartes dans les ressources",
+    "mapsources-math-desc": "Ajoute des balises pour la conversion des coordonnées"
+}

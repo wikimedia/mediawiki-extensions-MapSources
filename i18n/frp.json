@@ -1,0 +1,20 @@
+{
+    "@metadata": {
+        "authors": [
+            "ChrisPtDe"
+        ]
+    },
+    "mapsources": "Sôrses de mapes",
+    "mapsources-search-legend": "Rechèrchiér des sôrses de mapes et donâs",
+    "mapsources-coordinate": "Coordonâs :",
+    "mapsources-go": "Emmodar",
+    "mapsources-errormsgs": "Mèssâjos de fôta",
+    "mapsources-noparams": "Nion paramètro balyê",
+    "mapsources-incorrectparams": "Paramètros fôx ($1) balyês",
+    "mapsources-incorrectlat": "Latituda fôssa",
+    "mapsources-incorrectlong": "Longituda fôssa",
+    "mapsources-nopage": "Niona pâge projèt [[{{ns:project}}:$1|$1]] disponibla",
+    "mapsources-outofrange": "Coordonâs en defôr de les limites",
+    "mapsources-math-missing-operand": "Opèrando manquent",
+    "mapsources-math-incorrect-input": "Entrâ fôssa"
+}

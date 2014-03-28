@@ -1,0 +1,25 @@
+{
+    "@metadata": {
+        "authors": [
+            "DCamer",
+            "Kaganer",
+            "Okras"
+        ]
+    },
+    "mapsources": "Источники карт",
+    "mapsources-summary": "Эта страница позволяет пользователям вести поиск места (по его координатам) по нескольким источникам.\n\nШирота, долгота и дополнительные параметры должны быть разделены запятыми.\nПараметры состоят из идентификатора, знака равенства и значения.\n\nПример: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nКроме того, также подходит формат [https://wiki.toolserver.org/view/GeoHack GeoHack].",
+    "mapsources-search-legend": "Искать данные и карты в источниках",
+    "mapsources-coordinate": "Координаты:",
+    "mapsources-go": "Найти",
+    "mapsources-errormsgs": "Сообщения об ошибках",
+    "mapsources-noparams": "Параметры не заданы",
+    "mapsources-incorrectparams": "Заданы неправильные параметры ($1)",
+    "mapsources-incorrectlat": "Неправильная широта",
+    "mapsources-incorrectlong": "Неправильная долгота",
+    "mapsources-nopage": "Страница проекта [[{{ns:project}}:$1|$1]] недоступна.",
+    "mapsources-outofrange": "Координаты вне диапазона",
+    "mapsources-math-missing-operand": "Отсутствует операнд",
+    "mapsources-math-incorrect-input": "Неправильный ввод",
+    "mapsources-desc": "[[Special:MapSources|Поиск]] данных и карт в источниках",
+    "mapsources-math-desc": "Добавляет теги для преобразования координат"
+}

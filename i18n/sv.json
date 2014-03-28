@@ -1,0 +1,26 @@
+{
+    "@metadata": {
+        "authors": [
+            "Bengt B",
+            "Jopparn",
+            "Lokal Profil",
+            "WikiPhoenix"
+        ]
+    },
+    "mapsources": "Källor för karta",
+    "mapsources-summary": "Den här sidan tillåter användare att söka efter en plats (definierad av dess koordinater) i flera resurser.\n\nLatitud, longitud och ytterligare parametrar måste avgränsas med kommatecken.\nParametrar består av en identifierare, likhetstecknet och ett värde.\n\nExempel: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nDessutom kommer [https://wiki.toolserver.org/view/GeoHack GeoHack]-formatet att accepteras.",
+    "mapsources-search-legend": "Hitta data och källor i resurser",
+    "mapsources-coordinate": "Koordinater:",
+    "mapsources-go": "Gå",
+    "mapsources-errormsgs": "Felmeddelanden",
+    "mapsources-noparams": "Inga parametrar angivna",
+    "mapsources-incorrectparams": "Felaktiga parametrar ($1) har angetts",
+    "mapsources-incorrectlat": "Felaktig latitud",
+    "mapsources-incorrectlong": "Felaktig longitud",
+    "mapsources-nopage": "Ingen projektsida [[{{ns:project}}:$1|$1]] tillgänglig",
+    "mapsources-outofrange": "Koordinat utanför intervallet",
+    "mapsources-math-missing-operand": "Operand saknas",
+    "mapsources-math-incorrect-input": "Felaktig inmatning",
+    "mapsources-desc": "[[Special:MapSources|Sök]] efter data och kartor i resurser",
+    "mapsources-math-desc": "Lägger till taggar för konvertering av koordinater"
+}

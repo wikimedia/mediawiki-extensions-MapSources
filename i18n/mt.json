@@ -1,0 +1,16 @@
+{
+    "@metadata": {
+        "authors": [
+            "Chrisportelli"
+        ]
+    },
+    "mapsources-coordinate": "Koordinati:",
+    "mapsources-go": "Mur",
+    "mapsources-errormsgs": "Messaġġ ta' żball",
+    "mapsources-noparams": "Parametri nieqsa",
+    "mapsources-incorrectparams": "Ingħataw parametri ħżiena ($1)",
+    "mapsources-incorrectlat": "Latitudni ħażina",
+    "mapsources-incorrectlong": "Lonġitudni ħażina",
+    "mapsources-nopage": "Il-paġna tal-proġett [[Project:$1]] mhix disponibbli",
+    "mapsources-outofrange": "Il-koordinati huma ħżiena"
+}

@@ -1,0 +1,23 @@
+{
+    "@metadata": {
+        "authors": [
+            "Metalhead64"
+        ]
+    },
+    "mapsources": "Karten- und Datenquellen",
+    "mapsources-summary": "Diese Seite ermöglicht es Benutzern, in mehreren Ressourcen nach einem Standort (definiert durch seine Koordinaten) zu suchen.\n\nGeografische Breite, Länge und weitere Parameter müssen mit Kommas getrennt werden. Parameter bestehen aus dem Kennwort, dem Gleichheitszeichen und dem Wert.\n\nBeispiel: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nZusätzlich wird das Format des [https://wiki.toolserver.org/view/GeoHack Wikipedia-Geohack-Toolservers] akzeptiert.",
+    "mapsources-search-legend": "Daten und Karten in Ressourcen finden",
+    "mapsources-coordinate": "Koordinaten:",
+    "mapsources-go": "Suche",
+    "mapsources-errormsgs": "Fehlermeldungen",
+    "mapsources-noparams": "Keine Parameter angegeben",
+    "mapsources-incorrectparams": "Fehlerhafte Parameter ($1) angegeben",
+    "mapsources-incorrectlat": "Fehlerhafte Breitenangabe",
+    "mapsources-incorrectlong": "Fehlerhafte Längenangabe",
+    "mapsources-nopage": "Keine Projektseite [[{{ns:project}}:$1|$1]] verfügbar",
+    "mapsources-outofrange": "Ungültige Koordinate",
+    "mapsources-math-missing-operand": "Fehlende(r) Parameter",
+    "mapsources-math-incorrect-input": "Fehlerhafte Eingabe",
+    "mapsources-desc": "[[Special:MapSources|Suche]] nach Daten und Karten in Ressourcen",
+    "mapsources-math-desc": "Ergänzt Tags zur Umwandlung von Koordinaten"
+}

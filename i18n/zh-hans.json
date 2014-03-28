@@ -1,0 +1,25 @@
+{
+    "@metadata": {
+        "authors": [
+            "Liuxinyu970226",
+            "Xiaomingyan",
+            "Yfdyh000"
+        ]
+    },
+    "mapsources": "地图来源",
+    "mapsources-summary": "此页面允许用户提供一个地点的坐标搜索多个来源。\n\n纬度、经度和其他参数必须用逗号分隔。参数包含一个标识符、等号和一个值。\n\n例子：52° 31′ N, 13° 24′ 30″ E, scale=50000\n\n此外，[https://wiki.toolserver.org/view/GeoHack GeoHack]格式也能接受。",
+    "mapsources-search-legend": "在资源中查找数据和地图",
+    "mapsources-coordinate": "坐标：",
+    "mapsources-go": "提交",
+    "mapsources-errormsgs": "错误消息",
+    "mapsources-noparams": "没有提供参数",
+    "mapsources-incorrectparams": "提供了不正确的参数（$1）",
+    "mapsources-incorrectlat": "不正确的纬度",
+    "mapsources-incorrectlong": "不正确的经度",
+    "mapsources-nopage": "没有项目页面[[{{ns:project}}:$1|$1]]可用",
+    "mapsources-outofrange": "坐标超出范围",
+    "mapsources-math-missing-operand": "缺少操作数",
+    "mapsources-math-incorrect-input": "不正确的输入",
+    "mapsources-desc": "[[Special:MapSources|搜索]]来源的数据和地图",
+    "mapsources-math-desc": "添加坐标换算标签"
+}

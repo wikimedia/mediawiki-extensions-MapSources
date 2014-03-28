@@ -1,0 +1,23 @@
+{
+    "@metadata": {
+        "authors": [
+            "Beta16"
+        ]
+    },
+    "mapsources": "Fonte della mappa",
+    "mapsources-summary": "Questa pagina speciale permette di cercare fonti multiple per una posizione date le relative coordinate.\n\nLatitudine, longitudine e parametri aggiuntivi devono essere separati con virgole.\nI parametri sono costituiti da un identificatore, il segno di uguale e un valore.\n\nEsempio: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nInoltre, anche il formato [https://wiki.toolserver.org/view/GeoHack GeoHack] è accettato.",
+    "mapsources-search-legend": "Cerca per dati e fonti delle mappe",
+    "mapsources-coordinate": "Coordinate:",
+    "mapsources-go": "Cerca",
+    "mapsources-errormsgs": "Messaggio di errore",
+    "mapsources-noparams": "Parametri mancanti",
+    "mapsources-incorrectparams": "Inseriti parametri non corretti ($1)",
+    "mapsources-incorrectlat": "Latitudine non corretta",
+    "mapsources-incorrectlong": "Longitudine non corretta",
+    "mapsources-nopage": "Pagine del progetto [[{{ns:project}}:$1]] non disponibili",
+    "mapsources-outofrange": "Coordinate non valide",
+    "mapsources-math-missing-operand": "Parametro mancante",
+    "mapsources-math-incorrect-input": "Input non corretto",
+    "mapsources-desc": "[[Special:MapSources|Cerca]] per le origini dati e mappe",
+    "mapsources-math-desc": "Aggiunge l'etichetta per la conversione delle coordinate"
+}

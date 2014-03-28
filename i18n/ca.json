@@ -1,0 +1,18 @@
+{
+    "@metadata": {
+        "authors": [
+            "Jmontane"
+        ]
+    },
+    "mapsources-coordinate": "Coordenades:",
+    "mapsources-go": "Vés",
+    "mapsources-errormsgs": "Missatges d'error",
+    "mapsources-noparams": "No heu indicat cap paràmetre",
+    "mapsources-incorrectlat": "La latitud no és correcta",
+    "mapsources-incorrectlong": "La longitud no és correcta",
+    "mapsources-nopage": "La pàgina del projecte [[Project:$1]] no es troba disponible",
+    "mapsources-outofrange": "Les coordenades són fora de l'interval",
+    "mapsources-math-missing-operand": "Manca un operador",
+    "mapsources-math-incorrect-input": "L'entrada no és correcta",
+    "mapsources-desc": "[[Special:MapSources|Cerqueu]] dades i fonts de mapes"
+}
