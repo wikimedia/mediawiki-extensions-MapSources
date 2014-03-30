@@ -5,8 +5,8 @@
         ]
     },
     "mapsources": "Fontes de mapas",
-    "mapsources-summary": "Esta páxina permite aos usuarios procurar en varias fontes unha localización dada mediante as súas coordenadas.\n\nA latitude, a lonxitude e os parámetros adicionais deben separarse por comas.\nOs parámetros consisten nun identificador, o signo igual e un valor.\n\nExemplo: 52° 31′ N, 13° 24′ 30″ E, escala=50000\n\nAdemais, acéptase o formato [https://wiki.toolserver.org/view/GeoHack GeoHack].",
-    "mapsources-search-legend": "Procurar datos e fontes de mapas",
+    "mapsources-summary": "Esta páxina permite aos usuarios procurar en varios recursos unha localización (definida mediante as súas coordenadas).\n\nA latitude, a lonxitude e os parámetros adicionais deben separarse por comas.\nOs parámetros consisten nun identificador, o signo igual e un valor.\n\nExemplo: 52° 31′ N, 13° 24′ 30″ E, escala=50000\n\nAdemais, acéptase o formato [https://wiki.toolserver.org/view/GeoHack GeoHack].",
+    "mapsources-search-legend": "Atopar datos e mapas nos recursos",
     "mapsources-coordinate": "Coordenadas:",
     "mapsources-go": "Continuar",
     "mapsources-errormsgs": "Mensaxes de erro",
@@ -18,6 +18,6 @@
     "mapsources-outofrange": "A coordenada está fóra do rango",
     "mapsources-math-missing-operand": "Falta o operador",
     "mapsources-math-incorrect-input": "Entrada incorrecta",
-    "mapsources-desc": "[[Special:MapSources|Procurar]] datos e fontes de mapas",
+    "mapsources-desc": "[[Special:MapSources|Procurar]] datos e mapas nos recursos",
     "mapsources-math-desc": "Engade etiquetas para a conversión de coordenadas"
 }
