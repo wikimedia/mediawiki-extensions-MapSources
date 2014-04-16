@@ -1,23 +1,23 @@
 {
-    "@metadata": {
-        "authors": [
-            "Minh Nguyen"
-        ]
-    },
-    "mapsources": "Nguồn bản đồ",
-    "mapsources-summary": "Trang này cho phép tìm một địa điểm (theo tọa độ) trong nhiều nguồn gốc.\n\nVĩ độ, kinh độ, và các tham số khác được phân cách bằng dấu phẩy.\nCác tham số bao gồm định danh, dấu bằng, và một giá trị.\n\nVí dụ: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nNgoài ra, định dạng [https://wiki.toolserver.org/view/GeoHack?uselang=vi GeoHack] cũng được chấp nhận.",
-    "mapsources-search-legend": "Tìm dữ liệu và bản đồ trong nguồn gốc",
-    "mapsources-coordinate": "Tọa độ:",
-    "mapsources-go": "Tìm kiếm",
-    "mapsources-errormsgs": "Lỗi",
-    "mapsources-noparams": "Không đưa vào tham số",
-    "mapsources-incorrectparams": "Tham số không chính xác ($1) được đưa vào",
-    "mapsources-incorrectlat": "Vĩ độ không chính xác",
-    "mapsources-incorrectlong": "Kinh độ không chính xác",
-    "mapsources-nopage": "Không có sẵn trang dự án [[{{ns:project}}:$1|$1]]",
-    "mapsources-outofrange": "Tọa độ ngoài miền cho phép",
-    "mapsources-math-missing-operand": "Thiếu toán hạng",
-    "mapsources-math-incorrect-input": "Đầu vào không chính xác",
-    "mapsources-desc": "[[Special:MapSources|Tìm]] dữ liệu và bản đồ trong nhiều nguồn gốc",
-    "mapsources-math-desc": "Thêm thẻ để chuyển đổi tọa độ"
+	"@metadata": {
+		"authors": [
+			"Minh Nguyen"
+		]
+	},
+	"mapsources": "Nguồn bản đồ",
+	"mapsources-summary": "Trang này cho phép tìm một địa điểm (theo tọa độ) trong nhiều nguồn gốc.\n\nVĩ độ, kinh độ, và các tham số khác được phân cách bằng dấu phẩy.\nCác tham số bao gồm định danh, dấu bằng, và một giá trị.\n\nVí dụ: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nNgoài ra, định dạng [https://wiki.toolserver.org/view/GeoHack?uselang=vi GeoHack] cũng được chấp nhận.",
+	"mapsources-search-legend": "Tìm dữ liệu và bản đồ trong nguồn gốc",
+	"mapsources-coordinate": "Tọa độ:",
+	"mapsources-go": "Tìm kiếm",
+	"mapsources-errormsgs": "Lỗi",
+	"mapsources-noparams": "Không đưa vào tham số",
+	"mapsources-incorrectparams": "Tham số không chính xác ($1) được đưa vào",
+	"mapsources-incorrectlat": "Vĩ độ không chính xác",
+	"mapsources-incorrectlong": "Kinh độ không chính xác",
+	"mapsources-nopage": "Không có sẵn trang dự án [[{{ns:project}}:$1|$1]]",
+	"mapsources-outofrange": "Tọa độ ngoài miền cho phép",
+	"mapsources-math-missing-operand": "Thiếu toán hạng",
+	"mapsources-math-incorrect-input": "Đầu vào không chính xác",
+	"mapsources-desc": "[[Special:MapSources|Tìm]] dữ liệu và bản đồ trong nhiều nguồn gốc",
+	"mapsources-math-desc": "Thêm thẻ để chuyển đổi tọa độ"
 }

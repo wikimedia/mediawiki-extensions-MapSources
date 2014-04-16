@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Shanmugamp7"
-        ]
-    },
-    "mapsources-coordinate": "ஆயக்கூறு",
-    "mapsources-go": "செல்",
-    "mapsources-errormsgs": "பிழைச் செய்திகள்",
-    "mapsources-noparams": "அளவுருக்கள் ஏதும் தரப்படவில்லை"
+	"@metadata": {
+		"authors": [
+			"Shanmugamp7"
+		]
+	},
+	"mapsources-coordinate": "ஆயக்கூறு",
+	"mapsources-go": "செல்",
+	"mapsources-errormsgs": "பிழைச் செய்திகள்",
+	"mapsources-noparams": "அளவுருக்கள் ஏதும் தரப்படவில்லை"
 }

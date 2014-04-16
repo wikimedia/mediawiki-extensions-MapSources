@@ -1,24 +1,24 @@
 {
-    "@metadata": {
-        "authors": [
-            "Mormegil",
-            "Vks"
-        ]
-    },
-    "mapsources": "Zdroje map",
-    "mapsources-summary": "Tato stránka uživatelům umožňuje hledat místo (zadané svými souřadnicemi) v různých zdrojích.\n\nZeměpisná šířka, délka a další parametry musí být odděleny čárkami.\nParametry se skládají z identifikátoru, rovnítka a hodnoty.\n\nPříklad: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nNavíc je podporován formát [https://wiki.toolserver.org/view/GeoHack GeoHack].",
-    "mapsources-search-legend": "Hledání dat a map ve zdrojích",
-    "mapsources-coordinate": "Souřadnice:",
-    "mapsources-go": "Přejít",
-    "mapsources-errormsgs": "Chybová hlášení",
-    "mapsources-noparams": "Nebyly zadány parametry",
-    "mapsources-incorrectparams": "Zadány nesprávné parametry ($1)",
-    "mapsources-incorrectlat": "Nesprávná zeměpisná šířka",
-    "mapsources-incorrectlong": "Nesprávná zeměpisná délka",
-    "mapsources-nopage": "Není k dispozici projektová stránka [[{{ns:project}}:$1|$1]]",
-    "mapsources-outofrange": "Souřadnice mimo rozsah",
-    "mapsources-math-missing-operand": "Chybí operand",
-    "mapsources-math-incorrect-input": "Špatný vstup",
-    "mapsources-desc": "[[Special:MapSources|Hledání]] dat a map ve zdrojích",
-    "mapsources-math-desc": "Přidává značky pro převody souřadnic"
+	"@metadata": {
+		"authors": [
+			"Mormegil",
+			"Vks"
+		]
+	},
+	"mapsources": "Zdroje map",
+	"mapsources-summary": "Tato stránka uživatelům umožňuje hledat místo (zadané svými souřadnicemi) v různých zdrojích.\n\nZeměpisná šířka, délka a další parametry musí být odděleny čárkami.\nParametry se skládají z identifikátoru, rovnítka a hodnoty.\n\nPříklad: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nNavíc je podporován formát [https://wiki.toolserver.org/view/GeoHack GeoHack].",
+	"mapsources-search-legend": "Hledání dat a map ve zdrojích",
+	"mapsources-coordinate": "Souřadnice:",
+	"mapsources-go": "Přejít",
+	"mapsources-errormsgs": "Chybová hlášení",
+	"mapsources-noparams": "Nebyly zadány parametry",
+	"mapsources-incorrectparams": "Zadány nesprávné parametry ($1)",
+	"mapsources-incorrectlat": "Nesprávná zeměpisná šířka",
+	"mapsources-incorrectlong": "Nesprávná zeměpisná délka",
+	"mapsources-nopage": "Není k dispozici projektová stránka [[{{ns:project}}:$1|$1]]",
+	"mapsources-outofrange": "Souřadnice mimo rozsah",
+	"mapsources-math-missing-operand": "Chybí operand",
+	"mapsources-math-incorrect-input": "Špatný vstup",
+	"mapsources-desc": "[[Special:MapSources|Hledání]] dat a map ve zdrojích",
+	"mapsources-math-desc": "Přidává značky pro převody souřadnic"
 }

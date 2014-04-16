@@ -1,24 +1,24 @@
 {
-    "@metadata": {
-        "authors": [
-            "Amire80",
-            "Yona b"
-        ]
-    },
-    "mapsources": "מקורות מפות",
-    "mapsources-summary": "דף זה מאפשר לחפש מיקום (המוגדר על ידי נקודות ציון) במקורות רבים.\n\nקו רוחב, קו אורך ופרמטרים נוספים צריכים להיות מופרדים בפסיקים.\nפרמטרים מורכבים ממזהה, סימן שווה וערך.\n\nדוגמה: \u003Cspan dir=\"ltr\"\u003E32° 45′ N, 34° 57′ E, scale=50000 \u003C/span\u003E\n\nבנוסף, אפשר להשתמש בתסדיר [https://wiki.toolserver.org/view/GeoHack GeoHack].",
-    "mapsources-search-legend": "חיפוש נתונים ומפות במקורות",
-    "mapsources-coordinate": "נקודות ציון:",
-    "mapsources-go": "מעבר",
-    "mapsources-errormsgs": "הודעות שגיאה",
-    "mapsources-noparams": "לא ניתנו פרמטרים",
-    "mapsources-incorrectparams": "נותנים פרמטרים שגויים ($1)",
-    "mapsources-incorrectlat": "קו רוחב לא נכון",
-    "mapsources-incorrectlong": "קו אורך לא נכון",
-    "mapsources-nopage": "לא זמין דף מיזם [[{{ns:project}}:$1|$1]]",
-    "mapsources-outofrange": "נקודות הציון מחוץ לטווח",
-    "mapsources-math-missing-operand": "חסר אופרנד",
-    "mapsources-math-incorrect-input": "קלט שגוי",
-    "mapsources-desc": "[[Special:MapSources|חיפוס]] נתונים ומפות במקורות מידע",
-    "mapsources-math-desc": "הוספת תגים להמרת נקודות ציון"
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Yona b"
+		]
+	},
+	"mapsources": "מקורות מפות",
+	"mapsources-summary": "דף זה מאפשר לחפש מיקום (המוגדר על ידי נקודות ציון) במקורות רבים.\n\nקו רוחב, קו אורך ופרמטרים נוספים צריכים להיות מופרדים בפסיקים.\nפרמטרים מורכבים ממזהה, סימן שווה וערך.\n\nדוגמה: <span dir=\"ltr\">32° 45′ N, 34° 57′ E, scale=50000 </span>\n\nבנוסף, אפשר להשתמש בתסדיר [https://wiki.toolserver.org/view/GeoHack GeoHack].",
+	"mapsources-search-legend": "חיפוש נתונים ומפות במקורות",
+	"mapsources-coordinate": "נקודות ציון:",
+	"mapsources-go": "מעבר",
+	"mapsources-errormsgs": "הודעות שגיאה",
+	"mapsources-noparams": "לא ניתנו פרמטרים",
+	"mapsources-incorrectparams": "נותנים פרמטרים שגויים ($1)",
+	"mapsources-incorrectlat": "קו רוחב לא נכון",
+	"mapsources-incorrectlong": "קו אורך לא נכון",
+	"mapsources-nopage": "לא זמין דף מיזם [[{{ns:project}}:$1|$1]]",
+	"mapsources-outofrange": "נקודות הציון מחוץ לטווח",
+	"mapsources-math-missing-operand": "חסר אופרנד",
+	"mapsources-math-incorrect-input": "קלט שגוי",
+	"mapsources-desc": "[[Special:MapSources|חיפוס]] נתונים ומפות במקורות מידע",
+	"mapsources-math-desc": "הוספת תגים להמרת נקודות ציון"
 }

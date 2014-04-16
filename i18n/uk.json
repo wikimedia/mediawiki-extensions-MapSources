@@ -1,25 +1,25 @@
 {
-    "@metadata": {
-        "authors": [
-            "Andriykopanytsia",
-            "Base",
-            "RLuts"
-        ]
-    },
-    "mapsources": "Джерела карт",
-    "mapsources-summary": "Ця сторінка дозволяє користувачам здійснювати пошук місця (на основі його координат) за кількома джерелами.\n\nШирота, довгота і додаткові параметри повинні бути розділені комами.\nПараметри складаються з ідентифікатора, знака рівності і значення.\n\nПриклад: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nКрім того, також підходить формат [https://wiki.toolserver.org/view/GeoHack GeoHack].",
-    "mapsources-search-legend": "Знайти дані і карти у ресурсах",
-    "mapsources-coordinate": "Координати:",
-    "mapsources-go": "Перейти",
-    "mapsources-errormsgs": "Повідомлення про помилки",
-    "mapsources-noparams": "Не передано параметрів",
-    "mapsources-incorrectparams": "Передано некоректні параметри ($1)",
-    "mapsources-incorrectlat": "Некоректна широта",
-    "mapsources-incorrectlong": "Некоректна довгота",
-    "mapsources-nopage": "Немає доступної сторінки проекту  [[{{ns:project}}:$1|$1]]",
-    "mapsources-outofrange": "Координати за межами допустимого діапазону",
-    "mapsources-math-missing-operand": "Відсутній операнд",
-    "mapsources-math-incorrect-input": "Неправильний ввід",
-    "mapsources-desc": "[[Special:MapSources|Пошук]] даних та карт на ресурсах",
-    "mapsources-math-desc": "Додає теги для конвертування координат"
+	"@metadata": {
+		"authors": [
+			"Andriykopanytsia",
+			"Base",
+			"RLuts"
+		]
+	},
+	"mapsources": "Джерела карт",
+	"mapsources-summary": "Ця сторінка дозволяє користувачам здійснювати пошук місця (на основі його координат) за кількома джерелами.\n\nШирота, довгота і додаткові параметри повинні бути розділені комами.\nПараметри складаються з ідентифікатора, знака рівності і значення.\n\nПриклад: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nКрім того, також підходить формат [https://wiki.toolserver.org/view/GeoHack GeoHack].",
+	"mapsources-search-legend": "Знайти дані і карти у ресурсах",
+	"mapsources-coordinate": "Координати:",
+	"mapsources-go": "Перейти",
+	"mapsources-errormsgs": "Повідомлення про помилки",
+	"mapsources-noparams": "Не передано параметрів",
+	"mapsources-incorrectparams": "Передано некоректні параметри ($1)",
+	"mapsources-incorrectlat": "Некоректна широта",
+	"mapsources-incorrectlong": "Некоректна довгота",
+	"mapsources-nopage": "Немає доступної сторінки проекту  [[{{ns:project}}:$1|$1]]",
+	"mapsources-outofrange": "Координати за межами допустимого діапазону",
+	"mapsources-math-missing-operand": "Відсутній операнд",
+	"mapsources-math-incorrect-input": "Неправильний ввід",
+	"mapsources-desc": "[[Special:MapSources|Пошук]] даних та карт на ресурсах",
+	"mapsources-math-desc": "Додає теги для конвертування координат"
 }

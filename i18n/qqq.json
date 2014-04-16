@@ -1,24 +1,24 @@
 {
-    "@metadata": {
-        "authors": [
-            "Lloffiwr",
-            "Shirayuki"
-        ]
-    },
-    "mapsources": "{{doc-special|MapSources|unlisted=1}}",
-    "mapsources-summary": "Extension summary to be displayed at the top of the special page, explaining how the extension works.",
-    "mapsources-search-legend": "Form fieldset label.",
-    "mapsources-coordinate": "Label for input box accepting geographical coordinates.\n{{Identical|Coordinates}}",
-    "mapsources-go": "Label for submit button.\n{{Identical|Go}}",
-    "mapsources-errormsgs": "Title above error messages, if any occurred during search.\n{{Identical|Error message}}",
-    "mapsources-noparams": "Error message when no parameters are given.",
-    "mapsources-incorrectparams": "Error message when incorrect parameters are given. $1 is the current parameters.",
-    "mapsources-incorrectlat": "Error message when latitude is incorrect.",
-    "mapsources-incorrectlong": "Error message when longitude is incorrect.",
-    "mapsources-nopage": "Error message when project page is not available. Parameters:\n* $1 - the message {{msg-mw|Mapsources}}",
-    "mapsources-outofrange": "Error message when coordinates are out of range.",
-    "mapsources-math-missing-operand": "Error message when operand is missing.",
-    "mapsources-math-incorrect-input": "Error message when input is incorrect",
-    "mapsources-desc": "{{desc|name=Map Sources|url=http://www.mediawiki.org/wiki/Extension:MapSources}}\nExtension credits: special page description.  See [[Thread:Support/About MediaWiki:Mapsources-desc/cy|discussion]] of precise meaning.",
-    "mapsources-math-desc": "Extension credits: parser hook description"
+	"@metadata": {
+		"authors": [
+			"Lloffiwr",
+			"Shirayuki"
+		]
+	},
+	"mapsources": "{{doc-special|MapSources|unlisted=1}}",
+	"mapsources-summary": "Extension summary to be displayed at the top of the special page, explaining how the extension works.",
+	"mapsources-search-legend": "Form fieldset label.",
+	"mapsources-coordinate": "Label for input box accepting geographical coordinates.\n{{Identical|Coordinates}}",
+	"mapsources-go": "Label for submit button.\n{{Identical|Go}}",
+	"mapsources-errormsgs": "Title above error messages, if any occurred during search.\n{{Identical|Error message}}",
+	"mapsources-noparams": "Error message when no parameters are given.",
+	"mapsources-incorrectparams": "Error message when incorrect parameters are given. $1 is the current parameters.",
+	"mapsources-incorrectlat": "Error message when latitude is incorrect.",
+	"mapsources-incorrectlong": "Error message when longitude is incorrect.",
+	"mapsources-nopage": "Error message when project page is not available. Parameters:\n* $1 - the message {{msg-mw|Mapsources}}",
+	"mapsources-outofrange": "Error message when coordinates are out of range.",
+	"mapsources-math-missing-operand": "Error message when operand is missing.",
+	"mapsources-math-incorrect-input": "Error message when input is incorrect",
+	"mapsources-desc": "{{desc|name=Map Sources|url=http://www.mediawiki.org/wiki/Extension:MapSources}}\nExtension credits: special page description.  See [[Thread:Support/About MediaWiki:Mapsources-desc/cy|discussion]] of precise meaning.",
+	"mapsources-math-desc": "Extension credits: parser hook description"
 }

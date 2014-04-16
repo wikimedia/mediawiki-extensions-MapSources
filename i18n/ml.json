@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "Praveenp"
-        ]
-    },
-    "mapsources": "ഭൂപട സ്രോതസ്സുകൾ",
-    "mapsources-summary": "ഒരു സ്ഥലത്തെ അതിന്റെ നിർദ്ദേശാങ്കൾക്കനുസരിച്ച് വിവിധ സ്രോതസ്സുകളിൽ തിരയാൻ ഈ താൾ ഉപയോക്താക്കൾക്ക് സഹായമാകുന്നു.\nഅക്ഷാംശവും രേഖാംശവും മറ്റ് ചരങ്ങളും അർദ്ധവിരാമമുപയോഗിച്ച് വ്യത്യസ്തമാക്കുക.\nചരങ്ങൾ നൽകേണ്ടത് പേരും സമചിഹ്നവും വിലയുമായാണ്.\n\nഉദാ: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nകൂടുതലായി [https://wiki.toolserver.org/view/GeoHack ജിയോഹാക്ക്] രീതിയും സ്വീകരിക്കപ്പെടുന്നതാണ്.",
-    "mapsources-search-legend": "വിവരങ്ങൾക്കും ഭൂപടസ്രോതസ്സുകൾക്കുമായി തിരയുക",
-    "mapsources-coordinate": "നിർദ്ദേശാങ്കം:",
-    "mapsources-go": "പോകൂ",
-    "mapsources-errormsgs": "പിഴവ് സന്ദേശങ്ങൾ",
-    "mapsources-noparams": "ചരങ്ങളൊന്നും നൽകിയിട്ടില്ല",
-    "mapsources-incorrectparams": "തെറ്റായ ചരങ്ങൾ ($1) നൽകിയിരിക്കുന്നു",
-    "mapsources-incorrectlat": "തെറ്റായ അക്ഷാംശം",
-    "mapsources-incorrectlong": "തെറ്റായ രേഖാംശം",
-    "mapsources-nopage": "പദ്ധതി താൾ [[{{ns:project}}:$1|$1]] ലഭ്യമല്ല.",
-    "mapsources-outofrange": "നിർദ്ദേശാങ്കം പരിധിക്ക് പുറത്താണ്",
-    "mapsources-math-incorrect-input": "നൽകിയ വില തെറ്റാണ്",
-    "mapsources-desc": "വിവരങ്ങൾക്കും ഭൂപടസ്രോതസ്സുകൾക്കുമായി [[Special:MapSources|തിരയുക]]",
-    "mapsources-math-desc": "നിർദ്ദേശാങ്കങ്ങൾ പരിവർത്തനം ചെയ്യാനുള്ള ടാഗുകൾ കൂട്ടിച്ചേർക്കുക"
+	"@metadata": {
+		"authors": [
+			"Praveenp"
+		]
+	},
+	"mapsources": "ഭൂപട സ്രോതസ്സുകൾ",
+	"mapsources-summary": "ഒരു സ്ഥലത്തെ അതിന്റെ നിർദ്ദേശാങ്കൾക്കനുസരിച്ച് വിവിധ സ്രോതസ്സുകളിൽ തിരയാൻ ഈ താൾ ഉപയോക്താക്കൾക്ക് സഹായമാകുന്നു.\nഅക്ഷാംശവും രേഖാംശവും മറ്റ് ചരങ്ങളും അർദ്ധവിരാമമുപയോഗിച്ച് വ്യത്യസ്തമാക്കുക.\nചരങ്ങൾ നൽകേണ്ടത് പേരും സമചിഹ്നവും വിലയുമായാണ്.\n\nഉദാ: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nകൂടുതലായി [https://wiki.toolserver.org/view/GeoHack ജിയോഹാക്ക്] രീതിയും സ്വീകരിക്കപ്പെടുന്നതാണ്.",
+	"mapsources-search-legend": "വിവരങ്ങൾക്കും ഭൂപടസ്രോതസ്സുകൾക്കുമായി തിരയുക",
+	"mapsources-coordinate": "നിർദ്ദേശാങ്കം:",
+	"mapsources-go": "പോകൂ",
+	"mapsources-errormsgs": "പിഴവ് സന്ദേശങ്ങൾ",
+	"mapsources-noparams": "ചരങ്ങളൊന്നും നൽകിയിട്ടില്ല",
+	"mapsources-incorrectparams": "തെറ്റായ ചരങ്ങൾ ($1) നൽകിയിരിക്കുന്നു",
+	"mapsources-incorrectlat": "തെറ്റായ അക്ഷാംശം",
+	"mapsources-incorrectlong": "തെറ്റായ രേഖാംശം",
+	"mapsources-nopage": "പദ്ധതി താൾ [[{{ns:project}}:$1|$1]] ലഭ്യമല്ല.",
+	"mapsources-outofrange": "നിർദ്ദേശാങ്കം പരിധിക്ക് പുറത്താണ്",
+	"mapsources-math-incorrect-input": "നൽകിയ വില തെറ്റാണ്",
+	"mapsources-desc": "വിവരങ്ങൾക്കും ഭൂപടസ്രോതസ്സുകൾക്കുമായി [[Special:MapSources|തിരയുക]]",
+	"mapsources-math-desc": "നിർദ്ദേശാങ്കങ്ങൾ പരിവർത്തനം ചെയ്യാനുള്ള ടാഗുകൾ കൂട്ടിച്ചേർക്കുക"
 }

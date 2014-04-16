@@ -1,23 +1,23 @@
 {
-    "@metadata": {
-        "authors": [
-            "Xuacu"
-        ]
-    },
-    "mapsources": "Fontes de mapes",
-    "mapsources-summary": "Esta páxina permite a los usuarios buscar un llugar (definíu poles sos coordenaes) en múltiples recursos.\n\nLa llatitú, llonxitú y demás parámetros tienen de separase con comes.\nLos parámetros consisten nun identificador, el signu igual y un valor.\n\nExemplu: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nAmás, aceutaráse'l formatu [https://wiki.toolserver.org/view/GeoHack GeoHack].",
-    "mapsources-search-legend": "Alcontrar datos y mapes nos recursos",
-    "mapsources-coordinate": "Coordenaes:",
-    "mapsources-go": "Dir",
-    "mapsources-errormsgs": "Mensaxes d'error",
-    "mapsources-noparams": "Nun se dieron parámetros",
-    "mapsources-incorrectparams": "Dieronse los parámetros ($1) incorreutos",
-    "mapsources-incorrectlat": "Llatitú incorreuta",
-    "mapsources-incorrectlong": "Llonxitú incorreuta",
-    "mapsources-nopage": "Nun ta disponible la páxina del proyeutu [[{{ns:project}}:$1|$1]]",
-    "mapsources-outofrange": "Coordenaes fuera de rangu",
-    "mapsources-math-missing-operand": "Falta un operando",
-    "mapsources-math-incorrect-input": "Entrada incorreuta",
-    "mapsources-desc": "[[Special:MapSources|Buscar]] datos y mapes nos recursos",
-    "mapsources-math-desc": "Amestar etiquetes pa la conversión de coordenaes"
+	"@metadata": {
+		"authors": [
+			"Xuacu"
+		]
+	},
+	"mapsources": "Fontes de mapes",
+	"mapsources-summary": "Esta páxina permite a los usuarios buscar un llugar (definíu poles sos coordenaes) en múltiples recursos.\n\nLa llatitú, llonxitú y demás parámetros tienen de separase con comes.\nLos parámetros consisten nun identificador, el signu igual y un valor.\n\nExemplu: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nAmás, aceutaráse'l formatu [https://wiki.toolserver.org/view/GeoHack GeoHack].",
+	"mapsources-search-legend": "Alcontrar datos y mapes nos recursos",
+	"mapsources-coordinate": "Coordenaes:",
+	"mapsources-go": "Dir",
+	"mapsources-errormsgs": "Mensaxes d'error",
+	"mapsources-noparams": "Nun se dieron parámetros",
+	"mapsources-incorrectparams": "Dieronse los parámetros ($1) incorreutos",
+	"mapsources-incorrectlat": "Llatitú incorreuta",
+	"mapsources-incorrectlong": "Llonxitú incorreuta",
+	"mapsources-nopage": "Nun ta disponible la páxina del proyeutu [[{{ns:project}}:$1|$1]]",
+	"mapsources-outofrange": "Coordenaes fuera de rangu",
+	"mapsources-math-missing-operand": "Falta un operando",
+	"mapsources-math-incorrect-input": "Entrada incorreuta",
+	"mapsources-desc": "[[Special:MapSources|Buscar]] datos y mapes nos recursos",
+	"mapsources-math-desc": "Amestar etiquetes pa la conversión de coordenaes"
 }

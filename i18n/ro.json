@@ -1,20 +1,20 @@
 {
-    "@metadata": {
-        "authors": [
-            "Firilacroco",
-            "Minisarm",
-            "Stelistcristi"
-        ]
-    },
-    "mapsources": "Surse pentru hartă",
-    "mapsources-coordinate": "Coordonate:",
-    "mapsources-go": "Du-te",
-    "mapsources-errormsgs": "Mesaje de eroare",
-    "mapsources-noparams": "Niciun parametru introdus",
-    "mapsources-incorrectparams": "Parametri incorecți ($1) furnizați",
-    "mapsources-incorrectlat": "Latitudine incorectă",
-    "mapsources-incorrectlong": "Longitudine incorectă",
-    "mapsources-outofrange": "Coordonate în afara limitei",
-    "mapsources-math-missing-operand": "Operand lipsă",
-    "mapsources-math-incorrect-input": "Intrare incorectă"
+	"@metadata": {
+		"authors": [
+			"Firilacroco",
+			"Minisarm",
+			"Stelistcristi"
+		]
+	},
+	"mapsources": "Surse pentru hartă",
+	"mapsources-coordinate": "Coordonate:",
+	"mapsources-go": "Du-te",
+	"mapsources-errormsgs": "Mesaje de eroare",
+	"mapsources-noparams": "Niciun parametru introdus",
+	"mapsources-incorrectparams": "Parametri incorecți ($1) furnizați",
+	"mapsources-incorrectlat": "Latitudine incorectă",
+	"mapsources-incorrectlong": "Longitudine incorectă",
+	"mapsources-outofrange": "Coordonate în afara limitei",
+	"mapsources-math-missing-operand": "Operand lipsă",
+	"mapsources-math-incorrect-input": "Intrare incorectă"
 }

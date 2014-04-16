@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Avjoska",
-            "Pikne"
-        ]
-    },
-    "mapsources-coordinate": "Koordinaadid:",
-    "mapsources-go": "Mine"
+	"@metadata": {
+		"authors": [
+			"Avjoska",
+			"Pikne"
+		]
+	},
+	"mapsources-coordinate": "Koordinaadid:",
+	"mapsources-go": "Mine"
 }

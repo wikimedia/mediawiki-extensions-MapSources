@@ -1,23 +1,23 @@
 {
-    "@metadata": {
-        "authors": [
-            "Simon Shek"
-        ]
-    },
-    "mapsources": "地圖來源",
-    "mapsources-summary": "此頁面允許使用者以位置座標在多個地圖搜尋位置。\n\n緯度、 經度和附加的參數必須用逗號分隔。\n參數包含一個識別碼、 等號和一個值。\n\n例子：52° 31′ N, 13° 24′ 30″ E, 比例=50000\n\n此外，亦接受[https://wiki.toolserver.org/view/GeoHack GeoHack]格式填寫。",
-    "mapsources-search-legend": "搜尋資料和地圖來源",
-    "mapsources-coordinate": "座標：",
-    "mapsources-go": "提交",
-    "mapsources-errormsgs": "錯誤訊息",
-    "mapsources-noparams": "沒有參數",
-    "mapsources-incorrectparams": "參數（$1）有誤",
-    "mapsources-incorrectlat": "緯度有誤",
-    "mapsources-incorrectlong": "經度有誤",
-    "mapsources-nopage": "沒有項目頁[[Project:$1]]可用",
-    "mapsources-outofrange": "座標超出範圍",
-    "mapsources-math-missing-operand": "缺少運算元",
-    "mapsources-math-incorrect-input": "輸入有誤",
-    "mapsources-desc": "[[Special:MapSources|搜尋]]資料和地圖來源",
-    "mapsources-math-desc": "添加坐標變換標記"
+	"@metadata": {
+		"authors": [
+			"Simon Shek"
+		]
+	},
+	"mapsources": "地圖來源",
+	"mapsources-summary": "此頁面允許使用者以位置座標在多個地圖搜尋位置。\n\n緯度、 經度和附加的參數必須用逗號分隔。\n參數包含一個識別碼、 等號和一個值。\n\n例子：52° 31′ N, 13° 24′ 30″ E, 比例=50000\n\n此外，亦接受[https://wiki.toolserver.org/view/GeoHack GeoHack]格式填寫。",
+	"mapsources-search-legend": "搜尋資料和地圖來源",
+	"mapsources-coordinate": "座標：",
+	"mapsources-go": "提交",
+	"mapsources-errormsgs": "錯誤訊息",
+	"mapsources-noparams": "沒有參數",
+	"mapsources-incorrectparams": "參數（$1）有誤",
+	"mapsources-incorrectlat": "緯度有誤",
+	"mapsources-incorrectlong": "經度有誤",
+	"mapsources-nopage": "沒有項目頁[[Project:$1]]可用",
+	"mapsources-outofrange": "座標超出範圍",
+	"mapsources-math-missing-operand": "缺少運算元",
+	"mapsources-math-incorrect-input": "輸入有誤",
+	"mapsources-desc": "[[Special:MapSources|搜尋]]資料和地圖來源",
+	"mapsources-math-desc": "添加坐標變換標記"
 }
