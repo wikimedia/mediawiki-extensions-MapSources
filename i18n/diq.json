@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Gorizon"
+			"Gorizon",
+			"Mirzali"
 		]
 	},
-	"mapsources": "Çımey xerita",
+	"mapsources": "Çımeyê xerita",
 	"mapsources-coordinate": "Koordinati:",
 	"mapsources-go": "Şo"
 }
