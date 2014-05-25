@@ -39,6 +39,11 @@ $specialPageAliases['fa'] = array(
 	'MapSources' => array( 'منابع_نقشه' ),
 );
 
+/** Malayalam (മലയാളം) */
+$specialPageAliases['ml'] = array(
+	'MapSources' => array( 'ഭൂപടസ്രോതസ്സുകൾ' ),
+);
+
 /** Vietnamese (Tiếng Việt) */
 $specialPageAliases['vi'] = array(
 	'MapSources' => array( 'Nguồn_bản_đồ' ),
