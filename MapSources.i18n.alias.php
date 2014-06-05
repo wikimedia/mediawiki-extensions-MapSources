@@ -39,6 +39,11 @@ $specialPageAliases['fa'] = array(
 	'MapSources' => array( 'منابع_نقشه' ),
 );
 
+/** Korean (한국어) */
+$specialPageAliases['ko'] = array(
+	'MapSources' => array( '지도원본' ),
+);
+
 /** Malayalam (മലയാളം) */
 $specialPageAliases['ml'] = array(
 	'MapSources' => array( 'ഭൂപടസ്രോതസ്സുകൾ' ),
