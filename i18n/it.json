@@ -8,7 +8,7 @@
 	"mapsources-summary": "Questa pagina speciale permette di cercare per una posizione (definita dalle sue coordinate) in diverse risorse.\n\nLatitudine, longitudine e parametri aggiuntivi devono essere separati con virgole.\nI parametri sono costituiti da un identificatore, il segno di uguale e un valore.\n\nEsempio: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nInoltre, anche il formato [https://wiki.toolserver.org/view/GeoHack GeoHack] è accettato.",
 	"mapsources-search-legend": "Trova dati e mappe in risorse",
 	"mapsources-coordinate": "Coordinate:",
-	"mapsources-go": "Cerca",
+	"mapsources-go": "Vai",
 	"mapsources-errormsgs": "Messaggio di errore",
 	"mapsources-noparams": "Parametri mancanti",
 	"mapsources-incorrectparams": "Inseriti parametri non corretti ($1)",
