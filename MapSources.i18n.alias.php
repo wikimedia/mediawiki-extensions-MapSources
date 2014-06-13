@@ -49,6 +49,11 @@ $specialPageAliases['ml'] = array(
 	'MapSources' => array( 'ഭൂപടസ്രോതസ്സുകൾ' ),
 );
 
+/** Dutch (Nederlands) */
+$specialPageAliases['nl'] = array(
+	'MapSources' => array( 'MapBronnen' ),
+);
+
 /** Vietnamese (Tiếng Việt) */
 $specialPageAliases['vi'] = array(
 	'MapSources' => array( 'Nguồn_bản_đồ' ),
