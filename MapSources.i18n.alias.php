@@ -39,6 +39,11 @@ $specialPageAliases['fa'] = array(
 	'MapSources' => array( 'منابع_نقشه' ),
 );
 
+/** Upper Sorbian (hornjoserbsce) */
+$specialPageAliases['hsb'] = array(
+	'MapSources' => array( 'Kartowe_žórła' ),
+);
+
 /** Korean (한국어) */
 $specialPageAliases['ko'] = array(
 	'MapSources' => array( '지도원본' ),

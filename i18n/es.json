@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Armando-Martin",
-			"Ciencia Al Poder"
+			"Ciencia Al Poder",
+			"Macofe"
 		]
 	},
 	"mapsources": "Fuentes de datos del mapa",
-	"mapsources-summary": "Esta página permite a los usuarios buscar en múltiples fuentes para un lugar dado por sus coordenadas.\n\nLa latitud, longitud y los parámetros adicionales deben separarse con comas.\nLos parámetros consisten en un identificador, el signo igual y un valor.\n\nEjemplo: 52° 31′ N, 13° 24′ 30″ E, escala=50000\n\nAdemás, se aceptará el formato wiki de Wikipedia Geohack.",
-	"mapsources-search-legend": "Búsqueda de datos y fuentes de datos del mapa",
+	"mapsources-summary": "Esta página permite a los usuarios buscar una ubicación (definida por sus coordenadas) en múltiples fuentes.\n\nLa latitud, la longitud y los parámetros adicionales deben separarse con comas.\nLos parámetros consisten en un identificador, el signo igual y un valor.\n\nEjemplo: 52° 31′ N, 13° 24′ 30″ E, escala=50000\n\nAdemás, se aceptará el formato [https://wiki.toolserver.org/view/GeoHack GeoHack].",
+	"mapsources-search-legend": "Encuentra datos y mapas en los recursos",
 	"mapsources-coordinate": "Coordenadas:",
 	"mapsources-go": "Ir",
 	"mapsources-errormsgs": "Mensajes de error",
@@ -19,6 +20,6 @@
 	"mapsources-outofrange": "Coordenadas fuera de rango",
 	"mapsources-math-missing-operand": "Falta un operador",
 	"mapsources-math-incorrect-input": "Entrada incorrecta",
-	"mapsources-desc": "[[Special:MapSources|Buscar]] datos y fuentes de datos del mapa",
+	"mapsources-desc": "[[Special:MapSources|Buscar]] datos y mapas en los recursos",
 	"mapsources-math-desc": "Agrega etiquetas para la conversión de coordenadas"
 }
