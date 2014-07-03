@@ -49,6 +49,11 @@ $specialPageAliases['ko'] = array(
 	'MapSources' => array( '지도원본' ),
 );
 
+/** Macedonian (македонски) */
+$specialPageAliases['mk'] = array(
+	'MapSources' => array( 'КартографскиИзвори' ),
+);
+
 /** Malayalam (മലയാളം) */
 $specialPageAliases['ml'] = array(
 	'MapSources' => array( 'ഭൂപടസ്രോതസ്സുകൾ' ),
