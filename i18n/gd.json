@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"GunChleoc"
+		]
+	},
+	"mapsources": "Tùsan mapa",
+	"mapsources-summary": "Leigidh an duilleag seo leis na cleachdaichean àite a lorg (a-rèir a chàraid-àireimh) ann an iomadh goireas.\n\nFeumar domhan-leud, domhan-fhad 's paramadairean eile a sgaradh le cromagan.\n'S e aithnichear, samhla co-ionnannach 's luadh a th' ann am paramadair.\n\nBall-eisimpleir: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nA bharrachd air sin, gabhaidh sinn ris an fhòrmat [https://wiki.toolserver.org/view/GeoHack GeoHack].",
+	"mapsources-search-legend": "Lorg dàta 's mapaichean ann an goireasan",
+	"mapsources-coordinate": "Càraid-àireimh:",
+	"mapsources-go": "Siuthad",
+	"mapsources-errormsgs": "Teachdaireachdan mearachd",
+	"mapsources-noparams": "Cha deach paramadair a thoirt seachad",
+	"mapsources-incorrectparams": "Chaidh paramadairean  ($1) a thoirt seachad nach eil mar bu chòir",
+	"mapsources-incorrectlat": "Chan eil an domhan-leud mar bu chòir",
+	"mapsources-incorrectlong": "Chan eil an domhan-fhad mar bu chòir",
+	"mapsources-nopage": "Chan eil duilleag a' phròiseict [[{{ns:project}}:$1|$1]] ri fhaighinn",
+	"mapsources-outofrange": "Chan eil an càraid-àireimh san rainse",
+	"mapsources-math-missing-operand": "Tha oparand a dhìth",
+	"mapsources-math-incorrect-input": "Chan eil na chaidh a chur a-steach mar bu chòir",
+	"mapsources-desc": "[[Special:MapSources|Lorg]] dàta 's mapaichean ann an goireasan",
+	"mapsources-math-desc": "Cuiridh seo tagaichean ris airson iompachadh nan càraidean-àireimh"
+}
