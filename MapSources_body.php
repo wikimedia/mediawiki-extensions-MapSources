@@ -20,19 +20,19 @@
 
 class MapSourcesPage extends SpecialPage {
 
-	var $lat = 0;
-	var $long = 0;
-	var $params = '';
-	var $par;
-	var $errorMsgs = array();
-	var $locName = '';
+	public $lat = 0;
+	public $long = 0;
+	public $params = '';
+	public $par;
+	public $errorMsgs = array();
+	public $locName = '';
 
-	var $google = 0.1;
-	var $mapquest = 9;
-	var $msn = 1;
-	var $multimap = 100000;
-	var $osmzoom = 12;
-	var $osmzoommap = 10;
+	public $google = 0.1;
+	public $mapquest = 9;
+	public $msn = 1;
+	public $multimap = 100000;
+	public $osmzoom = 12;
+	public $osmzoommap = 10;
 
 	public function __construct(
 		$name = 'MapSources', $restriction = '', $listed = true,
