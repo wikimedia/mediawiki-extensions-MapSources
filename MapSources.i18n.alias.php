@@ -76,5 +76,5 @@ $specialPageAliases['zh-hans'] = array(
 
 /** Traditional Chinese (中文（繁體）‎) */
 $specialPageAliases['zh-hant'] = array(
-	'MapSources' => array( '地圖源' ),
+	'MapSources' => array( '地圖資源' ),
 );
