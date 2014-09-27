@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Simon Shek",
-			"Justincheng12345"
+			"Justincheng12345",
+			"Cwlin0416"
 		]
 	},
 	"mapsources": "地圖來源",
@@ -19,6 +20,6 @@
 	"mapsources-outofrange": "座標超出範圍",
 	"mapsources-math-missing-operand": "缺少運算元",
 	"mapsources-math-incorrect-input": "輸入有誤",
-	"mapsources-desc": "[[Special:MapSources|搜尋]]資料和地圖來源",
+	"mapsources-desc": "在資源中[[Special:MapSources|搜尋]]資料和地圖",
 	"mapsources-math-desc": "添加坐標變換標記"
 }
