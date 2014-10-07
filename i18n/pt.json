@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vitorvicentevalente"
+		]
+	},
+	"mapsources-coordinate": "Coordenadas:",
+	"mapsources-go": "Ir",
+	"mapsources-errormsgs": "Mensagens de erro",
+	"mapsources-noparams": "Não foram fornecidos parâmetros",
+	"mapsources-incorrectparams": "Parâmetros fornecidos ($1) incorretos",
+	"mapsources-incorrectlat": "Latitude incorreta",
+	"mapsources-incorrectlong": "Longitude incorreta"
+}
