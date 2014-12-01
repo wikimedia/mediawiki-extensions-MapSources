@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Protnet",
-			"ZaDiak"
+			"ZaDiak",
+			"Glavkos"
 		]
 	},
-	"mapsources-coordinate": "Συντεταγμένη:",
+	"mapsources-coordinate": "Συντεταγμένες:",
 	"mapsources-go": "Πήγαινε",
 	"mapsources-errormsgs": "Μηνύματα σφάλματος"
 }
