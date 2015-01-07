@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Lloffiwr"
+			"Lloffiwr",
+			"Robin Owain"
 		]
 	},
 	"mapsources": "Ffynnonellau mapiau",
-	"mapsources-search-legend": "Chwilio am ffynonellau data a mapio",
-	"mapsources-coordinate": "Cyfesuryn:",
+	"mapsources-search-legend": "Chwilio am data a mapiau yn yr adnoddau",
+	"mapsources-coordinate": "Cyfesurynnau:",
 	"mapsources-go": "Chwilier",
 	"mapsources-errormsgs": "Negeseuon gwallau",
 	"mapsources-noparams": "Ni roddwyd unrhyw baramedrau",
@@ -17,6 +18,6 @@
 	"mapsources-outofrange": "Y cyfesuryn yn rhy bell o'r cyrraedd",
 	"mapsources-math-missing-operand": "Operand yn eisiau",
 	"mapsources-math-incorrect-input": "Mewnbwn anghywir",
-	"mapsources-desc": "[[Special:MapSources|Chwilio]] am ffynonellau'r mapiau a'r data",
+	"mapsources-desc": "[[Special:MapSources|Chwilio]] data a mapiau o fewn yr adnoddau",
 	"mapsources-math-desc": "Ychwanegu tagiau er mwyn trosi cyfesurynnau"
 }
