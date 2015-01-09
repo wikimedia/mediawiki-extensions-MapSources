@@ -5,8 +5,8 @@
 		]
 	},
 	"mapsources": "Sorgende de le mappe",
-	"mapsources-summary": "Sta pàgene permette a l'utinde de cercà pe sorgende multiple pe 'na località date da le coordinate sue.\n\nLatitudine, longitudine e parametre aggiundive ponne essere separate cu le virgole.\nLe parametre tènene 'n'idendificatore,'u segne uguale e 'nu valore.\n\nEsembie: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nIn aggiunde: 'u formate [https://wiki.toolserver.org/view/GeoHack GeoHack] avène accettate.",
-	"mapsources-search-legend": "Cirche pe date e origgene d'a mappe",
+	"mapsources-summary": "Sta pàgene permette a l'utinde de cercà pe sorgende multiple pe 'na località (date da le coordinate sue).\n\nLatitudine, longitudine e parametre aggiundive ponne essere separate cu le virgole.\nLe parametre tènene 'n'idendificatore,'u segne uguale e 'nu valore.\n\nEsembie: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nIn aggiunde, 'u formate [https://wiki.toolserver.org/view/GeoHack GeoHack] avène accettate.",
+	"mapsources-search-legend": "Cirche pe date e mappe jndr'à le resorse",
 	"mapsources-coordinate": "Coordinate:",
 	"mapsources-go": "Véje",
 	"mapsources-errormsgs": "Messàgge d'errore",
@@ -18,6 +18,6 @@
 	"mapsources-outofrange": "Coordinate fore da l'indervalle",
 	"mapsources-math-missing-operand": "Operande zumbate",
 	"mapsources-math-incorrect-input": "'Nzerimento ingorrette",
-	"mapsources-desc": "[[Special:MapSources|Cirche]] pe date e mappe d'origgene",
+	"mapsources-desc": "[[Special:MapSources|Cirche]] date e mappe jndr'à le resorse",
 	"mapsources-math-desc": "Aggiunge le tag pa conversione de le coordinate"
 }
