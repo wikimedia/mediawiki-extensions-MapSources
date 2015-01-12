@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"J budissin"
+		]
+	},
+	"mapsources": "Žórła kartow a datow",
+	"mapsources-search-legend": "Namakaj daty a karty w resursach",
+	"mapsources-coordinate": "Koordinaty:",
+	"mapsources-go": "Wotesłać",
+	"mapsources-errormsgs": "Rozprawa zmylkow",
+	"mapsources-noparams": "Žane parametry podate",
+	"mapsources-incorrectparams": "Zmylkate parametry ($1) podate",
+	"mapsources-incorrectlat": "Zmylkate podaće šěrinoweho stopnja",
+	"mapsources-incorrectlong": "Zmylkate podaće stopnja dołhoty",
+	"mapsources-nopage": "Žana projektowa strona [[{{ns:project}}:$1|$1]] k dispoziciji njesteji",
+	"mapsources-outofrange": "Njepłaćiwa koordinata",
+	"mapsources-math-missing-operand": "Pobrachowacy parameter",
+	"mapsources-math-incorrect-input": "Zmylkate podaće"
+}
