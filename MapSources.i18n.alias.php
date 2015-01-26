@@ -26,7 +26,7 @@ $specialPageAliases['arz'] = array(
 
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
-	'MapSources' => array( 'Kartenquellen' ),
+	'MapSources' => array( 'Kartenherkunft', 'Kartenquellen' ),
 );
 
 /** Zazaki (Zazaki) */
