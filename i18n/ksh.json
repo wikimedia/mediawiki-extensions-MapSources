@@ -4,5 +4,19 @@
 			"Purodha"
 		]
 	},
-	"mapsources-coordinate": "Ko'oodėnaate"
+	"mapsources": "Quälle för Kaate",
+	"mapsources-search-legend": "Fengk Dahte un Kaate",
+	"mapsources-coordinate": "Ko'oodėnaate",
+	"mapsources-go": "Lohß Jonn!",
+	"mapsources-errormsgs": "Mäldonge övver Fähler",
+	"mapsources-noparams": "De Parramehtere fähle",
+	"mapsources-incorrectparams": "Onjöltijje Parramehtere ($1) aanjejovve",
+	"mapsources-incorrectlat": "Verkehte Beijde om Johbu",
+	"mapsources-incorrectlong": "Verkehte Läng om Johbu",
+	"mapsources-nopage": "Kein Projäksigg [[{{ns:project}}:$1|$1]] ze fenge",
+	"mapsources-outofrange": "Ko'oodėnaate sin ußerhallf vum zohjelohße Berett",
+	"mapsources-math-missing-operand": "Enne Parramehter fählt",
+	"mapsources-math-incorrect-input": "En onjöltejje Enjahbe",
+	"mapsources-desc": "Quälle för Dahte un Kaate [[Special:MapSources|Söhke]]",
+	"mapsources-math-desc": "Befähle för et Ömrääschne vun Ko'oodėnaate."
 }

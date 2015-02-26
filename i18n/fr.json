@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Crochet.david",
-			"Gomoko"
+			"Gomoko",
+			"Hercule"
 		]
 	},
 	"mapsources": "Sources de cartes",
@@ -17,7 +18,7 @@
 	"mapsources-incorrectlong": "Longitude erronée",
 	"mapsources-nopage": "Pas de page de projet [[{{ns:project}}:$1|$1]] disponible",
 	"mapsources-outofrange": "Coordonées invalides",
-	"mapsources-math-missing-operand": "Opérateur(s) manquant(s)",
+	"mapsources-math-missing-operand": "Opérateur manquant",
 	"mapsources-math-incorrect-input": "Entrée erronée",
 	"mapsources-desc": "[[Special:MapSources|Recherche]] de données et de cartes dans les ressources",
 	"mapsources-math-desc": "Ajoute des balises pour la conversion des coordonnées"
