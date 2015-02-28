@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Metalhead64"
+			"Metalhead64",
+			"Kghbln"
 		]
 	},
 	"mapsources": "Karten- und Datenquellen",
@@ -18,6 +19,6 @@
 	"mapsources-outofrange": "Ungültige Koordinate",
 	"mapsources-math-missing-operand": "Fehlende(r) Parameter",
 	"mapsources-math-incorrect-input": "Fehlerhafte Eingabe",
-	"mapsources-desc": "[[Special:MapSources|Suche]] nach Daten und Karten in Ressourcen",
+	"mapsources-desc": "Ergänzt eine [[Special:MapSources|Spezialseite]] zur Suche nach Daten und Karten in Ressourcen",
 	"mapsources-math-desc": "Ergänzt Tags zur Umwandlung von Koordinaten"
 }
