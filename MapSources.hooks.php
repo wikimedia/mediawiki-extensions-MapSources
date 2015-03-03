@@ -29,17 +29,21 @@ class MapSourcesHooks {
 			( $args['lon'] + $span * cos( $args['lat'] * 0.0175 ) ).','.
 			( $args['lat'] + $span / 2 );
 
-		return
-			Html::element( 'iframe', array(
-				// based on https://de.wikipedia.org/w/index.php?title=MediaWiki:GeoHack.js
-				'src' => '//toolserver.org/~kolossos/openlayers/embed.html?' . http_build_query( array(
-					'layer' => strtolower( $args['layer'] ),
-					'bbox' => $bbox,
-					'marker' => $args['lat'].','.$args['lon']
-				) ),
-				'width' => $args['w'],
-				'height' => $args['h'],
-			) );
+		$options = array(
+			// based on https://de.wikipedia.org/w/index.php?title=MediaWiki:GeoHack.js
+			'src' => '//toolserver.org/~kolossos/openlayers/embed.html?' . http_build_query( array(
+				'layer' => strtolower( $args['layer'] ),
+				'bbox' => $bbox,
+				'marker' => $args['lat'].','.$args['lon']
+			) ),
+			'height' => $args['h'],
+		);
+
+		if ( isset( $args['w'] ) ) {
+			$options['width'] = $args['w'];
+		}
+
+		return Html::element( 'iframe', $options );
 	}
 
 	/**
