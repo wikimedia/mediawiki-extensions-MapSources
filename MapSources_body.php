@@ -85,7 +85,7 @@ class MapSourcesPage extends SpecialPage {
 			Html::rawElement( 'fieldset', array(),
 				Html::element( 'legend', array(), $this->msg( 'mapsources-search-legend' )->escaped() ) .
 				Html::rawElement( 'form', array( 'method' => 'get', 'action' => $wgScript ),
-					Html::hidden( 'title', self::getTitleFor( 'Mapsources' )->getPrefixedText() ) .
+					Html::hidden( 'title', self::getTitleFor( 'MapSources' )->getPrefixedText() ) .
 					Html::rawElement( 'p', array(),
 						Xml::inputLabel( $this->msg( 'mapsources-coordinate' )->escaped(), 'params', 'params', 80, $defaultValue ) .
 						Xml::submitButton( $this->msg( 'mapsources-go' )->escaped() )
