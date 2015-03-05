@@ -31,7 +31,7 @@ class MapSourcesHooks {
 
 		$options = array(
 			// based on https://de.wikipedia.org/w/index.php?title=MediaWiki:GeoHack.js
-			'src' => '//toolserver.org/~kolossos/openlayers/embed.html?' . http_build_query( array(
+			'src' => '//tools.wmflabs.org/wiwosm/osm-on-ol/embed-labs.html?' . http_build_query( array(
 				'layer' => strtolower( $args['layer'] ),
 				'bbox' => $bbox,
 				'marker' => $args['lat'].','.$args['lon']
