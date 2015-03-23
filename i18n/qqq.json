@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Lloffiwr",
-			"Shirayuki"
+			"Shirayuki",
+			"Umherirrender"
 		]
 	},
 	"mapsources": "{{doc-special|MapSources|unlisted=1}}",
@@ -19,6 +20,6 @@
 	"mapsources-outofrange": "Error message when coordinates are out of range.",
 	"mapsources-math-missing-operand": "Error message when operand is missing.",
 	"mapsources-math-incorrect-input": "Error message when input is incorrect",
-	"mapsources-desc": "{{desc|name=Map Sources|url=http://www.mediawiki.org/wiki/Extension:MapSources}}\nExtension credits: special page description.  See [[Thread:Support/About MediaWiki:Mapsources-desc/cy|discussion]] of precise meaning.",
+	"mapsources-desc": "{{desc|name=Map Sources|url=https://www.mediawiki.org/wiki/Extension:MapSources}}\nExtension credits: special page description.  See [[Thread:Support/About MediaWiki:Mapsources-desc/cy|discussion]] of precise meaning.",
 	"mapsources-math-desc": "Extension credits: parser hook description"
 }
