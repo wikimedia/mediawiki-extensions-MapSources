@@ -24,6 +24,11 @@ $specialPageAliases['arz'] = array(
 	'MapSources' => array( 'مصادر_الخريطه' ),
 );
 
+/** Western Balochi (بلوچی رخشانی) */
+$specialPageAliases['bgn'] = array(
+	'MapSources' => array( 'نخشه_ئی_زهی' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'MapSources' => array( 'Kartenherkunft', 'Kartenquellen' ),
