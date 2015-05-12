@@ -19,7 +19,7 @@ $specialPageAliases['ar'] = array(
 	'MapSources' => array( 'مصادر_الخريطة' ),
 );
 
-/** Egyptian Spoken Arabic (مصرى) */
+/** Egyptian Arabic (مصرى) */
 $specialPageAliases['arz'] = array(
 	'MapSources' => array( 'مصادر_الخريطه' ),
 );
