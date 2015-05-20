@@ -1,12 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
-			"Luckas"
+			"Luckas",
+			"Araceletorres"
 		]
 	},
 	"mapsources-coordinate": "Coordenadas:",
 	"mapsources-go": "Ir",
 	"mapsources-errormsgs": "Mensagens de erro",
+	"mapsources-noparams": "Nenhum parâmetro dado",
+	"mapsources-incorrectparams": "Parâmetros dados ($1) incorretos",
 	"mapsources-incorrectlat": "Latitude incorreta",
-	"mapsources-incorrectlong": "Longitude incorreta"
+	"mapsources-incorrectlong": "Longitude incorreta",
+	"mapsources-math-incorrect-input": "Entrada incorreta"
 }
