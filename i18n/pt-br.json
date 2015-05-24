@@ -6,6 +6,8 @@
 		]
 	},
 	"mapsources": "Fontes de mapas",
+	"mapsources-summary": "Esta página permite aos usuários procurar um local (definido pelas suas coordenadas) em vários recursos.\n\nLatitude, longitude e parâmetros adicionais devem ser separados por vírgulas.\nParâmetros consistem em um identificador, o sinal de igual e um valor.\n\nExemplo: 52° 31′ N, 13° 24′ 30″ E, escala=50000\n\nAlém disso, o formato [https://wiki.toolserver.org/view/GeoHack GeoHack] será aceito.",
+	"mapsources-search-legend": "Encontrar dados e mapas nos recursos",
 	"mapsources-coordinate": "Coordenadas:",
 	"mapsources-go": "Ir",
 	"mapsources-errormsgs": "Mensagens de erro",
@@ -13,5 +15,10 @@
 	"mapsources-incorrectparams": "Parâmetros dados ($1) incorretos",
 	"mapsources-incorrectlat": "Latitude incorreta",
 	"mapsources-incorrectlong": "Longitude incorreta",
-	"mapsources-math-incorrect-input": "Entrada incorreta"
+	"mapsources-nopage": "Nenhuma página do projeto [[{{ns:project}}:$1|$1]] disponível",
+	"mapsources-outofrange": "Coordenadas fora do intervalo",
+	"mapsources-math-missing-operand": "Faltando operador",
+	"mapsources-math-incorrect-input": "Entrada incorreta",
+	"mapsources-desc": "[[Special:MapSources|Buscar]] dados e mapas em recursos",
+	"mapsources-math-desc": "Adicionar etiquetas para conversão de coordenadas"
 }
