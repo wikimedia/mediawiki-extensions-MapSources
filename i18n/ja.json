@@ -6,7 +6,7 @@
 		]
 	},
 	"mapsources": "地図情報源",
-	"mapsources-summary": "このページでは、指定した緯度経度の場所について複数の地図情報源で検索できます。\n\n緯度、経度、追加のパラメーターは、カンマで区切ってください。\n追加のパラメーターの書式は 識別子=値 です。\n\n例: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nさらに、[https://wiki.toolserver.org/view/GeoHack ジオハック]の書式も使用できます。",
+	"mapsources-summary": "このページでは、(緯度経度で定義された)場所について複数の地図情報源で検索できます。\n\n緯度、経度、追加のパラメーターは、カンマで区切ってください。\n追加のパラメーターの書式は 識別子=値 です。\n\n例: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nさらに、[https://wiki.toolserver.org/view/GeoHack ジオハック]の書式も使用できます。",
 	"mapsources-search-legend": "データおよび情報源にある地図を見つける",
 	"mapsources-coordinate": "緯度経度:",
 	"mapsources-go": "実行",
