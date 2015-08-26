@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"아라"
+			"아라",
+			"Hwangjy9"
 		]
 	},
 	"mapsources": "지도 출처",
 	"mapsources-summary": "이 문서는 사용자가 해당 좌표에 의해 지정된 위치에 대한 여러 출처를 검색할 수 있습니다.\n\n위도, 경도 및 추가 변수는 쉼표로 구분해야 합니다.\n변수 식별자, 등호와 값으로 구성되어 있습니다.\n\n예 : 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\n또한 [https://wiki.toolserver.org/view/GeoHack GeoHack] 형식도 허용합니다.",
 	"mapsources-search-legend": "데이터와 지도 출처에 대해 검색",
-	"mapsources-coordinate": "좌표",
+	"mapsources-coordinate": "좌표:",
 	"mapsources-go": "가기",
 	"mapsources-errormsgs": "오류 메시지",
 	"mapsources-noparams": "주어진 변수가 없습니다",
