@@ -11,42 +11,17 @@
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
-if ( !defined( 'MEDIAWIKI' ) ) {
-	die( 'This file is a MediaWiki extension, it is not a valid entry point' );
+if ( function_exists( 'wfLoadExtension' ) ) {
+	wfLoadExtension( 'MapSources' );
+	// Keep i18n globals so mergeMessageFileList.php doesn't break
+	$wgMessagesDirs['MapSources'] = __DIR__ . '/i18n';
+	$wgExtensionMessagesFiles['MapSourcesAlias'] = __DIR__ . '/MapSources.i18n.alias.php';
+	$wgExtensionMessagesFiles['MapSourcesMagic'] = __DIR__ . '/MapSources.i18n.magic.php';
+	/*wfWarn(
+		'Deprecated PHP entry point used for MapSources extension. Please use wfLoadExtension instead, ' .
+		'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
+	);*/
+	return;
+} else {
+	die( 'This version of the MapSources extension requires MediaWiki 1.25+' );
 }
-
-// autoloader
-$wgAutoloadClasses['MapSourcesHooks'] = __DIR__ . '/MapSources.hooks.php';
-$wgAutoloadClasses['MapSourcesPage'] = __DIR__ . '/MapSources_body.php';
-$wgAutoloadClasses['MapSourcesMath'] = __DIR__ . '/MapSources_math.php';
-$wgAutoloadClasses['MapSourcesTransform'] = __DIR__ . '/MapSources_transform.php';
-
-// special page
-$wgSpecialPages['MapSources'] = 'MapSourcesPage';
-
-// parser hooks
-$wgHooks['ParserFirstCallInit'][] = 'MapSourcesHooks::parserHooks';
-
-// extension & magic words i18n
-$wgMessagesDirs['MapSources'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['MapSources'] = __DIR__ . '/MapSources.i18n.php';
-$wgExtensionMessagesFiles['MapSourcesMagic'] = __DIR__ . '/MapSources.i18n.magic.php';
-$wgExtensionMessagesFiles['MapSourcesAlias'] = __DIR__ . '/MapSources.i18n.alias.php';
-
-// credits
-$wgExtensionCredits['specialpage'][] = array(
-	'path' => __FILE__,
-	'name' => 'MapSources',
-	'url' => 'https://www.mediawiki.org/wiki/Extension:MapSources',
-	'descriptionmsg' => 'mapsources-desc',
-	'author' => array( 'Roland Unger', 'Egil Kvaleberg', 'Matthias Mullie' ),
-	'version' => '1.8.0'
-);
-$wgExtensionCredits['parserhook'][] = array(
-	'path' => __FILE__,
-	'name' => 'MapSourcesMath',
-	'url' => 'https://www.mediawiki.org/wiki/Extension:MapSources',
-	'descriptionmsg' => 'mapsources-math-desc',
-	'author' => array( 'Roland Unger', 'Matthias Mullie' ),
-	'version' => '1.07'
-);

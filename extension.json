@@ -1,0 +1,36 @@
+{
+	"name": "MapSources",
+	"version": "1.8.0",
+	"author": [
+		"Roland Unger",
+		"Egil Kvaleberg",
+		"Matthias Mullie"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:MapSources",
+	"descriptionmsg": "mapsources-desc",
+	"type": "specialpage",
+	"SpecialPages": {
+		"MapSources": "MapSourcesPage"
+	},
+	"MessagesDirs": {
+		"MapSources": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"MapSourcesMagic": "MapSources.i18n.magic.php",
+		"MapSourcesAlias": "MapSources.i18n.alias.php"
+	},
+	"AutoloadClasses": {
+		"MapSourcesHooks": "MapSources.hooks.php",
+		"MapSourcesPage": "MapSources_body.php",
+		"MapSourcesMath": "MapSources_math.php",
+		"MapSourcesTransform": "MapSources_transform.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"MapSourcesHooks::parserHooks"
+		]
+	},
+	"manifest_version": 1
+}

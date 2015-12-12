@@ -16,6 +16,5 @@
 	"mapsources-outofrange": "Coordinate out of range",
 	"mapsources-math-missing-operand": "Missing operand",
 	"mapsources-math-incorrect-input": "Incorrect input",
-	"mapsources-desc": "[[Special:MapSources|Search]] data and maps in resources",
-	"mapsources-math-desc": "Adds tags for conversion of coordinates"
+	"mapsources-desc": "[[Special:MapSources|Search]] data and maps in resources"
 }
