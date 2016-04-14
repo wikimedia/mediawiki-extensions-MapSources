@@ -7,8 +7,8 @@
  *
  * @author Roland Unger
  * @copyright Copyright © 2007-2012 Roland Unger
- * v 1.05 of 2012/08/30
- * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
+ *
+ * @license https://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
 if ( function_exists( 'wfLoadExtension' ) ) {

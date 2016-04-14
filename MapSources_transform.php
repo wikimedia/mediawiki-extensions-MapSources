@@ -12,10 +12,9 @@
  * @copyright Copyright © 2005, Roger W Haworth
  * @author wikipedia:de:Benutzer:Meleager
  * @copyright Copyright © 2005, wikipedia:de:Benutzer:Meleager
- * http://tools.wikimedia.de/~magnus/common.php?common_source=geo/transversemercator.php
  *
  * @author Roland Unger
- * v 1.0 of 2007/11/20
+ *
  * @copyright Copyright © 2007, Roland Unger
  *
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License
