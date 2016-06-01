@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Andibing"
+		]
+	},
+	"mapsources": "Map sources",
+	"mapsources-summary": "This page allows users to search for a location (defined by its coordinates) in multiple resources.\n\nLatitude, longitude and additional parameters must be separated with commas.\nParameters consist of an identifier, the equal sign and a value.\n\nExample: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nAdditionally, the [https://wiki.toolserver.org/view/GeoHack GeoHack] format will be accepted.",
+	"mapsources-search-legend": "Find data and maps in resources",
+	"mapsources-coordinate": "Coordinates:",
+	"mapsources-go": "Go",
+	"mapsources-errormsgs": "Error messages",
+	"mapsources-noparams": "No parameters given",
+	"mapsources-incorrectparams": "Incorrect parameters ($1) given",
+	"mapsources-incorrectlat": "Incorrect latitude",
+	"mapsources-incorrectlong": "Incorrect longitude",
+	"mapsources-nopage": "No project page [[{{ns:project}}:$1|$1]] available",
+	"mapsources-outofrange": "Coordinate out of range",
+	"mapsources-math-missing-operand": "Missing operand",
+	"mapsources-math-incorrect-input": "Incorrect input",
+	"mapsources-desc": "[[Special:MapSources|Search]] data and maps in resources"
+}
