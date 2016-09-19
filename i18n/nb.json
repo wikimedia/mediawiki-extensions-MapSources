@@ -1,0 +1,18 @@
+{
+	"@metadata": [],
+	"mapsources": "Kartkilder",
+	"mapsources-summary": "Denne siden lar brukere søke etter et sted (definert av dets koordinater) i flere kilder.\n\nBredde- og lengdegrad og andre parametre må adskilles med komma.\nParametre består av en identifikator, erliktegn og en verdi.\n\nEksempel: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nI tillegg godtas [https://wiki.toolserver.org/view/GeoHack GeoHack-formatet].",
+	"mapsources-search-legend": "Finn data og kart i kilder",
+	"mapsources-coordinate": "Koordinater:",
+	"mapsources-go": "Gå",
+	"mapsources-errormsgs": "Feilmeldinger",
+	"mapsources-noparams": "Ingen parametre oppgitt",
+	"mapsources-incorrectparams": "Gale parametre ($1) oppgitt",
+	"mapsources-incorrectlat": "Gal breddegrad",
+	"mapsources-incorrectlong": "Gal lengdegrad",
+	"mapsources-nopage": "Ingen prosjektside [[{{ns:project}}:$1|$1]] tilgjengelig",
+	"mapsources-outofrange": "Koordinatene er utenfor intervallet",
+	"mapsources-math-missing-operand": "Operand mangler",
+	"mapsources-math-incorrect-input": "Gale inndata",
+	"mapsources-desc": "[[Special:MapSources|Søk]] etter data og kart i kilder"
+}
