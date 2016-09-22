@@ -1,5 +1,9 @@
 {
-	"@metadata": [],
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
 	"mapsources": "Kartkilder",
 	"mapsources-summary": "Denne siden lar brukere søke etter et sted (definert av dets koordinater) i flere kilder.\n\nBredde- og lengdegrad og andre parametre må adskilles med komma.\nParametre består av en identifikator, erliktegn og en verdi.\n\nEksempel: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nI tillegg godtas [https://wiki.toolserver.org/view/GeoHack GeoHack-formatet].",
 	"mapsources-search-legend": "Finn data og kart i kilder",
