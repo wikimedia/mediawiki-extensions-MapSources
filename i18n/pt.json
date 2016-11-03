@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vitorvicentevalente"
+			"Vitorvicentevalente",
+			"Hamilton Abreu"
 		]
 	},
 	"mapsources-coordinate": "Coordenadas:",
-	"mapsources-go": "Ir",
+	"mapsources-go": "Continuar",
 	"mapsources-errormsgs": "Mensagens de erro",
 	"mapsources-noparams": "Não foram fornecidos parâmetros",
 	"mapsources-incorrectparams": "Parâmetros fornecidos ($1) incorretos",
