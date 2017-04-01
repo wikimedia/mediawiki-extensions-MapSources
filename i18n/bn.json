@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aftabuzzaman"
+		]
+	},
+	"mapsources": "মানচিত্রের উত্স",
+	"mapsources-search-legend": "সংস্থানগুলিতে উপাত্ত ও মানচিত্র খুঁজুন",
+	"mapsources-coordinate": "স্থানাঙ্ক:",
+	"mapsources-go": "যান",
+	"mapsources-errormsgs": "ত্রুটি বার্তা",
+	"mapsources-noparams": "কোন প্যারামিটার দেয়া হয়নি",
+	"mapsources-incorrectparams": "প্রদত্ত প্যারামিটার ($1) সঠিক নয়",
+	"mapsources-incorrectlat": "অক্ষাংশ সঠিক নয়",
+	"mapsources-incorrectlong": "দ্রাঘিমাংশ সঠিক নয়",
+	"mapsources-nopage": "প্রকল্প পাতা [[{{ns:project}}:$1|$1]] উপলব্ধ নয়",
+	"mapsources-outofrange": "স্থানাঙ্ক পরিসীমার বাইরে",
+	"mapsources-math-missing-operand": "প্রতীক অনুপস্থিত",
+	"mapsources-math-incorrect-input": "ইনপুট সঠিক নয়",
+	"mapsources-desc": "সংস্থানগুলিতে উপাত্ত ও মানচিত্র [[Special:MapSources|অনুসন্ধান করে]]"
+}
