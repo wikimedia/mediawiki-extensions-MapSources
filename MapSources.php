@@ -18,7 +18,8 @@ if ( function_exists( 'wfLoadExtension' ) ) {
 	$wgExtensionMessagesFiles['MapSourcesAlias'] = __DIR__ . '/MapSources.i18n.alias.php';
 	$wgExtensionMessagesFiles['MapSourcesMagic'] = __DIR__ . '/MapSources.i18n.magic.php';
 	/*wfWarn(
-		'Deprecated PHP entry point used for MapSources extension. Please use wfLoadExtension instead, ' .
+		'Deprecated PHP entry point used for MapSources extension. ' .
+		'Please use wfLoadExtension instead, ' .
 		'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
 	);*/
 	return;

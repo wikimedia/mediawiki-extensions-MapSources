@@ -70,7 +70,9 @@ class MapSourcesHooks {
 						break;
 					case 'precision':
 						$precision = $parts[1];
-						if ( !is_numeric( $precision ) ) $precision = 4;
+						if ( !is_numeric( $precision ) ) {
+							$precision = 4;
+						}
 						break;
 				}
 			}
@@ -135,7 +137,7 @@ class MapSourcesHooks {
 			}
 		}
 
-		$args = array();
+		$args = [];
 		$lat = new MapSourcesMath( $lat, $precision, 'lat', 2 );
 		$long = new MapSourcesMath( $long, $precision, 'long', 2 );
 
@@ -171,8 +173,7 @@ class MapSourcesHooks {
 
 		if ( $long->error == 0 ) {
 			$args[] = $long->dec;
-		}
-		else {
+		} else {
 			$args[] = '0';
 		}
 

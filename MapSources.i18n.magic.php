@@ -1,9 +1,9 @@
 <?php
 
-$magicWords = array();
+$magicWords = [];
 
-$magicWords['en'] = array(
-	'dd2dms' => array( 0, 'dd2dms' ),
-	'deg2dd' => array( 0, 'deg2dd' ),
-	'geoLink' => array( 0, 'geoLink' ),
-);
+$magicWords['en'] = [
+	'dd2dms' => [ 0, 'dd2dms' ],
+	'deg2dd' => [ 0, 'deg2dd' ],
+	'geoLink' => [ 0, 'geoLink' ],
+];

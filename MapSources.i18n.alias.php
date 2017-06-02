@@ -5,81 +5,80 @@
  * @file
  * @ingroup Extensions
  */
-// @codingStandardsIgnoreFile
 
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English (English) */
-$specialPageAliases['en'] = array(
-	'MapSources' => array( 'MapSources' ),
-);
+$specialPageAliases['en'] = [
+	'MapSources' => [ 'MapSources' ],
+];
 
 /** Arabic (العربية) */
-$specialPageAliases['ar'] = array(
-	'MapSources' => array( 'مصادر_الخريطة' ),
-);
+$specialPageAliases['ar'] = [
+	'MapSources' => [ 'مصادر_الخريطة' ],
+];
 
 /** Egyptian Arabic (مصرى) */
-$specialPageAliases['arz'] = array(
-	'MapSources' => array( 'مصادر_الخريطه' ),
-);
+$specialPageAliases['arz'] = [
+	'MapSources' => [ 'مصادر_الخريطه' ],
+];
 
 /** Western Balochi (بلوچی رخشانی) */
-$specialPageAliases['bgn'] = array(
-	'MapSources' => array( 'نخشه_ئی_زهی' ),
-);
+$specialPageAliases['bgn'] = [
+	'MapSources' => [ 'نخشه_ئی_زهی' ],
+];
 
 /** German (Deutsch) */
-$specialPageAliases['de'] = array(
-	'MapSources' => array( 'Kartenherkunft', 'Kartenquellen' ),
-);
+$specialPageAliases['de'] = [
+	'MapSources' => [ 'Kartenherkunft', 'Kartenquellen' ],
+];
 
 /** Zazaki (Zazaki) */
-$specialPageAliases['diq'] = array(
-	'MapSources' => array( 'ÇımeyĞeriter' ),
-);
+$specialPageAliases['diq'] = [
+	'MapSources' => [ 'ÇımeyĞeriter' ],
+];
 
 /** Persian (فارسی) */
-$specialPageAliases['fa'] = array(
-	'MapSources' => array( 'منابع_نقشه' ),
-);
+$specialPageAliases['fa'] = [
+	'MapSources' => [ 'منابع_نقشه' ],
+];
 
 /** Upper Sorbian (hornjoserbsce) */
-$specialPageAliases['hsb'] = array(
-	'MapSources' => array( 'Kartowe_žórła' ),
-);
+$specialPageAliases['hsb'] = [
+	'MapSources' => [ 'Kartowe_žórła' ],
+];
 
 /** Korean (한국어) */
-$specialPageAliases['ko'] = array(
-	'MapSources' => array( '지도원본' ),
-);
+$specialPageAliases['ko'] = [
+	'MapSources' => [ '지도원본' ],
+];
 
 /** Macedonian (македонски) */
-$specialPageAliases['mk'] = array(
-	'MapSources' => array( 'КартографскиИзвори' ),
-);
+$specialPageAliases['mk'] = [
+	'MapSources' => [ 'КартографскиИзвори' ],
+];
 
 /** Malayalam (മലയാളം) */
-$specialPageAliases['ml'] = array(
-	'MapSources' => array( 'ഭൂപടസ്രോതസ്സുകൾ' ),
-);
+$specialPageAliases['ml'] = [
+	'MapSources' => [ 'ഭൂപടസ്രോതസ്സുകൾ' ],
+];
 
 /** Dutch (Nederlands) */
-$specialPageAliases['nl'] = array(
-	'MapSources' => array( 'MapBronnen' ),
-);
+$specialPageAliases['nl'] = [
+	'MapSources' => [ 'MapBronnen' ],
+];
 
 /** Vietnamese (Tiếng Việt) */
-$specialPageAliases['vi'] = array(
-	'MapSources' => array( 'Nguồn_bản_đồ' ),
-);
+$specialPageAliases['vi'] = [
+	'MapSources' => [ 'Nguồn_bản_đồ' ],
+];
 
 /** Simplified Chinese (中文（简体）‎) */
-$specialPageAliases['zh-hans'] = array(
-	'MapSources' => array( '地图来源' ),
-);
+$specialPageAliases['zh-hans'] = [
+	'MapSources' => [ '地图来源' ],
+];
 
 /** Traditional Chinese (中文（繁體）‎) */
-$specialPageAliases['zh-hant'] = array(
-	'MapSources' => array( '地圖資源' ),
-);
+$specialPageAliases['zh-hant'] = [
+	'MapSources' => [ '地圖資源' ],
+];

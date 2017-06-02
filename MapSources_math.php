@@ -17,7 +17,7 @@ class MapSourcesMath {
 	public $prec;
 	public $step;
 	public $error;
-	public $coord = array();
+	public $coord = [];
 
 	public function __construct( $input, $precision = 4, $dir = '', $untilStep = 1 ) {
 		$this->newCoord( $input, $precision, $dir );
@@ -34,7 +34,7 @@ class MapSourcesMath {
 		}
 
 		$p = intval( $precision );
-		if ( $p >= -1  && $p < 10 ) {
+		if ( $p >= -1 && $p < 10 ) {
 			$this->prec = $p;
 		} else {
 			$this->prec = 4;
@@ -151,11 +151,11 @@ class MapSourcesMath {
 	}
 
 	protected function getErrorMsg() {
-		$msg = array( 'no error', 'no parameter(s)', 'to many parameters', 'illegal characters',
+		$msg = [ 'no error', 'no parameter(s)', 'to many parameters', 'illegal characters',
 			'to many numeric parameters', 'degree out of range', 'minute out of range',
 			'degree no integer', 'second out of range', 'minute no integer',
 			'direction not last parameter', 'invalid negative value', 'wrong direction',
-			'latitude out of range', 'unknown error' );
+			'latitude out of range', 'unknown error' ];
 
 		$e = -$this->error;
 		$c = count( $msg );
@@ -168,25 +168,25 @@ class MapSourcesMath {
 	}
 
 	protected function toDec( $input = '' ) {
-		$units = array( '°', "'", '"', ' ' );
+		$units = [ '°', "'", '"', ' ' ];
 
 		if ( $input == '' ) {
 			return -1;
 		}
 
-		$w = str_replace( array( '‘', '’', '′' ), "'", $input );
-		$w = str_replace( array( "''", '“', '”', '″' ), '"', $w );
+		$w = str_replace( [ '‘', '’', '′' ], "'", $input );
+		$w = str_replace( [ "''", '“', '”', '″' ], '"', $w );
 		$w = str_replace( '−', '-', $w );
-		$w = strtoupper( str_replace( array( '_', '/', "\t", "\n", "\r" ), ' ', $w ) );
-		$w = str_replace( array( '°', "'", '"' ), array( '° ', "' ", '" ' ), $w );
-		$w = trim( str_replace( array( 'N', 'S', 'E', 'W' ), array( ' N', ' S', ' E', ' W' ), $w ) );
+		$w = strtoupper( str_replace( [ '_', '/', "\t", "\n", "\r" ], ' ', $w ) );
+		$w = str_replace( [ '°', "'", '"' ], [ '° ', "' ", '" ' ], $w );
+		$w = trim( str_replace( [ 'N', 'S', 'E', 'W' ], [ ' N', ' S', ' E', ' W' ], $w ) );
 		$w = preg_split( "/[\s]+/", $w, 5, PREG_SPLIT_NO_EMPTY );
 
 		$c = count( $w );
 		if ( $c < 1 || $c > 4 ) {
 			return -2;
 		}
-		$res = array( 0, 0, 0, 1 );
+		$res = [ 0, 0, 0, 1 ];
 
 		for ( $i = 0; $i < $c; $i++ ) {
 			$v = $w[$i];
@@ -264,7 +264,9 @@ class MapSourcesMath {
 					return -13;
 				}
 
-				if ( $v == 'S' || $v == 'W' ) $res[3] = -1;
+				if ( $v == 'S' || $v == 'W' ) {
+					$res[3] = -1;
+				}
 			}
 		}
 

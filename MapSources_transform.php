@@ -52,32 +52,32 @@ class MapSourcesTransform {
 	public $lat = 0;
 	public $long = 0;
 
-	public $ellWGS84 = array(
+	public $ellWGS84 = [
 		'maxAxis'       => 6378137.0,
 		'minAxis'       => 6356752.315,
 		'ecc'           => 0.081819190843,
 		'eccSquared'    => 0.006694379990,
 		'flattening'    => 0.003352810665,
 		'invFlattening' => 298.257223563
-	);
-	public $ellAiry1830 = array(
+	];
+	public $ellAiry1830 = [
 		'maxAxis'       => 6377563.396,
 		'minAxis'       => 6356256.909,
 		'ecc'           => 0.081673374328,
 		'eccSquared'    => 0.006670540074,
 		'flattening'    => 0.003340850640,
 		'invFlattening' => 299.3249647
-	);
-	public $ellBessel1841 = array(
+	];
+	public $ellBessel1841 = [
 		'maxAxis'       => 6377397.155,
 		'minAxis'       => 6356078.965,
 		'ecc'           => 0.081696829804,
 		'eccSquared'    => 0.006674372,
 		'flattening'    => 0.003342773182,
 		'invFlattening' => 299.1528128
-	);
+	];
 
-	public $utm = array(
+	public $utm = [
 		'easting'             => 0,
 		'northing'            => 0,
 		'error'               => -1,
@@ -88,9 +88,9 @@ class MapSourcesTransform {
 		'eastingOffset'       => 500000.0,
 		'northingOffset'      => 0.0,
 		'northingOffsetSouth' => 10000000.0
-	);
+	];
 	public $utm33;
-	public $osgb36 = array(
+	public $osgb36 = [
 		'easting'             => 0,
 		'northing'            => 0,
 		'ref'                 => '',
@@ -99,13 +99,13 @@ class MapSourcesTransform {
 		'eastingOffset'       => 400000.0,
 		'northingOffset'      => -100000.0,
 		'northingOffsetSouth' => 0.0
-	);
-	public $ch1903 = array(
+	];
+	public $ch1903 = [
 		'easting'             => 0,
 		'northing'            => 0,
 		'error'               => -1
-	);
-	public $nztm = array(
+	];
+	public $nztm = [
 		'easting'             => 0,
 		'northing'            => 0,
 		'error'               => -1,
@@ -113,15 +113,14 @@ class MapSourcesTransform {
 		'eastingOffset'       => 1600000.0,
 		'northingOffset'      => 0.0,
 		'northingOffsetSouth' => 10000000.0
-	);
-
+	];
 
 	public function __construct( $lat, $long ) {
 		return $this->getValues( $lat, $long );
 	}
 
 	protected function getValues( $lat, $long ) {
-		if ($lat < -90 || $lat > 90 || $long <= -180 || $long > 180) {
+		if ( $lat < -90 || $lat > 90 || $long <= -180 || $long > 180 ) {
 			return false;
 		}
 
@@ -176,7 +175,7 @@ class MapSourcesTransform {
 			$utmArray['zone'] = floor( ( $long + 180.0 ) / 6 ) + 1;
 		}
 
-		$c = floor( ($this->lat + 96) / 8 );
+		$c = floor( ( $this->lat + 96 ) / 8 );
 		/*                                000000000011111111112222 */
 		/*                                012345678901234567890134 */
 		$utmArray['zoneLetter'] = substr( 'CCCDEFGHJKLMNPQRSTUVWXXX', $c, 1 );
@@ -223,7 +222,7 @@ class MapSourcesTransform {
 		$tan2Lat = $tanLat * $tanLat;
 
 		$e2 = $model['eccSquared'];
-		$e2pr = $e2 / (1 - $e2);
+		$e2pr = $e2 / ( 1 - $e2 );
 		$radius = $model['maxAxis'];
 
 		$v = $radius / sqrt( 1 - $e2 * $sin2Lat );
@@ -232,7 +231,7 @@ class MapSourcesTransform {
 		$a = ( $long - $longOrig ) * $cosLat;
 		$m = $this->getMeridianDistance( $radius, $lat, $e2 );
 
-		if ($latOrigin != 0) {
+		if ( $latOrigin != 0 ) {
 			$m0 = $this->getMeridianDistance( $radius, $latOrig, $e2 );
 		} else {
 			$m0 = 0.0;
@@ -241,17 +240,17 @@ class MapSourcesTransform {
 		$utmArray['northing'] = $utmArray['northingOffset'] +
 			$utmArray['scale'] * ( ( $m - $m0 ) + $v * $tanLat * (
 				$a * $a / 2 + ( 5 - $t + 9 * $c + 4 * $c * $c ) * pow( $a, 4 ) / 24
-				+ ( 61 - 58 * $t + $t * $t + 600 * $c - 330 * $e2pr) * pow( $a, 6 ) / 720
-			));
+				+ ( 61 - 58 * $t + $t * $t + 600 * $c - 330 * $e2pr ) * pow( $a, 6 ) / 720
+			) );
 
-		if ($this->lat < 0) {
+		if ( $this->lat < 0 ) {
 			$utmArray['northing'] += $utmArray['northingOffsetSouth'];
 		}
 
 		$utmArray['easting'] = $utmArray['eastingOffset'] +
 			$utmArray['scale'] * $v * (
 				$a + ( 1 - $t + $c ) * pow( $a, 3 ) / 6
-				+ (5 - 18 * $t + pow( $t, 2 ) + 72 * $c - 58 * $e2pr) * pow( $a, 5 ) / 120
+				+ ( 5 - 18 * $t + pow( $t, 2 ) + 72 * $c - 58 * $e2pr ) * pow( $a, 5 ) / 120
 			);
 
 		$utmArray['error'] = 0;
@@ -308,7 +307,7 @@ class MapSourcesTransform {
 	# Code by [[wikipedia:de:Benutzer:Meleager]]
 	protected function getCH1903( &$ch1903Array ) {
 		# outside reasonable range
-		if ( $this->lat < 45.5 || $this->lat > 48 || $this->long < 5.0 || $this->long > 11) {
+		if ( $this->lat < 45.5 || $this->lat > 48 || $this->long < 5.0 || $this->long > 11 ) {
 			return false;
 		}
 

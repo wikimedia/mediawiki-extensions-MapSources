@@ -24,7 +24,7 @@ class MapSourcesPage extends SpecialPage {
 	public $long = 0;
 	public $params = '';
 	public $par;
-	public $errorMsgs = array();
+	public $errorMsgs = [];
 	public $locName = '';
 
 	public $google = 0.1;
@@ -84,13 +84,13 @@ class MapSourcesPage extends SpecialPage {
 		$out->addWikiMsg( 'mapsources-summary' );
 
 		$form =
-			Html::rawElement( 'fieldset', array(),
+			Html::rawElement( 'fieldset', [],
 				Html::element(
-					'legend', array(), $this->msg( 'mapsources-search-legend' )->escaped()
+					'legend', [], $this->msg( 'mapsources-search-legend' )->escaped()
 				) .
-				Html::rawElement( 'form', array( 'method' => 'get', 'action' => $wgScript ),
+				Html::rawElement( 'form', [ 'method' => 'get', 'action' => $wgScript ],
 					Html::hidden( 'title', self::getTitleFor( 'MapSources' )->getPrefixedText() ) .
-					Html::rawElement( 'p', array(),
+					Html::rawElement( 'p', [],
 						Xml::inputLabel(
 							$this->msg( 'mapsources-coordinate' )->escaped(),
 							'params', 'params', 80, $defaultValue
@@ -154,7 +154,7 @@ class MapSourcesPage extends SpecialPage {
 		}
 
 		$args = explode( " ", trim( str_replace( '=', ':', str_replace( '_', ' ', $args ) ) ) );
-		$this->par = array();
+		$this->par = [];
 		foreach ( $args as $arg ) {
 			$parts = array_map( 'trim', explode( ':', $arg, 2 ) );
 			if ( count( $parts ) == 2 && $parts[0] && $parts[1] ) {
@@ -177,7 +177,7 @@ class MapSourcesPage extends SpecialPage {
 	# setScales() code by Egil Kvaleberg <egil@kvaleberg.no>
 	private function setScales() {
 		if ( !isset( $this->par['scale'] ) || ( $this->par['scale'] < 100 ) ) {
-			$scaleByType = array(
+			$scaleByType = [
 				'country' => 10000000,
 				'state' => 3000000,
 				'adm1st' => 1000000,
@@ -188,7 +188,7 @@ class MapSourcesPage extends SpecialPage {
 				'waterbody' => 100000,
 				'airport' => 30000,
 				'landmark' => 10000
-			);
+			];
 			if ( isset( $this->par['type'] ) && isset( $scaleByType[$this->par['type']] ) ) {
 				$this->par['scale'] = $scaleByType[$this->par['type']];
 			} else {
@@ -215,10 +215,10 @@ class MapSourcesPage extends SpecialPage {
 		}
 
 		/* Multimap fixed scales */
-		$min = array( 1, 7000, 15000, 35000, 70000, 140000, 310000,
-			700000, 1400000, 2800000, 6300000, 14000000, 30000000 );
-		$mm = array( 5000, 10000, 20000, 50000, 100000, 200000, 500000,
-			1000000, 2000000, 4000000, 10000000, 20000000, 40000000 );
+		$min = [ 1, 7000, 15000, 35000, 70000, 140000, 310000,
+			700000, 1400000, 2800000, 6300000, 14000000, 30000000 ];
+		$mm = [ 5000, 10000, 20000, 50000, 100000, 200000, 500000,
+			1000000, 2000000, 4000000, 10000000, 20000000, 40000000 ];
 		$i = 0;
 		$c = count( $min );
 		while ( ( $this->par['scale'] >= $min[$i] ) && ( $i < $c ) ) {
@@ -264,7 +264,7 @@ class MapSourcesPage extends SpecialPage {
 				// otherwise, format should be /wiki/<title> (or whatever, based on $wgArticlePath)
 				$url = parse_url( $referrer );
 
-				$values = array();
+				$values = [];
 				if ( isset( $url['query'] ) ) {
 					parse_str( $url['query'], $values );
 				}
@@ -353,7 +353,7 @@ class MapSourcesPage extends SpecialPage {
 			$nztmError = $errorMsg;
 		}
 
-		$replace = array(
+		$replace = [
 			'{latdegdec}' => $this->lat->coord['dec'],
 			'{latdegabs}' => abs( $this->lat->coord['deg'] ),
 			'{latdegint}' => $this->lat->coord['deg'],
@@ -405,7 +405,7 @@ class MapSourcesPage extends SpecialPage {
 			'{ch1903error}' => $ch1903Error,
 			'{nztmerror}' => $nztmError,
 			'{locname}' => $this->locName
-		);
+		];
 
 		return strtr( $text, $replace );
 	}
