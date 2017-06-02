@@ -56,7 +56,8 @@ class MapSourcesPage extends SpecialPage {
 			// attempt to fetch title, either generic title or in-content-language title
 			$title = Title::makeTitleSafe( NS_PROJECT, $this->msg( 'mapsources' )->text() );
 			if ( $title === null || !$title->exists() ) {
-				$title = Title::makeTitleSafe( NS_PROJECT, $this->msg( 'mapsources' )->inContentLanguage()->text() );
+				$title = Title::makeTitleSafe( NS_PROJECT,
+					$this->msg( 'mapsources' )->inContentLanguage()->text() );
 			}
 
 			if ( $title !== null && $title->exists() ) {
@@ -64,7 +65,8 @@ class MapSourcesPage extends SpecialPage {
 				$text = ContentHandler::getContentText( $rev->getContent() );
 				$out->addWikiText( $this->replaceText( $text ) );
 			} else {
-				$this->errorMsgs[] = $this->msg( 'mapsources-nopage', $this->msg( 'mapsources' )->inContentLanguage()->escaped() )->text();
+				$this->errorMsgs[] = $this->msg( 'mapsources-nopage',
+					$this->msg( 'mapsources' )->inContentLanguage()->escaped() )->text();
 			}
 		}
 
@@ -83,11 +85,16 @@ class MapSourcesPage extends SpecialPage {
 
 		$form =
 			Html::rawElement( 'fieldset', array(),
-				Html::element( 'legend', array(), $this->msg( 'mapsources-search-legend' )->escaped() ) .
+				Html::element(
+					'legend', array(), $this->msg( 'mapsources-search-legend' )->escaped()
+				) .
 				Html::rawElement( 'form', array( 'method' => 'get', 'action' => $wgScript ),
 					Html::hidden( 'title', self::getTitleFor( 'MapSources' )->getPrefixedText() ) .
 					Html::rawElement( 'p', array(),
-						Xml::inputLabel( $this->msg( 'mapsources-coordinate' )->escaped(), 'params', 'params', 80, $defaultValue ) .
+						Xml::inputLabel(
+							$this->msg( 'mapsources-coordinate' )->escaped(),
+							'params', 'params', 80, $defaultValue
+						) .
 						Xml::submitButton( $this->msg( 'mapsources-go' )->escaped() )
 					)
 				)
@@ -248,7 +255,8 @@ class MapSourcesPage extends SpecialPage {
 			$this->locName = $request->getText( 'locname' );
 		}
 
-		$referrer = ( $request->getVal( 'referrer' ) ) ? $request->getVal( 'referrer' ) : $request->getHeader( 'referer' );
+		$referrer = ( $request->getVal( 'referrer' ) )
+			? $request->getVal( 'referrer' ) : $request->getHeader( 'referer' );
 		if ( $this->locName == '' && $referrer ) {
 			// check if internal referrer
 			if ( strpos( $referrer, $wgServer ) !== false ) {
