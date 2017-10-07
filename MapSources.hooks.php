@@ -9,8 +9,8 @@ class MapSourcesHooks {
 	}
 
 	/**
-	 * @param Parser $parser
-	 * @return String
+	 * @param Parser &$parser
+	 * @return string
 	 */
 	public static function wfdeg2dd( Parser &$parser ) {
 		$precision = -1;
@@ -44,7 +44,7 @@ class MapSourcesHooks {
 	}
 
 	/**
-	 * @param Parser $parser
+	 * @param Parser &$parser
 	 * @return string
 	 */
 	public static function wfdd2dms( Parser &$parser ) {
@@ -86,7 +86,7 @@ class MapSourcesHooks {
 	}
 
 	/**
-	 * @param Parser $parser
+	 * @param Parser &$parser
 	 * @return string
 	 */
 	public static function wfgeoLink( Parser &$parser ) {
