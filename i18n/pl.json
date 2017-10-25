@@ -19,6 +19,5 @@
 	"mapsources-outofrange": "Współrzędne poza zakresem",
 	"mapsources-math-missing-operand": "Brak parametru(ów)",
 	"mapsources-math-incorrect-input": "Błędne dane",
-	"mapsources-desc": "[[Special:MapSources|Wyszukaj]] źródła map i danych",
-	"mapsources-math-desc": "Dodaje znaczniki do konwersji współrzędnych"
+	"mapsources-desc": "[[Special:MapSources|Wyszukaj]] w źródłach dane i mapy"
 }
