@@ -18,6 +18,5 @@
 	"mapsources-outofrange": "Coordinate non valide",
 	"mapsources-math-missing-operand": "Parametro mancante",
 	"mapsources-math-incorrect-input": "Input non corretto",
-	"mapsources-desc": "[[Special:MapSources|Cerca]] dati e mappe in risorse",
-	"mapsources-math-desc": "Aggiunge l'etichetta per la conversione delle coordinate"
+	"mapsources-desc": "[[Special:MapSources|Cerca]] dati e mappe in risorse"
 }

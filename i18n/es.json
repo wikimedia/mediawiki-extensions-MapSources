@@ -21,6 +21,5 @@
 	"mapsources-outofrange": "Coordenadas fuera del intervalo",
 	"mapsources-math-missing-operand": "Falta un operador",
 	"mapsources-math-incorrect-input": "Entrada incorrecta",
-	"mapsources-desc": "[[Special:MapSources|Buscar]] datos y mapas en los recursos",
-	"mapsources-math-desc": "Agrega etiquetas para la conversión de coordenadas"
+	"mapsources-desc": "[[Special:MapSources|Buscar]] datos y mapas en los recursos"
 }

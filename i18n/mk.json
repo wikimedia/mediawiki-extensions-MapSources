@@ -18,6 +18,5 @@
 	"mapsources-outofrange": "Координатите се вон опсегот",
 	"mapsources-math-missing-operand": "Недостасува операнд",
 	"mapsources-math-incorrect-input": "Погрешен внос",
-	"mapsources-desc": "[[Special:MapSources|Пребарување]] на податоци и карти по ресурси",
-	"mapsources-math-desc": "Додава ознаки за претворање на координати"
+	"mapsources-desc": "[[Special:MapSources|Пребарување]] на податоци и карти по ресурси"
 }

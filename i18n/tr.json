@@ -18,6 +18,5 @@
 	"mapsources-outofrange": "Koordinat sınır dışında",
 	"mapsources-math-missing-operand": "Eksik terim",
 	"mapsources-math-incorrect-input": "Hatalı girdi",
-	"mapsources-desc": "Veri ve harita kaynaklarını [[Special:MapSources|ara]]",
-	"mapsources-math-desc": "Koordinatları dönüştürmek için etiketler ekler"
+	"mapsources-desc": "Veri ve harita kaynaklarını [[Special:MapSources|ara]]"
 }

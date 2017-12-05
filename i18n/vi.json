@@ -18,6 +18,5 @@
 	"mapsources-outofrange": "Tọa độ ngoài miền cho phép",
 	"mapsources-math-missing-operand": "Thiếu toán hạng",
 	"mapsources-math-incorrect-input": "Đầu vào không chính xác",
-	"mapsources-desc": "[[Special:MapSources|Tìm]] dữ liệu và bản đồ trong nhiều nguồn gốc",
-	"mapsources-math-desc": "Thêm thẻ để chuyển đổi tọa độ"
+	"mapsources-desc": "[[Special:MapSources|Tìm]] dữ liệu và bản đồ trong nhiều nguồn gốc"
 }

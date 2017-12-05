@@ -20,6 +20,5 @@
 	"mapsources-outofrange": "座標超出範圍",
 	"mapsources-math-missing-operand": "缺少運算元",
 	"mapsources-math-incorrect-input": "輸入有誤",
-	"mapsources-desc": "在資源中[[Special:MapSources|搜尋]]資料和地圖",
-	"mapsources-math-desc": "新增坐標變換標記"
+	"mapsources-desc": "在資源中[[Special:MapSources|搜尋]]資料和地圖"
 }

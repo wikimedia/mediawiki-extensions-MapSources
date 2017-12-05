@@ -20,6 +20,5 @@
 	"mapsources-outofrange": "Coordinà fòra da l'antërval",
 	"mapsources-math-missing-operand": "Operand mancant",
 	"mapsources-math-incorrect-input": "Anseriment nen giust",
-	"mapsources-desc": "[[Special:MapSources|Arserca]] ëd e sorgiss ëd dàit e ëd carte",
-	"mapsources-math-desc": "A gionta dle tichëtte për la conversion ëd le coordinà"
+	"mapsources-desc": "[[Special:MapSources|Arserca]] ëd e sorgiss ëd dàit e ëd carte"
 }

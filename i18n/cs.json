@@ -19,6 +19,5 @@
 	"mapsources-outofrange": "Souřadnice mimo rozsah",
 	"mapsources-math-missing-operand": "Chybí operand",
 	"mapsources-math-incorrect-input": "Špatný vstup",
-	"mapsources-desc": "[[Special:MapSources|Hledání]] dat a map ve zdrojích",
-	"mapsources-math-desc": "Přidává značky pro převody souřadnic"
+	"mapsources-desc": "[[Special:MapSources|Hledání]] dat a map ve zdrojích"
 }

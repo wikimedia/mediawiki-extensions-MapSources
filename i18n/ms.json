@@ -18,6 +18,5 @@
 	"mapsources-outofrange": "Koordinat di luar julat",
 	"mapsources-math-missing-operand": "Tiada kendalian",
 	"mapsources-math-incorrect-input": "Input tidak betul",
-	"mapsources-desc": "[[Special:MapSources|Cari]] sumber data dan peta",
-	"mapsources-math-desc": "Membubuh teg untuk penukaran koordinat"
+	"mapsources-desc": "[[Special:MapSources|Cari]] sumber data dan peta"
 }

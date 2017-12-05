@@ -19,6 +19,5 @@
 	"mapsources-outofrange": "נקודות הציון מחוץ לטווח",
 	"mapsources-math-missing-operand": "חסר אופרנד",
 	"mapsources-math-incorrect-input": "קלט שגוי",
-	"mapsources-desc": "[[Special:MapSources|חיפוס]] נתונים ומפות במקורות מידע",
-	"mapsources-math-desc": "הוספת תגים להמרת נקודות ציון"
+	"mapsources-desc": "[[Special:MapSources|חיפוס]] נתונים ומפות במקורות מידע"
 }

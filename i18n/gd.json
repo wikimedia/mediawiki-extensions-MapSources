@@ -18,6 +18,5 @@
 	"mapsources-outofrange": "Chan eil an càraid-àireimh san rainse",
 	"mapsources-math-missing-operand": "Tha oparand a dhìth",
 	"mapsources-math-incorrect-input": "Chan eil na chaidh a chur a-steach mar bu chòir",
-	"mapsources-desc": "[[Special:MapSources|Lorg]] dàta 's mapaichean ann an goireasan",
-	"mapsources-math-desc": "Cuiridh seo tagaichean ris airson iompachadh nan càraidean-àireimh"
+	"mapsources-desc": "[[Special:MapSources|Lorg]] dàta 's mapaichean ann an goireasan"
 }

@@ -21,6 +21,5 @@
 	"mapsources-outofrange": "Koordinat utanför intervallet",
 	"mapsources-math-missing-operand": "Operand saknas",
 	"mapsources-math-incorrect-input": "Felaktig inmatning",
-	"mapsources-desc": "[[Special:MapSources|Sök]] efter data och kartor i resurser",
-	"mapsources-math-desc": "Lägger till taggar för konvertering av koordinater"
+	"mapsources-desc": "[[Special:MapSources|Sök]] efter data och kartor i resurser"
 }

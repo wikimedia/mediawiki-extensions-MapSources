@@ -19,6 +19,5 @@
 	"mapsources-outofrange": "座標が範囲外です",
 	"mapsources-math-missing-operand": "演算対象がありません",
 	"mapsources-math-incorrect-input": "入力が正しくありません",
-	"mapsources-desc": "データおよび情報源にある地図の[[Special:MapSources|検索]]",
-	"mapsources-math-desc": "座標を変換するためのタグを追加する"
+	"mapsources-desc": "データおよび情報源にある地図の[[Special:MapSources|検索]]"
 }

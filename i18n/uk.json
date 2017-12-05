@@ -20,6 +20,5 @@
 	"mapsources-outofrange": "Координати за межами допустимого діапазону",
 	"mapsources-math-missing-operand": "Відсутній операнд",
 	"mapsources-math-incorrect-input": "Неправильний ввід",
-	"mapsources-desc": "[[Special:MapSources|Пошук]] даних та карт на ресурсах",
-	"mapsources-math-desc": "Додає теги для конвертування координат"
+	"mapsources-desc": "[[Special:MapSources|Пошук]] даних та карт на ресурсах"
 }

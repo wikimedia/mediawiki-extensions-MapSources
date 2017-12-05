@@ -17,6 +17,5 @@
 	"mapsources-nopage": "പദ്ധതി താൾ [[{{ns:project}}:$1|$1]] ലഭ്യമല്ല.",
 	"mapsources-outofrange": "നിർദ്ദേശാങ്കം പരിധിക്ക് പുറത്താണ്",
 	"mapsources-math-incorrect-input": "നൽകിയ വില തെറ്റാണ്",
-	"mapsources-desc": "വിവരങ്ങൾക്കും ഭൂപടസ്രോതസ്സുകൾക്കുമായി [[Special:MapSources|തിരയുക]]",
-	"mapsources-math-desc": "നിർദ്ദേശാങ്കങ്ങൾ പരിവർത്തനം ചെയ്യാനുള്ള ടാഗുകൾ കൂട്ടിച്ചേർക്കുക"
+	"mapsources-desc": "വിവരങ്ങൾക്കും ഭൂപടസ്രോതസ്സുകൾക്കുമായി [[Special:MapSources|തിരയുക]]"
 }

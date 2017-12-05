@@ -18,6 +18,5 @@
 	"mapsources-outofrange": "Coördinaat buiten het bereik",
 	"mapsources-math-missing-operand": "Ontbrekende operand",
 	"mapsources-math-incorrect-input": "Onjuiste invoer",
-	"mapsources-desc": "[[Special:MapSources|Zoeken]] naar gegevens en kaarten in bronnen",
-	"mapsources-math-desc": "Voegt labels toe voor het omrekenen van coördinaten"
+	"mapsources-desc": "[[Special:MapSources|Zoeken]] naar gegevens en kaarten in bronnen"
 }

@@ -20,6 +20,5 @@
 	"mapsources-outofrange": "Coordonées invalides",
 	"mapsources-math-missing-operand": "Opérateur manquant",
 	"mapsources-math-incorrect-input": "Entrée erronée",
-	"mapsources-desc": "[[Special:MapSources|Recherche]] de données et de cartes dans les ressources",
-	"mapsources-math-desc": "Ajoute des balises pour la conversion des coordonnées"
+	"mapsources-desc": "[[Special:MapSources|Recherche]] de données et de cartes dans les ressources"
 }
