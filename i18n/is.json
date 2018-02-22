@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sveinn í Felli"
+		]
+	},
+	"mapsources": "Gagnagjafar korta",
+	"mapsources-coordinate": "Hnit:",
+	"mapsources-go": "Fara",
+	"mapsources-errormsgs": "Villuskilaboð",
+	"mapsources-outofrange": "Hnit utan færis",
+	"mapsources-math-missing-operand": "Virkja vantar"
+}
