@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"ديفيد"
+		]
+	},
+	"mapsources": "مصادر الخريطة",
+	"mapsources-summary": "تسمح هذه الصفحة للمستخدمين بالبحث عن موقع (يتم تحديده من خلال إحداثياته) في موارد متعددة. \n\nيجب فصل خطوط الطول والعرض والبارامترات الإضافية بفواصل. \nتتكون الوسائط من معرف وعلامة يساوي وقيمة. \n\nمثال: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nبالإضافة إلى ذلك ، سيتم قبول صيغة [https://wiki.toolserver.org/view/GeoHack GeoHack].",
+	"mapsources-search-legend": "البحث عن البيانات والخرائط في الموارد",
+	"mapsources-coordinate": "الإحداثيات:",
+	"mapsources-go": "اذهب",
+	"mapsources-errormsgs": "رسائل خطأ",
+	"mapsources-noparams": "لا توجد وسائط معينة",
+	"mapsources-incorrectparams": "وسائط غير صحيحة ($1) معطاه",
+	"mapsources-incorrectlat": "خط العرض غير صحيح",
+	"mapsources-incorrectlong": "خط طول غير صحيح",
+	"mapsources-nopage": "لا توجد صفحة مشروع [[{{ns:project}}:$1|$1]] متاحة",
+	"mapsources-outofrange": "إحداثيات خارج النطاق",
+	"mapsources-math-missing-operand": "المعامل مفقود",
+	"mapsources-math-incorrect-input": "إدخال غير صحيح",
+	"mapsources-desc": "[[Special:MapSources|ابحث عن]] البيانات والخرائط في الموارد"
+}
