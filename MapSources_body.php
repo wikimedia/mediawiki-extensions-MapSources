@@ -20,18 +20,40 @@
 
 class MapSourcesPage extends SpecialPage {
 
+	/** @var string|int|MapSourcesMath */
 	public $lat = 0;
+
+	/** @var string|int|MapSourcesMath */
 	public $long = 0;
+
+	/** @var string */
 	public $params = '';
+
+	/** @var array */
 	public $par;
+
+	/** @var array */
 	public $errorMsgs = [];
+
+	/** @var string */
 	public $locName = '';
 
+	/** @var float */
 	public $google = 0.1;
+
+	/** @var int */
 	public $mapquest = 9;
+
+	/** @var int */
 	public $msn = 1;
+
+	/** @var int */
 	public $multimap = 100000;
+
+	/** @var int */
 	public $osmzoom = 12;
+
+	/** @var int */
 	public $osmzoommap = 10;
 
 	public function __construct(
@@ -243,7 +265,7 @@ class MapSourcesPage extends SpecialPage {
 	/**
 	 * Get parameters
 	 *
-	 * @param $par[optional]
+	 * @param string|null $param
 	 * @return bool
 	 */
 	private function getParams( $param = null ) {

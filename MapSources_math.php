@@ -12,11 +12,23 @@
  */
 
 class MapSourcesMath {
+
+	/** @var int */
 	public $dec;
-	public $dir; // 'long' (E-W), 'lat'
+
+	/** @var string 'long' (E-W), 'lat' */
+	public $dir;
+
+	/** @var int */
 	public $prec;
+
+	/** @var int */
 	public $step;
+
+	/** @var int */
 	public $error;
+
+	/** @var array */
 	public $coord = [];
 
 	public function __construct( $input, $precision = 4, $dir = '', $untilStep = 1 ) {
