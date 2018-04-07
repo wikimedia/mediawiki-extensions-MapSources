@@ -116,7 +116,7 @@ class MapSourcesTransform {
 	];
 
 	public function __construct( $lat, $long ) {
-		return $this->getValues( $lat, $long );
+		$this->getValues( $lat, $long );
 	}
 
 	protected function getValues( $lat, $long ) {
