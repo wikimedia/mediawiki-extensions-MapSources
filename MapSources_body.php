@@ -100,29 +100,28 @@ class MapSourcesPage extends SpecialPage {
 
 	# makeForm() code by Rob Church <robchur@gmail.com>
 	private function makeForm( $defaultValue ) {
-		global $wgScript;
 		$out = $this->getOutput();
 
 		$out->addWikiMsg( 'mapsources-summary' );
 
-		$form =
-			Html::rawElement( 'fieldset', [],
-				Html::element(
-					'legend', [], $this->msg( 'mapsources-search-legend' )->escaped()
-				) .
-				Html::rawElement( 'form', [ 'method' => 'get', 'action' => $wgScript ],
-					Html::hidden( 'title', self::getTitleFor( 'MapSources' )->getPrefixedText() ) .
-					Html::rawElement( 'p', [],
-						Xml::inputLabel(
-							$this->msg( 'mapsources-coordinate' )->escaped(),
-							'params', 'params', 80, $defaultValue
-						) .
-						Xml::submitButton( $this->msg( 'mapsources-go' )->escaped() )
-					)
-				)
-			);
+		$formDescriptor = [
+			'textbox' => [
+				'type' => 'text',
+				'name' => 'params',
+				'id' => 'params',
+				'label' => $this->msg( 'mapsources-coordinate' )->escaped(),
+				'size' => 80,
+				'default' => $defaultValue,
+			]
+		];
 
-		$out->addHtml( $form );
+		$htmlForm = HTMLForm::factory( 'ooui', $formDescriptor, $this->getContext() );
+		$htmlForm
+			->setMethod( 'get' )
+			->setSubmitText( $this->msg( 'mapsources-go' )->escaped() )
+			->setWrapperLegend( $this->msg( 'mapsources-search-legend' )->escaped() )
+			->prepareForm()
+			->displayForm( false );
 	}
 
 	private function outputErrorMsgs() {
