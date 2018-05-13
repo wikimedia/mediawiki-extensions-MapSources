@@ -3,12 +3,13 @@
 		"authors": [
 			"Armin1392",
 			"Mjbmr",
-			"ZxxZxxZ"
+			"ZxxZxxZ",
+			"Ladsgroup"
 		]
 	},
 	"mapsources": "منابع نقشه",
-	"mapsources-summary": "این صفحه به کاربران برای جستجوی چندین منابع برای مکان داده شده توسط مختصات آن می دهد.\nعرض جغرافیایی، طول جغرافیایی و پارامترهای اضافه باید با کاما جدا شوند.\nپارامترها شامل یک شناسه، نشان برابر و یک مقدار هستند.\nبرای مثال:  ۵۲° ۳۱′ ان, ۱۳° ۲۴′ ۳۰″ ای, مقیاس=۵۰۰۰۰\nعلاوه بر این، فرمت [https://wiki.toolserver.org/view/GeoHack GeoHack] پذیرفته خواهد شد.",
-	"mapsources-search-legend": "جستجو برای اطلاعات و منابع نقشه",
+	"mapsources-summary": "این صفحه به کاربران امکان جستجوی برای مکان‌های (تعریف شده توسط مختصات) آن را می دهد.\nعرض جغرافیایی، طول جغرافیایی و پارامترهای اضافه باید با کاما جدا شوند.\nپارامترها شامل یک شناسه، نشان برابر و یک مقدار هستند.\nبرای مثال:  ۵۲° ۳۱′ ان, ۱۳° ۲۴′ ۳۰″ ای, مقیاس=۵۰۰۰۰\nعلاوه بر این، فرمت [https://wiki.toolserver.org/view/GeoHack GeoHack] پذیرفته خواهد شد.",
+	"mapsources-search-legend": "یافتن اطلاعات و نقشه‌ها در منابع",
 	"mapsources-coordinate": "مختصات:",
 	"mapsources-go": "برو",
 	"mapsources-errormsgs": "پیام‌های خطا",
@@ -20,5 +21,5 @@
 	"mapsources-outofrange": "متناسب کردن خارج از محدوده",
 	"mapsources-math-missing-operand": "دستور گم شده",
 	"mapsources-math-incorrect-input": "ورودی نادرست",
-	"mapsources-desc": "[[Special:MapSources|جستجو]] برای اطلاعات و منابع نقشه"
+	"mapsources-desc": "[[Special:MapSources|جستجوی]] اطلاعات و نقشه‌ها در منابع"
 }
