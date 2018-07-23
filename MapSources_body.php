@@ -115,7 +115,10 @@ class MapSourcesPage extends SpecialPage {
 			]
 		];
 
-		$htmlForm = HTMLForm::factory( 'ooui', $formDescriptor, $this->getContext() );
+		$context = new DerivativeContext( $this->getContext() );
+		// Remove subpage
+		$context->setTitle( $this->getPageTitle() );
+		$htmlForm = HTMLForm::factory( 'ooui', $formDescriptor, $context );
 		$htmlForm
 			->setMethod( 'get' )
 			->setSubmitText( $this->msg( 'mapsources-go' )->escaped() )
