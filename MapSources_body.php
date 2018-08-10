@@ -109,7 +109,7 @@ class MapSourcesPage extends SpecialPage {
 				'type' => 'text',
 				'name' => 'params',
 				'id' => 'params',
-				'label' => $this->msg( 'mapsources-coordinate' )->escaped(),
+				'label-message' => 'mapsources-coordinate',
 				'size' => 80,
 				'default' => $defaultValue,
 			]
