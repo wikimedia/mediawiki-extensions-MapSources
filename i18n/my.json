@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dr Lotus Black"
+		]
+	},
+	"mapsources": "မြေပုံ ရင်းမြစ်များ",
+	"mapsources-search-legend": "အရင်းအမြစ်များထဲတွင် ဒေတာနှင့် မြေပုံများကို ရှာဖွေရန်",
+	"mapsources-coordinate": "ကိုဩဒိနိတ်များ:",
+	"mapsources-go": "သွားပါ",
+	"mapsources-errormsgs": "အမှား မက်ဆေ့များ",
+	"mapsources-noparams": "ပါရာမီတာများ မပေးထားပါ",
+	"mapsources-desc": "အရင်းအမြစ်များထဲတွင် ဒေတာနှင့် မြေပုံများကို [[Special:MapSources|ရှာဖွေရန်]]"
+}
