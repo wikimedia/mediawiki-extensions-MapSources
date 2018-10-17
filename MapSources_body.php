@@ -85,7 +85,7 @@ class MapSourcesPage extends SpecialPage {
 			if ( $title !== null && $title->exists() ) {
 				$rev = Revision::newFromTitle( $title );
 				$text = ContentHandler::getContentText( $rev->getContent() );
-				$out->addWikiText( $this->replaceText( $text ) );
+				$out->addWikiTextAsInterface( $this->replaceText( $text ) );
 			} else {
 				$this->errorMsgs[] = $this->msg( 'mapsources-nopage',
 					$this->msg( 'mapsources' )->inContentLanguage()->escaped() )->text();
@@ -131,11 +131,14 @@ class MapSourcesPage extends SpecialPage {
 		$out = $this->getOutput();
 
 		if ( count( $this->errorMsgs ) > 0 ) {
-			$out->addWikiText( '==' . $this->msg( 'mapsources-errormsgs' )->plain() . '==' );
+			$out->addWikiTextAsInterface( '==' . $this->msg( 'mapsources-errormsgs' )->plain() . '==' );
 
+			$list = '';
 			foreach ( $this->errorMsgs as $msg ) {
-				$out->addWikiText( '* ' . $msg );
+				$list .= '* ' . $msg . "\n";
 			}
+			# Emit entire list at once so that it becomes a single <ul>
+			$out->addWikiTextAsInterface( $list );
 		}
 	}
 
