@@ -10,12 +10,11 @@ class MapSourcesHooks {
 
 	/**
 	 * @param Parser &$parser
+	 * @param string ...$args
 	 * @return string
 	 */
-	public static function wfdeg2dd( Parser &$parser ) {
+	public static function wfdeg2dd( Parser &$parser, ...$args ) {
 		$precision = -1;
-		$args = func_get_args();
-		array_shift( $args );
 		if ( count( $args ) < 1 ) {
 			return wfMessage( 'mapsources-math-missing-operand' )->inContentLanguage()->text();
 		}
@@ -45,14 +44,13 @@ class MapSourcesHooks {
 
 	/**
 	 * @param Parser &$parser
+	 * @param string ...$args
 	 * @return string
 	 */
-	public static function wfdd2dms( Parser &$parser ) {
+	public static function wfdd2dms( Parser &$parser, ...$args ) {
 		$plus = '';
 		$minus = '';
 		$precision = 4;
-		$args = func_get_args();
-		array_shift( $args );
 		if ( count( $args ) < 1 ) {
 			return wfMessage( 'mapsources-math-missing-operand' )->inContentLanguage()->text();
 		}
@@ -87,9 +85,10 @@ class MapSourcesHooks {
 
 	/**
 	 * @param Parser &$parser
+	 * @param string ...$args
 	 * @return string
 	 */
-	public static function wfgeoLink( Parser &$parser ) {
+	public static function wfgeoLink( Parser &$parser, ...$args ) {
 		$plusLat = '';
 		$minusLat = '';
 		$plusLong = '';
@@ -97,8 +96,6 @@ class MapSourcesHooks {
 		$lat = 0;
 		$long = 0;
 		$precision = 4;
-		$args = func_get_args();
-		array_shift( $args );
 		if ( count( $args ) < 1 ) {
 			return wfMessage( 'mapsources-math-missing-operand' )->inContentLanguage()->text();
 		}
