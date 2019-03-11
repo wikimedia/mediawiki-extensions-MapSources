@@ -282,8 +282,7 @@ class MapSourcesPage extends SpecialPage {
 			$this->locName = $request->getText( 'locname' );
 		}
 
-		$referrer = ( $request->getVal( 'referrer' ) )
-			? $request->getVal( 'referrer' ) : $request->getHeader( 'referer' );
+		$referrer = $request->getVal( 'referrer' ) ?: $request->getHeader( 'referer' );
 		if ( $this->locName == '' && $referrer ) {
 			// check if internal referrer
 			if ( strpos( $referrer, $wgServer ) !== false ) {
@@ -299,9 +298,9 @@ class MapSourcesPage extends SpecialPage {
 				if ( isset( $values['title'] ) ) {
 					$title = $values['title'];
 				} else {
-					$path = isset( $url['path'] ) ? $url['path'] : '';
+					$path = $url['path'] ?? '';
 					$title = WebRequest::extractTitle( $path, $wgArticlePath );
-					$title = isset( $title['title'] ) ? $title['title'] : '';
+					$title = $title['title'] ?? '';
 				}
 
 				// get text for referrer page
@@ -408,9 +407,9 @@ class MapSourcesPage extends SpecialPage {
 			'{osmzoom}' => $this->osmzoom,
 			'{osmzoommap}' => $this->osmzoommap,
 
-			'{type}' => isset( $this->par['type'] ) ? $this->par['type'] : '',
-			'{region}' => isset( $this->par['region'] ) ? $this->par['region'] : '',
-			'{globe}' => isset( $this->par['globe'] ) ? $this->par['globe'] : '',
+			'{type}' => $this->par['type'] ?? '',
+			'{region}' => $this->par['region'] ?? '',
+			'{globe}' => $this->par['globe'] ?? '',
 			'{params}' => $origParams,
 
 			'{utmzone}' => $geo->utm['zone'] . $geo->utm['zoneLetter'],
