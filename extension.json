@@ -26,10 +26,10 @@
 		"MapSourcesAlias": "MapSources.i18n.alias.php"
 	},
 	"AutoloadClasses": {
-		"MapSourcesHooks": "MapSources.hooks.php",
-		"MapSourcesPage": "MapSources_body.php",
-		"MapSourcesMath": "MapSources_math.php",
-		"MapSourcesTransform": "MapSources_transform.php"
+		"MapSourcesHooks": "includes/MapSourcesHooks.php",
+		"MapSourcesPage": "includes/specials/MapSourcesPage.php",
+		"MapSourcesMath": "includes/MapSourcesMath.php",
+		"MapSourcesTransform": "includes/MapSourcesTransform.php"
 	},
 	"Hooks": {
 		"ParserFirstCallInit": [
