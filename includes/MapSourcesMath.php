@@ -248,6 +248,7 @@ class MapSourcesMath {
 					return -11;
 				}
 
+				/** @phan-suppress-next-line PhanParamSuspiciousOrder */
 				$pos = strpos( 'NSEW', $v );
 				if ( strlen( $v ) != 1 || $pos === false ) {
 					return -3;
