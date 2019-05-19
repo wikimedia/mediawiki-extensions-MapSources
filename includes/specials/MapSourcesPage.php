@@ -189,6 +189,7 @@ class MapSourcesPage extends SpecialPage {
 			}
 		}
 		if ( isset( $this->par['precision'] ) ) {
+			/** @phan-suppress-next-line PhanTypeInvalidDimOffset */
 			$a = intval( $this->par['precision'] );
 			if ( ( $a < 0 ) || ( $a > 12 ) ) {
 				$a = 6;
