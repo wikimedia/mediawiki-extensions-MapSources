@@ -122,7 +122,7 @@ class MapSourcesPage extends SpecialPage {
 		$htmlForm
 			->setMethod( 'get' )
 			->setSubmitText( $this->msg( 'mapsources-go' )->escaped() )
-			->setWrapperLegend( $this->msg( 'mapsources-search-legend' )->escaped() )
+			->setWrapperLegend( $this->msg( 'mapsources-search-legend' )->text() )
 			->prepareForm()
 			->displayForm( false );
 	}
