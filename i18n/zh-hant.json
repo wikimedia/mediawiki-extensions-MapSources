@@ -4,11 +4,12 @@
 			"Simon Shek",
 			"Justincheng12345",
 			"Cwlin0416",
-			"LNDDYL"
+			"LNDDYL",
+			"Winston Sung"
 		]
 	},
 	"mapsources": "地圖來源",
-	"mapsources-summary": "此頁面允許使用者以位置座標在多個地圖搜尋位置。\n\n緯度、 經度和附加的參數必須用逗號分隔。\n參數包含一個識別碼、 等號和一個值。\n\n例子：52° 31′ N, 13° 24′ 30″ E, scale=50000\n\n此外，亦接受[https://wiki.toolserver.org/view/GeoHack GeoHack]格式填寫。",
+	"mapsources-summary": "此頁面允許使用者以位置座標在多個地圖搜尋位置。\n\n緯度、經度和附加的參數必須用逗號分隔。\n參數包含一個識別碼、等號和一個值。\n\n例子：52° 31′ N, 13° 24′ 30″ E, scale=50000\n\n此外，亦接受[https://wiki.toolserver.org/view/GeoHack GeoHack]格式填寫。",
 	"mapsources-search-legend": "於來源中搜尋資料和地圖",
 	"mapsources-coordinate": "座標：",
 	"mapsources-go": "送出",
