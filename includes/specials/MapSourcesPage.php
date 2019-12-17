@@ -254,7 +254,7 @@ class MapSourcesPage extends SpecialPage {
 		}
 
 		/* OSM zoom */
-		$this->osmzoom = round( log( 500000000 / $this->par['scale'], 2 ) );
+		$this->osmzoom = (int)round( log( 500000000 / $this->par['scale'], 2 ) );
 		if ( $this->osmzoom < 0 ) {
 			$this->osmzoom = 0;
 		}

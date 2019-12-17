@@ -175,7 +175,7 @@ class MapSourcesTransform {
 			$utmArray['zone'] = floor( ( $long + 180.0 ) / 6 ) + 1;
 		}
 
-		$c = floor( ( $this->lat + 96 ) / 8 );
+		$c = (int)( ( $this->lat + 96 ) / 8 );
 		/*                                000000000011111111112222 */
 		/*                                012345678901234567890134 */
 		$utmArray['zoneLetter'] = substr( 'CCCDEFGHJKLMNPQRSTUVWXXX', $c, 1 );
