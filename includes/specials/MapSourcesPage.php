@@ -18,6 +18,9 @@
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
+use MediaWiki\MediaWikiServices;
+use MediaWiki\Revision\SlotRecord;
+
 class MapSourcesPage extends SpecialPage {
 
 	/** @var string|int|MapSourcesMath */
@@ -83,8 +86,10 @@ class MapSourcesPage extends SpecialPage {
 			}
 
 			if ( $title !== null && $title->exists() ) {
-				$rev = Revision::newFromTitle( $title );
-				$text = ContentHandler::getContentText( $rev->getContent() );
+				$rev = MediaWikiServices::getInstance()
+					->getRevisionLookup()
+					->getRevisionByTitle( $title );
+				$text = ContentHandler::getContentText( $rev->getContent( SlotRecord::MAIN ) );
 				$out->addWikiTextAsInterface( $this->replaceText( $text ) );
 			} else {
 				$this->errorMsgs[] = $this->msg( 'mapsources-nopage',
