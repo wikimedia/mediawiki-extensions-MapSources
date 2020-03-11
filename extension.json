@@ -32,9 +32,7 @@
 		"MapSourcesTransform": "includes/MapSourcesTransform.php"
 	},
 	"Hooks": {
-		"ParserFirstCallInit": [
-			"MapSourcesHooks::parserHooks"
-		]
+		"ParserFirstCallInit": "MapSourcesHooks::parserHooks"
 	},
 	"manifest_version": 1
 }
