@@ -34,5 +34,5 @@
 	"Hooks": {
 		"ParserFirstCallInit": "MapSourcesHooks::parserHooks"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }
