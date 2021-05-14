@@ -253,7 +253,7 @@ class MapSourcesPage extends SpecialPage {
 			1000000, 2000000, 4000000, 10000000, 20000000, 40000000 ];
 		$i = 0;
 		$c = count( $min );
-		while ( ( $this->par['scale'] >= $min[$i] ) && ( $i < $c ) ) {
+		while ( ( $i < $c ) && ( $this->par['scale'] >= $min[$i] ) ) {
 			$this->multimap = $mm[$i];
 			$i++;
 		}
