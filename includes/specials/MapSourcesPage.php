@@ -89,7 +89,8 @@ class MapSourcesPage extends SpecialPage {
 				$rev = MediaWikiServices::getInstance()
 					->getRevisionLookup()
 					->getRevisionByTitle( $title );
-				$text = ContentHandler::getContentText( $rev->getContent( SlotRecord::MAIN ) );
+				$content = $rev->getContent( SlotRecord::MAIN );
+				$text = ( $content instanceof TextContent ) ? $content->getText() : null;
 				$out->addWikiTextAsInterface( $this->replaceText( $text ) );
 			} else {
 				$this->errorMsgs[] = $this->msg( 'mapsources-nopage',
