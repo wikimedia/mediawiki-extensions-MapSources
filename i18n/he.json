@@ -6,7 +6,7 @@
 		]
 	},
 	"mapsources": "מקורות מפות",
-	"mapsources-summary": "דף זה מאפשר לחפש מיקום (המוגדר על ידי נקודות ציון) במקורות רבים.\n\nקו רוחב, קו אורך ופרמטרים נוספים צריכים להיות מופרדים בפסיקים.\nפרמטרים מורכבים ממזהה, סימן שווה וערך.\n\nדוגמה: <span dir=\"ltr\">32° 45′ N, 34° 57′ E, scale=50000 </span>\n\nבנוסף, אפשר להשתמש בתסדיר [https://wiki.toolserver.org/view/GeoHack GeoHack].",
+	"mapsources-summary": "הדף הזה מאפשר לחפש מיקום (המוגדר על־ידי נקודות ציון) במקורות רבים.\n\nקו רוחב, קו אורך ופרמטרים נוספים צריכים להיות מופרדים בפסיקים.\nפרמטרים מורכבים ממזהה, סימן שווה, וערך.\n\nדוגמה: <span dir=\"ltr\">32° 45′ N, 34° 57′ E, scale=50000</span>\n\nבנוסף, אפשר להשתמש בתסדיר [https://wiki.toolserver.org/view/GeoHack GeoHack].",
 	"mapsources-search-legend": "חיפוש נתונים ומפות במקורות",
 	"mapsources-coordinate": "נקודות ציון:",
 	"mapsources-go": "מעבר",
