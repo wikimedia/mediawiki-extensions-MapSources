@@ -4,12 +4,13 @@
 			"Crt",
 			"Silvonen",
 			"Stryn",
-			"VezonThunder"
+			"VezonThunder",
+			"Rönttönen"
 		]
 	},
 	"mapsources": "Karttalähteet",
 	"mapsources-summary": "Tämä sivu antaa käyttäjien hakea sijaintia useista lähteistä sen koordinaattien mukaan.\n\nLeveys- ja pituusaste sekä lisäehdot tulee erottaa pilkuin.\nEhdot koostuvat tunnisteesta, yhtäsuuruusmerkistä ja arvosta.\n\nEsimerkki: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nMyös [https://wiki.toolserver.org/view/GeoHack GeoHack]-muoto hyväksytään.",
-	"mapsources-search-legend": "Hae tieto- ja karttalähteitä",
+	"mapsources-search-legend": "Hae tietoja ja karttoja lähdekirjastosta",
 	"mapsources-coordinate": "Koordinaatit:",
 	"mapsources-go": "Siirry",
 	"mapsources-errormsgs": "Virheilmoitukset",

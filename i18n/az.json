@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Maqa001",
+			"Şeyx Şamil"
+		]
+	},
+	"mapsources": "Xəritə mənbələri",
+	"mapsources-summary": "Bu səhifə, istifadəçilərə bir çox mənbədə bir yer (koordinatları ilə təyin olunmuş) axtarmağa imkan verir.\n\nEnlik, uzunluq və əlavə parametrlər vergüllə ayrılmalıdır.\nParametrlər identifikator, bərabər işarəsi və dəyərdən ibarətdir.\n\nMisal: 52° 31′ N, 13° 24′ 30″ E, miqyas=50000\n\nƏlavə olaraq, [https://wiki.toolserver.org/view/GeoHack GeoHack] formatı qəbul ediləcək.",
+	"mapsources-search-legend": "Resurslardakı məlumatları və xəritələri tapın",
+	"mapsources-coordinate": "Koordinatlar:",
+	"mapsources-go": "Getmək",
+	"mapsources-errormsgs": "Xəta mesajları",
+	"mapsources-noparams": "Parametr verilməyib",
+	"mapsources-incorrectparams": "Yanlış parametrlər ($1) verilmişdir",
+	"mapsources-incorrectlat": "Yanlış enlik",
+	"mapsources-incorrectlong": "Yanlış uzunluq",
+	"mapsources-nopage": "Layihə səhifəsi [[{{ns:project}}:$1|$1]] mövcud deyil",
+	"mapsources-outofrange": "Sıra xaricində koordinat",
+	"mapsources-math-missing-operand": "Çatışmayan operand",
+	"mapsources-math-incorrect-input": "Səhv giriş",
+	"mapsources-desc": "[[Special:MapSources|Search]] mənbələrdəki məlumatlar və xəritələr"
+}
