@@ -11,6 +11,8 @@
  * @license https://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
+namespace MediaWiki\Extension\MapSources;
+
 class MapSourcesMath {
 
 	/** @var int */

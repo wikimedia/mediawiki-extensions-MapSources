@@ -18,8 +18,18 @@
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
+namespace MediaWiki\Extension\MapSources\Specials;
+
+use DerivativeContext;
+use HTMLForm;
+use MediaWiki\Extension\MapSources\MapSourcesMath;
+use MediaWiki\Extension\MapSources\MapSourcesTransform;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Revision\SlotRecord;
+use SpecialPage;
+use TextContent;
+use Title;
+use WebRequest;
 
 class MapSourcesPage extends SpecialPage {
 

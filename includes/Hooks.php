@@ -1,10 +1,14 @@
 <?php
 
-class MapSourcesHooks {
+namespace MediaWiki\Extension\MapSources;
+
+use Parser;
+
+class Hooks {
 	public static function parserHooks( Parser $parser ) {
-		$parser->setFunctionHook( 'dd2dms', 'MapSourcesHooks::wfdd2dms' );
-		$parser->setFunctionHook( 'deg2dd', 'MapSourcesHooks::wfdeg2dd' );
-		$parser->setFunctionHook( 'geoLink', 'MapSourcesHooks::wfgeoLink' );
+		$parser->setFunctionHook( 'dd2dms', [ self::class, 'wfdd2dms' ] );
+		$parser->setFunctionHook( 'deg2dd', [ self::class, 'wfdeg2dd' ] );
+		$parser->setFunctionHook( 'geoLink', [ self::class, 'wfgeoLink' ] );
 		return true;
 	}
 

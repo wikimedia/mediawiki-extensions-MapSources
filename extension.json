@@ -14,7 +14,7 @@
 		"MediaWiki": ">= 1.33.0"
 	},
 	"SpecialPages": {
-		"MapSources": "MapSourcesPage"
+		"MapSources": "MediaWiki\\Extension\\MapSources\\Specials\\MapSourcesPage"
 	},
 	"MessagesDirs": {
 		"MapSources": [
@@ -25,14 +25,11 @@
 		"MapSourcesMagic": "MapSources.i18n.magic.php",
 		"MapSourcesAlias": "MapSources.i18n.alias.php"
 	},
-	"AutoloadClasses": {
-		"MapSourcesHooks": "includes/MapSourcesHooks.php",
-		"MapSourcesPage": "includes/specials/MapSourcesPage.php",
-		"MapSourcesMath": "includes/MapSourcesMath.php",
-		"MapSourcesTransform": "includes/MapSourcesTransform.php"
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\MapSources\\": "includes/"
 	},
 	"Hooks": {
-		"ParserFirstCallInit": "MapSourcesHooks::parserHooks"
+		"ParserFirstCallInit": "MediaWiki\\Extension\\MapSources\\Hooks::parserHooks"
 	},
 	"manifest_version": 2
 }
