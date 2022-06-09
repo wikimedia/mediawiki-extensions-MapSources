@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Anakmalaysia"
+			"Anakmalaysia",
+			"Ultron90"
 		]
 	},
 	"mapsources": "Sumber Peta",
@@ -17,6 +18,6 @@
 	"mapsources-nopage": "Tiada halaman projek [[{{ns:project}}:$1|$1]] disediakan",
 	"mapsources-outofrange": "Koordinat di luar julat",
 	"mapsources-math-missing-operand": "Tiada kendalian",
-	"mapsources-math-incorrect-input": "Input tidak betul",
-	"mapsources-desc": "[[Special:MapSources|Cari]] sumber data dan peta"
+	"mapsources-math-incorrect-input": "Masukan salah",
+	"mapsources-desc": "[[Special:MapSources|Cari]] tela dan peta dalam sumber"
 }
