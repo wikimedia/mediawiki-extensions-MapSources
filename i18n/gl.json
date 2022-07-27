@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"McDutchie",
 			"Toliño"
 		]
 	},
 	"mapsources": "Fontes de mapas",
-	"mapsources-summary": "Esta páxina permite aos usuarios procurar en varios recursos unha localización (definida mediante as súas coordenadas).\n\nA latitude, a lonxitude e os parámetros adicionais deben separarse por comas.\nOs parámetros consisten nun identificador, o signo igual e un valor.\n\nExemplo: 52° 31′ N, 13° 24′ 30″ E, escala=50000\n\nAdemais, acéptase o formato [https://wiki.toolserver.org/view/GeoHack GeoHack].",
+	"mapsources-summary": "Esta páxina permite aos usuarios procurar en varios recursos unha localización (definida mediante as súas coordenadas).\n\nA latitude, a lonxitude e os parámetros adicionais deben separarse por comas.\nOs parámetros consisten nun identificador, o signo igual e un valor.\n\nExemplo: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nAdemais, acéptase o formato [https://wiki.toolserver.org/view/GeoHack GeoHack].",
 	"mapsources-search-legend": "Atopar datos e mapas nos recursos",
 	"mapsources-coordinate": "Coordenadas:",
 	"mapsources-go": "Continuar",

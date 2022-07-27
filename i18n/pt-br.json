@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Araceletorres",
-			"Luckas"
+			"Luckas",
+			"McDutchie"
 		]
 	},
 	"mapsources": "Fontes de mapas",
-	"mapsources-summary": "Esta página permite aos usuários procurar um local (definido pelas suas coordenadas) em vários recursos.\n\nLatitude, longitude e parâmetros adicionais devem ser separados por vírgulas.\nParâmetros consistem em um identificador, o sinal de igual e um valor.\n\nExemplo: 52° 31′ N, 13° 24′ 30″ E, escala=50000\n\nAlém disso, o formato [https://wiki.toolserver.org/view/GeoHack GeoHack] será aceito.",
+	"mapsources-summary": "Esta página permite aos usuários procurar um local (definido pelas suas coordenadas) em vários recursos.\n\nLatitude, longitude e parâmetros adicionais devem ser separados por vírgulas.\nParâmetros consistem em um identificador, o sinal de igual e um valor.\n\nExemplo: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nAlém disso, o formato [https://wiki.toolserver.org/view/GeoHack GeoHack] será aceito.",
 	"mapsources-search-legend": "Encontrar dados e mapas nos recursos",
 	"mapsources-coordinate": "Coordenadas:",
 	"mapsources-go": "Ir",

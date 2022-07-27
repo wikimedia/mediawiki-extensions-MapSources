@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Hamilton Abreu",
+			"McDutchie",
 			"Vitorvicentevalente"
 		]
 	},
 	"mapsources": "Fontes cartográficas",
-	"mapsources-summary": "Esta página permite procurar uma localidade (definida pelas coordenadas) em várias fontes.\n\nOs parâmetros de latitude, longitude e outros devem ser separados por vírgulas.\nConsistem num identificador, um sinal de igual e um valor.\n\nExemplo: 52° 31′ N, 13° 24′ 30″ E, scale=50000.\n\nO formato [https://wiki.toolserver.org/view/GeoHack GeoHack] também é válido.",
+	"mapsources-summary": "Esta página permite procurar uma localidade (definida pelas coordenadas) em várias fontes.\n\nOs parâmetros de latitude, longitude e outros devem ser separados por vírgulas.\nConsistem num identificador, um sinal de igual e um valor.\n\nExemplo: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nO formato [https://wiki.toolserver.org/view/GeoHack GeoHack] também é válido.",
 	"mapsources-search-legend": "Procurar dados e cartas geográficas nas fontes",
 	"mapsources-coordinate": "Coordenadas:",
 	"mapsources-go": "Continuar",
