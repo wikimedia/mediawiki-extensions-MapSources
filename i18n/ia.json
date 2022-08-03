@@ -4,5 +4,19 @@
 			"McDutchie"
 		]
 	},
-	"mapsources": "Fontes cartographic"
+	"mapsources": "Fontes cartographic",
+	"mapsources-summary": "Iste pagina permitte que usatores cerca un loco (indicate per coordinatas) in plure ressources.\n\nLatitude, longitude e altere parametros debe esser separate con commas.\nParametros consiste de un identificator, le signo de equal e un valor.\n\nExemplo: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nLe formato [https://wiki.toolserver.org/view/GeoHack GeoHack] tamben es acceptate.",
+	"mapsources-search-legend": "Trovar datos e cartas in ressources",
+	"mapsources-coordinate": "Coordinatas:",
+	"mapsources-go": "Va",
+	"mapsources-errormsgs": "Messages de error",
+	"mapsources-noparams": "Nulle parametro date",
+	"mapsources-incorrectparams": "Parametros incorrecte ($1) fornite",
+	"mapsources-incorrectlat": "Latitude incorrecte",
+	"mapsources-incorrectlong": "Longitude incorrecte",
+	"mapsources-nopage": "Nulle pagina de projecto [[{{ns:project}}:$1|$1]] disponibile",
+	"mapsources-outofrange": "Coordinata non valide",
+	"mapsources-math-missing-operand": "Operando mancante",
+	"mapsources-math-incorrect-input": "Entrata incorrecte",
+	"mapsources-desc": "[[Special:MapSources|Cercar]] datos e cartas in ressources"
 }

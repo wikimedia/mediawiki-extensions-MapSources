@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Siebrand"
+			"Siebrand",
+			"McDutchie"
 		]
 	},
 	"mapsources": "Kaartbronnen",
 	"mapsources-summary": "Via deze pagina kunt u, op basis van coördinaten, zoeken naar een locatie in meerdere bronnen.\n\nLengtegraad, breedtegraad en extra parameters moeten gescheiden worden met komma's.\nParameters bestaan uit een identificatie, het =-teken en een waarde.\n\nVoorbeeld: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nOok de [https://wiki.toolserver.org/view/GeoHack opmaak van Geohack] wordt ondersteund.",
-	"mapsources-search-legend": "Gegevens- en kaarten vinden in bronnen",
+	"mapsources-search-legend": "Gegevens en kaarten vinden in bronnen",
 	"mapsources-coordinate": "Coördinaten:",
 	"mapsources-go": "OK",
 	"mapsources-errormsgs": "Foutberichten",

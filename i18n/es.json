@@ -4,11 +4,12 @@
 			"Armando-Martin",
 			"Ciencia Al Poder",
 			"Fitoschido",
-			"Macofe"
+			"Macofe",
+			"McDutchie"
 		]
 	},
 	"mapsources": "Fuentes de datos del mapa",
-	"mapsources-summary": "Esta página permite a los usuarios buscar una ubicación (definida por sus coordenadas) en múltiples fuentes.\n\nLa latitud, la longitud y los parámetros adicionales deben separarse con comas.\nLos parámetros consisten en un identificador, el signo igual y un valor.\n\nEjemplo: 52° 31′ N, 13° 24′ 30″ E, escala=50000\n\nAdemás, se aceptará el formato [https://wiki.toolserver.org/view/GeoHack GeoHack].",
+	"mapsources-summary": "Esta página permite a los usuarios buscar una ubicación (definida por sus coordenadas) en múltiples fuentes.\n\nLa latitud, la longitud y los parámetros adicionales deben separarse con comas.\nLos parámetros consisten en un identificador, el signo igual y un valor.\n\nEjemplo: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nAdemás, se aceptará el formato [https://wiki.toolserver.org/view/GeoHack GeoHack].",
 	"mapsources-search-legend": "Encuentra datos y mapas en los recursos",
 	"mapsources-coordinate": "Coordenadas:",
 	"mapsources-go": "Ir",
