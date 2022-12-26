@@ -4,5 +4,19 @@
 			"Eleassar"
 		]
 	},
-	"mapsources-go": "Pojdi"
+	"mapsources": "Viri zemljevidov",
+	"mapsources-summary": "Ta stran omogoča uporabnikom, da iščejo lokacijo (določeno z njenimi koordinatami) v več virih.\n\nŠirina, dolžina in dodatni parametri morajo biti ločeni z vejicami.\nParametri so sestavljeni iz identifikatorja, enačaja in vrednosti.\n\nZgled: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nPoleg tega bo sprejet zapis  [https://wiki.toolserver.org/view/ GeoHack GeoHack].",
+	"mapsources-search-legend": "Poiščite podatke in zemljevide v virih",
+	"mapsources-coordinate": "Koordinate:",
+	"mapsources-go": "Pojdi",
+	"mapsources-errormsgs": "Sporočila o napakah",
+	"mapsources-noparams": "Ni podanih parametrov",
+	"mapsources-incorrectparams": "Podani so nepravilni parametri ($1).",
+	"mapsources-incorrectlat": "Nepravilna zemljepisna širina",
+	"mapsources-incorrectlong": "Nepravilna zemljepisna dolžina",
+	"mapsources-nopage": "Na voljo ni nobens stran projekta [[{{ns:project}}:$1|$1]]",
+	"mapsources-outofrange": "Neveljavna koordinata",
+	"mapsources-math-missing-operand": "Manjkajoč parameter",
+	"mapsources-math-incorrect-input": "Nepravilen vnos",
+	"mapsources-desc": "[[Special:MapSources|Iskanje]] podatkov in zemljevidov v virih"
 }
