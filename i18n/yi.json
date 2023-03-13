@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"פוילישער"
+			"פוילישער",
+			"Pacha Tchernof"
 		]
 	},
-	"mapsources-coordinate": "קאארדינאטן"
+	"mapsources-coordinate": "קאארדינאטן",
+	"mapsources-go": "גיין"
 }
