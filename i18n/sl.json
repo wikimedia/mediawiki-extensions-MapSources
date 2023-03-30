@@ -11,7 +11,7 @@
 	"mapsources-go": "Pojdi",
 	"mapsources-errormsgs": "Sporočila o napakah",
 	"mapsources-noparams": "Ni podanih parametrov",
-	"mapsources-incorrectparams": "Podani so nepravilni parametri ($1).",
+	"mapsources-incorrectparams": "Nepravilni predloženi parametri ($1)",
 	"mapsources-incorrectlat": "Nepravilna zemljepisna širina",
 	"mapsources-incorrectlong": "Nepravilna zemljepisna dolžina",
 	"mapsources-nopage": "Na voljo ni nobens stran projekta [[{{ns:project}}:$1|$1]]",
