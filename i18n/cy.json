@@ -2,13 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Lloffiwr",
-			"Robin Owain"
+			"Robin Owain",
+			"Afalau"
 		]
 	},
 	"mapsources": "Ffynnonellau mapiau",
 	"mapsources-search-legend": "Chwilio am data a mapiau yn yr adnoddau",
 	"mapsources-coordinate": "Cyfesurynnau:",
-	"mapsources-go": "Chwilier",
+	"mapsources-go": "Iawn",
 	"mapsources-errormsgs": "Negeseuon gwallau",
 	"mapsources-noparams": "Ni roddwyd unrhyw baramedrau",
 	"mapsources-incorrectparams": "Rhoddwyd paramedrau ($1) anghywir",
