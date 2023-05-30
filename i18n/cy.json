@@ -17,7 +17,7 @@
 	"mapsources-incorrectlong": "Hydred anghywir",
 	"mapsources-nopage": "Dim tudalen brosiect [[{{ns:project}}:$1|$1]] ar gael",
 	"mapsources-outofrange": "Y cyfesuryn yn rhy bell o'r cyrraedd",
-	"mapsources-math-missing-operand": "Operand yn eisiau",
+	"mapsources-math-missing-operand": "Operand ar goll",
 	"mapsources-math-incorrect-input": "Mewnbwn anghywir",
 	"mapsources-desc": "[[Special:MapSources|Chwilio]] data a mapiau o fewn yr adnoddau"
 }
