@@ -9,5 +9,10 @@
 	"mapsources-coordinate": "Koordinatės:",
 	"mapsources-go": "Eiti",
 	"mapsources-errormsgs": "Klaidų Pranešimai",
-	"mapsources-noparams": "Nėra pateiktų parametrų"
+	"mapsources-noparams": "Nėra pateiktų parametrų",
+	"mapsources-incorrectparams": "Nurodyti neteisingi parametrai ($1)",
+	"mapsources-incorrectlat": "Neteisinga platuma",
+	"mapsources-incorrectlong": "Neteisinga ilguma",
+	"mapsources-nopage": "Nėra prieinamo projekto puslapio [[{{ns:project}}:$1|$1]]",
+	"mapsources-math-incorrect-input": "Neteisinga įvestis"
 }
