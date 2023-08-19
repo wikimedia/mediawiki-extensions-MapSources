@@ -26,9 +26,9 @@ use MediaWiki\Extension\MapSources\MapSourcesMath;
 use MediaWiki\Extension\MapSources\MapSourcesTransform;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Revision\SlotRecord;
+use MediaWiki\Title\Title;
 use SpecialPage;
 use TextContent;
-use Title;
 use WebRequest;
 
 class MapSourcesPage extends SpecialPage {
