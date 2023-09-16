@@ -29,7 +29,12 @@
 		"MediaWiki\\Extension\\MapSources\\": "includes/"
 	},
 	"Hooks": {
-		"ParserFirstCallInit": "MediaWiki\\Extension\\MapSources\\Hooks::parserHooks"
+		"ParserFirstCallInit": "main"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "MediaWiki\\Extension\\MapSources\\Hooks"
+		}
 	},
 	"manifest_version": 2
 }
