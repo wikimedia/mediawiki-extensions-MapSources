@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ziko"
+		]
+	},
+	"mapsources": "Mapaj fontoj",
+	"mapsources-summary": "Ĉi tiu paĝo permesas al uzantoj serĉi lokon (difinita per ĝiaj koordinatoj) en pluraj resurcoj.\n\nLatitudo, longitudo kaj pliaj parametroj devas esti apartigitaj per komoj.\nParametroj konsistas el identigilo, la egalsigno kaj valoro.\n\nEkzemplo: 52° 31′ N, 13° 24′ 30″ E, skalo=50000\n\nAldone, la [https://wiki.toolserver.org/view/GeoHack GeoHack]-formato estos akceptita.",
+	"mapsources-search-legend": "Trovu datumojn kaj mapojn en resursoj",
+	"mapsources-coordinate": "Koordinatoj:",
+	"mapsources-go": "Ek!",
+	"mapsources-errormsgs": "Eraro-mesaĝoj",
+	"mapsources-noparams": "Neniuj parametroj donitaj",
+	"mapsources-incorrectparams": "Malĝustaj parametroj ($1) donitaj",
+	"mapsources-incorrectlat": "Malĝusta latitudo",
+	"mapsources-incorrectlong": "Malĝusta longitudo",
+	"mapsources-nopage": "Neniu projektpaĝo [[{{ns:project}}:$1|$1]] ekzistas",
+	"mapsources-outofrange": "Koordinato ekster intervalo",
+	"mapsources-math-missing-operand": "Mankas operando",
+	"mapsources-math-incorrect-input": "Malĝusta enigo",
+	"mapsources-desc": "[[Special:MapSources|Serĉi]] datumojn kaj mapojn en resursoj"
+}
