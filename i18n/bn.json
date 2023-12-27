@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Aftabuzzaman",
-			"আফতাবুজ্জামান"
+			"আফতাবুজ্জামান",
+			"Aishik Rehman"
 		]
 	},
 	"mapsources": "মানচিত্রের উত্স",
@@ -10,7 +11,7 @@
 	"mapsources-coordinate": "স্থানাঙ্ক:",
 	"mapsources-go": "যান",
 	"mapsources-errormsgs": "ত্রুটি বার্তা",
-	"mapsources-noparams": "কোন প্যারামিটার দেয়া হয়নি",
+	"mapsources-noparams": "কোনো প্যারামিটার দেয়া হয়নি",
 	"mapsources-incorrectparams": "প্রদত্ত প্যারামিটার ($1) সঠিক নয়",
 	"mapsources-incorrectlat": "অক্ষাংশ সঠিক নয়",
 	"mapsources-incorrectlong": "দ্রাঘিমাংশ সঠিক নয়",
