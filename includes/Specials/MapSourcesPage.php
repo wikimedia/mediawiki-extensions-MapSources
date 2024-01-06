@@ -25,11 +25,11 @@ use HTMLForm;
 use MediaWiki\Extension\MapSources\MapSourcesMath;
 use MediaWiki\Extension\MapSources\MapSourcesTransform;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Request\WebRequest;
 use MediaWiki\Revision\SlotRecord;
+use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
-use SpecialPage;
 use TextContent;
-use WebRequest;
 
 class MapSourcesPage extends SpecialPage {
 
