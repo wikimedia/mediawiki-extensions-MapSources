@@ -4,5 +4,7 @@
 			"Joao Xavier"
 		]
 	},
+	"mapsources-summary": "Ca pagino posibligas ke uzeri serches ula lokizo (definita segun lua koordinati) en multopla fonti.\n\nLatitudo, longitudo e plusa parametri mustas separesar per komi.\nParametri konsistas en: identifikilo, la signo \"=\", ed un valoro.\n\nExemplo: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nAdjuntite, formato [https://wiki.toolserver.org/view/GeoHack GeoHack] ank aceptesos.",
+	"mapsources-coordinate": "Koordinati:",
 	"mapsources-go": "Irez"
 }
