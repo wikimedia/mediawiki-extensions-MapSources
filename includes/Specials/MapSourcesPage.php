@@ -20,10 +20,10 @@
 
 namespace MediaWiki\Extension\MapSources\Specials;
 
-use DerivativeContext;
-use HTMLForm;
+use MediaWiki\Context\DerivativeContext;
 use MediaWiki\Extension\MapSources\MapSourcesMath;
 use MediaWiki\Extension\MapSources\MapSourcesTransform;
+use MediaWiki\HTMLForm\HTMLForm;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Request\WebRequest;
 use MediaWiki\Revision\SlotRecord;

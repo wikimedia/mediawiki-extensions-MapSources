@@ -3,7 +3,7 @@
 namespace MediaWiki\Extension\MapSources;
 
 use MediaWiki\Hook\ParserFirstCallInitHook;
-use Parser;
+use MediaWiki\Parser\Parser;
 
 class Hooks implements ParserFirstCallInitHook {
 	public function onParserFirstCallInit( $parser ) {
