@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"John Reid"
+			"John Reid",
+			"CiphriusKane"
 		]
 	},
 	"mapsources-summary": "This page lats uisers rake fer ae location (defined bi its coordinates) in monie resoorces.\n\nLateetuid, langeetuid n addeetional guidins maun be separated wi commas.\nBoondins conseest o aen identeefier, the equal sign n ae value.\n\nExample: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nAddeetionlie, the [https://wiki.toolserver.org/view/GeoHack GeoHack] format will be acceptit.",
-	"mapsources-search-legend": "Fynd data n maps in resoorces",
+	"mapsources-search-legend": "Find data an maps in resoorces",
 	"mapsources-coordinate": "Coordinates:",
 	"mapsources-desc": "[[Special:MapSources|Rake]] data n maps in resoorces"
 }
