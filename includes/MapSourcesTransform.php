@@ -51,9 +51,12 @@
 namespace MediaWiki\Extension\MapSources;
 
 class MapSourcesTransform {
+	/** @var float */
 	public $lat = 0;
+	/** @var float */
 	public $long = 0;
 
+	/** @var float[] */
 	public $ellWGS84 = [
 		'maxAxis'       => 6378137.0,
 		'minAxis'       => 6356752.315,
@@ -62,6 +65,7 @@ class MapSourcesTransform {
 		'flattening'    => 0.003352810665,
 		'invFlattening' => 298.257223563
 	];
+	/** @var float[] */
 	public $ellAiry1830 = [
 		'maxAxis'       => 6377563.396,
 		'minAxis'       => 6356256.909,
@@ -70,6 +74,7 @@ class MapSourcesTransform {
 		'flattening'    => 0.003340850640,
 		'invFlattening' => 299.3249647
 	];
+	/** @var float[] */
 	public $ellBessel1841 = [
 		'maxAxis'       => 6377397.155,
 		'minAxis'       => 6356078.965,
@@ -79,6 +84,7 @@ class MapSourcesTransform {
 		'invFlattening' => 299.1528128
 	];
 
+	/** @var array */
 	public $utm = [
 		'easting'             => 0,
 		'northing'            => 0,
@@ -91,7 +97,9 @@ class MapSourcesTransform {
 		'northingOffset'      => 0.0,
 		'northingOffsetSouth' => 10000000.0
 	];
+	/** @var array */
 	public $utm33;
+	/** @var array */
 	public $osgb36 = [
 		'easting'             => 0,
 		'northing'            => 0,
@@ -102,11 +110,13 @@ class MapSourcesTransform {
 		'northingOffset'      => -100000.0,
 		'northingOffsetSouth' => 0.0
 	];
+	/** @var array */
 	public $ch1903 = [
 		'easting'             => 0,
 		'northing'            => 0,
 		'error'               => -1
 	];
+	/** @var array */
 	public $nztm = [
 		'easting'             => 0,
 		'northing'            => 0,
