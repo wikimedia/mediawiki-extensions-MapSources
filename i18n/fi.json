@@ -3,13 +3,14 @@
 		"authors": [
 			"Crt",
 			"Rönttönen",
+			"Samoasambia",
 			"Silvonen",
 			"Stryn",
 			"VezonThunder"
 		]
 	},
 	"mapsources": "Karttalähteet",
-	"mapsources-summary": "Tämä sivu antaa käyttäjien hakea sijaintia useista lähteistä sen koordinaattien mukaan.\n\nLeveys- ja pituusaste sekä lisäehdot tulee erottaa pilkuin.\nEhdot koostuvat tunnisteesta, yhtäsuuruusmerkistä ja arvosta.\n\nEsimerkki: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nMyös [https://wiki.toolserver.org/view/GeoHack GeoHack]-muoto hyväksytään.",
+	"mapsources-summary": "Tämä sivu antaa käyttäjien hakea sijaintia (sen koordinaattien mukaan) useista lähteistä.\n\nLeveys- ja pituusaste sekä lisäehdot tulee erottaa pilkuin.\nEhdot koostuvat tunnisteesta, yhtäsuuruusmerkistä ja arvosta.\n\nEsimerkki: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nMyös [https://wiki.toolserver.org/view/GeoHack GeoHack]-muoto hyväksytään.",
 	"mapsources-search-legend": "Hae tietoja ja karttoja lähdekirjastosta",
 	"mapsources-coordinate": "Koordinaatit:",
 	"mapsources-go": "Siirry",
@@ -20,6 +21,7 @@
 	"mapsources-incorrectlong": "Virheellinen pituusaste",
 	"mapsources-nopage": "Projektisivua [[{{ns:project}}:$1|$1]] ei saatavilla",
 	"mapsources-outofrange": "Koordinaatti kantaman ulkopuolella",
+	"mapsources-math-missing-operand": "Puuttuva kohdemuuttuja",
 	"mapsources-math-incorrect-input": "Virheellinen syöte",
 	"mapsources-desc": "Tieto- ja karttalähteiden [[Special:MapSources|haku]]"
 }
