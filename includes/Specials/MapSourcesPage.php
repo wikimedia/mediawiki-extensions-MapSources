@@ -24,6 +24,7 @@ use MediaWiki\Context\DerivativeContext;
 use MediaWiki\Extension\MapSources\MapSourcesMath;
 use MediaWiki\Extension\MapSources\MapSourcesTransform;
 use MediaWiki\HTMLForm\HTMLForm;
+use MediaWiki\MainConfigNames;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Request\WebRequest;
 use MediaWiki\Revision\SlotRecord;
@@ -290,7 +291,6 @@ class MapSourcesPage extends SpecialPage {
 	 * @return bool
 	 */
 	private function getParams( $param = null ) {
-		global $wgServer, $wgArticlePath;
 		$request = $this->getRequest();
 
 		$this->locName = $request->getText( 'pagename' );
@@ -300,8 +300,9 @@ class MapSourcesPage extends SpecialPage {
 
 		$referrer = $request->getVal( 'referrer' ) ?: $request->getHeader( 'referer' );
 		if ( $this->locName == '' && $referrer ) {
+			$config = $this->getConfig();
 			// check if internal referrer
-			if ( strpos( $referrer, $wgServer ) !== false ) {
+			if ( strpos( $referrer, $config->get( MainConfigNames::Server ) ) !== false ) {
 				// check if referrer is in format /index.php?title=<title>
 				// otherwise, format should be /wiki/<title> (or whatever, based on $wgArticlePath)
 				$url = parse_url( $referrer );
@@ -315,7 +316,7 @@ class MapSourcesPage extends SpecialPage {
 					$title = $values['title'];
 				} else {
 					$path = $url['path'] ?? '';
-					$title = WebRequest::extractTitle( $path, $wgArticlePath );
+					$title = WebRequest::extractTitle( $path, $config->get( MainConfigNames::ArticlePath ) );
 					$title = $title['title'] ?? '';
 				}
 
