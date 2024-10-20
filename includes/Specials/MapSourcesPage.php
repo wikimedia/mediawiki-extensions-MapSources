@@ -20,6 +20,7 @@
 
 namespace MediaWiki\Extension\MapSources\Specials;
 
+use MediaWiki\Content\TextContent;
 use MediaWiki\Context\DerivativeContext;
 use MediaWiki\Extension\MapSources\MapSourcesMath;
 use MediaWiki\Extension\MapSources\MapSourcesTransform;
@@ -30,7 +31,6 @@ use MediaWiki\Request\WebRequest;
 use MediaWiki\Revision\SlotRecord;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
-use TextContent;
 
 class MapSourcesPage extends SpecialPage {
 
