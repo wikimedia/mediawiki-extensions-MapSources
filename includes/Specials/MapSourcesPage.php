@@ -101,8 +101,9 @@ class MapSourcesPage extends SpecialPage {
 					->getRevisionLookup()
 					->getRevisionByTitle( $title );
 				$content = $rev->getContent( SlotRecord::MAIN );
-				$text = ( $content instanceof TextContent ) ? $content->getText() : null;
-				$out->addWikiTextAsInterface( $this->replaceText( $text ) );
+				if ( $content instanceof TextContent ) {
+					$out->addWikiTextAsInterface( $this->replaceText( $content->getText() ) );
+				}
 			} else {
 				$this->errorMsgs[] = $this->msg( 'mapsources-nopage',
 					$this->msg( 'mapsources' )->inContentLanguage()->escaped() )->text();
@@ -357,7 +358,7 @@ class MapSourcesPage extends SpecialPage {
 		return true;
 	}
 
-	private function replaceText( $text ) {
+	private function replaceText( string $text ): string {
 		$origParams = abs( $this->lat->dec ) . '_' . $this->lat->coord['NS'] . '_'
 			. abs( $this->long->dec ) . '_' . $this->long->coord['EW'];
 		if ( count( $this->par ) > 0 ) {
