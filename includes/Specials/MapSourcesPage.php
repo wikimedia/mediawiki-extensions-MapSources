@@ -74,6 +74,7 @@ class MapSourcesPage extends SpecialPage {
 		parent::__construct( 'MapSources' );
 	}
 
+	/** @inheritDoc */
 	public function execute( $subPage ) {
 		$out = $this->getOutput();
 
@@ -113,7 +114,11 @@ class MapSourcesPage extends SpecialPage {
 		}
 	}
 
-	# makeForm() code by Rob Church <robchur@gmail.com>
+	/**
+	 * @author makeForm() code by Rob Church <robchur@gmail.com>
+	 *
+	 * @param string $defaultValue
+	 */
 	private function makeForm( $defaultValue ) {
 		$out = $this->getOutput();
 
@@ -216,7 +221,9 @@ class MapSourcesPage extends SpecialPage {
 		return 0;
 	}
 
-	# setScales() code by Egil Kvaleberg <egil@kvaleberg.no>
+	/**
+	 * @author setScales() code by Egil Kvaleberg <egil@kvaleberg.no>
+	 */
 	private function setScales() {
 		if ( !isset( $this->par['scale'] ) || ( $this->par['scale'] < 100 ) ) {
 			$scaleByType = [

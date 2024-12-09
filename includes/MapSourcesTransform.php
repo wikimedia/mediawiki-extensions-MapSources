@@ -127,10 +127,19 @@ class MapSourcesTransform {
 		'northingOffsetSouth' => 10000000.0
 	];
 
+	/**
+	 * @param float $lat
+	 * @param float $long
+	 */
 	public function __construct( $lat, $long ) {
 		$this->getValues( $lat, $long );
 	}
 
+	/**
+	 * @param float $lat
+	 * @param float $long
+	 * @return bool
+	 */
 	protected function getValues( $lat, $long ) {
 		if ( $lat < -90 || $lat > 90 || $long <= -180 || $long > 180 ) {
 			return false;
@@ -151,19 +160,35 @@ class MapSourcesTransform {
 		return true;
 	}
 
+	/**
+	 * @param float $deg
+	 * @return float
+	 */
 	protected function deg2rad( $deg ) {
 		return $deg * M_PI / 180;
 	}
 
+	/**
+	 * @param float $rad
+	 * @return float
+	 */
 	protected function rad2deg( $rad ) {
 		return $rad * 180 / M_PI;
 	}
 
+	/**
+	 * @param float $zone
+	 * @return float
+	 */
 	protected function getCentralMeridian( $zone ) {
 		return ( $zone * 6.0 ) - 183.0;
 	}
 
-	# Code by Egil Kvaleberg <egil@kvaleberg.no>
+	/**
+	 * @author Code by Egil Kvaleberg <egil@kvaleberg.no>
+	 *
+	 * @param array &$utmArray
+	 */
 	protected function getUTMZone( &$utmArray ) {
 		if ( $this->long >= 180 ) {
 			$long = $this->long - 360;
@@ -195,7 +220,14 @@ class MapSourcesTransform {
 		$utmArray['centralMeridian'] = $this->getCentralMeridian( $utmArray['zone'] );
 	}
 
-	# Code by Egil Kvaleberg <egil@kvaleberg.no>
+	/**
+	 * @author Code by Egil Kvaleberg <egil@kvaleberg.no>
+	 *
+	 * @param float $radius
+	 * @param float $lat
+	 * @param float $e2
+	 * @return float
+	 */
 	protected function getMeridianDistance( $radius, $lat, $e2 ) {
 		$e4 = $e2 * $e2;
 		$e6 = $e4 * $e2;
@@ -208,7 +240,15 @@ class MapSourcesTransform {
 		);
 	}
 
-	# Code by Egil Kvaleberg <egil@kvaleberg.no>
+	/**
+	 * @author Code by Egil Kvaleberg <egil@kvaleberg.no>
+	 *
+	 * @param float $latOrigin
+	 * @param float $longOrigin
+	 * @param array &$utmArray
+	 * @param array &$model
+	 * @return bool
+	 */
 	protected function getTM( $latOrigin, $longOrigin, &$utmArray, &$model ) {
 		if ( $this->lat < -80 || $this->lat > 84 || $this->long < -180 || $this->long > 180 ) {
 			$utmArray['error'] = -1;
@@ -270,12 +310,20 @@ class MapSourcesTransform {
 		return true;
 	}
 
+	/**
+	 * @param array &$utmArray
+	 * @return bool
+	 */
 	protected function getUTM( &$utmArray ) {
 		$this->getUTMZone( $utmArray );
 		// @phan-suppress-next-line PhanTypePossiblyInvalidDimOffset
 		return $this->getTM( 0.0, $utmArray['centralMeridian'], $utmArray, $this->ellWGS84 );
 	}
 
+	/**
+	 * @param array &$utmArray
+	 * @return bool
+	 */
 	protected function getUTM33( &$utmArray ) {
 		$utmArray['zone'] = 33;
 		$utmArray['zoneLetter'] = 'V';
@@ -283,9 +331,13 @@ class MapSourcesTransform {
 		return $this->getTM( 0.0, $utmArray['centralMeridian'], $utmArray, $this->ellWGS84 );
 	}
 
-	# Code by Egil Kvaleberg <egil@kvaleberg.no>
-	# Fix by Roger W Haworth
-
+	/**
+	 * @author Code by Egil Kvaleberg <egil@kvaleberg.no>
+	 * @author Fix by Roger W Haworth
+	 *
+	 * @param array &$utmArray
+	 * @return bool
+	 */
 	protected function getOSGB36( &$utmArray ) {
 		$this->getUTMZone( $utmArray );
 		if ( !$this->getTM( 49.0, -2.0, $utmArray, $this->ellAiry1830 ) ) {
@@ -321,7 +373,12 @@ class MapSourcesTransform {
 		return true;
 	}
 
-	# Code by [[wikipedia:de:Benutzer:Meleager]]
+	/**
+	 * @author Code by [[wikipedia:de:Benutzer:Meleager]]
+	 *
+	 * @param array &$ch1903Array
+	 * @return bool
+	 */
 	protected function getCH1903( &$ch1903Array ) {
 		# outside reasonable range
 		if ( $this->lat < 45.5 || $this->lat > 48 || $this->long < 5.0 || $this->long > 11 ) {
@@ -345,13 +402,18 @@ class MapSourcesTransform {
 		return true;
 	}
 
-	# New Zealand Geodetic Datum 2000 (NZGD2000)
-	# See also http://www.linz.govt.nz/core/surveysystem/geodeticinfo/geodeticdatums/
-	# Northernmost point - Nugent Island, in the Kermadec Islands: -29° S
-	# Southernmost point - Jacquemart Island (off the south coast of Campbell Island)
-	# in the Campbell Island group: -53° S
-	# Westernmost point - Cape Lovitt, Auckland Islands: 165° E
-	# Easternmost point - Kahuitara Point, Pitt Island, in the Chatham Islands: 178° E
+	/**
+	 * New Zealand Geodetic Datum 2000 (NZGD2000)
+	 * See also http://www.linz.govt.nz/core/surveysystem/geodeticinfo/geodeticdatums/
+	 * Northernmost point - Nugent Island, in the Kermadec Islands: -29° S
+	 * Southernmost point - Jacquemart Island (off the south coast of Campbell Island)
+	 * in the Campbell Island group: -53° S
+	 * Westernmost point - Cape Lovitt, Auckland Islands: 165° E
+	 * Easternmost point - Kahuitara Point, Pitt Island, in the Chatham Islands: 178° E
+	 *
+	 * @param array &$utmArray
+	 * @return bool
+	 */
 	protected function getNZTM( &$utmArray ) {
 		# outside reasonable range
 		if ( $this->lat > -29.0 || $this->lat < -53.0 || $this->long > 178.0 || $this->long < 165.0 ) {
