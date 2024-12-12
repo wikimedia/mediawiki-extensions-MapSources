@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cabal"
+		]
+	},
+	"mapsources-noparams": "ਕੋਈ ਮਾਪਦੰਡ ਨਹੀਂ ਦਿੱਤੇ ਗਏ",
+	"mapsources-incorrectparams": "ਗਲਤ ਮਾਪਦੰਡ ($1) ਦਿੱਤੇ ਗਏ ਹਨ"
+}
