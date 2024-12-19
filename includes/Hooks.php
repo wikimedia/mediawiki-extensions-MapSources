@@ -6,6 +6,7 @@ use MediaWiki\Hook\ParserFirstCallInitHook;
 use MediaWiki\Parser\Parser;
 
 class Hooks implements ParserFirstCallInitHook {
+	/** @inheritDoc */
 	public function onParserFirstCallInit( $parser ) {
 		$parser->setFunctionHook( 'dd2dms', [ self::class, 'wfdd2dms' ] );
 		$parser->setFunctionHook( 'deg2dd', [ self::class, 'wfdeg2dd' ] );

@@ -33,6 +33,12 @@ class MapSourcesMath {
 	/** @var array */
 	public $coord = [];
 
+	/**
+	 * @param string $input
+	 * @param int $precision
+	 * @param string $dir
+	 * @param int $untilStep
+	 */
 	public function __construct( $input, $precision = 4, $dir = '', $untilStep = 1 ) {
 		$this->newCoord( $input, $precision, $dir );
 		if ( $untilStep > 1 && $this->error == 0 ) {
@@ -40,6 +46,11 @@ class MapSourcesMath {
 		}
 	}
 
+	/**
+	 * @param string $input
+	 * @param int $precision
+	 * @param string $dir
+	 */
 	protected function newCoord( $input, $precision = 4, $dir = '' ) {
 		if ( $dir == 'lat' || $dir == 'long' ) {
 			$this->dir = $dir;
@@ -62,6 +73,9 @@ class MapSourcesMath {
 		$this->error = $this->toDec( $input );
 	}
 
+	/**
+	 * @return bool
+	 */
 	protected function setCoord() {
 		if ( $this->step > 1 ) {
 			return true;
@@ -126,6 +140,11 @@ class MapSourcesMath {
 		return true;
 	}
 
+	/**
+	 * @param string $plus
+	 * @param string $minus
+	 * @return string
+	 */
 	public function getDMSString( $plus = '', $minus = '' ) {
 		if ( $this->step < 2 ) {
 			$this->setCoord();
@@ -164,6 +183,9 @@ class MapSourcesMath {
 		return $result;
 	}
 
+	/**
+	 * @return string
+	 */
 	protected function getErrorMsg() {
 		$msg = [ 'no error', 'no parameter(s)', 'to many parameters', 'illegal characters',
 			'to many numeric parameters', 'degree out of range', 'minute out of range',
@@ -181,6 +203,10 @@ class MapSourcesMath {
 		}
 	}
 
+	/**
+	 * @param string $input
+	 * @return int
+	 */
 	protected function toDec( $input = '' ) {
 		$units = [ '°', "'", '"', ' ' ];
 
