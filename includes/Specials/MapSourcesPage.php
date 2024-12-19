@@ -34,19 +34,19 @@ use MediaWiki\Title\Title;
 
 class MapSourcesPage extends SpecialPage {
 
-	/** @var string|int|MapSourcesMath */
-	public $lat = 0;
+	/** @var string|MapSourcesMath */
+	public $lat;
 
-	/** @var string|int|MapSourcesMath */
-	public $long = 0;
+	/** @var string|MapSourcesMath */
+	public $long;
 
-	/** @var string */
+	/** @var string|null */
 	public $params = '';
 
 	/** @var array */
 	public $par;
 
-	/** @var array */
+	/** @var string[] */
 	public $errorMsgs = [];
 
 	/** @var string */
@@ -163,7 +163,7 @@ class MapSourcesPage extends SpecialPage {
 	}
 
 	/**
-	 * @return int
+	 * @return int Error code
 	 */
 	private function splitParameters() {
 		$a = explode( ',', str_replace( ';', ',', $this->params ), 4 );
@@ -224,7 +224,7 @@ class MapSourcesPage extends SpecialPage {
 	/**
 	 * @author setScales() code by Egil Kvaleberg <egil@kvaleberg.no>
 	 */
-	private function setScales() {
+	private function setScales(): void {
 		if ( !isset( $this->par['scale'] ) || ( $this->par['scale'] < 100 ) ) {
 			$scaleByType = [
 				'country' => 10000000,
@@ -347,12 +347,12 @@ class MapSourcesPage extends SpecialPage {
 			return false;
 		}
 
-		$this->lat = new MapSourcesMath( $this->lat, $this->par['precision'], 'lat', 2 );
+		$this->lat = new MapSourcesMath( $this->lat, $this->par['precision'], 'lat' );
 		if ( $this->lat->error != 0 ) {
 			$this->errorMsgs[] = $this->msg( 'mapsources-incorrectlat' )->text();
 			return false;
 		}
-		$this->long = new MapSourcesMath( $this->long, $this->par['precision'], 'long', 2 );
+		$this->long = new MapSourcesMath( $this->long, $this->par['precision'], 'long' );
 		if ( $this->long->error != 0 ) {
 			$this->errorMsgs[] = $this->msg( 'mapsources-incorrectlong' )->text();
 			return false;
