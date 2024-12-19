@@ -70,11 +70,8 @@ class MapSourcesPage extends SpecialPage {
 	/** @var int */
 	public $osmzoommap = 10;
 
-	public function __construct(
-		$name = 'MapSources', $restriction = '', $listed = true,
-		$function = false, $file = 'default', $includable = false
-	) {
-		parent::__construct( $name, $restriction, $listed, $function, $file, $includable );
+	public function __construct() {
+		parent::__construct( 'MapSources' );
 	}
 
 	public function execute( $subPage ) {
