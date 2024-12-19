@@ -37,11 +37,10 @@ class MapSourcesMath {
 	 * @param string $input
 	 * @param int $precision
 	 * @param string $dir
-	 * @param int $untilStep
 	 */
-	public function __construct( $input, $precision = 4, $dir = '', $untilStep = 1 ) {
+	public function __construct( $input, $precision = 4, $dir = '' ) {
 		$this->newCoord( $input, $precision, $dir );
-		if ( $untilStep > 1 && $this->error == 0 ) {
+		if ( $this->error == 0 ) {
 			$this->setCoord();
 		}
 	}
@@ -51,7 +50,7 @@ class MapSourcesMath {
 	 * @param int $precision
 	 * @param string $dir
 	 */
-	protected function newCoord( $input, $precision = 4, $dir = '' ) {
+	protected function newCoord( $input, $precision = 4, $dir = '' ): void {
 		if ( $dir == 'lat' || $dir == 'long' ) {
 			$this->dir = $dir;
 		} else {
@@ -73,12 +72,9 @@ class MapSourcesMath {
 		$this->error = $this->toDec( $input );
 	}
 
-	/**
-	 * @return bool
-	 */
-	protected function setCoord() {
+	protected function setCoord(): void {
 		if ( $this->step > 1 ) {
-			return true;
+			return;
 		}
 		if ( $this->prec < 9 ) {
 			$this->coord['dec'] = round( $this->dec, $this->prec );
@@ -86,11 +82,7 @@ class MapSourcesMath {
 			$this->coord['dec'] = $this->dec;
 		}
 
-		if ( $this->dec < 0 ) {
-			$sign = -1;
-		} else {
-			$sign = 1;
-		}
+		$sign = $this->dec < 0 ? -1 : 1;
 		$angle = abs( $this->dec );
 		$deg = floor( $angle );
 		$min = ( $angle - $deg ) * 60;
@@ -136,8 +128,6 @@ class MapSourcesMath {
 		}
 
 		$this->step = 2;
-
-		return true;
 	}
 
 	/**

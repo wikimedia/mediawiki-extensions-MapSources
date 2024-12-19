@@ -40,7 +40,7 @@ class Hooks implements ParserFirstCallInitHook {
 			}
 		}
 
-		$geo = new MapSourcesMath( $coord, $precision, '', 2 );
+		$geo = new MapSourcesMath( $coord, $precision );
 		if ( $geo->error < 0 ) {
 			return wfMessage( 'mapsources-math-incorrect-input' )->inContentLanguage()->text();
 		}
@@ -81,7 +81,7 @@ class Hooks implements ParserFirstCallInitHook {
 			}
 		}
 
-		$geo = new MapSourcesMath( $coord, $precision, '', 2 );
+		$geo = new MapSourcesMath( $coord, $precision );
 		if ( $geo->error < 0 ) {
 			return wfMessage( 'mapsources-math-incorrect-input' )->inContentLanguage()->text();
 		}
@@ -140,8 +140,8 @@ class Hooks implements ParserFirstCallInitHook {
 		}
 
 		$args = [];
-		$lat = new MapSourcesMath( $lat, $precision, 'lat', 2 );
-		$long = new MapSourcesMath( $long, $precision, 'long', 2 );
+		$lat = new MapSourcesMath( $lat, $precision, 'lat' );
+		$long = new MapSourcesMath( $long, $precision, 'long' );
 
 		if ( $lat->error == 0 ) {
 			$args[] = abs( $lat->dec ) . '_' . $lat->coord['NS'];

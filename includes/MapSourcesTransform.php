@@ -246,19 +246,18 @@ class MapSourcesTransform {
 	 * @param float $latOrigin
 	 * @param float $longOrigin
 	 * @param array &$utmArray
-	 * @param array &$model
+	 * @param float[] $model
 	 * @return bool
 	 */
-	protected function getTM( $latOrigin, $longOrigin, &$utmArray, &$model ) {
+	protected function getTM( $latOrigin, $longOrigin, &$utmArray, $model ) {
 		if ( $this->lat < -80 || $this->lat > 84 || $this->long < -180 || $this->long > 180 ) {
 			$utmArray['error'] = -1;
 			return false;
 		}
 
-		if ( $this->long >= 180 ) {
-			$long = $this->long - 360;
-		} else {
-			$long = $this->long;
+		$long = $this->long;
+		if ( $long >= 180 ) {
+			$long -= 360;
 		}
 
 		$lat = $this->deg2rad( $this->lat );
