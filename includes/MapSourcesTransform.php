@@ -362,9 +362,9 @@ class MapSourcesTransform {
 		$c1 = substr( $letters, ( 17 - intval( $gridY / 5 ) * 5 ) + intval( $gridX / 5 ), 1 );
 		$c2 = substr( $letters, ( 20 - ( $gridY % 5 ) * 5 ) + $gridX % 5, 1 );
 		// @phan-suppress-next-line PhanTypePossiblyInvalidDimOffset
-		$e = sprintf( "%05d", $utmArray['easting'] % 100000 );
+		$e = sprintf( "%05d", (int)$utmArray['easting'] % 100000 );
 		// @phan-suppress-next-line PhanTypePossiblyInvalidDimOffset
-		$n = sprintf( "%05d", $utmArray['northing'] % 100000 );
+		$n = sprintf( "%05d", (int)$utmArray['northing'] % 100000 );
 
 		$utmArray['error'] = 0;
 		$utmArray['ref'] = $c1 . $c2 . $e . $n;
