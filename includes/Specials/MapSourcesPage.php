@@ -339,7 +339,8 @@ class MapSourcesPage extends SpecialPage {
 			$this->params = $request->getText( 'params' );
 		}
 
-		if ( $this->params === '' ) {
+		// T388355 - double checking for null because $subPage passed into execute() may be null
+		if ( $this->params === '' || $this->params === null ) {
 			$this->errorMsgs[] = $this->msg( 'mapsources-noparams' )->text();
 			return false;
 		} elseif ( $this->splitParameters() != 0 ) {
