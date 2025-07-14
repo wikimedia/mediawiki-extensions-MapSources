@@ -4,6 +4,17 @@
 			"Умар"
 		]
 	},
+	"mapsources": "Картанийн хьостанаш",
 	"mapsources-coordinate": "Координаташ:",
-	"mapsources-go": "Лаха"
+	"mapsources-go": "Лаха",
+	"mapsources-errormsgs": "ГӀалатех хаам бар",
+	"mapsources-noparams": "Параметраш хӀиттийна йац",
+	"mapsources-incorrectparams": "Нийса йоцу параметраш билгалйаьхна ($1)",
+	"mapsources-incorrectlat": "Нийса доцу шоралла",
+	"mapsources-incorrectlong": "Нийса доцу дохалла",
+	"mapsources-nopage": "[[{{ns:project}}:$1|$1]] проектан агӀо тӀекхочуш йац.",
+	"mapsources-outofrange": "Координаташ диапазонан арахьа",
+	"mapsources-math-missing-operand": "Операнд йац",
+	"mapsources-math-incorrect-input": "Нийса доцу йаздар",
+	"mapsources-desc": "[[Special:MapSources|Леха]] хьостанашкахь хаамаш а, карташ а"
 }
