@@ -73,12 +73,17 @@ $specialPageAliases['vi'] = [
 	'MapSources' => [ 'Nguồn_bản_đồ' ],
 ];
 
-/** Simplified Chinese (中文（简体）‎) */
+/** Chinese (中文) */
+$specialPageAliases['zh'] = [
+	'MapSources' => [ 'MapSources' ],
+];
+
+/** Simplified Chinese (中文（简体）) */
 $specialPageAliases['zh-hans'] = [
 	'MapSources' => [ '地图来源' ],
 ];
 
-/** Traditional Chinese (中文（繁體）‎) */
+/** Traditional Chinese (中文（繁體）) */
 $specialPageAliases['zh-hant'] = [
-	'MapSources' => [ '地圖資源' ],
+	'MapSources' => [ '地圖來源', '地圖資源' ],
 ];
