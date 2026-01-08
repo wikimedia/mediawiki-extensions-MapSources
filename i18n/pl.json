@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Chrumps",
-			"Odie2"
+			"Odie2",
+			"Woytecr"
 		]
 	},
 	"mapsources": "Mapy",
-	"mapsources-summary": "Na tej stronie można odnaleźć łącza do map przedstawiających miejsce o podanych współrzędnych.",
+	"mapsources-summary": "Na tej stronie można odnaleźć łącza do map przedstawiających miejsce o podanych współrzędnych.\n\nSzerokość i długość geograficzną wraz z dodatkowymi parametrami należy oddzielać przecinkami.\nParametry składają się z identyfikatora (nazwy), znaku równości i wartości.\n\nPrzykład: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nOprócz tego akceptowalny jest format [https://wiki.toolserver.org/view/GeoHack GeoHack].",
 	"mapsources-search-legend": "Znajdź dane i mapy w źródłach",
 	"mapsources-coordinate": "Współrzędne:",
 	"mapsources-go": "Przejdź",
@@ -15,7 +16,7 @@
 	"mapsources-incorrectparams": "Podano błędne parametry ($1)",
 	"mapsources-incorrectlat": "Błędna szerokość",
 	"mapsources-incorrectlong": "Błędna długość",
-	"mapsources-nopage": "Brak adresu [[Project:$1]] źródła",
+	"mapsources-nopage": "Brak strony projektu [[{{ns:project}}:$1]]",
 	"mapsources-outofrange": "Współrzędne poza zakresem",
 	"mapsources-math-missing-operand": "Brak parametru(ów)",
 	"mapsources-math-incorrect-input": "Błędne dane",
