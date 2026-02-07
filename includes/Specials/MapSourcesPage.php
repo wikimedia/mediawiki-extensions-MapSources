@@ -141,7 +141,7 @@ class MapSourcesPage extends SpecialPage {
 		$htmlForm = HTMLForm::factory( 'ooui', $formDescriptor, $context );
 		$htmlForm
 			->setMethod( 'get' )
-			->setSubmitText( $this->msg( 'mapsources-go' )->escaped() )
+			->setSubmitText( $this->msg( 'mapsources-go' )->text() )
 			->setWrapperLegend( $this->msg( 'mapsources-search-legend' )->text() )
 			->prepareForm()
 			->displayForm( false );
