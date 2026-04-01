@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"MR973"
+		]
+	},
+	"mapsources": "Карта сығанаҡтары",
+	"mapsources-summary": "Был бит файҙаланыусыларға бер нисә ресурста урынды (уның координаттары буйынса билдәләнгән) эҙләргә мөмкинлек бирә.\n\nКиңлек, оҙонлоҡ һәм өҫтәмә параметрҙар үҙ-ара өтөр менән айырылырға тейеш.\nПараметрҙар идентификаторҙан, тигеҙлек билдәһенән һәм ҡиммәттән тора.\n\nМиҫал: 52° 31′ N, 13° 24′ 30″ E, scale=50000\n\nБынан тыш, [https://wiki.toolserver.org/view/GeoHack GeoHack] форматы ла ҡабул ителә.",
+	"mapsources-search-legend": "Ресурстарҙа мәғлүмәт һәм карталар эҙләү",
+	"mapsources-coordinate": "Координаталар:",
+	"mapsources-go": "Эҙләү",
+	"mapsources-errormsgs": "Хаталар тураһында хәбәрҙәр",
+	"mapsources-noparams": "Параметрҙар бирелмәгән",
+	"mapsources-incorrectparams": "Дөрөҫ булмаған параметрҙар ($1) бирелгән",
+	"mapsources-incorrectlat": "Хаталы киңлек",
+	"mapsources-incorrectlong": "Хаталы оҙонлоҡ",
+	"mapsources-nopage": "[[{{ns:project}}:$1|$1]] проект бите юҡ",
+	"mapsources-outofrange": "Координаталар диапазондан ситтә",
+	"mapsources-math-missing-operand": "Операнд етешмәй",
+	"mapsources-math-incorrect-input": "Хаталы индереү",
+	"mapsources-desc": "Сығанаҡтарҙа мәғлүмәт һәм карталар [[Special:MapSources|эҙләү]]"
+}
