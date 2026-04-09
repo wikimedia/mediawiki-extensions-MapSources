@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"DzWiki"
+			"DzWiki",
+			"Srđan"
 		]
 	},
-	"mapsources-coordinate": "Koordinate:"
+	"mapsources-coordinate": "Koordinate:",
+	"mapsources-go": "Pokreni"
 }
