@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"mapsources": "Ilaha khariidadda",
+	"mapsources-summary": "Boggan wuxuu u oggolaanayaa isticmaalayaasha inay raadiyaan goob (lagu qeexay isku-duwayaasha) ilo kala duwan.\n\nLatitude, longitude iyo cabbirro dheeraad ah waa in lagu kala saaraa comma-yada.\nCabbirradu waxay ka kooban yihiin aqoonsi, calaamadda sinnaan, iyo qiime.\n\nTusaale: 52° 31′ N, 13° 24′ 30″ E, \nscale=50000\n\nIntaa waxaa dheer, qaabka [https://wiki.toolserver.org/view/GeoHack GeoHack] waa la aqbali doonaa.",
+	"mapsources-search-legend": "Ka hel xog iyo khariidado ilaha kala duwan",
+	"mapsources-coordinate": "Isku-duwayaasha:",
+	"mapsources-go": "Soco",
+	"mapsources-errormsgs": "Farriimaha khaladka",
+	"mapsources-noparams": "Ma jiraan cabbirro la bixiyay",
+	"mapsources-incorrectparams": "Cabbirro khaldan ($1) ayaa la bixiyay",
+	"mapsources-incorrectlat": "Latitude khaldan",
+	"mapsources-incorrectlong": "Longitude khaldan",
+	"mapsources-nopage": "Ma jiro bog mashruuc [[{{ns:project}}:$1|$1]] oo la heli karo",
+	"mapsources-outofrange": "Isku-duwayaal ka baxsan xadka",
+	"mapsources-math-missing-operand": "Qiime maqan",
+	"mapsources-math-incorrect-input": "Gelinta khaldan",
+	"mapsources-desc": "[[Special:MapSources|Raadi]] xog iyo khariidado ilaha kala duwan"
+}
