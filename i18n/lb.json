@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
 	"mapsources": "Quelle vun de Kaarten",
@@ -13,5 +14,6 @@
 	"mapsources-incorrectlat": "Falsche Breedegrad",
 	"mapsources-incorrectlong": "Falsche Längtegrad",
 	"mapsources-nopage": "Keng Säit vum Projet [[{{ns:project}}:$1|$1]] disponibel",
-	"mapsources-outofrange": "Koordinaten ausserhalb vum Beräich"
+	"mapsources-outofrange": "Koordinaten ausserhalb vum Beräich",
+	"mapsources-math-incorrect-input": "Inkorrekten Input"
 }
