@@ -14,7 +14,12 @@
 		"MediaWiki": ">= 1.47.0"
 	},
 	"SpecialPages": {
-		"MapSources": "MediaWiki\\Extension\\MapSources\\Specials\\MapSourcesPage"
+		"MapSources": {
+			"class": "MediaWiki\\Extension\\MapSources\\Specials\\MapSourcesPage",
+			"services": [
+				"RevisionLookup"
+			]
+		}
 	},
 	"MessagesDirs": {
 		"MapSources": [

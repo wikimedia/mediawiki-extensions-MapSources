@@ -26,8 +26,8 @@ use MediaWiki\Extension\MapSources\MapSourcesMath;
 use MediaWiki\Extension\MapSources\MapSourcesTransform;
 use MediaWiki\HTMLForm\HTMLForm;
 use MediaWiki\MainConfigNames;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Request\WebRequest;
+use MediaWiki\Revision\RevisionLookup;
 use MediaWiki\Revision\SlotRecord;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
@@ -70,7 +70,9 @@ class MapSourcesPage extends SpecialPage {
 	/** @var int */
 	public $osmzoommap = 10;
 
-	public function __construct() {
+	public function __construct(
+		private readonly RevisionLookup $revisionLookup,
+	) {
 		parent::__construct( 'MapSources' );
 	}
 
@@ -95,9 +97,7 @@ class MapSourcesPage extends SpecialPage {
 			}
 
 			if ( $title !== null && $title->exists() ) {
-				$rev = MediaWikiServices::getInstance()
-					->getRevisionLookup()
-					->getRevisionByTitle( $title );
+				$rev = $this->revisionLookup->getRevisionByTitle( $title );
 				$content = $rev->getContent( SlotRecord::MAIN );
 				if ( $content instanceof TextContent ) {
 					$out->addWikiTextAsInterface( $this->replaceText( $content->getText() ) );
