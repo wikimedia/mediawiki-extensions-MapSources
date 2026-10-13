@@ -225,28 +225,21 @@ class MapSourcesPage extends SpecialPage {
 	 * @author setScales() code by Egil Kvaleberg <egil@kvaleberg.no>
 	 */
 	private function setScales(): void {
-		if ( !isset( $this->par['scale'] ) || ( $this->par['scale'] < 100 ) ) {
-			$scaleByType = [
+		$this->par['scale'] = (int)( $this->par['scale'] ?? 0 );
+		if ( $this->par['scale'] < 100 ) {
+			$this->par['scale'] = match ( $this->par['type'] ?? null ) {
 				'country' => 10000000,
 				'state' => 3000000,
 				'adm1st' => 1000000,
 				'adm2nd' => 300000,
-				'city' => 100000,
-				'mountain' => 100000,
-				'isle' => 100000,
-				'waterbody' => 100000,
 				'airport' => 30000,
-				'landmark' => 10000
-			];
-			if ( isset( $this->par['type'] ) && isset( $scaleByType[$this->par['type']] ) ) {
-				$this->par['scale'] = $scaleByType[$this->par['type']];
-			} else {
-				$this->par['scale'] = 100000;
-			}
+				'landmark' => 10000,
+				default => 100000,
+			};
 		}
 
 		/* Google and Tiger span */
-		$this->google = $this->par['scale'] * 1.0 / 1000000;
+		$this->google = $this->par['scale'] / 1000000;
 
 		/* Mapquest zoom 0 ... 9 */
 		$this->mapquest = intval( 18.0 - log( $this->par['scale'] ) );
