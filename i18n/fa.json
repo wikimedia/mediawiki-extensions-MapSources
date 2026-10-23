@@ -4,6 +4,7 @@
 			"Armin1392",
 			"Ebrahim",
 			"Ebraminio",
+			"LProfo",
 			"Ladsgroup",
 			"McDutchie",
 			"Mjbmr",
@@ -21,7 +22,7 @@
 	"mapsources-incorrectlat": "عرض جغرافیایی نادرست",
 	"mapsources-incorrectlong": "طول جغرافیایی نادرست",
 	"mapsources-nopage": "هیچ صفحهٔ پروژه [[{{ns:project}}:$1|$1]] در دسترس نیست",
-	"mapsources-outofrange": "متناسب کردن خارج از محدوده",
+	"mapsources-outofrange": "مختصات خارج از بازه",
 	"mapsources-math-missing-operand": "دستور گم شده",
 	"mapsources-math-incorrect-input": "ورودی نادرست",
 	"mapsources-desc": "[[Special:MapSources|جستجوی]] اطلاعات و نقشه‌ها در منابع"
