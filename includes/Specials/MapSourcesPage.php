@@ -62,7 +62,7 @@ class MapSourcesPage extends SpecialPage {
 	public $msn = 1;
 
 	/** @var int */
-	public $multimap = 100000;
+	public $multimap = 100_000;
 
 	/** @var int */
 	public $osmzoom = 12;
@@ -228,18 +228,18 @@ class MapSourcesPage extends SpecialPage {
 		$this->par['scale'] = (int)( $this->par['scale'] ?? 0 );
 		if ( $this->par['scale'] < 100 ) {
 			$this->par['scale'] = match ( $this->par['type'] ?? null ) {
-				'country' => 10000000,
-				'state' => 3000000,
-				'adm1st' => 1000000,
-				'adm2nd' => 300000,
-				'airport' => 30000,
-				'landmark' => 10000,
-				default => 100000,
+				'country' => 10_000_000,
+				'state' => 3_000_000,
+				'adm1st' => 1_000_000,
+				'adm2nd' => 300_000,
+				'airport' => 30_000,
+				'landmark' => 10_000,
+				default => 100_000,
 			};
 		}
 
 		/* Google and Tiger span */
-		$this->google = $this->par['scale'] / 1000000;
+		$this->google = $this->par['scale'] / 1_000_000;
 
 		/* Mapquest zoom 0 ... 9 */
 		$this->mapquest = intval( 18.0 - log( $this->par['scale'] ) );
@@ -251,16 +251,16 @@ class MapSourcesPage extends SpecialPage {
 		}
 
 		/* MSN altitude */
-		$this->msn = intval( $this->par['scale'] * 143 / 1000000 );
+		$this->msn = intval( $this->par['scale'] * 143 / 1_000_000 );
 		if ( $this->msn < 1 ) {
 			$this->msn = 1;
 		}
 
 		/* Multimap fixed scales */
-		$min = [ 1, 7000, 15000, 35000, 70000, 140000, 310000,
-			700000, 1400000, 2800000, 6300000, 14000000, 30000000 ];
-		$mm = [ 5000, 10000, 20000, 50000, 100000, 200000, 500000,
-			1000000, 2000000, 4000000, 10000000, 20000000, 40000000 ];
+		$min = [ 1, 7_000, 15_000, 35_000, 70_000, 140_000, 310_000,
+			700_000, 1_400_000, 2_800_000, 6_300_000, 14_000_000, 30_000_000 ];
+		$mm = [ 5_000, 10_000, 20_000, 50_000, 100_000, 200_000, 500_000,
+			1_000_000, 2_000_000, 4_000_000, 10_000_000, 20_000_000, 40_000_000 ];
 		$i = 0;
 		$c = count( $min );
 		while ( ( $i < $c ) && ( $this->par['scale'] >= $min[$i] ) ) {
@@ -269,7 +269,7 @@ class MapSourcesPage extends SpecialPage {
 		}
 
 		/* OSM zoom */
-		$this->osmzoom = (int)round( log( 500000000 / $this->par['scale'], 2 ) );
+		$this->osmzoom = (int)round( log( 50_000_0000 / $this->par['scale'], 2 ) );
 		if ( $this->osmzoom < 0 ) {
 			$this->osmzoom = 0;
 		}
